@@ -1,0 +1,45 @@
+## Component: Difficulty Ladder
+
+**The principle:** Finishing the game is only the beginning. Winning unlocks a harder, stranger way to play, and mastery is measured by how high the player climbs.
+
+**Used by:** Loathing, Spire, Containment, Casebook
+
+### Design Rules
+
+* **Each Rung Is Earned:** Winning unlocks a harder tier with a stacked modifier (more elite enemies, less healing, a starting curse). The player can always see which rung they've reached.
+
+* **The Rebirth Loop:** Completing a run lets the player restart at the beginning, carrying one permanent perk or skill into a different class or build (Loathing's "permed" skills).
+
+* **Restriction Runs:** Provide built-in paths that strip away comfort.
+  * *Examples (Loathing):* Hardcore (no access to saved storage), Teetotaler (no booze), Oxygenarian (no food or drink at all), or a thematic overhaul where every enemy is replaced with bees.
+
+* **Efficiency Is Prestige:** Measure status not by whether the player won, but by how few turns, days, or minutes it took.
+
+* **Seeded Runs and Daily Challenges:** Let players share seeds and compete on the same daily run. Identical starting conditions turn every result into a comparable test of skill.
+
+* **Opt-In Difficulty:** If meta-progression makes the game easier over time, pair it with a system that lets experts add difficulty back (*Hades*' Heat).
+
+### Tuning by Soul
+
+* **Spire:** The ladder is a stack of difficulty modifiers applied to a self-contained run.
+* **Loathing:** The ladder is a rebirth economy. Each ascension adds permanent breadth, and restriction paths add self-imposed friction.
+* **Containment:** The ladder is a rebirth economy plus restriction runs, and the top is stamina: the most output from a design that holds.
+* **Casebook:** The ladder lives inside each installment. A harder second page opens after the first, harder because one named rule changes.
+
+### What It Costs
+
+* **Tuning Every Rung:** Twenty difficulty tiers is more tuning work than one game.
+* **The Content Treadmill:** Players who climb the ladder burn through content. Long-term health depends on new pieces, modes, and paths.
+* **Balance Debt:** Every permanent perk interacts with everything ever released. Power creep is cumulative and hard to reverse.
+
+### How It Fails
+
+* **Grind Disguised as Progress:** Meta-progression becomes a stat treadmill, so players win by playing longer rather than better. *Symptom:* skill matters less than hours logged. *Fix:* unlock options, not raw power, or make the power optional.
+* **Unfair Rungs:** Higher tiers are harder only through bigger numbers and randomness. *Symptom:* experts plateau and quit. *Fix:* each rung should demand a new skill or a new decision, not just more patience.
+* **The Empty Top:** Nothing is waiting for players who reach the top. *Symptom:* the most dedicated players leave. *Fix:* efficiency leaderboards, restriction paths, and seeds give the top of the ladder somewhere to go.
+
+### Litmus
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Ladder** | After the credits roll, is there a harder, stranger way to play? | **Yes.** Finishing is the tutorial. |

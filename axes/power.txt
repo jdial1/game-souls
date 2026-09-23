@@ -1,0 +1,49 @@
+## Axis: Power
+
+**The question:** What does the player's power consist of, and how much of it do they have?
+
+This axis is not just "how strong is the player." It is *what kind* of strength the game offers. Two games can both make the player feel powerful, one through reflexes and one through knowledge, and they will need completely different upgrade systems.
+
+### Positions
+
+* **Powerless, Never Helpless:** The player cannot fight the main threat, but can always hide, flee, or distract.
+* **Poor:** The player can fight, but can never afford to fight everything.
+* **Earned Mastery:** The character starts weak; the real power is the player's own skill, built through repeated failure.
+* **Kinetic:** Power is the joy of movement itself. The point isn't to defeat things; it's how good it feels to move.
+* **Toolkit:** Power is the number of ways the player can solve a problem.
+* **Optimization:** Power is efficiency: builds, synergies, turns saved, the elegance of a solved system.
+* **Understanding:** The only power is knowledge. A player who knows everything is all-powerful.
+* **Social / Interior:** Power is persuasion, perception, and conviction.
+* **Custodial:** The player doesn't embody power; they manage people who have their own wills. Power is indirect and unreliable.
+* **Surplus:** Power is having more than you need. It is measured in what the player can spare, and its highest use is giving it away.
+
+### Design Implications
+
+* The power type decides what an upgrade means. In an Understanding game, a stat upgrade is a betrayal. In an Optimization game, it is the whole point. In an Earned Mastery game, upgrades exist but must never replace skill.
+* Almost every soul in this collection rejects power fantasy through *looking cool*. Power fantasy comes from the player's own competence (Loathing states this outright).
+* Custodial power needs the managed characters to be genuinely willful, or the player is just using a clumsy remote control (see components/living_world.txt).
+
+### Tensions
+
+* **Poor + Toolkit** turns horror into an immersive sim. That is a legitimate hybrid (*System Shock*, *Prey*), but choose it deliberately, because every new tool erodes the scarcity.
+* **Understanding + any stat progression** invites the player to grind past a puzzle instead of solving it. Hearthian bans this outright.
+* **Understanding of a person + a per-person score** turns knowing someone into a contest between the two people doing the knowing. Ampersand measures only the pair.
+* **Surplus + a hard bottleneck** means nothing is ever spare, and the power never gets used. Gauge resolves it by limiting room rather than production: a store that fills is exactly what makes something spare.
+
+### Where Each Soul Sits
+
+| Soul | Position |
+| --- | --- |
+| Looking Glass | Toolkit |
+| Dwarven | Custodial |
+| Loathing | Optimization |
+| Ashen | Earned Mastery |
+| Hearthian | Understanding |
+| Elysium | Social / Interior |
+| Spire | Optimization |
+| Toybox | Kinetic |
+| Mansion | Poor (variants: Powerless, Never Helpless) |
+| Containment | Optimization |
+| Ampersand | Understanding (of a person, who keeps changing) |
+| Gauge | Surplus |
+| Casebook | Understanding (of the craft and of the case) |

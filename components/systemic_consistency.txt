@@ -1,0 +1,51 @@
+## Component: Systemic Consistency
+
+**The principle:** The world runs on universal laws that never switch off for a narrative beat, a boss fight, or the player's convenience. If fire burns wood in the tutorial, fire burns all wood, everywhere, forever.
+
+**Used by:** Looking Glass, Dwarven, Hearthian, Toybox, Containment, Gauge, Casebook
+
+### Design Rules
+
+* **Blind Interactivity:** Entities react to stimuli, not to the player's status as the protagonist.
+  * *Example (Looking Glass):* If guards attack on sight when a weapon is drawn, they also attack an enemy NPC who draws a weapon. If stepping on a pressure plate triggers a dart trap, luring a hostile dog onto that plate triggers the same trap and kills the dog.
+
+* **Overlapping States of Matter:** Elements (water, fire, electricity, gas) interact with one another and with the AI.
+  * *Example (Looking Glass):* Throwing a bottle of liquor creates a flammable puddle. Luring an enemy into the puddle and striking a metal pipe with a sword makes a spark. The spark ignites the puddle. The burning enemy panics, runs into a wooden support beam, and collapses a balcony onto their allies. Nobody scripted this; the systems merely collided.
+
+* **Material Properties Dictate Value and Function:** Objects are made of materials, and materials have properties. A gold sword is valuable but useless in combat because gold is soft and heavy. A wooden shield burns; an asbestos one doesn't, but may give its wielder lung disease (Dwarven).
+
+* **No Special Immunities:** If a rule applies to every human, it applies to the boss. If the player earned the right to bypass a fight with a sleep dart, let them.
+
+* **Deterministic Rules:** The same cause always produces the same effect. Randomness in the *laws* of the world makes it unlearnable; consistency turns it into something the player can reason about and exploit.
+
+* **Readable Affordances:** Every climbable ledge, breakable wall, and flammable surface shares a consistent visual language, taught early. A system the player can't see is a system they can't use.
+
+* **Simulate Only What Matters:** Only simulate a property in depth if it can change a player's decision or produce a story.
+
+### Tuning by Soul
+
+* **Looking Glass:** Systems exist to be exploited as solutions. Consistency is what makes a clever plan work.
+* **Dwarven:** Systems are simulated to a granular, material level. Consistency is what makes tragedy believable.
+* **Hearthian:** The laws of the world are the puzzle. Consistency is what makes them learnable.
+* **Toybox:** Systems exist to be played with. Consistency is what makes the playground trustworthy (*Breath of the Wild*'s fire, wind, metal, and electricity chemistry).
+* **Containment:** The laws are thermodynamics. Consistency is what makes a shared design the same machine in anyone's game, and a sandbox forecast worth trusting.
+* **Gauge:** Kindness obeys the same laws as haulage. A gift runs on the same rails and stops at the same full yard as every other load, so it can never be lost to a special case.
+* **Casebook:** One symbol means one thing everywhere on the page, and the page is identical on every device. A harder page departs from the primer only by a stated rule, so a solver can prove every page fair.
+
+### What It Costs
+
+* **Combinatorial QA:** Every tool must be tested against every system in every space. A new element doesn't add one interaction; it multiplies against everything already in the game. Cut systems that don't earn their combinations.
+* **Performance:** Deep simulations get slow as the world and its history grow. Performance becomes a design constraint.
+* **Narrative Fragility:** Writers lose the ability to script convenient exceptions. Every story beat must survive the systems.
+
+### How It Fails
+
+* **The Arbitrary Exception:** A boss is immune, a door is indestructible for no reason, a scripted sequence ignores the rules. *Symptom:* players stop experimenting because they no longer trust the world. *Fix:* no exceptions; if something must be blocked, block it with a rule the player can understand.
+* **Unreadable Affordances:** The player can't tell what can be stacked, burned, or climbed. *Symptom:* players only discover creative solutions by watching videos. *Fix:* a consistent visual language, taught early.
+* **Detail Nobody Feels:** The engine tracks the boiling point of a hundred minerals, but no decision ever depends on it. *Symptom:* developers are proud of features players never notice. *Fix:* cut or surface it.
+
+### Litmus
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Consistency** | Does this enemy, door, or scene ignore a rule that works everywhere else? | **No.** If it's true in the tutorial, it's true in the finale. |

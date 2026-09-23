@@ -1,0 +1,46 @@
+## Component: Shared Discovery
+
+**The principle:** The game is bigger than any single player. Players help, warn, mislead, and collaborate with one another, and some secrets can only be solved together.
+
+**Used by:** Loathing, Ashen, Hearthian, Containment
+
+### Design Rules
+
+* **Messages from the Void:** Let players leave short, templated notes in the world for strangers to find. Warnings, hints about hidden walls, and deliberate trolling ("Try jumping") coexist, and the reader must decide whom to trust (Ashen).
+
+* **Bloodstains and Phantoms:** Replay the final seconds of other players' deaths where they fell. Show faint silhouettes of strangers moving through the same space. Players learn from each other's mistakes without a word.
+
+* **Mercy and Menace from the Same System:** Let players summon strangers for help and let other strangers invade as hunters. Cooperation and predation run on the same pipes.
+
+* **Secrets Without Announcements:** Drop unannounced items, cryptic riddles, and subtle world changes into the game with no patch notes. Let the community discover and decipher them together (Loathing).
+
+* **Community-Wide Megaprojects:** Build events that no single player can complete, but the whole player base can (throwing millions of items into a communal rift, collectively deciphering an encoded text).
+
+* **Secrets Deeper Than One Player:** Hide content so deep that it takes the whole community months to find, and requires pooling notes (*Fez*'s endgame codes).
+
+* **The Offline Echo:** Without servers, fake the communion. Hand-author notes from long-dead adventurers, place corpses whose poses and gear tell how they died, and write NPC rivals who reach each area just before you do.
+
+### Tuning by Soul
+
+* **Ashen:** Asynchronous presence. The player is alone, but never lonely.
+* **Loathing:** A living alternate reality game. A secret society in conversation with the developers.
+* **Hearthian:** Collaborative puzzle-solving, usually after launch, in forums and notebooks.
+* **Containment:** Designs travel as text. Players post layout codes with their numbers attached, and the classic designs wait offline under their old names.
+
+### What It Costs
+
+* **Online Infrastructure:** Messages, phantoms, summons, and invasions need servers, moderation, and anti-cheat for the life of the game.
+* **Live Operations:** Unannounced secrets and megaprojects are a continuous commitment. Once players expect surprises, stopping feels like abandonment.
+* **Moderation:** Any player-written content will be abused. Templated messages limit this.
+
+### How It Fails
+
+* **The Spoiler Flood:** Discoveries leak within hours and everyone else reads the answer instead of finding it. *Symptom:* the mystery dies on day one. *Fix:* layer secrets so the deepest ones require in-game action, not just information.
+* **Toxic Invasion:** Hostile multiplayer drives away the players it preys on. *Symptom:* players go offline to avoid it. *Fix:* make invasions opt-in or tied to a clear risk the player chose.
+* **Dead Servers:** The communion depends on servers that eventually shut down. *Symptom:* the game becomes emptier than designed. *Fix:* build an Offline Echo fallback from the start.
+
+### Litmus
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Community** | Could a stranger's message, discovery, or ghost have changed this player's experience? | **Yes.** Even when they play alone, they're not alone. |

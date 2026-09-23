@@ -1,0 +1,54 @@
+## Component: Trusting the Player
+
+**The principle:** Assume the player is smart, literate, and curious. Replace instructions with invitations, and let curiosity be the compass.
+
+**Used by:** Looking Glass, Loathing, Ashen, Hearthian, Toybox, Containment, Ampersand, Gauge, Casebook
+
+### Design Rules
+
+* **No Quest Arrows:** No glowing trails, no objective markers, no patronizing pop-ups. Trust the player to read the joke, spot the clue, and figure out the solution (Loathing).
+
+* **Visible Destinations:** Show the player places they can't yet reach: a castle on a distant cliff, a glowing tower across a chasm. Curiosity replaces the waypoint (Ashen).
+
+* **Every Anomaly Is a Promise:** If something looks strange (a misaligned tile, a hum behind a wall, a star that blinks out of rhythm), it must mean something. Never waste the player's trust on set dressing that merely looks like a clue (Hearthian).
+
+* **Reward Poking:** Anything the player might plausibly try should do something. If they climb the tree that looks unclimbable, something is waiting at the top.
+  * *Example (Toybox):* A player scales a pointless rock spire purely because it was there. At the top, a tiny creature pops out and hands them a collectible. The designer predicted exactly what they would do.
+
+* **Teach Through Play, Not Text:** The first obstacle teaches the mechanic. See the four-beat structure in souls/toybox.txt for the full method.
+
+* **Record Observations, Not Instructions:** A journal may log what the player has seen and flag unanswered questions, but never tells them what to do next.
+  * *Example (Hearthian):* The log reads: "The statue in the flooded village faces east. Every other statue faces the sea. Why?" It never says: "Go east."
+
+* **Never Think for the Player:** No hint lens, detective vision, or ability that highlights the answer. Every shortcut to the epiphany destroys the epiphany.
+
+* **Pose Problems, Not Paths:** Present the goal and the obstacle; don't mark the intended route (Looking Glass).
+
+### Tuning by Soul
+
+* **Looking Glass:** Trust the player to find a route.
+* **Loathing:** Trust the player to read, to get the joke, and to do the math.
+* **Ashen:** Trust the player to navigate by sight and to persevere.
+* **Hearthian:** Trust the player to notice, remember, and take notes. This is the whole game.
+* **Toybox:** Trust the player to learn by playing and to poke at everything.
+* **Containment:** Trust the player to do the engineering. Show every number, record what a part was seen to do, and never suggest a layout.
+* **Ampersand:** Trust the couple to have the conversation. Show both answers, interpret neither, and give one instruction: go and ask them about it.
+* **Gauge:** Hints, never gates. The tutorial reads the state of the world, passes over lessons already learned, and never disables a control to force an order.
+* **Casebook:** Trust the player to deduce. Record what they have spotted, show counts without advice, and say nothing about a wrong mark until they pay to ask.
+
+### What It Costs
+
+* **Level and World Design Precision:** Without arrows, the space itself must guide. That requires iteration, landmarks, sightlines, and many playtests.
+* **Some Players Will Leave:** Players who expect guidance may bounce. Accept that trade, or provide opt-in help that never appears unless requested.
+
+### How It Fails
+
+* **The Wordy Tutorial:** Text boxes explain what the level should teach. *Symptom:* players skip the text and miss the mechanic. *Fix:* redesign the first obstacle so the correct action is the natural one.
+* **Abandonment Disguised as Trust:** There's no guidance, and also no landmarks, no sightlines, and no clues. *Symptom:* players wander aimlessly and quit. *Fix:* removing arrows means adding world design, not just deleting UI.
+* **The Empty Playground:** Curiosity stops paying off. *Symptom:* players follow only the main path. *Fix:* raise reward density or shrink the space. The designer should always get there first.
+
+### Litmus
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Respect** | Are we hand-holding the player or treating them like a child? | **No.** We assume the player is smart, literate, and capable of solving puzzles. |

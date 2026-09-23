@@ -1,0 +1,46 @@
+## Component: Environmental Storytelling
+
+**The principle:** The story is not told; it is found. Information is a physical object in the world, and the player assembles meaning from debris, documents, and details.
+
+**Used by:** Looking Glass, Ashen, Hearthian, Mansion, Casebook
+
+### Design Rules
+
+* **Information as a Physical Object:** Passwords are found on discarded clipboards. The layout of an enemy base is learned by stealing a janitor's blueprints (Looking Glass). If the player wants to know something, there is a thing in the world that knows it.
+
+* **The Story Has Already Happened:** The player arrives in the aftermath and reconstructs what happened from what was left behind.
+
+* **Item Descriptions as Scripture:** Every item carries a few sentences of history. Individually cryptic; collectively, they tell the story of a fallen kingdom, a betrayal, and a doomed romance.
+  * *Example (Ashen):* A pair of worn boots mentions a sentry who waited at a bridge for a lord who never returned. Three zones later, the player finds that bridge, and the sentry is still waiting, now hollowed and hostile.
+
+* **Cross-Reference the World:** The meaning of one place is written in another. A mural in a drowned library depicts four constellations; a star-chart lock in a mountain observatory needs exactly four stars (Hearthian).
+
+* **Write the Whole Truth First, Then Scatter It:** Ambiguity must hide a truth, not an absence. Write the complete hidden history before placing a single fragment, so every fragment is consistent with every other.
+
+* **Refuse to Summarize:** Never provide a codex that explains everything. Let the community argue for years about what happened. Ambiguity is a culture generator.
+
+### Tuning by Soul
+
+* **Looking Glass:** Information is practical. The note tells you the safe code; the lore is a bonus.
+* **Ashen:** Information is scripture. Fragmentary, mournful, and deliberately incomplete.
+* **Hearthian:** Information is the progression system itself. Understanding it is the only way forward.
+* **Mansion:** Information is dread. Diaries and files reveal what happened here, and what is probably still here.
+* **Dwarven (variant):** The story is *generated* rather than written. See the Procedural Mythmaking pillar in souls/dwarven.txt.
+* **Casebook:** Information is the frame around a puzzle. Clippings and dossiers give the player everything except the line that matters, and the proven line is written back into the record.
+
+### What It Costs
+
+* **Writing Discipline:** Fragments must be consistent across the entire game. A hidden history document (a "bible") is mandatory, and late plot changes ripple through every item description.
+* **Missed Content:** Most players will read a fraction of what you write.
+
+### How It Fails
+
+* **The Lore Void:** Fragments are so scattered that no coherent story can be reconstructed. *Symptom:* the community stops theorizing. *Fix:* write the full truth first.
+* **Obscurity as a Shortcut:** Designers confuse "cryptic" with "deep" and hide critical progression behind unguessable actions. *Symptom:* players need a wiki to finish the main path. *Fix:* the main path must be discoverable by observation alone; keep the truly obscure secrets optional.
+* **The Audio-Log Dump:** Environmental storytelling becomes a pile of voice recordings that explain the plot out loud. *Symptom:* the player stops looking at the environment. *Fix:* let objects, placement, and architecture carry the story before text does.
+
+### Litmus
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Discovery** | Is any important piece of the story delivered only through a cutscene or narrator? | **No.** It's in the world, waiting to be found. |

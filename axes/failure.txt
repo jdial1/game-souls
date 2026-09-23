@@ -1,0 +1,44 @@
+## Axis: Failure
+
+**The question:** What happens when the player loses, and what does the loss mean?
+
+Every game answers this, whether on purpose or by accident. The answer sets the stakes of every decision, how willing the player is to experiment, and how the game feels on its worst day.
+
+### Positions
+
+* **Trivial:** Failure costs seconds. Instant respawn, no lost progress, often a joke. Encourages fearless experimentation.
+* **Costly:** Failure spends a resource (ammunition, turns, a save, an alarm that stays tripped). The player keeps going, but poorer. Encourages caution and planning.
+* **Punishing but Legible:** Failure sends the player back, but always teaches exactly why. Difficulty is the product being sold.
+* **Narrative:** Failure branches the story instead of halting it. Failing is often more interesting than succeeding.
+* **Terminal:** Failure is permanent, and the fall is itself the story. The player watches it happen and retells it afterward.
+* **Forgone:** Nothing can be lost. The worst outcome is a gain not yet made: growth pauses with a visible reason and resumes when the reason is fixed. Encourages coming back without dread.
+
+### Design Implications
+
+* The further toward Terminal, the more the game must invest in legibility (components/legible_failure.txt) and in making the fall itself worth watching (components/failure_as_content.txt).
+* The further toward Trivial, the more the game must find tension somewhere else: novelty (Toybox) or mystery (Hearthian).
+* Save systems are a failure-axis decision. Unlimited saves drag any position toward Trivial. That is why Mansion charges for saves and Elysium works to make players not *want* to reload.
+
+### Tensions
+
+* **Costly resources + Trivial death:** If death is free but resources are scarce, players will die on purpose to reset. Decide which one is real.
+* **Punishing failure + Hidden information:** Hard failure the player can't explain reads as unfair. Punishing positions need Total or Observed information on the information axis (axes/information.txt).
+* **Forgone failure + Scarcity:** If nothing can be lost, scarcity can only be felt as waiting, and a tight bottleneck produces a stalled game rather than a tense one. Put the bottleneck on room rather than on supply, so that running short is a reason to reach further, never a threat.
+
+### Where Each Soul Sits
+
+| Soul | Position | In Practice |
+| --- | --- | --- |
+| Looking Glass | Costly | Alarms, bodies, and noise permanently change the level; quicksave softens the blow. |
+| Dwarven | Terminal | The colony falls, and the fall is the story. |
+| Loathing | Costly | A lost fight wastes turns; nothing is permanently lost. |
+| Ashen | Punishing but Legible | The corpse run. Learn the tell and try again. |
+| Hearthian | Trivial | The loop resets the world, not the mind. |
+| Elysium | Narrative | A failed check opens a different scene. |
+| Spire | Punishing but Legible | The run ends; the lesson carries into the next one. |
+| Toybox | Trivial | Instant, funny respawn. |
+| Mansion | Costly | Bullets and saves are finite. |
+| Containment | Costly | A failed part is gone and its heat returns to the reactor; a meltdown takes the board, never the account. |
+| Ampersand | Trivial (absence) / Narrative (the wrong guess) | A missed day costs a brick, not a lecture; a wrong guess about your partner is the best reveal of the day. |
+| Gauge | Forgone | A full yard makes trains wait; an unaffordable line says "Not enough goods." Nothing spoils, reverts, or is taken while the player is away. |
+| Casebook | Trivial (the board) / Costly (the receipt) | A wrong mark costs nothing and can sit unfiled forever; every check and revealed answer comes from a small ration and is printed on the result. |

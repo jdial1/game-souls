@@ -1,0 +1,47 @@
+## Component: Failure as Content
+
+**The principle:** Losing should produce something new (a scene, a story, a changed world, a lesson) rather than just rewinding the clock.
+
+**Used by:** Dwarven, Ashen, Hearthian, Elysium, Ampersand
+
+### Design Rules
+
+* **Failure Opens a Different Door:** A failed check, a lost fight, or a death should move the game somewhere new, not just back to where it was.
+  * *Example (Elysium):* The player fails a check to climb a fire escape, falls, and sprains an ankle. The limp causes a suspicious landlady to take pity and invite them in for tea, where she reveals the clue they would never have gotten by breaking in competently.
+
+* **Write Failure with More Care than Success:** Failure branches should be funnier, sadder, stranger, or more revealing than the success branches. Players see failure more often than they expect; make it the richer content.
+
+* **Retryable vs. Permanent:** Distinguish failures that can be retried after the character or player grows from failures that are final. The permanent ones carry weight; the retryable ones reward returning later as a changed person.
+
+* **Recoverable Stakes:** When failure costs something, make the cost recoverable, once. Drop the player's currency where they fell and give them exactly one chance to retrieve it. Die on the way back, and it's gone forever.
+  * *Example (Ashen):* The corpse run turns every return trip into a tense pilgrimage instead of a respawn chore.
+
+* **Make the Fall Worth Watching:** When failure is terminal, the collapse itself must have dramatic beats. Give failing players desperate options (abandon, bargain, flee, make a last stand) so the ending is a story, not a slow fade.
+  * *Example (Dwarven):* A colony cook gets rained on (Mood -5). He eats without a table (Mood -10). He suffers a psychotic break and punches an artillery shell in the armory. The explosion breaches the outer wall, letting in a pack of rabid wolves. The colony dies because a man got wet.
+
+* **Kill the Reload Reflex:** If players save-scum every failure, the failure content isn't good enough. Design so reloading feels like skipping the interesting part.
+
+### Tuning by Soul
+
+* **Dwarven:** Failure is terminal and the fall is the entire product. "Losing is fun."
+* **Ashen:** Failure is repeated and instructive. Death is the curriculum; the corpse run is the tuition.
+* **Hearthian:** Failure is free. Dying resets the world but keeps everything the player learned, and often reveals something new on the way out.
+* **Elysium:** Failure is narrative. A failed check is a scene, not a wall.
+* **Ampersand:** Failure is a wrong guess about someone you love, and it is the best reveal of the day. Absence costs a piece and is never scolded.
+
+### What It Costs
+
+* **Double Content:** Every failure branch is content that must be written, animated, or simulated, and many players will never see it.
+* **Testing the Fail States:** Failure states must be tested as thoroughly as the success path, and there are usually more of them.
+
+### How It Fails
+
+* **Failure as Punishment:** A failure simply closes a door with a flat "You fail." *Symptom:* players save-scum every roll. *Fix:* write every failure as a scene worth seeing.
+* **The Death Spiral Without a Story:** One bad event cascades into inevitable collapse with nothing interesting along the way. *Symptom:* players quit the moment things go wrong. *Fix:* give the fall dramatic beats and desperate choices.
+* **The Long Dead Run:** A run or save is doomed by the midpoint but takes another thirty minutes to actually end. *Symptom:* players abandon instead of finishing. *Fix:* let lost games end fast, or add comeback mechanics that keep the ending tense.
+
+### Litmus
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Branch** | When the player fails here, do they get less content? | **No.** They get different, often better, content. |

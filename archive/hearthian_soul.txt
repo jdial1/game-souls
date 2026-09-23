@@ -1,0 +1,100 @@
+## The "Hearthian" Game Soul Guide
+
+**A Framework for Knowledge-Gated Progression, Curiosity-Driven Exploration, and the Earned Epiphany**
+
+The soul of games like *Outer Wilds*, *Return of the Obra Dinn*, *Tunic*, *The Witness*, *Fez*, *Her Story*, and *Myst* can be distilled into a single philosophy: "The only thing you carry forward is what you understand."
+
+On the surface, these games look like quiet, meandering exploration titles where there isn't much to *do*. Beneath the surface lies a precisely engineered puzzle box whose lock is the player's own mind. There is nothing to grind, no stats to level, and no gear to upgrade. A player who already knows everything could finish the game in minutes. The entire game is the journey from ignorance to understanding.
+
+If you want to instill this exact soul into a new game, use this guide as your design bible.
+
+### Pillar 1: The Knowledge Lock
+
+In most games, progress is gated by keys, abilities, or experience levels. In a Hearthian-style game, every door is technically open from the first minute. The only thing locked is the player's comprehension.
+
+**Design Rules:**
+
+* **Gate with Understanding, Not Items:** Never give the player a double jump to reach the high ledge. Instead, let them realize the ledge was always reachable in a way they hadn't considered.
+  * *Example:* A sealed temple door opens only at the hour when the shadow of a distant lighthouse falls across its threshold. The player has walked past it twenty times. The lighthouse was always there. Nothing in the world changed except what the player knows.
+
+* **The Speedrun Proof:** Test your design by asking: could a fully informed player beat the game in under half an hour? If yes, your progression is truly knowledge-based. If they need to farm or unlock anything first, you have smuggled in a traditional gate.
+
+* **No Upgrades That Think for You:** Never sell the player a "hint lens," a detective vision, or an ability that highlights the answer. Every shortcut to the epiphany destroys the epiphany.
+
+### Pillar 2: Curiosity as the Only Quest Log
+
+There are no objective markers. There is no "Main Quest." There is only the nagging question the player cannot stop thinking about.
+
+**Design Rules:**
+
+* **Record Observations, Not Instructions:** A journal may log what the player has seen and flag the questions they haven't answered, but it must never tell them what to do next.
+  * *Example:* The log reads: "The statue in the flooded village faces east. Every other statue faces the sea. Why?" It never says: "Go east."
+
+* **Every Anomaly Is a Promise:** If something looks strange (a misaligned tile, a hum behind a wall, a star that blinks out of rhythm), it must mean something. The player's trust that the world is meaningful is sacred. Never waste it on set dressing that merely looks like a clue.
+
+* **Design the Knowledge Graph First:** Map every insight the player needs as a node, with at least three independent entry points to each (a mural, a recovered log, an environmental pattern). The story should be assemblable in any order, so two players compare notes and discover they solved the mystery backwards from each other.
+  * *Example:* A player can't crack the cipher on the observatory door. They wander off to chase a different mystery and find the cipher's key carved into a shipwreck that had nothing to do with what they were looking for.
+
+* **Always Leave a Thread to Pull:** Players will get stuck; that is part of the soul. But a player stuck on one question must always have another open question they can make progress on. Getting stuck should mean "switch threads," never "stop playing."
+
+### Pillar 3: The Language of the World
+
+The world teaches the player a grammar. First wordlessly, then fluently, then in combinations no tutorial could have explained.
+
+**Design Rules:**
+
+* **Teach a Rule, Then Test Fluency:** Introduce a mechanic through a short sequence of trivially easy puzzles with no text, then combine it with a second rule the player learned somewhere else entirely.
+  * *Example:* In a desert region, the player learns that bells must be rung in the order their shadows touch a sundial. In a flooded region, they learn that bells ring a note lower underwater. Deep in the game, a sunken sundial demands both rules at once, and the player solves it without ever being told the two lessons could combine.
+
+* **Cross-Reference the World:** The answer to a puzzle in one location is written, carved, or painted somewhere else. A mural in a drowned library depicts four constellations; a star-chart lock in a mountain observatory needs exactly four stars.
+
+* **The Notebook Test:** The highest compliment a player can pay is filling a physical notebook with sketches, symbols, and theories. If nobody reaches for a pen, the puzzles are too shallow or the answers too convenient.
+
+### Pillar 4: The Bounded World
+
+The world must be finite and learnable, so every piece the player discovers fits into a whole they can eventually hold in their head. A time loop is the most dramatic way to bound a world, but not the only one.
+
+**Design Rules:**
+
+* **Constrain Time or Space:** Bound the world with a repeating time cycle, a single frozen moment, a small island, or a fixed archive of recordings. Whatever the container, it must be small enough that the player can eventually map all of it. If time loops, the loop resets the world, never the mind.
+  * *Example:* Every twenty-minute cycle, a coastal city floods at minute twelve. The archive in the basement is reachable only before the flood; the observatory on the roof is reachable only after, by swimming. The player has to learn the timetable to be in the right place at the right minute.
+
+* **Deterministic Rules:** Whatever the container, it behaves the same way every time. In a loop, events happen at the same moment in the same way; on an island, every puzzle of the same type follows the same grammar. Randomness would make the world unlearnable. Consistency turns it into something the player can exploit.
+
+* **The Epiphany Is the Reward:** No loot fanfare, no XP pop-up, no achievement toast at the moment of discovery. The reward is the quiet "Oh." in the player's own head. Do not undercut it.
+
+### Variants & Exceptions
+
+* The container in Pillar 4 takes different forms. *Outer Wilds* and *Return of the Obra Dinn* bound their worlds in time (a repeating loop; a ship full of frozen death moments). *The Witness*, *Fez*, and *Tunic* bound them in space (a single island, a rotating world, a small kingdom with a hidden manual). *Her Story* bounds it in data: a fixed database of video clips, searchable only by the words the player thinks to type.
+* *Tunic* includes traditional combat, items, and stat upgrades alongside its knowledge gates. The core rule still holds: its deepest progress is gated purely by understanding.
+* *Fez*'s deepest secrets required the entire community to pool notes and brute-force codes. That is the soul at its most demanding and its most divisive.
+
+### What This Soul Costs
+
+* **Playtesting Is Nearly Impossible:** An epiphany can only happen once. Every tester is spent after one session, so you need a large, steady supply of fresh testers and the discipline to watch them struggle without helping.
+* **Design Is Front-Loaded:** The knowledge graph, the world's rules, and every cross-reference must be designed before much content is built. Changing a rule late can break clues scattered across the entire world.
+* **Near-Zero Replay Value:** Once solved, the game can't be unsolved. The soul trades replayability for one unforgettable first playthrough; the second playthrough is a speedrun.
+* **Marketing Fights the Product:** You can't show the best parts of the game without spoiling them. Trailers must sell a feeling, not a feature.
+
+### How It Fails
+
+* **The Wall:** A player is stuck on one insight with no other thread to pull. *Symptom:* they quit or open a walkthrough, and the epiphany is lost forever. *Fix:* the knowledge graph must always leave an open question the player can progress on. After a long stretch without progress, the world may redirect their attention (a bird lands on the relevant statue, a distant light flickers) without ever giving the answer.
+* **Moon Logic:** The solution makes sense only to the designer. *Symptom:* players who look up the answer feel cheated rather than foolish. *Fix:* the right reaction to a spoiled solution is "I should have seen that." If it's "How would anyone know that?", a clue is missing.
+* **Execution Friction:** Movement or controls are so clumsy that performing a known solution becomes the challenge. *Symptom:* players understand what to do but can't do it. *Fix:* once the player knows the answer, execution should be easy.
+* **The Accidental Answer:** A player stumbles into a solution without understanding it. *Symptom:* progress without an epiphany. *Fix:* make gates resistant to brute force and blind luck, so comprehension is the only way through.
+
+### Neighboring Souls
+
+* **Ashen:** Both refuse to explain themselves. Ashen gates progress on execution and lets you grind around a wall; Hearthian gates progress purely on understanding, and there is nothing to grind.
+* **Looking Glass:** Both treat information as a physical object in the world. In Looking Glass, a password on a sticky note is one route among many; in Hearthian, the understanding *is* the route.
+
+### The "Hearthian" Litmus Test
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Speedrun** | Could a player who knows every secret finish the game in twenty minutes? | **Yes.** The walls were only ever in their head. |
+| **The Upgrade** | Does the player receive a new ability that opens this area? | **No.** They received a new idea. |
+| **The Clue** | Is anything placed in the world that looks meaningful but isn't? | **No.** Every anomaly pays off. |
+| **The Notebook** | Are players reaching for pen and paper? | **Yes.** If they aren't, the puzzle is doing their thinking for them. |
+
+*"You do not need a skill tree when you have a door that was never locked, a mural nobody looked at twice, and a player who just gasped out loud alone in their room."*

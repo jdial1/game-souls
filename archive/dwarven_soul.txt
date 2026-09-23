@@ -1,0 +1,102 @@
+## The "Dwarven" Game Soul Guide
+
+**A Framework for Granular Chaos, Procedural History, and Inevitable Collapse**
+
+The soul of games like *Dwarf Fortress*, *RimWorld*, *Kenshi*, and *Project Zomboid* can be distilled into a single philosophy: "Losing is fun because the story of the fall is spectacular."
+
+On the surface, these games are obtuse management simulators or punishing survival RPGs with terrifying UI. Beneath the surface lies a ruthless, hyper-detailed simulation of anatomy, psychology, and thermodynamics. They are not games to be "beaten"; they are tragedy engines. You are not building a permanent utopia; you are authoring a spectacular, inevitable disaster.
+
+If you want to instill this exact soul into a game, use this guide as your design bible.
+
+### Pillar 1: Radical Materiality and Granular Anatomy
+
+Abstract concepts like "Hit Points" and "Mana" are banned. Everything in the world must be made of specific physical materials with boiling points, weights, and tensile strengths.
+
+**Design Rules:**
+
+* **Anatomical Targeting over HP Pools:** A creature does not die because a red bar reached zero. It dies because its blood volume dropped below critical pressure, or its brain took blunt force trauma.
+  * *Example:* A lucky strike from a peasant with a copper knife severs a dragon's motor nerve in its right leg. The dragon cannot walk, but it can still breathe fire. It eventually bleeds to death, not because of "DPS," but because of arterial fluid loss.
+
+* **Material Properties dictate Value and Function:** A sword made of gold is incredibly valuable but useless in combat because gold is soft and heavy. A wooden shield burns; an asbestos one does not, but it might give the wielder long-term lung disease.
+
+### Pillar 2: Cascading Psychological Failure
+
+The entities you control (or interact with) are not robots perfectly executing your commands. They have moods, biases, memories, and breaking points. Mechanical failure in this soul often originates from emotional failure.
+
+**Design Rules:**
+
+* **The Domino Effect of Misery:** Physical discomfort must directly tie into systemic disaster.
+  * *Example:* A colony cook gets rained on (Mood -5). He eats without a table (Mood -10). He suffers a psychotic break and punches a highly explosive artillery shell in the armory. The resulting explosion breaches the outer wall, letting in a pack of rabid wolves. The colony dies because a man got wet.
+
+* **Relational Webbing:** NPCs must form organic relationships. If a sniper accidentally shoots a miner in the crossfire, the miner's spouse will forever hate the sniper, potentially refusing to heal them in a future medical emergency.
+
+### Pillar 3: Apathetic Generation
+
+The universe is utterly indifferent to the player's existence. The world does not level up with you, nor does it wait for you to be ready before it introduces existential threats.
+
+**Design Rules:**
+
+* **No Level Scaling:** Do not spawn weak enemies just because the player is level one. If the player wanders into an ancient robotic hive on day two, they die. The game provides no warning prompts.
+* **If You Pace, Pace the Drama, Not the Safety Net:** A "storyteller" system that times events for rhythm (a lull after a disaster, a raid sized to colony wealth) is acceptable. A system that guarantees survival is not. The storyteller may decide *when* the wolves arrive; it must never decide that the colony is allowed to win.
+* **Economic & Ecological Independence:** Factions go to war, cities starve, and ecosystems collapse entirely independently of the player. You are not the chosen one; you are a variable in a massive algorithm.
+  * *Example:* You arrive at a highly anticipated trade hub only to find it entirely wiped out because, three in-game weeks ago, a plague of giant acidic beetles migrated through the area.
+
+### Pillar 4: Procedural Mythmaking through Logging
+
+Because the mechanics are so granular, the game generates actual history rather than scripted lore. To capture this, the game must meticulously track the lineage of objects and actions.
+
+**Design Rules:**
+
+* **The Artifact Memory System:** Objects of high quality should record their own history.
+  * *Example:* A masterwork steel helmet is forged. The game assigns it a name. Later, a goblin kills your captain and steals the helmet. Ten years later, in a new playthrough in the same generated world, you kill a goblin king and find that exact named helmet.
+
+* **Art Imitates Simulation:** Characters should generate art (statues, engravings, songs) based on actual events that happened in the simulation. An artisan might engrave a masterwork chair with an image of the time a squirrel bit the colony leader in the eye, forever memorializing a humiliating mechanical glitch.
+
+### Pillar 5: Legible Catastrophe
+
+Granular chaos is only fun if the player can trace it. A disaster the player can't explain feels like a random number generator; a disaster they can reconstruct step by step feels like a story. The simulation must show its work.
+
+**Design Rules:**
+
+* **Every Mood Has an Itemized Receipt:** Selecting a character must show every modifier affecting their mood, with its source and duration: "Ate without a table (-3), Rained on (-5), Witnessed death of spouse (-20, 8 days remaining)."
+* **The Combat Log Is Literature:** Record every blow in plain language: which body part, which tissue layer, which material. The log is how "15 Damage" becomes "the bronze spear tears the muscle and bruises the left lung."
+  * *Example:* After the colony falls, the player scrolls back through the log and finds the exact line where the cook punched the artillery shell. The tragedy becomes a story they retell to friends, not a crash they resent.
+
+* **Report the Present, Don't Warn About the Future:** Pillar 3 bans warning prompts about dangers the player hasn't met. It does not ban reporting what is already happening. A colonist's status reading "On the verge of a mental break" is information, not hand-holding.
+
+### Variants & Exceptions
+
+* *RimWorld* uses a "storyteller" AI that sizes raids to colony wealth and spaces out disasters. That bends Pillar 3's apathy into dramatic pacing, but it never guarantees survival, which is why it still belongs to this soul (see the revised Pillar 3 rules).
+* *Project Zomboid* and *Kenshi* keep little procedural history. They lean hard on Pillars 1–3 and largely skip Pillar 4. *Dwarf Fortress* is the only game of the four that fully implements artifact memory and simulation-generated art.
+* *Kenshi* is one persistent world rather than a succession of colonies, so "losing" often means a squad is enslaved or crippled rather than a total game over. The soul survives because the world keeps going without you.
+
+### What This Soul Costs
+
+* **Simulation Depth Is Expensive in Every Direction:** Every material needs properties, every body part needs tissue layers, and every system that touches them must handle them. Performance becomes a design constraint; large colonies and long histories will eventually slow the game down.
+* **Years, Not Months:** The canonical games in this soul were built and expanded over many years, often by very small teams. Plan for a long development tail and incremental growth.
+* **The UI Tax:** Legible catastrophe (Pillar 5) demands an enormous amount of interface: itemized tooltips, combat logs, relationship graphs, and histories. Expect the UI to be one of the largest and hardest parts of the project.
+* **A Narrow Front Door:** The audience that loves this soul is fiercely loyal but not huge. Onboarding is inherently hard, and some players will bounce off in the first hour no matter what you do.
+
+### How It Fails
+
+* **Illegible Chaos:** The simulation produces rich events, but the player can't see the causes. *Symptom:* players describe their losses as random or unfair. *Fix:* Pillar 5. Surface causes, not just effects.
+* **The Death Spiral Without a Story:** One bad event cascades into inevitable collapse with nothing interesting happening along the way. *Symptom:* players quit the moment things go wrong instead of watching the fall. *Fix:* give failing colonies desperate options (abandon, bargain, flee, make a last stand) so the fall has dramatic beats.
+* **The Solved Simulation:** Players find a layout or strategy that makes the colony effectively immortal. *Symptom:* the tragedy engine stops producing tragedy. *Fix:* escalate external pressure with wealth and time, and let internal systems (aging, grudges, decay) erode even perfect fortresses.
+* **Detail Nobody Feels:** The engine tracks the boiling point of a hundred minerals, but no decision ever depends on it. *Symptom:* developers are proud of features players never notice. *Fix:* only simulate a property in depth if it can change a player's decision or produce a story.
+
+### Neighboring Souls
+
+* **Looking Glass:** Both run on consistent systems. The Looking Glass soul simulates a space for a single protagonist to solve cleverly; the Dwarven soul simulates a society that collapses whether or not anyone is clever.
+* **Mansion:** Both are built on scarcity. Mansion scarcity is authored and hand-tuned to produce dread; Dwarven scarcity is emergent and indifferent, and nobody tuned it for you.
+
+### The "Dwarven" Litmus Test
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Anatomy** | Does a sword deal "15 Damage," or does it "bruise the fat layer and chip the humerus"? | **The latter.** Damage is a physical state, not a math deduction. |
+| **The Psychology** | Will the player's most skilled medic refuse to work because their pet turtle died? | **Yes.** Competence does not override emotional mechanics. |
+| **The Fairness** | Is the game perfectly balanced to ensure the player faces manageable, escalating challenges? | **No.** The player might spawn next to a dormant volcano that erupts on day three. |
+| **The History** | Does the game remember who forged a specific iron bucket ten in-game years ago? | **Yes.** And that bucket might be etched with the story of its own creation. |
+| **The Receipt** | After the colony falls, can the player trace the full chain of causes back to the first domino? | **Yes.** Unexplained chaos is noise; explained chaos is a story. |
+
+*"You do not need a team of sixty writers when you can simulate the melting point of granite, give a depressed colonist a sledgehammer, and let thermodynamics write the tragedy for you."*

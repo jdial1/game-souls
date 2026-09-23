@@ -1,0 +1,43 @@
+## Axis: Authorship
+
+**The question:** Who writes the story the player remembers afterward?
+
+### Positions
+
+* **Designer-Authored:** Meaning and sequence are hand-crafted in advance. The player experiences a story (or a sequence of challenges) that was written for them.
+* **Designer Space, Player Solution:** The designer authors the problem and the space; the player authors the solution. The story they tell later is "how I did it."
+* **Player-Authored Self:** The designer writes the branches; the player authors who the protagonist is. The story they tell later is "who I became."
+* **Player-Authored Build:** The story is the run itself: the draft, the combo, the turn it all came together. The story they tell later is "what I built."
+* **Mutual:** The designer writes the prompts; two players author each other. The story they tell later is "what I found out about you."
+* **System-Authored:** Nobody writes the story. The simulation produces it, and the player curates and retells it. The story they tell later is "what happened to us."
+* **Kin-Authored:** The story is what people who already know each other did for one another, a turn at a time and never at the same time. The story they tell later is "what they sent me."
+
+### Design Implications
+
+* The more authorship moves to systems, the more the game needs logging and legibility. A system-authored story only exists if someone can read it (components/legible_failure.txt).
+* The more authorship stays with the designer, the more content cost scales with play time. Designer-authored games are usually single journeys (axes/structure.txt).
+* Mixed positions need firewalls. Looking Glass writes a plot but lets systems solve every mission, so the plot must survive any solution, including ones the designer never imagined.
+
+### Tensions
+
+* **Designer-authored cutscenes + player-authored solutions:** The classic ludonarrative conflict. The player ghosted the whole level without a kill; the cutscene shows the hero gunning down guards. If you mix these, cutscenes must react to how the player actually played, or stay out of the way (Looking Glass: "Cutscenes Live Only at the Seams").
+* **Mutual authorship + designer interpretation:** A game that summarizes what the players' answers mean overwrites the story they were writing about each other. If the designer adds anything after the reveal, it should be a question, not a conclusion (Ampersand: "Leave the Good Part Unsaid").
+* **System-authored stories + designer-authored plot:** A hand-written main quest collides with an indifferent simulation that may have already killed the quest giver. Pick one to be in charge.
+
+### Where Each Soul Sits
+
+| Soul | Position | The Story Players Tell |
+| --- | --- | --- |
+| Looking Glass | Designer Space, Player Solution | "I got into the vault by mind-controlling the guard." |
+| Dwarven | System-Authored | "The colony died because the cook got rained on." |
+| Loathing | Player-Authored Build | "I ascended in three days with no food or booze." |
+| Ashen | Designer Space, Player Solution | "I finally beat him with a parry build on attempt forty." |
+| Hearthian | Designer-Authored | "I figured out the sundial on my own." |
+| Elysium | Player-Authored Self | "My detective became a communist who talks to his tie." |
+| Spire | Player-Authored Build | "Twelve-card poison deck, killed the boss in one turn." |
+| Toybox | Designer-Authored | "The level where the platforms flipped when I jumped." |
+| Mansion | Designer-Authored | "I had four bullets left and heard footsteps upstairs." |
+| Containment | Player-Authored Build | "My Mark I has run five quad thorium cells for two days without losing a vent." |
+| Ampersand | Mutual | "Nine years together and I had no idea he hated his middle name." |
+| Gauge | Kin-Authored | "I was stuck for timber, and the next morning my sister's came up my line in her colour." |
+| Casebook | Designer-Authored (the case) / Designer Space, Player Solution (each page) | "I broke the Night Extra off one name in the article, and it turned out the widow lied." |

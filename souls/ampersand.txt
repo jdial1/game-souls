@@ -1,0 +1,136 @@
+## The "Ampersand" Game Soul
+
+**A Framework for Sealed Answers, Shared Artifacts, and the Conversation Afterward**
+
+The soul of games like *Click Clack*, *The Newlywed Game*, the sealed daily-question apps (*Paired*, *Agapé*), and write-then-reveal card games like *The Couples Game That's Actually Fun* can be distilled into a single philosophy: "The screen asks the question; the game is what two people say to each other afterward."
+
+On the surface, these are the slightest things in the collection: a question a day, a text box, a reveal. There is no challenge, no world, and nothing to master. Beneath the surface lies a machine for producing one specific event: two people who know each other well finding out, at the same moment, that they don't know each other completely. Every rule exists to protect that moment. The rules stop one answer from contaminating the other, stop either player from winning, and get both of them away from the screen and talking before the moment goes cold. The ampersand is the right emblem: a character whose only job is to join two things, and which means nothing on its own.
+
+### Axis Positions
+
+| Axis | Position |
+| --- | --- |
+| Failure | Trivial (absence) / Narrative (the wrong guess) |
+| Information | Sealed (the other's answer) / Total (the rules) |
+| Authorship | Mutual |
+| Power | Understanding (of a person, never finished) |
+| Tone | Plain Warmth |
+| Structure | Ritual |
+
+### Components
+
+* **components/social_safety.txt:** The core of the soul's ethics. No witness but the other half, every number about the pair, either partner can veto, and every feature passes the Bad-Month Test.
+* **components/interface_voice.txt:** Plain and quiet. The partner is always named, never "your partner"; no emoji; the brick lighting up is the feedback, and no number is ever congratulated.
+* **components/theme_as_mechanic.txt:** The theme is two halves joined, and joining is the mechanic. Remove the pairing and nothing is left to be a mechanic.
+* **components/failure_as_content.txt:** The wrong guess is the best reveal of the day. "I didn't know that" is the conversation the game exists to start.
+* **components/trusting_the_player.txt:** Trust the couple to have the conversation. Show both answers, interpret neither, and give exactly one instruction.
+* **components/scarcity_economy.txt:** Scarcity is weight, not optimization. One question a day, one answer with no edits, one reaction each.
+
+### Signature Pillar 1: The Seal
+
+In most games, the second player to act has an advantage, because they've seen the first move. In an Ampersand-style game there is no second player. Both commit blind, and both find out at once.
+
+**Design Rules:**
+
+* **Commit Before You See:** Neither answer is readable until both exist, and the seal is enforced by whatever stores the data, not by the interface. An answer the client merely hides is an answer somebody will eventually read early.
+  * *Example:* Asked what they'd carry out of a house fire, one partner, seeing the other's answer first, writes "the photo albums, obviously" to match. Under seal, one writes the albums and the other writes the dog, and that gap is the evening's conversation.
+
+* **Statements Under Seal Are Permanent:** No edits after submitting. A sealed answer is valuable because it was given blind; if it can be revised, it becomes a reply. Gestures added after the reveal (a reaction, a line back) are not statements and can change.
+
+* **Predict, Then Answer:** Wherever an answer can be matched, also ask for a guess at the other's. The reveal then has two surprises: what they said, and how well you knew.
+
+* **Neither Player Holds the Key:** The second answer lifts the seal for both. Revealing happens to the pair, not by a button one of them presses.
+
+### Signature Pillar 2: The Pair Is the Player
+
+Every other soul in this collection has one player, even the multiplayer ones. Here the player is two specific people, and the game must never let either of them become the winner, the loser, or the audience.
+
+**Design Rules:**
+
+* **Nothing Is Made by One:** Every reward, artifact, and record needs both people. A question only one person has answered isn't half-finished content; it isn't content yet.
+
+* **Colours Apart, Object Together:** Each contribution keeps its author's colour, and the finished thing belongs to both. Caption it "built together," never "by you."
+  * *Example:* A shared window box where each person's seeds flower in their own colour. By autumn the colours are mixed through every row, and nobody can point to a corner that is only theirs.
+
+* **Pay for Turning Up, Never for Being Right:** Rewards are flat for each thing done together. Once a right guess pays more, the prediction becomes a test, the partner becomes the exam, and the best part of the day (the miss) becomes a cost.
+
+### Signature Pillar 3: The Game Ends in the Other Room
+
+Most games measure success by how long the player stays. An Ampersand-style game has succeeded when both players put it down at the same time and turn to each other.
+
+**Design Rules:**
+
+* **Design the Session to End:** The reveal is the last screen, not a lobby. A game that wants to host the conversation has become a messaging app, and the phone already has several. At most, one line back each.
+
+* **One Instruction, Given Last:** Never coach and never interpret, but end the reveal with the one instruction the game exists to give: go and ask them about it.
+
+* **Reward the Offline Act on Trust:** The real payoff happens where the game can't see it. Let either player report that they talked about it, pay both of them, and never ask for proof.
+
+* **Leave the Good Part Unsaid:** Show two answers side by side and stop. Summaries, compatibility readings, and "what this says about you" do the couple's talking for them. If the game must add something, add a question, never a conclusion.
+
+### Signature Pillar 4: Time Answers Back
+
+A Ritual game's archive is its long game. The players write the content one day at a time without noticing; the game's job is to keep it and hand it back once it has turned into something.
+
+**Design Rules:**
+
+* **Bring the Past Forward Unasked:** Show an old day on its anniversary, in full, where it will be read by accident, not behind a link.
+
+* **Ask Again Later:** Repeat a question months later, sealed as before, and show the new pair beside the old pair. The same prompt is new content because the people have changed. This is how a Ritual game pays down its content debt.
+  * *Example:* A year ago both said their ideal weekend was "somewhere with no plans." Now one still says that, and the other says "somewhere with the kids asleep by eight."
+
+* **A Memory Needs Distance:** "Three weeks ago today" isn't an anniversary. Resurface after a season at least, and prefer whole years, which means the archive must reach back that far.
+
+* **Date the Whole, Not the Part:** Put the date on the finished artifact (the week, the sculpture), never on each piece. A dated sculpture is "the one we made the week of the ninth."
+
+* **Built for Year Two:** Judge each feature by whether it survives two years with the same two people. Novelty wears off; a deep question pool, a growing archive, and a calendar that brings dates back around don't.
+
+### Field Notes
+
+How *Click Clack* implements each pillar, and where it broke or still breaks them, is recorded in souls/field_notes/ampersand.txt. Those notes are a dated snapshot of a codebase; this file is the philosophy.
+
+### Variants & Exceptions
+
+* *The Newlywed Game* is the ancestor of the Seal: one spouse leaves the stage while the other answers about them. It breaks the Pair on purpose, with four couples competing for points and a prize in front of an audience, and shows most clearly what grading the pair does to the tone.
+* *Paired* holds the Seal and encourages talking afterward with no winner, but breaks the Bad-Month Test with a streak counter and nudging notifications.
+* *Agapé* holds the Seal on a daily question with no scoring, the closest commercial match to the core loop.
+* Scored quiz apps (*Couple Game: Relationship Quiz*, *Lovify*) are the Scoreboard failure made into a product: "the lover with the highest score wins."
+* *The Couples Game That's Actually Fun* is the soul on a card table: both write in secret and reveal together, with no winner. With no archive, Pillar 4 is absent.
+* *We're Not Really Strangers* shares the goal (conversation between people who know each other) but not the Seal; questions are asked aloud, turn by turn.
+* *Journey* and *It Takes Two* are distant kin: a wordless pair of strangers, and a pair that must work a machine together. Neither is about discovering the other.
+
+### What This Soul Costs
+
+(Shared costs live in the component files: a network that doesn't spread, testing with real people, copy as design work.)
+
+* **Content by the Calendar:** A question a day is 365 a year, and the pool must never seem to repeat by accident. Budget a year before launch, plus questions the players write for each other and questions asked again on purpose.
+* **The Metrics Point the Wrong Way:** Session length and messages sent go up when the soul is failing. The real success signal (did they talk?) happens off-screen and can only be self-reported.
+* **Privacy Is Structural:** The seal has to hold in storage, which dictates the data model: one record per person, no edits, and no server process that reads answers.
+
+### How It Fails
+
+(Shared failure modes live in the component files: the Guilt Engine, the Ranked Group, the Cheerful Toast, theme as paint.)
+
+* **The Scoreboard:** Right guesses pay more, or a per-person tally appears. *Symptom:* players guess safe, and the reveal turns tense instead of funny. *Fix:* pay flat for doing it together, and keep any number about the pair ("84% of guesses landed").
+* **The Chat Room:** The reveal grows a reply box, then a thread, then a notification per message. *Symptom:* the conversation happens typed instead of in the other room, and the "we talked about it" mark gets rarer. *Fix:* one line each, then the instruction to go and talk.
+* **The Oracle:** The game interprets: personality types, compatibility readings, "what your answers say about you." *Symptom:* a reading becomes something one partner quotes at the other. *Fix:* show both results and ask one question about them.
+* **The Short Memory:** Everything is archived, but nothing old enough comes back. *Symptom:* "on this day" only ever shows last month, and the history screen is visited once. *Fix:* budget storage and loading for years, and bring the past forward unasked.
+* **The Seal by Convention:** Something called sealed (a naming word, tomorrow's theme) is hidden by the screen but readable in the data. *Fix:* seal it in storage like an answer, or stop calling it sealed.
+
+### Neighboring Souls
+
+* **Elysium:** Both make conversation the main verb and treat a wrong answer as the best content. Elysium's conversation is with authored characters in one mind; Ampersand's is between two real people, after the game is closed.
+* **Hearthian:** Both make understanding the only power. Hearthian's world can be finished; a person keeps changing, so a question asked a year later has a new answer.
+* **Gauge:** Both are warm, short-visit games between people who already know each other, sharing the Social Safety component. Gauge's people help each other and hide nothing; Ampersand's pair must both act before anything happens, and the payoff is finding something out.
+
+### The "Ampersand" Litmus Test
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Seal** | Can either player learn anything about the other's answer before committing their own? | **No.** Not the answer, and not a hint of it. |
+| **The Payout** | Does a right guess earn more than a wrong one? | **No.** Rewards pay for turning up together, never for being right about each other. |
+| **The Other Room** | After the reveal, is there anything left worth doing on the screen? | **No.** The next move is to put the phone down. |
+| **The Witness** | Could anyone other than the two of them see, rank, or react to this? | **No.** An audience changes what people write under seal. |
+| **The Bad Month** | Would this feature still be kind if the couple were barely speaking? | **Yes.** If it would sting, it's a lever. |
+
+*"You do not need a world, a villain, or a win condition when you have one question, two sealed answers, and a person in the next room who just found out you always wanted to live by the sea."*

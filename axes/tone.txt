@@ -1,0 +1,45 @@
+## Axis: Tone
+
+**The question:** What emotional register does the game hold, and what in the design keeps it there?
+
+Tone isn't only art and writing. Mechanics produce tone, and the wrong mechanic will kill a tone no matter how good the writing is (components/theme_as_mechanic.txt).
+
+### Positions
+
+* **Deadpan Absurd:** A ridiculous world treated with total seriousness.
+* **Dread:** Sustained anticipation. The fear of what might happen outweighs what does.
+* **Elegiac:** A beautiful, ruined world after the end. Melancholy and awe.
+* **Wonder:** Awe at a hidden logic slowly revealed, often tinged with melancholy.
+* **Tragicomic:** Horror and farce in the same event.
+* **Joyful:** Delight, surprise, and play.
+* **Tense Paranoia:** Being somewhere you shouldn't be, surrounded by people who might notice.
+* **Cool Focus:** Clean, clinical concentration. The tone stays out of the way of the math.
+* **Watchful Calm:** A dangerous machine, quiet because it was built right. The calm is the reward, and the danger never leaves the room.
+* **Plain Warmth:** Affection stated plainly, by something that knows both people and isn't making a fuss. The warmth comes from the other person; the game refuses to perform it.
+* **Unhurried Warmth:** Nothing is urgent and nothing is lost. The pleasure is watching something you made keep working, and seeing someone you know get somewhere.
+* **Armchair Intrigue:** A crime held at arm's length and worked slowly at a desk. The danger is on paper; the tension is an account that doesn't add up yet, and the pleasure is the click when it does.
+
+### Tone Killers
+
+Every tone has a mechanic that destroys it. Identify yours before production starts.
+
+| Soul | Tone | The Mechanic That Kills It |
+| --- | --- | --- |
+| Looking Glass | Tense Paranoia | A forced cutscene mid-mission; guards who forget you after ten seconds. |
+| Dwarven | Tragicomic | A safety net that guarantees survival. |
+| Loathing | Deadpan Absurd | The game winking at its own jokes. |
+| Ashen | Elegiac | A codex that explains all the lore. |
+| Hearthian | Wonder | Hint arrows and objective markers. |
+| Elysium | Tragicomic | A flat "You fail" with no scene attached. |
+| Spire | Cool Focus | Hidden dice and unexplained numbers. |
+| Toybox | Joyful | Slow, punishing failure. |
+| Mansion | Dread | Abundant ammunition. |
+| Containment | Watchful Calm | Random breakdowns: a part that fails for a reason the design did not cause. |
+| Ampersand | Plain Warmth | A verdict: any score, reading, or celebration that grades the pair. |
+| Gauge | Unhurried Warmth | A loss that happens while the player is away: spoilage, decay, a broken streak, a lapsed upkeep. |
+| Casebook | Armchair Intrigue | Live correctness feedback: a wrong answer flagged before the player commits to it. |
+
+### Design Implications
+
+* Protect the tone with mechanics first, then with content. Dread survives mediocre monster art; it doesn't survive a full ammo pouch.
+* Tones can blend, but one must lead. Hearthian is Wonder led, with melancholy underneath; if the melancholy leads, it becomes Elegiac and starts to feel like Ashen.

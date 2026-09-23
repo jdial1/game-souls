@@ -1,0 +1,90 @@
+## The "Looking Glass" Game Soul Guide
+
+**A Framework for Systemic Authorship, Diegetic Reality, and Clockwork Emergence**
+
+The soul of games like *Deus Ex*, *Thief*, *Dishonored*, and *Prey* can be distilled into a single philosophy: "The world exists; you just happen to be in it."
+
+On the surface, these games look like standard first-person action or stealth titles. Beneath the surface lies a fiercely agnostic simulation engine that refuses to script your victories, demanding instead that you exploit its intersecting physical and social rules. It respects the player's agency by making them the author of their own solutions, rather than an actor hitting marks on a director's stage.
+
+If you want to instill this exact soul into a new game, use this guide as your design bible.
+
+### Pillar 1: The Sacred Objective, The Agnostic Method
+
+In most games, a quest tells you what to do and how to do it. In a Looking Glass-style game, the developer only dictates the *what*. The *how* belongs entirely to the player and the physics engine.
+
+**Design Rules:**
+
+* **Design Problems, Not Solutions:** Never build *the* stealth path and *the* action path as two scripted tracks. Build a fortified bank. Put a vault inside it. Place guards with realistic patrol routes and security systems with actual power sources. Hand-author the space generously (vents, balconies, back offices, a skylight), but never script which route is the "right" one. Let the player figure out the rest.
+  * *Example:* If a door is locked, do not just hide a key. Allow the player to pick the lock, blow the door off its hinges with a proximity mine, stack cardboard boxes to bypass the wall entirely, or mind-control a guard on the other side to open it for them.
+
+* **Permissive Toolkits:** Give players tools that manipulate the environment rather than just deleting enemies.
+  * *Example:* *Prey's* GLOO Cannon doesn't just freeze aliens. It creates non-conductive insulation over sparking electrical hazards, extinguishes fires, and allows players to build custom staircases up vertical walls to break out of the intended map flow.
+
+### Pillar 2: Consistent Systemic Chemistry
+
+The game world must operate on universal laws that never arbitrarily turn off for the sake of a narrative beat or boss fight. If fire burns wood in the tutorial, fire must burn all wood, everywhere, forever.
+
+**Design Rules:**
+
+* **Blind Interactivity:** Entities must react to stimuli, not to the player's status as the protagonist.
+  * *Example:* If guards attack on sight when a weapon is drawn, they should also attack an enemy NPC who draws a weapon. If stepping on a pressure plate triggers a dart trap, luring a hostile dog onto that same plate must trigger the same trap, killing the dog.
+
+* **Overlapping States of Matter:** Elements (water, fire, electricity, gas) must logically interact with one another and the AI.
+  * *Example:* Throwing a bottle of liquor creates a flammable puddle. Luring an enemy into the puddle and hitting a nearby metal pipe with a sword creates a spark. The spark ignites the puddle. The burning enemy panics, runs into a wooden support beam, and collapses a balcony onto their allies. You did not script this; the systems merely collided.
+
+### Pillar 3: The Clockwork AI
+
+NPCs in this soul are not standing around waiting for the player to arrive so they can begin existing. They are actors in a simulated ecology with jobs, bodily needs, and allegiances.
+
+**Design Rules:**
+
+* **Diegetic Suspicion Escalation:** Enemies must not jump instantly from "oblivious" to "lethally hostile." They need a granular state machine.
+  * *Example:* A guard hears a footstep (Curious). They leave their post to investigate (Searching). They see an open door they know they closed (Suspicious). They find a missing lightbulb (Alert). Only when they see the player do they attack.
+
+* **Internal Agendas:** AI must interact with the world outside of combat. Guards need to complain about their rations, visit the bathroom, get into arguments with rival factions, and fall asleep on duty.
+
+### Pillar 4: The Unbroken Perspective
+
+Once a mission begins, the game must never wrench control away from the player to show them how cool they look or to explain a plot point. Information is gathered through observation, eavesdropping, and environmental archeology.
+
+**Design Rules:**
+
+* **Vulnerability in Interface:** Checking your inventory, reading an email, or looking at a map must not pause the game. The UI exists in the physical space. If you are reading a code off a sticky note, a guard can walk up behind you and hit you in the head.
+* **Information as a Physical Object:** Lore is not spoon-fed through cutscenes. Passwords are found on discarded clipboards. The layout of an enemy base is learned by stealing a janitor's blueprints.
+* **Cutscenes Live Only at the Seams:** If you must use a cinematic, confine it to the boundaries between missions (a briefing, a return to the hub), never the middle of an infiltration. Inside a mission, the player's eyes are the only camera.
+
+### Variants & Exceptions
+
+* *Deus Ex* and *Dishonored* both use cutscenes before and between missions, and *Deus Ex: Human Revolution* cuts to third person for takedowns and cover. They honor Pillar 4 where it matters most: during the infiltration itself, the world keeps running and the camera stays with the player. Treat the rule as "never in the middle of a mission," not "never at all."
+* *Thief* offers a far smaller toolkit than *Prey* or *Dishonored*. It proves the soul can run on a handful of tools (rope arrows, water arrows, a blackjack) as long as each one touches the environment rather than just an enemy.
+* All four games hand-author their levels in painstaking detail. The soul does not ask for procedural or unauthored spaces; it asks that the authored space never dictate the solution.
+
+### What This Soul Costs
+
+* **Combinatorial QA:** Every tool must be tested against every system in every level. A new ability doesn't add one interaction; it multiplies against everything already in the game. Budget testing time accordingly, and cut tools that don't earn their combinations.
+* **Content the Player Never Sees:** The vent route, the back office with the safe code, and the guard's personal quarters exist whether or not a given player finds them. Most players will skip most of the level you built.
+* **Sequence Breaking Is Permanent:** Once the player can stack boxes to skip a wall, every narrative beat behind that wall must survive being reached early, late, or never. The story has to be written to tolerate missing pieces.
+* **A Slow First Hour:** Systemic games ask players to experiment before they understand the rules. Expect a steeper onboarding curve than a linear action game.
+
+### How It Fails
+
+* **The Illusion of Choice:** Three routes that all lead to the same door and the same scripted confrontation. *Symptom:* players stop experimenting after the second mission. *Fix:* let routes change the state of the world (who is alive, which alarms were tripped, what the player learned along the way).
+* **The Dominant Strategy:** One tool trivializes every problem (a stealth cloak with no meaningful cost, a hack that opens any door). *Symptom:* every player's playthrough looks the same. *Fix:* give each tool a resource cost, a counter-system, or a noise signature.
+* **Unreadable Affordances:** The player cannot tell which objects can be stacked, burned, or climbed. *Symptom:* players only discover the creative solutions by watching videos. *Fix:* establish a consistent visual language (every climbable ledge, breakable wall, and flammable surface looks the same) and teach it early.
+* **The Tunnel-Vision Boss:** A mandatory fight in a sealed arena that ignores the entire toolkit. *Symptom:* players who built for stealth are suddenly stuck. *Fix:* every major encounter must offer at least one non-lethal solution and one way to avoid it entirely.
+
+### Neighboring Souls
+
+* **Dwarven:** Both run on consistent systems. The Looking Glass soul simulates a *space* for a single protagonist to solve cleverly; the Dwarven soul simulates a *society* that collapses whether or not anyone is clever.
+* **Toybox:** Both reward poking at the world. Looking Glass systems exist to be exploited as solutions to a problem; Toybox systems exist to be played with, and the problem is often just an excuse.
+
+### The "Looking Glass" Litmus Test
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Agency** | Can the player bypass this carefully crafted encounter by stacking trash cans and jumping over a fence? | **Yes.** Breaking the sequence via systemic cleverness is the core reward. |
+| **The Consistency** | Does this boss have immunity to the sleep darts that work on every other human in the game? | **No.** If they are human, they sleep. The player earned the right to bypass the fight. |
+| **The Ecology** | If the player stands perfectly still in a closet for an hour, will the AI continue to function around them? | **Yes.** Shifts change, conversations happen, the world ticks on. |
+| **The Perspective** | Does the camera ever leave the protagonist's eyes to show an explosion happening in the next room? | **No.** If they want to see the explosion, they should have looked through the keyhole. |
+
+*"You do not need a cinematic director when you have a physics engine, volatile materials, and a player who just realized they can stick a proximity mine to a thrown severed arm."*

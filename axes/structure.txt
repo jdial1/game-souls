@@ -1,0 +1,46 @@
+## Axis: Structure
+
+**The question:** How is play packaged in time? One journey, a persistent world, or repeated runs?
+
+### Positions
+
+* **Single Journey:** One authored arc, played once, meant to be finished. Replay is optional or pointless.
+* **Persistent World:** One continuous world the player inhabits and gradually masters across long sessions.
+* **Sandbox Chronicle:** Open-ended play that continues until collapse. Worlds and histories can persist across multiple games.
+* **Runs:** Short, self-contained sessions that reset on death. Mastery accumulates in the player, across runs.
+* **Rebirth Account:** Runs that feed a permanent account. Finishing the game is merely completing the tutorial. Often live and ongoing.
+* **Levels:** Discrete, bite-sized spaces, each built around its own idea.
+* **Ritual:** Short sessions tied to the real calendar, usually one a day, that can't be binged or played ahead. Nothing resets; play builds up into an archive, and the game's long arc is what that archive becomes.
+* **Serial:** One authored arc delivered as short, sealed installments (pages, cases, chapters), each finished in one sitting. Each installment closes; the arc does not. Unlike a Ritual, the player sets the pace, and a season can be read as fast as it can be solved.
+
+### Design Implications
+
+* **Structure sets the content economics.** A Single Journey burns content once. Runs and Chronicles reuse content through systems. A Rebirth Account demands a steady treadmill of new content, forever (see components/difficulty_ladder.txt).
+* **Structure sets what "progress" means.** In a Persistent World, progress is reclaimed geography (components/interlocking_space.txt). In Runs, it is the rung you've reached. In a Single Journey, it is what you now understand.
+* **A Ritual sets its content economics by the calendar.** A question a day is 365 a year. Reuse comes from returning to old content on purpose (the same prompt asked again a year later) and from letting players write it.
+* **Structure sets the marketing.** Single Journeys sell an experience and must avoid spoilers. Runs and Chronicles sell replayability and can show everything.
+
+### Tensions
+
+* **Single Journey + Terminal failure** means one mistake can end the only playthrough the player will ever have. Only do this if the fall is the experience (as in Dwarven), and even then give it a Chronicle structure.
+* **Ritual + a streak with teeth:** A calendar-bound game punishes absence by default, because every missed day is visible. The design has to push the other way, or the ritual becomes a chore (Ampersand: "The Bad-Month Test").
+* **Serial + a fast reader:** A self-paced serial can be finished in a weekend, and then nothing is left until the next season. Either pace the arc (chapter breaks that wait, a harder page that must be earned) or budget the next season before shipping this one (Casebook: "Every Page Is Spent Once").
+* **Runs + heavy authored story** means the player sees the same scenes repeatedly. *Hades* solves this with an enormous pool of reactive dialogue; most teams can't afford that.
+
+### Where Each Soul Sits
+
+| Soul | Position |
+| --- | --- |
+| Looking Glass | Persistent World (mission by mission) |
+| Dwarven | Sandbox Chronicle |
+| Loathing | Rebirth Account |
+| Ashen | Persistent World |
+| Hearthian | Single Journey (bounded, often looped) |
+| Elysium | Single Journey |
+| Spire | Runs |
+| Toybox | Levels |
+| Mansion | Single Journey |
+| Containment | Rebirth Account (one board, redesigned at every tier) |
+| Ampersand | Ritual (a day at a time, sealed weekly, for years) |
+| Gauge | Persistent World (visited in short sessions; it grows between visits) |
+| Casebook | Serial (a season of installments, one sitting each) |

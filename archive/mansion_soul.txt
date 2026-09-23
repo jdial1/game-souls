@@ -1,0 +1,101 @@
+## The "Mansion" Game Soul Guide
+
+**A Framework for Engineered Scarcity, Hostile Architecture, and the Terror of the Unseen**
+
+The soul of games like *Resident Evil*, *Silent Hill 2*, *Alien: Isolation*, *Amnesia: The Dark Descent*, *Dead Space*, and *Signalis* can be distilled into a single philosophy: "The monster is frightening. The empty hallway is worse."
+
+On the surface, these games look like action or adventure titles with monsters in them. Beneath the surface lies an economy of fear, where every bullet, every save, and every footstep is a budgeted expense. The player is never powerless (helplessness is boring), but they are always poor. Horror emerges from choices made under deprivation.
+
+If you want to instill this exact soul into a new game, use this guide as your design bible.
+
+### Pillar 1: Engineered Scarcity
+
+In most games, resources exist to be spent freely. In a Mansion-style game, resources exist to be agonized over.
+
+**Design Rules:**
+
+* **Poor, Not Powerless:** Give the player a gun, but never enough ammunition to kill everything in the building. Every encounter becomes a question: fight, evade, or take the long way around?
+  * *Example:* Three shambling corpses block a corridor the player will traverse a dozen times. The player has nine bullets. Kill them all, and there's nothing left for whatever waits upstairs. Dodge them every trip, and risk a bite every time. Neither answer is correct, and that is the point.
+
+* **Inventory as Anxiety:** Keep the carrying capacity cruelly small and the storage boxes far apart. Picking up a key means leaving behind a healing item. Every trip becomes a packing puzzle.
+
+* **Saving Costs Something:** Make saving a consumable decision (a finite ribbon, a rare cassette, a limited terminal charge). The player must weigh "Is this progress worth protecting?" before every save.
+
+### Pillar 2: Architecture as Antagonist
+
+The building is the main character. It is dense, interconnected, and learned room by room until the player knows it better than their own home. Then the game weaponizes that familiarity.
+
+**Design Rules:**
+
+* **Familiarity as a Trap:** Force the player to revisit the same spaces repeatedly. Safety breeds routine, and routine is where fear lives.
+  * *Example:* The player has safely walked the dining hall corridor twenty times. On the twenty-first, a window they never noticed shatters. Nothing comes through. They will never walk that corridor calmly again.
+
+* **Locks as Promises:** The map marks locked doors with the symbol of the key that opens them. The player builds a mental to-do list of doors, and every key found sends them back through territory they'd rather not cross.
+
+* **The Sanctity of the Safe Room:** Save rooms have distinct music, soft light, and an absolute guarantee: nothing follows you in. The contrast gives horror its rhythm. Never violate the safe room, or violate it exactly once, and let the player carry that betrayal for the rest of the game.
+
+* **The Building Is a Mirror:** The architecture and the creatures inside it should reflect the protagonist's guilt, grief, or fear. When the horror is personal, the player isn't just afraid of what's in the hallway; they're afraid of what it says about who they're playing.
+  * *Example:* A widower's house has one door that never opens: the nursery. The creatures grow smaller and louder the closer the player gets to it.
+
+### Pillar 3: The Terror of the Unseen
+
+What the player imagines will always be worse than what the artists can render.
+
+**Design Rules:**
+
+* **Sound Before Sight:** The player should hear the threat long before seeing it. Footsteps in the ceiling. Scraping inside the vents. Breathing on the other side of a door.
+
+* **Imperfect Information:** Restrict vision with fixed camera angles, a narrow flashlight cone, fog, or darkness. What sits just outside the frame is more terrifying than anything inside it.
+
+* **The Unkillable Stalker:** Introduce one pursuer that cannot be killed, only evaded or briefly repelled. It hunts by sound and adapts to the player's habits.
+  * *Example:* The creature learns the player hides in lockers. After the third successful locker escape, it starts checking lockers. The player's safest trick has become a coffin.
+
+* **Silence as an Instrument:** Long stretches where nothing happens are not wasted content; they are the tension being loaded. Jump scares are spice, not the meal. Dread is the meal.
+
+### Pillar 4: Vulnerable Embodiment
+
+The protagonist is not an action hero, and the controls should never let the player forget it.
+
+**Design Rules:**
+
+* **Deliberate Friction:** Aiming roots the player in place. Reloading takes real, interruptible time. Turning around is slower than running. The *character* is clumsy, but the *input* must remain precise; the player must never die to an unresponsive button.
+
+* **Diegetic Health:** Show injury through the body, not a HUD bar. A limp, a hunch, a hand clutched to the ribs, or a glowing gauge built into the character's suit. The player reads their health the same way they read the monsters.
+
+* **Fear Is Physical:** The protagonist's body reacts to terror in ways that change play. Breathing grows loud enough to give away a hiding place. Hands shake and aim sways after a close call. Sprinting burns stamina the player can hear running out. The player's fear and the character's fear become the same resource.
+
+### Variants & Exceptions
+
+* *Amnesia: The Dark Descent* and *Alien: Isolation* push Pillar 1 to its extreme: the player is essentially powerless against the main threat (Amnesia provides no weapons; Isolation's tools can repel the Alien but never kill it). Scarcity shifts from ammunition to hiding places, light, and nerve. The rest of the soul holds, and "poor, not powerless" becomes "powerless, but never helpless": the player can always hide, flee, or distract.
+* *Dead Space* leans toward action. Most enemies can be killed, and ammunition is less tight. It keeps the soul through dismemberment combat that rewards precision under panic, diegetic health (Pillar 4), and a hostile, interconnected ship (Pillar 2).
+* *Silent Hill 2* leans hardest on "The Building Is a Mirror": its town and monsters are an externalization of the protagonist's guilt.
+
+### What This Soul Costs
+
+* **Audio Is a Core Department:** Sound before sight demands positional audio, layered ambience, and bespoke creature sound design. Budget audio like a main system, not polish.
+* **Scarcity Tuning Is Fragile:** Too much ammunition and the dread evaporates; too little and players get soft-locked with no way forward. Expect many rounds of economy tuning, and consider a hidden safety net that quietly supplies essentials to players who are truly out.
+* **Stalker AI Is Expensive:** An adaptive, unkillable pursuer needs sophisticated perception, pathfinding, and behavior design, plus careful tuning so it terrifies without becoming exhausting.
+* **A Short Shelf Life:** Horror depends on the unknown. Once the building is mapped and the monsters understood, fear drains away. Plan for a tight, well-paced playthrough rather than endless content.
+
+### How It Fails
+
+* **The Soft Lock:** The player saves with no ammunition and no health in front of a mandatory fight. *Symptom:* they must restart hours of progress. *Fix:* every mandatory encounter needs an evasion route or a guaranteed supply nearby.
+* **Jump-Scare Addiction:** Loud stings replace atmosphere. *Symptom:* players are startled but not afraid, and the scares become predictable. *Fix:* spend silence generously and save shocks for moments that break an established pattern.
+* **The Exhausting Stalker:** The pursuer appears too often or too predictably. *Symptom:* terror curdles into irritation. *Fix:* give the stalker rhythm, with long absences and escalation tied to player progress.
+* **Clumsy Input Masquerading as Vulnerability:** The controls are unresponsive rather than deliberately constrained. *Symptom:* players blame the controls, not the monster. *Fix:* the character may be slow; the input must never be.
+
+### Neighboring Souls
+
+* **Dwarven:** Both are built on scarcity. Mansion scarcity is authored and hand-tuned to produce dread; Dwarven scarcity is emergent and indifferent.
+* **Ashen:** Both make the player afraid of a hostile, interconnected space. Ashen fear is about the player's own skill; Mansion fear is about what's waiting around the next corner.
+
+### The "Mansion" Litmus Test
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Ammo** | Can the player kill every enemy they encounter? | **No.** If they can, it's an action game wearing a horror costume. |
+| **The Safe Room** | Can an enemy follow the player into the save room? | **No.** Or once, and never again. |
+| **The Silence** | Does the scariest moment in this area involve no enemy at all? | **Yes.** The hallway did the work. |
+| **The Stalker** | Can this pursuer be killed with enough bullets? | **No.** It can only be outwitted. |
+
+*"You do not need a thousand monsters when you have four bullets, a door that wasn't open before, and footsteps in the room directly above you."*

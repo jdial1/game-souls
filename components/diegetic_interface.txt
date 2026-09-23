@@ -1,0 +1,40 @@
+## Component: Diegetic Interface
+
+**The principle:** The interface lives inside the world. Menus don't pause time, and status is read from the body and the environment, not from floating bars.
+
+**Used by:** Looking Glass, Ashen, Mansion, Gauge
+
+### Design Rules
+
+* **Vulnerability in Interface:** Checking inventory, reading a document, or looking at a map does not pause the game. If you are reading a code off a sticky note, a guard can walk up behind you and hit you in the head (Looking Glass).
+
+* **Diegetic Health:** Show injury through the body: a limp, a hunch, a hand clutched to the ribs, or a gauge built into the character's suit. The player reads their own condition the same way they read an enemy's (Mansion).
+
+* **No Pause, No Escape:** In a world that doesn't wait (components/living_world.txt), the menu isn't a safe room either. Ashen's menus don't pause, which makes rummaging through inventory mid-fight a real risk.
+
+* **The Camera Is the Character:** Where the character looks, the player looks. If they want to see the explosion in the next room, they should have looked through the keyhole.
+
+* **Accessibility Is Not Diegesis:** Subtitles, input remapping, colorblind modes, and camera settings are not immersion-breakers. Always include them; they sit outside the fiction for good reason.
+
+### Tuning by Soul
+
+* **Looking Glass:** Unpaused UI keeps the player vulnerable and the world credible.
+* **Ashen:** Unpaused menus keep every moment in a hostile world dangerous.
+* **Mansion:** Diegetic health and real-time inventory management keep fear constant.
+* **Gauge:** Diegetic for warmth, not vulnerability. Stores are read off the heaps, waits off the vehicles doing the carrying, and a gift off the colour of the train it came on. Numbers caption objects; they never replace them.
+
+### What It Costs
+
+* **UX Iteration:** Diegetic displays are harder to read than bars and numbers. They need careful design and testing to stay legible.
+* **Player Frustration:** Some players will resent not being able to pause. Consider a true pause that exists only in the system menu, clearly outside the fiction.
+
+### How It Fails
+
+* **Diegesis at the Cost of Legibility:** The player can't tell how hurt they are because the limp is too subtle. *Symptom:* deaths feel unfair. *Fix:* diegetic doesn't mean ambiguous; make states unmistakable (see components/legible_failure.txt).
+* **The Pause Loophole:** One menu pauses while others don't, and players use it to cheat time. *Symptom:* the tension leaks. *Fix:* be consistent about what stops the clock.
+
+### Litmus
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Perspective** | Can the player open a menu to escape danger? | **No.** The world keeps running while you read. |

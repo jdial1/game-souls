@@ -1,0 +1,103 @@
+## The "Spire" Game Soul
+
+**A Framework for Legible Risk, Compounding Synergy, and the Perfect Run**
+
+The soul of games like *Slay the Spire*, *Into the Breach*, *Balatro*, *Hades*, *FTL*, and *Monster Train* can be distilled into a single philosophy: "Every loss is your fault, and you can prove it."
+
+On the surface, these games look small and tidy: a map, a handful of cards or mechs, a run that lasts under an hour. Beneath the surface lies a machine of transparent information and exponential combinatorics. You will lose constantly, but always to your own decisions, never to hidden dice. Each run is a fresh puzzle drawn from a fixed box of pieces, and the box is deeper than anyone will ever fully map.
+
+### Axis Positions
+
+| Axis | Position |
+| --- | --- |
+| Failure | Punishing but Legible |
+| Information | Total |
+| Authorship | Player-Authored Build |
+| Power | Optimization |
+| Tone | Cool Focus |
+| Structure | Runs |
+
+### Components
+
+* **components/legible_failure.txt:** Total legibility. Telegraph intent, randomize inputs not outcomes, show all the math.
+* **components/synergy_engines.txt:** Multiply, don't add. Balance the average, not the ceiling. The run where the numbers go vertical is the jackpot.
+* **components/difficulty_ladder.txt:** Each win unlocks a harder rung; seeded runs and daily challenges make results comparable.
+* **components/scarcity_economy.txt:** Energy per turn, health across a run, and deck slots. Saying no is a skill.
+
+### Signature Pillar 1: The Draft, Not the Grind
+
+Power is not earned across hundreds of hours. It is assembled in the next forty minutes from the choices you make right now.
+
+**Design Rules:**
+
+* **Build In-Run:** Every run starts from a humble baseline. The player's strength comes from what they draft, buy, and combine during this run alone.
+
+* **Meta-Progression Adds Width, Not Height:** Between runs, unlock new cards, characters, and options, but never permanent raw stat boosts. If meta-progression must exist, make it transparent and optional, and pair it with an opt-in difficulty system experts can pile on.
+
+* **The Thin Deck Wins:** Skipping a card reward, passing on a shop, or leaving a relic behind must frequently be the correct play.
+  * *Example:* A novice takes every card offered and dilutes their deck into mush. An expert skips six rewards in a row, waiting for the one card that completes their engine, and wins with a twelve-card deck.
+
+* **Commit or Drift:** By the midpoint of a run, the player should have to commit to an archetype. Staying flexible forever should be a losing strategy.
+
+### Signature Pillar 2: The Disposable Run
+
+A single run should be short enough to start on a whim and deep enough to replay for a thousand hours.
+
+**Design Rules:**
+
+* **The One-Minute Restart:** The time between the death screen and the next meaningful decision must be under a minute. No lengthy intros, no mandatory hub chores.
+
+* **Runs Are Short on Purpose:** Thirty to ninety minutes. Short enough that a loss stings but doesn't devastate; long enough for a build to develop an identity.
+
+* **Lost Runs End Fast:** When a run is doomed, let it end (see "The Long Dead Run" in components/failure_as_content.txt).
+
+### Signature Pillar 3: The Route Is a Risk Budget
+
+Between the fights, the map is itself a decision. The player sees the road ahead and chooses how much danger to buy in exchange for how much power.
+
+**Design Rules:**
+
+* **Show the Road Ahead:** Reveal the map, or at least the next few branches, before the player commits to a path. Route planning is only a decision if the player can see what the routes contain.
+
+* **Risk Is a Path You Choose:** Put optional danger (elite enemies, cursed events, harder encounters) on the map with better rewards behind it. A strong run seeks out risk to grow faster; a weak run routes around it to survive. The same map plays differently depending on the deck.
+  * *Example:* A player with a fragile but explosive deck sees two paths: one with two elite fights and a rare relic, one with a rest site and a shop. Taking the elites now could win the run or end it. Reading the deck honestly is the skill.
+
+* **Offer a Few, Always Including None:** Reward screens offer a small, fixed number of options (usually three) and always allow skipping. Too many options is shopping; too few is a slot machine; a forced pick bloats the build.
+
+* **Rest Is a Choice, Not a Refill:** Safe stops offer a trade (heal, *or* upgrade a card, *or* remove one) rather than a free top-up. Even recovery costs power.
+
+### Variants & Exceptions
+
+* *Balatro* moves the whole soul into poker hands. Its jokers are the purest "Multiply, Don't Add" in the genre, and it lets the player skip a round's blind in exchange for a tag, which puts "Risk Is a Path You Choose" directly on the scoring screen.
+
+* *FTL* breaks "randomize inputs, not outcomes": weapons can miss, and evasion is a percentage. It compensates with heavy transparency elsewhere (you watch enemy weapons charge and can see their crew and systems) and relatively short runs. It is an older, rougher form of the soul.
+* *Hades* breaks "width, not height": the Mirror grants permanent stat upgrades, and resources carry across runs. It balances this with the Heat system, which lets players opt back into difficulty. It is the most accessible form of the soul, built for players who would bounce off pure mastery.
+* *Into the Breach* is the purest form of total legibility: nearly every enemy action is shown before the player commits, and its few random elements are clearly labeled with their odds.
+
+### What This Soul Costs
+
+(Shared costs live in the component files: combinatorial balance, the UI tax, tuning every rung, the content treadmill.)
+
+* **Designing for the Five-Hundredth Encounter:** Every card, enemy, and event will be seen hundreds of times. Each piece must stay interesting on its five-hundredth appearance, which rules out anything that's only fun as a surprise.
+
+### How It Fails
+
+(Shared failure modes live in the component files: hidden math, the dominant strategy, grind disguised as progress, the long dead run.)
+
+* **Snowball Certainty:** Runs are effectively decided in the first ten minutes. *Symptom:* the rest of the run is a formality, won or lost. *Fix:* escalate threats and change their type as the run progresses, so even strong starts must keep adapting.
+
+### Neighboring Souls
+
+* **Loathing:** Both reward optimization and replay with a difficulty ladder. Spire's ladder measures mastery of a single self-contained run; Loathing's rebirth loop builds a permanent account across hundreds of runs, and its identity lives as much in tone as in systems.
+* **Ashen:** Both promise that every loss is the player's fault. Spire delivers it through perfect information and short, disposable runs; Ashen delivers it through readable animation and one persistent world.
+
+### The "Spire" Litmus Test
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Blame** | When the player loses, can they point to the exact decision that killed them? | **Yes.** Every loss is a lesson with a timestamp. |
+| **The Dice** | Can a 75% hit chance miss at the most critical moment? | **No.** Randomize the options, never the outcome of a committed choice. |
+| **The Break** | Can a skilled player assemble a build that trivializes the final boss? | **Yes.** That's the jackpot, not a bug. |
+| **The Restart** | How long from the death screen to the next meaningful decision? | **Under a minute.** The next run is always one click away. |
+
+*"You do not need a hundred hours of content when you have seventy-five cards, a fully telegraphed enemy, and a player who has been staring at a single turn for eleven minutes because they know the answer is in there somewhere."*

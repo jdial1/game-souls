@@ -1,0 +1,142 @@
+## The "Containment" Game Soul
+
+**A Framework for Conserved Danger, Spatial Design, and the Machine That Holds**
+
+The soul of games like *IndustrialCraft 2*'s nuclear reactor, *NuclearCraft*, *Reactor Incremental*, *Reactor Knockoff*, and *Reactor Revived* can be distilled into a single philosophy: "A good design is one you can stop watching."
+
+On the surface, these games are a grid of squares, a few bars, and numbers that keep climbing: an idle game you leave running in another tab. Beneath the surface lies a conservation puzzle. Every point of heat a fuel cell makes has to be moved, held, or shed somewhere on a small, fixed board, and the same handful of parts, arranged differently, is either a machine that runs for a week or one that melts in ninety seconds. Players don't remember runs. They remember designs, and they post them.
+
+### Axis Positions
+
+| Axis | Position |
+| --- | --- |
+| Failure | Costly |
+| Information | Total (state) / Observed (consequence) |
+| Authorship | Player-Authored Build |
+| Power | Optimization |
+| Tone | Watchful Calm |
+| Structure | Rebirth Account |
+
+### Components
+
+* **components/systemic_consistency.txt:** The laws are thermodynamics, and they hold everywhere: the lab, the forecast, and the real board run the same tick.
+* **components/legible_failure.txt:** Legibility lives in per-part heat bars and one ledger line. Every failure traces back to heat the design itself made.
+* **components/interface_voice.txt:** Say it once. The board, the bars, and the hum are the interface; at the limit, the reactor is the loudest thing in the game.
+* **components/scarcity_economy.txt:** The bottleneck is space, not money. Money inflates away; the board never grows fast enough to stop mattering.
+* **components/synergy_engines.txt:** Adjacency multiplies. Cells that touch feed each other, and reflectors amplify their neighbours.
+* **components/difficulty_ladder.txt:** Rebirth trades the board for research. Restriction runs and time-to-output records give the top somewhere to go.
+* **components/trusting_the_player.txt:** The numbers are shown and the advice is not. The tutorial teaches controls and never states the physics; the square law is the player's first discovery.
+* **components/shared_discovery.txt:** Designs travel as codes between players, and the classic designs are named and waiting to be found.
+
+### Signature Pillar 1: The Ledger
+
+In most games, damage and resources appear and disappear at the designer's convenience. In a Containment-style game, one quantity can't be destroyed, only moved. The whole game is a ledger of it, and the player is the accountant.
+
+**Design Rules:**
+
+* **One Conserved Quantity:** Choose the quantity the game keeps the books on (heat, items, atoms). It is made only by named sources and leaves only through named sinks the player places.
+  * *Example:* A pipe that quietly loses three percent of the water it carries is a leak in the rules, not a feature. If water has to disappear, give the player a drain to put somewhere.
+
+* **No Leaks in the Math:** Rounding, hidden decay, free dissipation, and heat that vanishes with a destroyed part are bugs, even when they favour the player. A ledger that doesn't balance can't be reasoned about, and a puzzle that can't be reasoned about is a slot machine.
+
+* **The Line Is the Truth:** Show what was made, moved, held, and shed this tick in one place. A balanced line and a machine that holds are the same thing.
+
+* **Storage Buys Time, Not Safety:** Tanks and buffers delay a deficit; they never cure it. A design that leans on storage fails later, on schedule.
+  * *Example:* A hot core ringed with coolant tanks runs beautifully for forty minutes, then the tanks fill and the failures arrive in the order they filled. Nothing surprising happened; the bill came due.
+
+### Signature Pillar 2: Geometry Is the Build
+
+Power is not only which parts you own. It is where they sit. The same parts in a different arrangement are a different machine.
+
+**Design Rules:**
+
+* **A Small, Fixed Board:** Space is the scarce resource. The board must be small enough to hold in your head, and never so large that placement stops mattering.
+
+* **Neighbours Are the Rules:** Every interaction is local and visible: a part affects the tiles it touches. The only exception is one named shared pool, and the board draws it.
+
+* **Every Tile Is a Trade:** Each tile either makes the dangerous quantity or handles it. The ratio between the two is the puzzle, and a tile left empty on purpose can be the correct play.
+
+* **Every Upgrade Moves the Optimum:** Upgrades change ratios, not just values, so the best layout of the last tier isn't the best of this one. Redesign is the loop.
+  * *Example:* A cooling upgrade makes a two-to-one pattern of coolers to cores wasteful. The player who notices takes one cooler out of every row and fits another core, and the whole board has to be rethought.
+
+### Signature Pillar 3: Proof by Running
+
+A design isn't finished when it is placed. It is finished when it has run. The clock is the judge, and the verdict is how long the machine holds.
+
+**Design Rules:**
+
+* **The Clock Is the Judge:** Consequences arrive late but lawfully. A cooler that fills over ninety seconds fails at second ninety, every time. The delay is where the tension lives; the determinism keeps it fair. If anything is random, it is a reward roll, never a failure.
+
+* **Rate the Machine by Its Stamina:** Classify designs by how long they hold, not only what they make, and make the prestige number output from a machine that holds. A board that makes a fortune for one minute and then melts is a stunt, not a design.
+
+* **Absence Is Play:** A good machine runs without you. The reward for a design that holds is permission to look away.
+
+* **The Hum of a Held Machine:** When the design holds, the game grows quiet. A board in balance sounds different from one slowly building toward failure.
+
+* **A Meltdown Is a Receipt, Not a Scar:** Catastrophic failure wipes the board cleanly and prints what happened: the first part lost, what it held, the heat at the end. Nothing lingers as rubble or a permanent debuff.
+
+### Signature Pillar 4: The Workbench Ships with the Game
+
+The communities of these games built planners, calculators, and share codes because the design was the product. If the community would have to build a tool to play well, build it in.
+
+**Design Rules:**
+
+* **A Lab Beside the Floor:** Give the player a sandbox copy where nothing is lost and predictions are allowed. Forecasts live in the lab; the floor reports only what has happened.
+
+* **The Lab Runs the Floor's Rules:** The lab changes money and nothing else. If it drops the power cap, selling, or upkeep, some designs will forecast one way and run another, and the lab has lied.
+
+* **Designs Travel as Text, With Their Context:** Every machine becomes a string and back. The string carries its measured numbers and the upgrades it assumes, so "Mark I" means the same machine in the reader's game as in the writer's.
+
+* **Measure, Don't Grade:** Report output, cost, heat, and stamina. Don't award stars and don't advise.
+
+* **Rebuild, Never Rewind:** Saved designs can be rebuilt on today's board, but the game can't be rolled back. The workbench helps you build; it never undoes a consequence.
+
+### Field Notes
+
+How *Reactor Revived* implements each pillar, and where it broke or still breaks them, is recorded in souls/field_notes/containment.txt. Those notes are a dated snapshot of a codebase; this file is the philosophy.
+
+### Variants & Exceptions
+
+* *IndustrialCraft 2* is the ancestor, and its heat is conserved: exchangers only move heat, only vents and condensators remove it, and melting coolant returns its heat to the hull. It left the workbench to its community: outside planners shared designs as text codes, and the Mark scale was a wiki convention, from Mark I (never builds heat) to Mark V (needs constant supervision). Its failure sat nearer Terminal: a reactor at full heat exploded and took its surroundings with it.
+* *NuclearCraft* is the closest living heir: each cooler type has its own neighbour rule. Planning again lives in community tools.
+* *Reactor Incremental* wraps the puzzle in an incremental shell, and its prestige is earned on the lower of power made and heat removed. That rule ties prestige to heat handled, closer to "Rate the Machine by Its Stamina" than its successors. It shared saves, not layouts.
+* *Reactor Knockoff*, the direct parent of *Reactor Revived*, added banked offline time, toggleable automation, and objectives, but still shared saves rather than layouts.
+* *Factorio* is distant kin: adjacent reactors double each other's output and heat pipes conserve heat, but its board is effectively unbounded, which breaks "A Small, Fixed Board." Its blueprint strings are the purest form of "Designs Travel as Text."
+* *Oxygen Not Included* is the cautionary kin: heat is mostly conserved, but several buildings delete it through quirks in how they handle inputs and outputs, and the community treats those as exploits. That's what happens to any leak in a heat ledger.
+* *Opus Magnum* is distant kin with a Levels structure: solutions are measured on cost, cycles, and area as histograms, never graded. That's "Measure, Don't Grade" in its purest form.
+
+### What This Soul Costs
+
+(Shared costs live in the component files: combinatorial balance, tuning every rung, the content treadmill.)
+
+* **Tuning Ratios, Not Values:** Every change to a part moves the optimum for every design players have already shared. Balance is done against a library of known layouts, pinned by tests.
+* **Time as a Test Input:** Stamina can only be proven by running. The game needs fast-forward, banked offline time, or a forecast in the lab, or proving a design is as tedious for the player as for the tester.
+
+### How It Fails
+
+(Shared failure modes live in the component files: the dominant strategy, hidden math, grind disguised as progress.)
+
+* **The Checkerboard Forever:** One layout is best at every tier. *Symptom:* shared codes converge, and nobody redesigns after an upgrade. *Fix:* upgrades that move ratios, and tiers that change the shape of the heat, not only its size.
+* **The Babysat Machine:** The design can't run without a hand on it: manual refuelling, manual selling. *Symptom:* players quit from chores, not difficulty. *Fix:* sell automation early. The player's hands belong on the design, not the machine.
+* **The Friendly Leak:** A little heat disappears for free. It feels generous. *Symptom:* designs that exploit the leak earn top stamina ratings, and players who reason from conservation get the wrong answer. *Fix:* every sink is a part the player places; if the game wants to be generous, give them a better vent.
+* **The Lab That Lies:** The forecast's setup differs from the floor's. *Symptom:* a design forecast to hold melts on the floor, and players stop trusting the workbench. *Fix:* a test runs every example layout in both and requires them to agree.
+* **The Backdoor Rewind:** A save import or cloud restore undoes a meltdown. *Symptom:* the receipt stops mattering. *Fix:* refuse it in Hardcore, and mark the run as restored everywhere else.
+* **Proof Nobody Sees:** The only prestige number is peak output, which a doomed board can hit. *Symptom:* players chase one-minute stunts. *Fix:* rate stamina, and lead the records with output from a machine that holds.
+
+### Neighboring Souls
+
+* **Spire:** Both are total-information optimization. Spire's build is drafted and thrown away within the hour; a Containment design is kept, rebuilt, shared, and judged by how long it runs.
+* **Loathing:** Both are rebirth accounts with a spreadsheet at the heart. Loathing asks its community to build the tools and hides the math behind a joke; Containment ships the workbench and keeps a straight face.
+* **Dwarven:** Both let thermodynamics decide the outcome. In Dwarven the fall is the story; in Containment the fall is a receipt, and the story is the machine that didn't fall.
+
+### The "Containment" Litmus Test
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Ledger** | Can the player account for every point of the dangerous quantity the board made this tick? | **Yes.** Made equals shed, moved, and held. |
+| **The Neighbour** | Would the same parts in a different arrangement make a different machine? | **Yes.** Geometry is the build. |
+| **The Clock** | Is a design judged by how long it holds, not only by what it makes in a minute? | **Yes.** Stamina is the prestige. |
+| **The Workbench** | If players would need an outside tool to design well, does the game ship it? | **Yes.** The lab, the code, and the measurements are in the box. |
+| **The Dice** | Can a part fail for a reason the board did not cause? | **No.** Every failure is heat the design made. |
+
+*"You do not need a story when you have ninety-six tiles, one quantity that refuses to disappear, and a player who left the same reactor running all night just to prove it could."*

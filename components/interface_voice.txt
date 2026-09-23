@@ -1,0 +1,49 @@
+## Component: Interface Voice
+
+**The principle:** The words, colours, and sounds of the interface are part of the mechanics. They must say only what is true, say it once, and never contradict what the systems actually do.
+
+**Used by:** Ampersand, Gauge, Casebook, Containment
+
+### Design Rules
+
+* **Say It Once:** If a bar, a heap, a glow, or a sound already carries a piece of information, no toast, badge, or popup repeats it. Redundant alerts train the player to ignore alerts.
+
+* **The Material Is the Feedback:** When the player does something, the thing itself responds (a brick lights up, a load shrinks, a stamp lands) and the interface says nothing. "Reaction sent!" is noise laid over the only feedback that mattered.
+
+* **Never Congratulate a Number:** No confetti for a count, no "Perfect match!", no "7-day streak!" A number that gets praised becomes a number people perform for.
+
+* **Name the Pause, Not the Loss:** Describe a stopped system by what is paused and what resumes it. "Overdue," "missing," "lost," and "failed" make players hear loss even when the mechanics took nothing.
+
+* **Warning Colours Mean Danger:** Red, alarms, and warning chimes are reserved for real danger, or for nothing at all. Leftover styling from pressure games (a red mark on a full store) contradicts the words beside it.
+
+* **The Voice Must Not Lie:** A strong voice, whether a period setting, a character, or a brand, makes false claims sound like flavour ("CERTIFIED," "Verified!"). Every claim, in character or not, must be literally true about what the game measured. A time the player's device reported is "as filed," not "verified."
+
+* **Even Errors Stay in Voice:** Network failures, loading, and empty states speak in the game's voice (the wire is down; the file is with the typist) and never break character with "Error 503."
+
+* **The Mix Follows the State:** Sound carries state. As danger rises, other sounds duck until the dangerous thing is the loudest; when a system is at rest, the game grows quiet. Nothing plays that a player's action or the world didn't cause.
+
+* **Written to Last:** Copy that players will read daily for years avoids slang, emoji, and borrowed art. Contractions are fine. An emoji is someone else's art direction, drawn by someone else's font.
+
+### Tuning by Soul
+
+* **Ampersand:** Plain and quiet: the partner is always named ("Maya hasn't answered yet"), never "your partner"; no emoji; the brick is the feedback.
+* **Gauge:** The vocabulary of pause, and no red anywhere a store is simply full. "Idle" became "In the shed" because idle reads as broken.
+* **Casebook:** A period institution's voice that must stay truthful: the Bureau prints times "as filed," and even errors are in period.
+* **Containment:** Say it once: the board, the bars, and the hum are the interface, and at the limit the reactor is the loudest thing in the game.
+
+### What It Costs
+
+* **Copy Is Design Work:** Every string needs the same review as a mechanic, and a style guide that covers banned words, colours, and sounds.
+* **Every String Is a Test Target:** Truthful claims are only reliable if a test pins them, such as a test that fails if "verified" appears on an unverified time.
+
+### How It Fails
+
+* **The Cheerful Toast:** Confirmations and celebrations pile on top of feedback the world already gave. *Symptom:* players dismiss popups without reading, including the important ones. *Fix:* delete every message the world already says.
+* **The Red Signal:** Warning colours or words contradict the mechanics. *Symptom:* players read a full store or a quiet line as a problem. *Fix:* reserve warning styling for real danger.
+* **The Flavourful Lie:** In-character copy claims something the game didn't do ("Officially certified"). *Symptom:* nobody notices until a player relies on it. *Fix:* audit in-character claims against what the systems measure, and pin them with tests.
+
+### Litmus
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Voice** | Does any word, colour, or sound here claim or imply something the systems don't do? | **No.** The interface says only what is true, once. |

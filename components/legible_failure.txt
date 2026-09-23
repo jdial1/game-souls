@@ -1,0 +1,55 @@
+## Component: Legible Failure
+
+**The principle:** Every loss must be traceable to a cause the player can see. Unexplained failure feels like a random number generator; explained failure feels like a lesson or a story.
+
+**Used by:** Dwarven, Ashen, Hearthian, Spire, Mansion, Containment, Gauge, Casebook
+
+### Design Rules
+
+* **Every Death Must Be Legible:** The player must always be able to answer "Why did I lose?" Attacks need clear wind-ups, hitboxes must be honest, and timing must be consistent. Unblockable surprise attacks with no tell violate the contract.
+  * *Example (Ashen):* A knight raises his greatsword over his shoulder and holds it for a full second before a delayed overhead swing. The first time, it kills you because you rolled too early. The fifth time, you roll late, and the knight is yours. The enemy did not change. You did.
+
+* **Telegraph Intent:** Show what the enemy will do before the player commits. The puzzle becomes solving a known threat, not reacting to a surprise.
+  * *Example (Spire):* An enemy mech displays that it will fire on tile C4 next turn, where the player's power generator sits. The player can't destroy the mech, but can shove a different enemy onto C4 so the mech shoots its own ally.
+
+* **Randomize Inputs, Not Outcomes:** Randomness belongs before the decision (which cards are offered, which rooms appear), never after it (whether a 75% attack connects). Players forgive a bad hand; they never forgive a missed shot they had no power over.
+
+* **Show the Math:** Damage previews, full tooltips, exact numbers. If the player has to guess how a modifier stacks, the loss stops feeling like their fault.
+
+* **Itemize the Causes:** In a simulation, every state needs a receipt and every event needs a log entry in plain language: "Ate without a table (-3), Rained on (-5), Witnessed death of spouse (-20, 8 days remaining)."
+  * *Example (Dwarven):* After the colony falls, the player scrolls back through the log and finds the exact line where the cook punched the artillery shell. The tragedy becomes a story they retell to friends, not a crash they resent.
+
+* **Report the Present, Don't Warn About the Future:** Legibility means explaining what is happening and what happened. It does not mean warning the player about dangers they haven't met. "On the verge of a mental break" is information; "Danger ahead!" is hand-holding.
+
+* **Clumsy Character, Precise Input:** Vulnerability can be designed into the character (slow turns, rooted aiming), never into the controls. The player must never die to an unresponsive button.
+
+### Tuning by Soul
+
+* **Ashen:** Legibility lives in animation. The player learns by dying and watching.
+* **Spire:** Legibility lives in the interface. The player learns by planning before committing.
+* **Dwarven:** Legibility lives in logs and tooltips. The player learns after the fact, by reconstructing the disaster.
+* **Mansion:** The rules are legible (the stalker hunts by sound), even when the state is hidden (where it is right now).
+* **Hearthian:** Legibility is retroactive. The solution must feel obvious in hindsight: "I should have seen that."
+* **Containment:** Legibility lives in the ledger: per-part heat bars, one flow line, and a receipt when the board melts. The player learns by watching a design run.
+* **Gauge:** There is no failure, only stalls, and legibility is a present-tense receipt for each one: what is paused and what resumes it, never what is missing or overdue.
+* **Casebook:** Legibility is retroactive and exact. A failed check names the one wrong mark; a solved page makes every step look obvious in hindsight.
+
+### What It Costs
+
+* **Animation Budget:** Hand-crafted wind-ups, recoveries, and hitboxes for every enemy and boss. In action games, animation and combat tuning become the most expensive departments on the team.
+* **The UI Tax:** Intent icons, previews, itemized tooltips, combat logs, relationship graphs. In simulations and tactics games, the interface is core design, not polish, and may be the largest single piece of work.
+* **Playtest Auditing:** Someone has to review deaths and losses in playtests and ask, every time, "Could the player name the cause?"
+
+### How It Fails
+
+* **Difficulty Without Legibility:** Enemies are hard because of unfair hitboxes, off-screen attacks, or random damage spikes. *Symptom:* players blame the game. *Fix:* audit every playtest death; if the player can't name the cause, fix the tell.
+* **Hidden Math:** Damage formulas or modifier stacking are opaque. *Symptom:* losses feel unfair. *Fix:* show the intent, the preview, and the numbers.
+* **Illegible Chaos:** The simulation produces rich events, but the player can't see the causes. *Symptom:* players describe their losses as random. *Fix:* surface causes, not just effects.
+* **Moon Logic:** A puzzle solution makes sense only to the designer. *Symptom:* players who look up the answer feel cheated rather than foolish. *Fix:* if the reaction is "How would anyone know that?", a clue is missing.
+* **Clumsy Input Masquerading as Vulnerability:** The controls are unresponsive rather than deliberately constrained. *Symptom:* players blame the controls instead of the monster. *Fix:* the character may be slow; the input must never be.
+
+### Litmus
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Blame** | After any loss, can the player name the exact cause? | **Yes.** If they can't, the loss is noise, not a lesson. |

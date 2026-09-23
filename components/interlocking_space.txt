@@ -1,0 +1,46 @@
+## Component: Interlocking Space
+
+**The principle:** The world is not a sequence of levels but a single, folded, hand-authored space that the player learns room by room. Familiarity is the reward, and sometimes the weapon.
+
+**Used by:** Looking Glass, Ashen, Hearthian, Mansion
+
+### Design Rules
+
+* **The Shortcut as Loot:** The most emotionally powerful reward is often a door. After twenty minutes fighting through a hostile fortress, the player kicks down a ladder and realizes they're standing above the first checkpoint. Progress is measured in reclaimed geography.
+  * *Example (Ashen):* A rusted elevator at the top of a cathedral descends into the hub area the player left three hours ago. The world folds in on itself and suddenly makes sense.
+
+* **Locks as Promises:** Mark locked doors with the symbol of what opens them. The player builds a mental to-do list, and every key found sends them back through territory they'd rather not cross (Mansion).
+
+* **Sparse, Precious Safety:** Checkpoints and safe rooms are rare enough that finding one is an event. Safe rooms have distinct music, soft light, and an absolute guarantee: nothing follows you in. Never violate the safe room, or violate it exactly once and let the player carry that betrayal for the rest of the game.
+
+* **Familiarity as a Trap:** Force the player to revisit the same spaces. Routine breeds comfort, and comfort can be weaponized.
+  * *Example (Mansion):* The player has safely walked the dining hall corridor twenty times. On the twenty-first, a window they never noticed shatters. Nothing comes through. They'll never walk that corridor calmly again.
+
+* **Many Routes, No Right One:** Hand-author the space generously (vents, balconies, back offices, a skylight), but never script which route is "correct" (Looking Glass).
+
+* **A Bounded, Learnable Whole:** The space must be small enough that the player can eventually hold all of it in their head (Hearthian).
+
+### Tuning by Soul
+
+* **Looking Glass:** Each mission is a dense, multi-route space; the player authors the path.
+* **Ashen:** The whole world is one labyrinth; shortcuts are the primary reward.
+* **Hearthian:** The world is bounded and mappable; every piece fits a whole.
+* **Mansion:** A single building revisited until it is known, then turned against the player.
+
+### What It Costs
+
+* **Level Design That Folds:** An interlocking world has to be designed as one piece. Late changes to one area ripple through every connection to it.
+* **Content the Player Never Sees:** Alternative routes, back rooms, and unused shortcuts exist whether or not a given player finds them.
+* **Backtracking Tuning:** Revisiting must stay tense or interesting, never tedious.
+
+### How It Fails
+
+* **Checkpoint Sadism:** The run back from a checkpoint to the challenge is long, tedious, and dangerous for no reason. *Symptom:* players quit from boredom, not difficulty. *Fix:* keep run-backs short, or make them a learnable challenge with their own shortcut.
+* **Tedious Backtracking:** Revisited spaces offer nothing new. *Symptom:* players resent the map. *Fix:* change something on each revisit: an enemy, a light, a sound, a new shortcut.
+* **The Illusion of Choice:** Several routes that all converge on the same scripted door. *Symptom:* players stop exploring alternatives. *Fix:* let routes change the state of the world or what the player learns.
+
+### Litmus
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Geography** | Can the player see or reach a place they visited hours ago from where they're standing now? | **Yes.** The world is one continuous, remembered space. |

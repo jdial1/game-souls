@@ -1,0 +1,96 @@
+## The "Spire" Game Soul Guide
+
+**A Framework for Legible Risk, Compounding Synergy, and the Perfect Run**
+
+The soul of games like *Slay the Spire*, *Into the Breach*, *Balatro*, *Hades*, *FTL*, and *Monster Train* can be distilled into a single philosophy: "Every loss is your fault, and you can prove it."
+
+On the surface, these games look small and tidy: a map, a handful of cards or mechs, a run that lasts under an hour. Beneath the surface lies a machine of transparent information and exponential combinatorics. You will lose constantly, but always to your own decisions, never to hidden dice. Each run is a fresh puzzle drawn from a fixed box of pieces, and the box is deeper than anyone will ever fully map.
+
+If you want to instill this exact soul into a new game, use this guide as your design bible.
+
+### Pillar 1: Total Legibility
+
+In most games, tension comes from not knowing what the enemy will do. In a Spire-style game, tension comes from knowing *exactly* what the enemy will do and not yet knowing how to stop it.
+
+**Design Rules:**
+
+* **Telegraph Intent:** Enemies announce their next action before the player commits to a turn. The puzzle is solving a known threat, not reacting to a surprise.
+  * *Example:* An enemy mech displays that it will fire on tile C4 next turn, where the player's power generator sits. The player cannot destroy the mech, but they can shove a different enemy onto C4, so the mech shoots its own ally instead.
+
+* **Randomize Inputs, Not Outcomes:** Randomness belongs before the decision (which cards are offered, which rooms appear on the map), never after it (whether a 75% attack connects). Players forgive a bad hand; they never forgive a missed shot they had no power over.
+
+* **Show All the Math:** Damage previews, full tooltips, and exact numbers everywhere. If the player has to guess how a modifier stacks, the loss stops feeling like their fault.
+
+### Pillar 2: The Draft, Not the Grind
+
+Power is not earned across hundreds of hours. It is assembled in the next forty minutes from the choices you make right now.
+
+**Design Rules:**
+
+* **Build In-Run:** Every run starts from a humble baseline. The player's strength comes from what they draft, buy, and combine during this run alone.
+
+* **Meta-Progression Adds Width, Not Height:** Between runs, unlock new cards, characters, and options, but never permanent raw stat boosts. If meta-progression must exist, make it transparent and optional, and pair it with an opt-in difficulty system experts can pile on.
+
+* **Saying No Is a Skill:** Skipping a card reward, passing on a shop, or leaving a relic behind must frequently be the correct play. A thin, focused deck should beat a bloated one full of "good" cards.
+  * *Example:* A novice takes every card offered and dilutes their deck into mush. An expert skips six rewards in a row, waiting for the one card that completes their engine, and wins with a twelve-card deck.
+
+### Pillar 3: Synergy Engines That Break the Game
+
+The dream of every run is the moment the numbers go vertical. That moment is not a balance failure. It is the jackpot.
+
+**Design Rules:**
+
+* **Multiply, Don't Add:** Design pieces that multiply one another rather than stacking linear bonuses. A correct combination should turn a modest build into an absurd one.
+  * *Example:* A card that doubles poison stacks, a card that applies poison whenever the player blocks, and a relic that grants block every time a card is discarded. Separately, they're mediocre. Together, the final boss dies in one turn.
+
+* **Balance the Average, Not the Ceiling:** Tune the game so an average run is tense and winnable, then let skilled players break it wide open. Patching out a legendary combo punishes the players who found it.
+
+* **Unwritten Interactions:** Don't spell out every combo in the tooltips. Let the community discover that two seemingly unrelated pieces form an infinite loop.
+
+### Pillar 4: Short Loops, Deep Ladders
+
+A single run should be short enough to start on a whim and deep enough to replay for a thousand hours.
+
+**Design Rules:**
+
+* **The One-Minute Restart:** The time between the death screen and the next meaningful decision must be under a minute. No lengthy intros, no mandatory hub chores.
+
+* **The Difficulty Ladder:** Winning unlocks a harder tier with a stacked modifier (more elite enemies, less healing, a starting curse). Each tier is earned; mastery is measured by the rung you've reached.
+
+* **Seeded Runs and Daily Challenges:** Let players share seeds and compete on the same daily run. Identical starting conditions turn every result into a comparable skill test and every forum post into a strategy debate.
+
+### Variants & Exceptions
+
+* *FTL* breaks Pillar 1's "randomize inputs, not outcomes" rule: weapons can miss, and evasion is a percentage. It compensates with heavy transparency elsewhere (you watch enemy weapons charge and can see their crew and systems) and relatively short runs. It is an older, rougher form of the soul.
+* *Hades* breaks Pillar 2's "width, not height" rule: the Mirror grants permanent stat upgrades, and resources carry across runs. It balances this with the Heat system, which lets players opt back into difficulty. It is the most accessible form of the soul, built for players who would bounce off pure mastery.
+* *Into the Breach* is the purest form of Pillar 1: nearly every enemy action is shown before the player commits, and its few random elements are clearly labeled with their odds.
+
+### What This Soul Costs
+
+* **Balance Is a Combinatorial Problem:** Every new card, relic, or item multiplies against every existing one. You need automated simulation or huge volumes of playtesting to find degenerate combos, plus a clear philosophy about which ones to keep.
+* **The Content Treadmill:** Players burn through a fixed pool of pieces quickly. Long-term health depends on a steady flow of new characters, cards, and modes.
+* **The UI Is the Game:** Total legibility means every number, intent, and interaction must be displayed clearly. The interface is not polish; it is core design and needs as much iteration as the systems.
+* **Tuning the Ladder:** Each difficulty rung must feel meaningfully harder without becoming unfair. Tuning twenty rungs is more work than tuning one game.
+
+### How It Fails
+
+* **Hidden Information:** Damage formulas, enemy behaviors, or modifier stacking are opaque. *Symptom:* players feel their losses were unfair. *Fix:* show the intent, show the preview, show the math.
+* **The Dominant Build:** One strategy wins so reliably that every run converges on it. *Symptom:* runs stop feeling different. *Fix:* balance the average, not the ceiling, but make sure the pieces of the top build rarely appear together in one run.
+* **Grind Disguised as Progress:** Meta-progression becomes a stat treadmill, so players win by playing longer rather than better. *Symptom:* skill feels less important than hours logged. *Fix:* keep meta-progression to new options, not raw power, or make its power optional.
+* **The Long Dead Run:** A run is doomed by the midpoint but takes another thirty minutes to end. *Symptom:* players abandon runs instead of finishing them. *Fix:* let lost runs end fast, or add comeback mechanics that keep the ending tense.
+
+### Neighboring Souls
+
+* **Loathing:** Both reward optimization and replay with a difficulty ladder. Spire's ladder measures mastery of a single self-contained run; Loathing's rebirth loop builds a permanent account across hundreds of runs, and its identity lives as much in tone as in systems.
+* **Ashen:** Both promise that every loss is the player's fault. Spire delivers it through perfect information and short, disposable runs; Ashen delivers it through readable animation and one persistent world.
+
+### The "Spire" Litmus Test
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Blame** | When the player loses, can they point to the exact decision that killed them? | **Yes.** Every loss is a lesson with a timestamp. |
+| **The Dice** | Can a 75% hit chance miss at the most critical moment? | **No.** Randomize the options, never the outcome of a committed choice. |
+| **The Break** | Can a skilled player assemble a build that trivializes the final boss? | **Yes.** That's the jackpot, not a bug. |
+| **The Restart** | How long from the death screen to the next meaningful decision? | **Under a minute.** The next run is always one click away. |
+
+*"You do not need a hundred hours of content when you have seventy-five cards, a fully telegraphed enemy, and a player who has been staring at a single turn for eleven minutes because they know the answer is in there somewhere."*

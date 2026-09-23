@@ -1,0 +1,151 @@
+## The "Gauge" Game Soul
+
+**A Framework for Loss-Free Play, Things You Can Point At, and Help Between People Who Already Know Each Other**
+
+The soul of games like *Common Gauge*, *Neko Atsume*, *Tsuki Adventure*, the friend-gifting of *Sky: Children of the Light*, and the visiting-and-gifting layer of *Animal Crossing* can be distilled into a single philosophy: "Nothing is ever taken; it is only spent on purpose, or given away."
+
+On the surface, these games are desk toys: a small place that keeps working while the player is somewhere else, checked on for two minutes at a time. There is no enemy, no timer, and no way to lose. Beneath the surface lies a deliberate refusal. Every mechanism that could take something back (spoilage, decay, upkeep, raids, streaks) has been removed on purpose and replaced with a thing the player can watch arrive. What is left is wanting, waiting, and a handful of people the player already knows, who are never online at the same time and who send each other what they have spare.
+
+The name comes from the rule that turns separate railways into one network: a common gauge, agreed in advance, so that what one person builds can run straight onto what another built.
+
+### Axis Positions
+
+| Axis | Position |
+| --- | --- |
+| Failure | Forgone |
+| Information | Total (state) / Taught (rules) |
+| Authorship | Kin-Authored |
+| Power | Surplus |
+| Tone | Unhurried Warmth |
+| Structure | Persistent World (visited, not inhabited) |
+
+### Components
+
+* **components/social_safety.txt:** The family layer. Invite codes only, no typed names or free text, no ranking, no requests, news that only goes up and is spent once, and thanks without words.
+* **components/interface_voice.txt:** The vocabulary of pause ("waiting for timber," never "missing timber"), no red where a store is simply full, and nothing said twice.
+* **components/diegetic_interface.txt:** The world is the readout, for warmth rather than vulnerability. Numbers caption objects; they never replace them.
+* **components/systemic_consistency.txt:** Kindness obeys the same rules as haulage. A gift runs on the same rails and stops at the same full yard as every other load. Deterministic throughout, down to where the animals stand.
+* **components/legible_failure.txt:** There is no failure, only stalls, and each gets a present-tense receipt: what is paused, and what resumes it.
+* **components/theme_as_mechanic.txt:** The theme is a family, and the family is a network. Help needs a connection to arrive by, built from both sides.
+* **components/trusting_the_player.txt:** Hints, never gates. The tutorial passes over any lesson already learned and never disables a control to force an order.
+
+### Signature Pillar 1: Nothing Is Taken Back
+
+In most games, even gentle ones, the world reserves the right to take things away: crops wither, food spoils, a streak breaks, a tier lapses when upkeep goes unpaid. In a Gauge-style game, that right has been surrendered. The worst thing that can happen is that something the player wanted hasn't happened yet.
+
+**Design Rules:**
+
+* **Stall, Never Subtract:** When a requirement isn't met, growth pauses and nothing reverses. A tier never lapses, a building never comes down, a delivered good never evaporates.
+  * *Example:* In a lighthouse game, when the oil runs out the lamp goes dark and the ships wait offshore until it is lit again. No ship sinks. The harbour mouth fills with patient boats, and that crowd is the whole of the pressure.
+
+* **Absence Only Adds:** Anything simulated while the player is away may produce, grow, or arrive. Nothing that consumes runs offline, and a card announcing that nothing happened is never shown.
+
+* **Refund the Regret:** Any commitment can be unmade, returning whatever wasn't used. The undoing is visible work, capped so that building and unbuilding can't mint anything.
+
+* **Owned Things Wait:** Something that already belongs to the player (a gift, a refund) is never dropped for lack of room. It stands somewhere visible and waits for space. Only new production may be turned away at a full store.
+
+### Signature Pillar 2: The Thing Itself
+
+In most games, value is a number and time is a bar. In a Gauge-style game, both are objects. Resources are heaps the player can point at, and every wait is something travelling that the player can watch.
+
+**Design Rules:**
+
+* **No Abstract Currency:** Prices are goods, paid off the pile they came from.
+  * *Example:* In a bakery game, a second oven costs forty sacks of flour, and the sacks leave the storeroom on a handcart. Delete the word "money" from the code and nothing breaks.
+
+* **Every Wait Is a Journey:** No countdowns and no percentage bars. If something takes time, it is because something is on its way: a works train, a cart, a barge, a letter.
+
+* **Progress Arrives; It Is Not Bought:** Choosing an upgrade starts a delivery, and the delivery landing is the upgrade. New ground and a village's next level follow from things arriving, never from a purchase.
+
+* **The Heap Is the Readout:** Draw a quantity as a fraction of the room it stands in, so "full" looks full at every size of store.
+
+* **Commission, Don't Carry:** The player decides where things go and never carries the pieces. Every decision is a routing decision, and the machinery does the holding.
+
+### Signature Pillar 3: Spare Is the Gift
+
+In a Gauge-style game, power is how much the player has beyond what they need, and its highest use is giving it away. Surplus isn't waste to be optimized out; it is what kindness is made of.
+
+**Design Rules:**
+
+* **Only Spare Leaves:** Anything that leaves for someone else comes only from genuine surplus, above the line where a store stops being savings. Helping can never leave the helper short.
+
+* **Full Is an Offer:** A full store is the moment the game offers generosity, and the signal arrives together with who could use what is in it.
+
+* **A Gift Is an Event, Not a Service:** Giving is one act the player chooses, with the amount named on the button. An automatic gift is nobody having given anything.
+
+* **The Giver's Colour:** A gift arrives as a thing, carried by the world and marked as the sender's.
+  * *Example:* A friend's spare stone doesn't appear in your stockpile. It comes down the river on a barge flying their pennant and is unloaded at your quay.
+
+* **Receiving Can't Be Missed:** A gift that arrives while the recipient is away waits for them. It can't expire, be taken back, or be claimed twice.
+
+### Signature Pillar 4: The Seam Is a Place
+
+The social rules come from components/social_safety.txt. What this soul adds is geography: each player's world touches the others' at real borders, and relationships are built there.
+
+**Design Rules:**
+
+* **Connections Are Built From Both Sides:** A link between two players is something both build toward, and it is drawn where their places meet.
+  * *Example:* Two cousins' allotments share a hedge. Each can cut a gap from their own side; when both have, a gate appears, and from then on gifts come through the gate instead of over the hedge.
+
+* **Show Growth, Not Standings:** Show what the others got done as changes to their place, never as positions in a list. A child should never open the game to find they are last.
+
+### Signature Pillar 5: The Desk Toy
+
+A Gauge-style game lives on a desk or a kitchen table and is pleasant to glance at, not a funnel that pulls the player back.
+
+**Design Rules:**
+
+* **Deterministic, Not Dice:** What grows and where things appear are placed by seed, never by chance. Randomness produces unlucky days, and an unlucky day is a small loss.
+
+* **Pleasant With the Screen Ignored:** The game should be good company with the sound on and nobody looking: wood, felt, and resin to look at; clacks and rumbles to hear.
+
+* **The Juice Switch Test:** Every flourish must be removable without changing a rule. If the game plays differently with effects off, an effect is carrying information that belongs in the world.
+
+* **Not a Retention Funnel:** Tune for a pleasant visit, not a fast first reward, and keep rewards cosmetic. New ground and a bigger village change how the place looks, never anyone's power over anyone else.
+
+### Field Notes
+
+How *Common Gauge* implements each pillar, and where it broke or still breaks them, is recorded in souls/field_notes/gauge.txt. Those notes are a dated snapshot of a codebase; this file is the philosophy.
+
+### Variants & Exceptions
+
+* *Neko Atsume* holds Pillar 1 almost perfectly: an empty food bowl just means no cats until it's refilled. It reverses Pillar 3 (the visitors bring gifts to the player), has no kin layer, and its waits happen out of sight.
+* *Animal Crossing: New Horizons* holds the kin layer (invited visits, gifts that wait in the mailbox) and breaks Pillar 1 on purpose: weeds spread during a long absence, turnips spoil weekly, and a month away brings cockroaches. Villagers can't leave without permission, a small victory for this soul.
+* *Tsuki Adventure* holds Pillar 1 (carrots arrive while you're away, with no penalty for absence) but is played alone.
+* *Cats & Soup* has no streak guilt, but offline earnings stop after a few hours: absence still only adds; it just stops adding.
+* *Sky: Children of the Light* is the closest commercial "Spare Is the Gift": gifts only to friends, one a day. But a gift costs candles, so it can leave the giver short, and friendship needs real-time play.
+* *Viridi* is the cautionary cousin: succulents that can be overwatered and die. A desk toy turns into a chore the moment something can be lost.
+* *Townscaper* and *Death Stranding* are distant kin: a toy that takes nothing but has no one to give to, and help between strangers inside a world that punishes.
+* The source game borrows its machinery from pressure games (*OpenTTD* signalling, *Factorio*'s LogisTrainNetwork train pools, *Brio* track) and removes the pressure: no bankruptcy, no breakdowns, no deadlines.
+
+### What This Soul Costs
+
+(Shared costs live in the component files: a network that doesn't spread, expression without words, the UI tax.)
+
+* **Safety Is Engineering:** "Nothing is ever lost" is a promise the code keeps: saves written beside the real file and moved into place, unreadable saves set aside, gifts journaled so a crash mid-delivery finishes on restart. A game that can lose things can afford bugs that lose them. This one can't.
+* **Tension Must Come From Wanting:** With no threat, the only pull is desire: the next tier, a village one delivery short, a gift on its way. Wanting is harder to design than fear.
+
+### How It Fails
+
+(Shared failure modes live in the component files: the Guilt Engine, the Ranked Group, the Nagging Feed, the Red Signal.)
+
+* **The Screensaver:** Nothing is lost and nothing is wanted. *Symptom:* players open the game, see that everything is fine, and close it. *Fix:* every visit should find something that wants something. Wanting, not owing.
+* **Upkeep in Disguise:** A recurring charge on what the player already owns, defended as "only a stall." *Symptom:* a tester describes a stall as having lost something. *Fix:* recurring sinks are things the player chooses to feed, never charges on what they hold.
+
+### Neighboring Souls
+
+* **Toybox:** Both are toys first, with failure trivial or absent. Toybox's joy lives in a verb performed well; Gauge's lives in watching things arrive.
+* **Containment:** Both reward looking away from a machine that runs without you. Containment's calm is earned against a danger that never leaves; Gauge has no danger, and the surplus is for somebody else.
+* **Ampersand:** Both are warm, short-visit games between people who already know each other, sharing the Social Safety component. Ampersand's pair seals statements; Gauge's family sends things.
+
+### The "Gauge" Litmus Test
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Drawer** | If the phone sits in a drawer for a week, is anything worse when it comes out? | **No.** Absence only adds. |
+| **The Take-Back** | Can this system remove something the player earned: a tier, a building, a delivered gift? | **No.** It may pause growth; it never reverses it. |
+| **The Pointing Finger** | Can the player point at this resource, this price, or this wait in the world? | **Yes.** It is a heap or something travelling, never only a number or a bar. |
+| **The Spare** | Can giving this leave the giver short, or can the recipient ask for it? | **No, and no.** Only surplus leaves, and need is visible but never sent. |
+| **The Kitchen Table** | Does this feature rank, rush, or compare the people in the group? | **No.** Everybody's place gets bigger; nobody is behind. |
+
+*"You do not need a fail state when you have a toy railway on a kitchen table, a yard with more timber than it can use, and a cousin three towns away watching a train in your colour come up her line."*

@@ -1,0 +1,107 @@
+## The "Mansion" Game Soul
+
+**A Framework for Engineered Scarcity, Hostile Architecture, and the Terror of the Unseen**
+
+The soul of games like *Resident Evil*, *Silent Hill 2*, *Alien: Isolation*, *Amnesia: The Dark Descent*, *Dead Space*, and *Signalis* can be distilled into a single philosophy: "The monster is frightening. The empty hallway is worse."
+
+On the surface, these games look like action or adventure titles with monsters in them. Beneath the surface lies an economy of fear, where every bullet, every save, and every footstep is a budgeted expense. The player is never powerless (helplessness is boring), but they are always poor. Horror emerges from choices made under deprivation.
+
+### Axis Positions
+
+| Axis | Position |
+| --- | --- |
+| Failure | Costly |
+| Information | Hidden (state) |
+| Authorship | Designer-Authored |
+| Power | Poor (variants: Powerless, Never Helpless) |
+| Tone | Dread |
+| Structure | Single Journey |
+
+### Components
+
+* **components/scarcity_economy.txt:** Poor, not powerless. Bullets, healing, inventory slots, and saves are all budgeted, with a hidden floor so the player is never soft-locked.
+* **components/interlocking_space.txt:** The building is the main character. Familiarity is a trap, locks are promises, and the safe room is sacred.
+* **components/living_world.txt:** The adaptive predator that learns the player's habits.
+* **components/legible_failure.txt:** The rules are legible even when the state is hidden. The character may be clumsy; the input must never be.
+* **components/theme_as_mechanic.txt:** The building is a mirror of the protagonist's guilt, and fear itself is a resource.
+* **components/environmental_storytelling.txt:** Diaries and files reveal what happened here, and what is probably still here.
+* **components/diegetic_interface.txt:** Health is read from the body, not a bar.
+
+### Signature Pillar 1: The Terror of the Unseen
+
+What the player imagines will always be worse than what the artists can render.
+
+**Design Rules:**
+
+* **Sound Before Sight:** The player should hear the threat long before seeing it. Footsteps in the ceiling. Scraping inside the vents. Breathing on the other side of a door.
+
+* **Imperfect Information:** Restrict vision with fixed camera angles, a narrow flashlight cone, fog, or darkness. What sits just outside the frame is more terrifying than anything inside it.
+
+* **The Unkillable Stalker:** Introduce one pursuer that cannot be killed, only evaded or briefly repelled. It hunts by sound and adapts to the player's habits (see "Adaptive Predators" in components/living_world.txt).
+
+* **Silence as an Instrument:** Long stretches where nothing happens are not wasted content; they are the tension being loaded. Jump scares are spice, not the meal. Dread is the meal.
+
+* **Ration the Monster:** Every full, well-lit look at a creature spends some of its power to frighten. Show it in fragments (a silhouette, a limb, a shadow) for as long as possible.
+
+### Signature Pillar 2: Vulnerable Embodiment
+
+The protagonist is not an action hero, and the controls should never let the player forget it.
+
+**Design Rules:**
+
+* **Deliberate Friction:** Aiming roots the player in place. Reloading takes real, interruptible time. Turning around is slower than running. The *character* is clumsy, but the *input* must remain precise.
+
+* **Fear Is Physical:** The protagonist's body reacts to terror in ways that change play. Breathing grows loud enough to give away a hiding place. Hands shake and aim sways after a close call. Sprinting burns stamina the player can hear running out. The player's fear and the character's fear become the same resource.
+
+### Signature Pillar 3: The Puzzle-Box House
+
+The building is also a lock. Its puzzles aren't a break from the horror; they are the reason the player has to go back through it.
+
+**Design Rules:**
+
+* **Puzzles Are Architecture:** Every puzzle's solution opens part of the building: a crest that unlocks a wing, a statue that reveals a stair. There are no separate minigames, and nothing is solved on a screen with the danger paused.
+
+* **Keys Change the Map:** Each key, crest, or tool redraws the player's mental map. Doors they'd written off become routes, and the map marks what is now open.
+  * *Example:* The player finds a small key with a spade engraved on it. Five rooms they've already passed through have spade locks. Three of them are on the far side of the corridor where they last heard the footsteps.
+
+* **Solve Under Threat:** Place puzzle pieces so that solving one means crossing somewhere dangerous, and reading the clue means standing still in a room that isn't safe. The puzzle's difficulty is modest; the price of working it out is where the fear lives.
+
+* **Clues Are Documents:** Solutions are hinted at in the house's own papers (a butler's note, a painting's plaque, a child's drawing), tying the puzzle to the story of what happened here.
+
+### Variants & Exceptions
+
+* *Signalis* is the soul's modern restatement: a tiny inventory, save points you must reach, radio-frequency and document puzzles, and a building that rearranges itself around the protagonist's memories.
+
+* *Amnesia: The Dark Descent* and *Alien: Isolation* push scarcity to its extreme: the player is essentially powerless against the main threat (Amnesia provides no weapons; Isolation's tools can repel the Alien but never kill it). Scarcity shifts from ammunition to hiding places, light, and nerve. "Poor, not powerless" becomes "powerless, but never helpless": the player can always hide, flee, or distract.
+* *Dead Space* leans toward action. Most enemies can be killed, and ammunition is less tight. It keeps the soul through dismemberment combat that rewards precision under panic, diegetic health, and a hostile, interconnected ship.
+* *Silent Hill 2* leans hardest on "Let the World Mirror the Self" (components/theme_as_mechanic.txt): its town and monsters are an externalization of the protagonist's guilt.
+
+### What This Soul Costs
+
+(Shared costs live in the component files: fragile scarcity tuning, adaptive AI, writing discipline.)
+
+* **Audio Is a Core Department:** Sound before sight demands positional audio, layered ambience, and bespoke creature sound design. Budget audio like a main system, not polish.
+* **A Short Shelf Life:** Horror depends on the unknown. Once the building is mapped and the monsters understood, fear drains away. Plan for a tight, well-paced playthrough rather than endless content.
+
+### How It Fails
+
+(Shared failure modes live in the component files: the soft lock, the exhausting hunter, clumsy input masquerading as vulnerability.)
+
+* **Jump-Scare Addiction:** Loud stings replace atmosphere. *Symptom:* players are startled but not afraid, and the scares become predictable. *Fix:* spend silence generously and save shocks for moments that break an established pattern.
+* **Monster Overexposure:** The creature is shown in full light early and often. *Symptom:* by the midpoint, the monster is a known quantity and fear has drained away. *Fix:* ration visibility; let the player's imagination do the work for as long as possible.
+
+### Neighboring Souls
+
+* **Dwarven:** Both are built on scarcity. Mansion scarcity is authored and hand-tuned to produce dread; Dwarven scarcity is emergent and indifferent.
+* **Ashen:** Both make the player afraid of a hostile, interconnected space. Ashen fear is about the player's own skill; Mansion fear is about what's waiting around the next corner.
+
+### The "Mansion" Litmus Test
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Ammo** | Can the player kill every enemy they encounter? | **No.** If they can, it's an action game wearing a horror costume. |
+| **The Safe Room** | Can an enemy follow the player into the save room? | **No.** Or once, and never again. |
+| **The Silence** | Does the scariest moment in this area involve no enemy at all? | **Yes.** The hallway did the work. |
+| **The Stalker** | Can this pursuer be killed with enough bullets? | **No.** It can only be outwitted. |
+
+*"You do not need a thousand monsters when you have four bullets, a door that wasn't open before, and footsteps in the room directly above you."*

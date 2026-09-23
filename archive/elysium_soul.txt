@@ -1,0 +1,100 @@
+## The "Elysium" Game Soul Guide
+
+**A Framework for Interior Conflict, Failure as Content, and Dialogue as the Primary Verb**
+
+The soul of games like *Disco Elysium*, *Planescape: Torment*, *Pentiment*, *Citizen Sleeper*, and *Kentucky Route Zero* can be distilled into a single philosophy: "The most dangerous dungeon is the protagonist's own head."
+
+On the surface, these games look like walls of text with a character slowly wandering an isometric street. There is barely any combat. Beneath the surface lies a fully mechanical RPG where skills are personalities, stats are character flaws, and conversation is the combat system. The dice still roll and the numbers still matter, but they express *who you are*, not how hard you hit.
+
+If you want to instill this exact soul into a new game, use this guide as your design bible.
+
+### Pillar 1: The Self as a Party
+
+In most RPGs, you control a party of companions. In an Elysium-style game, the party lives inside the protagonist. Every skill is a voice with an opinion.
+
+**Design Rules:**
+
+* **Skills Are Characters:** Each stat is an inner voice that interjects, argues, flatters, and gives terrible advice. A high skill doesn't just succeed more often; it speaks louder and more often.
+  * *Example:* A protagonist with a high "Paranoia" skill notices the bartender's hand drifting beneath the counter toward a weapon. The same skill, moments later, becomes convinced the potted fern is a government informant. Both warnings are delivered with identical confidence, and the player must decide which voice to trust.
+
+* **Every Strength Is a Weakness:** No stat is purely good. High physical instinct means the body keeps demanding a fight. High logic means you disappear down pedantic rabbit holes mid-conversation. High empathy means you feel everyone's pain, including the murderer's.
+
+* **The Build Is a Personality:** Two players with different builds should have completely different conversations with the same NPC. The build is not how the character fights; it is who the character is.
+
+* **Or Let the Past Speak:** If you don't use skill voices, build the protagonist's interior from chosen history instead. Background choices (where they studied, where they've traveled, what they've lost) unlock and color dialogue options the same way a skill voice would.
+
+### Pillar 2: Failure Is the Richest Branch
+
+In most games, failing a check closes a door. In this soul, failure opens a different door, and it is frequently the more interesting one.
+
+**Design Rules:**
+
+* **Write Failure with More Care than Success:** Failed checks should be funnier, sadder, stranger, or more revealing than the successes.
+  * *Example:* The player fails a check to climb a fire escape, falls, and sprains an ankle. The resulting limp causes a suspicious landlady to take pity and invite them in for tea, where she reveals the clue they would have never gotten by breaking in competently.
+
+* **Retryable vs. Permanent Checks:** Distinguish checks that can be retried after the character grows from checks that are one-shot and final. The permanent ones carry real weight; the retryable ones reward returning later as a changed person.
+
+* **Kill the Reload Reflex:** Design failure to be so rich that the player stops reaching for the quick-load key. If players save-scum every check, your failure branches aren't good enough.
+
+### Pillar 3: Conversation as Combat
+
+Dialogue is not the thing you do between fights. Dialogue *is* the fight, with stakes, resources, and consequences.
+
+**Design Rules:**
+
+* **Words Deal Damage:** Give the protagonist a psychological health pool alongside the physical one. Humiliation, guilt, and existential dread wound it. A character can be talked to death.
+
+* **Rhetoric as Weapon Choice:** Each conversation offers tactics (empathy, intimidation, flattery, lies, logic, and silence) that land differently depending on who you are talking to and who you've become.
+  * *Example:* An interrogation plays out like a boss fight. The suspect has a hidden Composure meter. Pressing on their alibi erodes it; mentioning their daughter shatters it; a clumsy lie from the player restores it completely.
+
+* **Silence Is a Valid Answer:** Saying nothing, walking away, or refusing to answer must always be an option, and it must have consequences of its own.
+
+### Pillar 4: Ideology as Equipment
+
+Beliefs are not flavor. They are items the player picks up, equips, and lives with.
+
+**Design Rules:**
+
+* **Thoughts as Gear:** Let the player internalize ideas they encounter in conversation. Once "equipped," a thought grants concrete bonuses and penalties, like a political worldview worn as armor.
+  * *Example:* Adopting the thought "Nihilist Accountant" grants +2 to Logic checks involving money, but costs 1 Morale every time an NPC is sincerely kind to you.
+
+* **The World Hears You:** NPCs remember what the player has said they believe and respond to it. Declaring yourself a revolutionary in the first hour has consequences in the thirtieth.
+
+* **No Morality Meter:** Ban the Good/Evil bar. Consequences come from specific choices affecting specific people, not from accumulating abstract alignment points.
+
+### Variants & Exceptions
+
+* *Disco Elysium* is the only game in the list that implements all four pillars literally: skill voices, retryable vs. permanent checks, psychological health, and a cabinet of equippable thoughts.
+* *Planescape: Torment* predates skill voices but carries the core: combat is largely avoidable, a high-Wisdom, high-Intelligence protagonist has entirely different conversations, and failure (including death itself) is frequently a narrative door.
+* *Pentiment* and *Kentucky Route Zero* have no dice at all. *Pentiment* builds the protagonist's interior from chosen background history ("Let the Past Speak" in Pillar 1); *Kentucky Route Zero* lets the player define characters' pasts and feelings through dialogue choices. Both keep the spirit of Pillars 2–4 (choice over skill, conversation as the primary verb, belief as identity) without the RPG math.
+* *Citizen Sleeper* replaces skill checks with a daily pool of dice that shrinks as the protagonist's body degrades, making the self a literal, failing resource.
+
+### What This Soul Costs
+
+* **The Word Count Is the Budget:** This soul is bound by writing. Branching dialogue for every skill, failure, and belief multiplies text volume dramatically; the flagship games run from hundreds of thousands to around a million words. Scope the number of skills, checks, and thoughts to what your writers can produce at quality.
+* **Voice Acting Multiplies Everything:** Fully voicing a branching script this large is enormously expensive. Many games in this soul ship with partial or no voice acting for a reason.
+* **Reactivity Testing:** Every belief, failed check, and background choice alters later conversations. The number of states to test grows combinatorially; build debug tools that can jump to any state early in development.
+* **A Reading Audience:** Players must enjoy reading a great deal. The soul trades mass-market reach for a devoted literary audience.
+
+### How It Fails
+
+* **Failure as Punishment:** A failed check just closes a door with a flat "You fail." *Symptom:* players save-scum every roll. *Fix:* write every failure as a scene worth seeing.
+* **Voices Without Personalities:** Skills speak, but they all sound like the same narrator. *Symptom:* the build doesn't change the experience. *Fix:* give each voice a distinct vocabulary, temperament, and agenda, and let them disagree with one another.
+* **Walls of Undifferentiated Text:** Long passages with no choices, no checks, and no stakes. *Symptom:* players skim. *Fix:* keep conversations interactive; every few lines should offer a meaningful choice, a check, or an inner voice reacting.
+* **Choice Without Consequence:** Beliefs and failures are acknowledged once, then forgotten. *Symptom:* players stop believing their choices matter. *Fix:* track what the player has said and done and pay it off, even hours later, even in small ways.
+
+### Neighboring Souls
+
+* **Loathing:** Both are writing-led and text-heavy. Loathing uses writing to make a mechanic funny; Elysium uses mechanics to explore a person.
+* **Looking Glass:** Both let the player solve problems in many ways. Looking Glass solves them with physics and tools; Elysium solves them with words, and with who you've decided to become.
+
+### The "Elysium" Litmus Test
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Failure** | When the player fails this check, do they get less content? | **No.** They get different, often better, content. |
+| **The Voices** | Does a high stat change what the protagonist *thinks*, or only what succeeds? | **What they think.** Skills are personalities, not success percentages. |
+| **The Morality** | Is there a Paragon/Renegade meter tracking the player's goodness? | **No.** Beliefs are specific, messy, and equippable. |
+| **The Combat** | Could the player finish the game without ever throwing a punch? | **Yes.** Words are the weapons. |
+
+*"You do not need a combat system when you have a skill check, a hangover, and a protagonist whose inner voice of Reason just lost an argument with his own necktie."*

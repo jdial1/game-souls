@@ -1,0 +1,44 @@
+## Component: Synergy Engines
+
+**The principle:** Pieces (cards, gear, tools, pets, perks) interlock in non-obvious ways, and the right combination produces results far greater than the sum of its parts.
+
+**Used by:** Looking Glass, Loathing, Spire, Containment
+
+### Design Rules
+
+* **Multiply, Don't Add:** Design pieces that multiply one another rather than stacking linear bonuses. A correct combination should turn a modest build into an absurd one.
+  * *Example (Spire):* A card that doubles poison stacks, a card that applies poison whenever the player blocks, and a relic that grants block every time a card is discarded. Separately, they're mediocre. Together, the final boss dies in one turn.
+
+* **Cross-System Combos:** The best synergies connect systems that weren't obviously related.
+  * *Example (Loathing):* A hat that gives +2 to linguistic damage combos with a pet that drops punctuation marks, creating an unexpected micro-build.
+  * *Example (Looking Glass):* A proximity mine stuck to a thrown severed arm.
+
+* **Balance the Average, Not the Ceiling:** Tune so an average build or run is tense and winnable, then let skilled players break it wide open. Patching out a legendary combo punishes the players who found it.
+
+* **Unwritten Interactions:** Don't spell out every combo. Let players discover that two unrelated pieces form an infinite loop.
+
+* **Encourage Spreadsheeting:** The community should feel compelled to write wikis, calculate soft caps, and optimize. Deep synergies are what make that worthwhile.
+
+### Tuning by Soul
+
+* **Spire:** Synergies are assembled inside a single run and discarded afterward.
+* **Loathing:** Synergies accumulate across gear, familiars, buffs, and permanent skills, over years.
+* **Looking Glass:** Synergies are between tools and the environment, and are improvised in the moment.
+* **Containment:** Synergies are geometric. Parts multiply the parts they touch, so the combination is an arrangement, not a set.
+
+### What It Costs
+
+* **Combinatorial Balance:** Every new piece multiplies against every existing one. Finding degenerate combos needs automated simulation or huge volumes of playtesting, plus a clear philosophy about which ones to keep.
+* **Power Creep:** In persistent games, each new piece raises the ceiling further. Rolling back power betrays veteran players.
+
+### How It Fails
+
+* **The Dominant Strategy:** One build or tool wins so reliably that everyone converges on it. *Symptom:* every playthrough looks the same. *Fix:* give tools costs or counters, and make the pieces of the top build rarely appear together.
+* **Additive Blandness:** Every piece is "+10% damage." *Symptom:* choices feel interchangeable. *Fix:* design pieces that change *how* you play, not just how much.
+* **Illegible Combos:** Interactions are so opaque that nobody can reason about them. *Symptom:* players pick at random. *Fix:* keep each piece's own rule clear, even if the combinations are hidden.
+
+### Litmus
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Break** | Can a skilled player assemble a combination that trivializes a major challenge? | **Yes.** That's the jackpot, not a bug. |

@@ -1,0 +1,261 @@
+## LLM Guide: Building a Game Soul by Cross-Comparison
+
+This guide teaches a language model how to extract a soul from an existing game, compare it against the library, and use the result to instill that soul in a new game.
+
+The core idea: **a soul = axis positions + components + residue.** Axes and components are shared vocabulary. The residue (what nothing in the library explains) is what makes a soul distinct.
+
+---
+
+### The Procedure at a Glance
+
+| Step | Name | Output |
+| --- | --- | --- |
+| 1 | Intake | A fact sheet of the game's concrete mechanics |
+| 2 | Axis Profiling | A position on each of the six axes, with evidence |
+| 3 | Component Extraction | Which components are present, and how they're tuned |
+| 4 | Residue Hunting | The elements no axis or component explains |
+| 5 | Cross-Comparison | The nearest existing souls and a classification verdict |
+| 6 | Soul Writing | A new or updated soul file (only if the verdict calls for it) |
+| 7 | Validation | Litmus test, tension check, tone-killer check |
+| 8 | Instillation | A gap analysis for a target game (only if requested) |
+
+Do not skip steps 2–4. Jumping straight to "this is like Dark Souls" produces shallow souls.
+
+---
+
+### Step 1: Intake
+
+Build a fact sheet before interpreting anything. List only observable facts.
+
+**Key questions:**
+* What does the player do, moment to moment? (The core verbs.)
+* What happens when the player fails? Exactly what is lost?
+* What resources exist, and which one runs out first?
+* How is information delivered? (UI, text, voice, environment, community.)
+* How does the player get stronger, if at all? What carries over between sessions?
+* How long is a session? How long is a full playthrough? Is it meant to be replayed?
+* What do players tell each other about the game afterward? (Stories, strategies, secrets.)
+
+If you don't know a game well enough to answer these, stop and ask the user for the missing facts.
+
+---
+
+### Step 2: Axis Profiling
+
+Place the game on each axis. Read the axis file for the full list of positions. Give one piece of evidence per axis. A game can take different positions on the rules and on the current state (see "Rules vs. State" in axes/information.txt).
+
+| Axis | Diagnostic Questions |
+| --- | --- |
+| **Failure** (axes/failure.txt) | What exactly is lost on failure: seconds, resources, progress, the story branch, or everything? Do players reload to avoid it? Is failing ever more interesting than succeeding? |
+| **Information** (axes/information.txt) | What does the player know that they didn't discover themselves? Are enemy intentions shown? Are the rules explained, hidden, or taught through play? Can the protagonist's perception be wrong? |
+| **Authorship** (axes/authorship.txt) | When players tell stories about this game, whose story is it: the designer's plot, their clever solution, who their character became, their build, or what the simulation did? |
+| **Power** (axes/power.txt) | What does "getting stronger" mean: reflexes, tools, knowledge, builds, persuasion, or managing others? Can the player afford to fight everything? |
+| **Tone** (axes/tone.txt) | What emotion does the game sustain for hours, not just in its best moment? What single mechanic, if added, would destroy that emotion? |
+| **Structure** (axes/structure.txt) | Is play one journey, a persistent world, a chronicle, a series of runs, a rebirth account, or levels? What resets, and what persists? |
+
+**Watch for:** Positions that don't exist yet. If no named position fits, describe the new position precisely. That is often the first sign of residue.
+
+---
+
+### Step 3: Component Extraction
+
+Check the game against every component. Use the fingerprints below to detect each one, then read the component file to confirm and to describe the tuning.
+
+| Component | Fingerprints (signs it's present) | Key Question |
+| --- | --- | --- |
+| legible_failure | Telegraphed attacks, intent icons, damage previews, mood tooltips, combat logs | After a loss, can the player name the exact cause? |
+| failure_as_content | Failure branches, recoverable death drops, dramatic collapses, loop resets that reveal things | Does failing produce new content rather than a rewind? |
+| systemic_consistency | Elemental interactions, NPCs reacting to each other, no boss immunities, material properties | Does every rule hold everywhere, including the finale? |
+| living_world | NPC schedules, suspicion states, factions acting off-screen, relationships with memory | Does the world keep running when the player does nothing? |
+| environmental_storytelling | Notes, item descriptions, ruins, audio logs, lore without cutscenes | Is the story found rather than told? |
+| trusting_the_player | No waypoints, visible destinations, wordless tutorials, clues the player must notice | Does the game assume the player is smart? |
+| interlocking_space | Shortcuts, hub revisits, locked doors marked with their key, rare safe rooms | Is the world one folded space the player learns? |
+| scarcity_economy | Limited ammo, saves, turns, inventory, oxygen, energy | Can the player afford to do everything? |
+| synergy_engines | Builds, combos, multiplicative items, community theorycrafting | Can a combination break the game open? |
+| difficulty_ladder | Ascension levels, heat systems, restriction runs, new game plus, speedrun culture | After the credits, is there a harder, stranger way to play? |
+| theme_as_mechanic | Renamed stats, systems that literalize the theme, emotions as resources | Would the mechanic collapse without the theme? |
+| diegetic_interface | Menus that don't pause, health shown on the body, in-world maps | Does the interface live inside the fiction? |
+| shared_discovery | Player messages, ghosts, community puzzles, unannounced secrets | Can other players change this player's experience? |
+
+For each component found, record:
+* **Evidence:** the concrete mechanic.
+* **Tuning:** how this game sets the dial, compared with the "Tuning by Soul" notes in the component file.
+* **Strength:** Core (the game collapses without it), Supporting (it clearly matters), or Trace (it's there but minor).
+
+Only Core and Supporting components belong in a soul's component list.
+
+---
+
+### Step 4: Residue Hunting
+
+Residue is everything important about the game that axes and components don't explain. This is where a soul's signature pillars come from.
+
+**Key questions:**
+* What would a devoted player say is the *heart* of the game that isn't in your component list?
+* What design decision would the developers refuse to cut, even under budget pressure?
+* What would be lost if a competent team rebuilt the game using only the components you found?
+* Is there a mechanic that does double or triple duty in a way no component describes?
+* Is there a progression system, verb, or constraint that doesn't match any existing pattern?
+
+**Test each residue candidate:**
+1. Is it already covered by a component? If yes, it's tuning, not residue.
+2. Is it specific to one game rather than a family of games? If yes, it's a variant note, not a pillar.
+3. Can you write it as a rule a designer could follow in a different game? If not, keep refining it.
+
+Aim for two to four residue items. More than five usually means some belong in components.
+
+---
+
+### Step 5: Cross-Comparison
+
+Compare the profile against every existing soul using the tables in README.txt.
+
+**Scoring:**
+* **Axis match:** Count how many of the six axes match each existing soul (partial matches count as half).
+* **Component overlap:** Count shared Core and Supporting components.
+* **Residue overlap:** Check whether any residue matches an existing soul's signature pillars.
+
+**Verdict:**
+
+| Verdict | When | Action |
+| --- | --- | --- |
+| **Member** | 5–6 axis matches, most components shared, residue matches that soul's signature pillars | Add the game to that soul's list of example games. |
+| **Variant** | 4–5 axis matches, but the game bends one or two rules | Add a line to that soul's "Variants & Exceptions" section. |
+| **Blend** | Two souls each explain about half the profile, and there's little residue | Describe it as a blend; name which soul leads on each axis where they disagree. No new file. |
+| **New Soul** | No soul gets 4+ axis matches, or there are 2+ residue items no soul covers | Proceed to Step 6. |
+
+**Key questions for the comparison:**
+* Which soul is nearest, and what exactly separates the game from it? (That separation becomes the "Neighboring Souls" entry.)
+* If the game were forced into its nearest soul, which of its own rules would that soul's litmus test fail?
+
+---
+
+### Step 6: Soul Writing
+
+Only for a New Soul verdict. Create souls/<name>.txt using the section order in README.txt ("Adding a New Soul").
+
+**Naming:** Choose one evocative word drawn from the source games' worlds or themes (existing examples: Ashen, Hearthian, Mansion, Toybox). Avoid genre names.
+
+**Philosophy:** One quotable sentence that could not describe any other soul. Test it against the neighbors: if it fits them too, sharpen it.
+
+**Signature Pillars:** Built from the residue. Each pillar gets an intro paragraph, then rules in the form **Rule Name:** explanation, with an italic *Example:* where helpful. Examples should be original, not scenes lifted from the source games.
+
+**Components:** List Core and Supporting components with a one-line tuning note each. Do not copy component rules into the soul file.
+
+**Variants & Exceptions:** For each example game that bends a rule, say which rule and why it still belongs.
+
+**Costs and Failure Modes:** Only the ones specific to this soul. Shared ones live in the components.
+
+**Litmus Test:** Four or five yes/no checks a designer could run on a single feature. Each answer should include a one-line reason.
+
+**Index updates:** Add the soul to both tables in README.txt, add it to the "Used by" and "Tuning by Soul" sections of each component it uses, and add it to each axis file's "Where Each Soul Sits" table.
+
+If the residue reveals a rule shared with an existing soul, create or extend a component instead of duplicating it.
+
+---
+
+### Step 7: Validation
+
+Run all of these before presenting a soul:
+
+* **Litmus self-test:** Do the source games pass the new soul's own litmus test? If a key source game fails, either the test or the game list is wrong.
+* **Tension check:** Read the "Tensions" section of each axis file. Does the profile hit a known conflict? If yes, explain how the source games resolve it.
+* **Tone-killer check:** Name the single mechanic that would destroy this soul's tone, and add it to axes/tone.txt.
+* **Neighbor check:** Could the philosophy sentence describe a neighboring soul? If yes, sharpen it.
+* **Duplication check:** Does any signature rule already appear in a component or another soul? If yes, move it.
+
+---
+
+### Step 8: Instillation (Applying a Soul to a Target Game)
+
+When the user wants to give a game in development a particular soul, perform a gap analysis.
+
+1. **Profile the target** using Steps 1–3 on the target game's current design.
+2. **Diff the axes.** For each axis where the target differs from the soul, state the gap and the smallest design change that closes it.
+3. **Diff the components.** For each component the soul uses that the target lacks or tunes differently, recommend concrete changes, citing the component file's rules.
+4. **Apply the signature pillars.** For each pillar, ask: "What would this rule look like in the target's genre?" Translate the rule; don't copy the source game's mechanic.
+5. **Hunt for tone killers.** Check whether the target already contains the mechanic listed in axes/tone.txt for this soul. This is usually the highest-priority fix.
+6. **Run the soul's litmus test** against the target's key features and report pass or fail for each row.
+7. **Prioritize.** Rank recommendations: tone killers first, then axis gaps, then missing Core components, then signature pillars.
+
+**Key questions for instillation:**
+* What does the target game do today that directly contradicts the soul?
+* Which single change would move the target closest to the soul?
+* Which parts of the soul don't translate to the target's genre, and what is the genre-appropriate equivalent?
+* What will this soul cost the target (see the soul's and components' cost sections), and can the team afford it?
+
+---
+
+### Output Formats
+
+**Analysis Report (Steps 1–5):**
+
+```
+## Soul Analysis: <Game>
+
+### Fact Sheet
+- ...
+
+### Axis Profile
+| Axis | Position | Evidence | Confidence |
+
+### Components
+| Component | Strength | Evidence | Tuning |
+
+### Residue
+1. **<Name>:** description. Why no component covers it.
+
+### Cross-Comparison
+| Soul | Axis Matches | Shared Components | Residue Overlap |
+
+### Verdict
+Member / Variant / Blend / New Soul, and why in two or three sentences.
+```
+
+**Instillation Report (Step 8):**
+
+```
+## Instilling <Soul> into <Target Game>
+
+### Tone Killers Found
+### Axis Gaps
+| Axis | Soul | Target Today | Recommended Change |
+### Component Gaps
+| Component | Status | Recommended Change |
+### Signature Pillars, Translated
+### Litmus Results
+| Check | Pass/Fail | Note |
+### Prioritized Recommendations
+1. ...
+### Cost Warning
+```
+
+Use Confidence values of High, Medium, or Low. Mark every Low item for the user to verify.
+
+---
+
+### Worked Example (Abbreviated): Subnautica
+
+*This example shows the method, not a finished soul. Verify game facts with the user before building on it.*
+
+**Axis Profile**
+
+| Axis | Position | Evidence |
+| --- | --- | --- |
+| Failure | Costly | Death costs some carried items and returns the player to the last safe point. |
+| Information | Oblique / Observed | Lore and navigation come from scanning, recovered logs, and radio signals. |
+| Authorship | Designer-Authored mystery inside a player-driven sandbox | The main story is fixed; the order of exploration is the player's. |
+| Power | Poor, becoming Toolkit | Starts nearly defenseless; power arrives as equipment and vehicles that extend reach, not as combat strength. |
+| Tone | Wonder and Dread (no existing single position fits) | Beautiful shallows; terrifying depths. |
+| Structure | Persistent World / Single Journey | One continuous world, one story arc. |
+
+**Components (Core/Supporting):** scarcity_economy (oxygen is the defining bottleneck), environmental_storytelling (logs and wrecks), living_world (a predator ecosystem that doesn't scale to the player), trusting_the_player (few objective markers; signals invite rather than direct).
+
+**Residue candidates:**
+1. **Depth Is the Difficulty Curve:** Danger scales with physical depth and distance, not with level or story progress. The player chooses their own difficulty by choosing how far to go.
+2. **The Tool Is the Key:** Progress is gated by equipment that extends survival (more oxygen, deeper-rated vehicles). This is the opposite of Hearthian's knowledge lock, which suggests a real distinction.
+3. **Wonder-Dread Oscillation:** The tone deliberately alternates between beauty and terror, rather than holding one.
+
+**Cross-Comparison:** Nearest are Hearthian (exploration, oblique information; differs on power and failure), Mansion (scarcity, dread; differs on structure and power), and Dwarven (survival, indifferent world; differs on authorship). No soul reaches four axis matches, and three residue items are uncovered.
+
+**Verdict:** New Soul candidate, a "frontier survival" soul whose philosophy centers on the environment as the adversary and depth as the difficulty dial. It also points to a possible new tone position ("Wonder-Dread") to add to axes/tone.txt.

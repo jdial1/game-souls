@@ -1,0 +1,143 @@
+## The "Casebook" Game Soul
+
+**A Framework for Rationed Certainty, the Answer as the Record, and the Case in Installments**
+
+The soul of games like *Chronicle Cryptogram*, *The Case of the Golden Idol*, *Duck Detective: The Secret Salami*, *Sherlock Holmes Consulting Detective*, *Clues by Sam*, and *Murdle* can be distilled into a single philosophy: "Nothing goes in the file until you can prove it."
+
+On the surface, these are desk games: a page, a pencil, a few names, and a crime that has already happened to someone else. There is no danger, nothing to explore, and nothing to level up. Beneath the surface lies a contract between the game and the player. Everything needed to reach the answer is on the page. The game won't say whether a guess is right until the player commits to it, and it charges for asking. When the answer is proven, it is written into the case record as a line of the story. The player isn't reading a mystery. They are writing the account of one, a line at a time, and every line has to survive a check.
+
+### Axis Positions
+
+| Axis | Position |
+| --- | --- |
+| Failure | Trivial (the board) / Costly (the receipt) |
+| Information | Fair Play (the answer) / Taught (the rules) |
+| Authorship | Designer-Authored (the case) / Designer Space, Player Solution (each page) |
+| Power | Understanding (of the craft and of the case) |
+| Tone | Armchair Intrigue |
+| Structure | Serial |
+
+### Components
+
+* **components/trusting_the_player.txt:** Trust the player to deduce. The board records what they've spotted and shows counts without advice.
+* **components/scarcity_economy.txt:** The scarce resource is certainty. A few checks and revealed answers per installment, shared across its pages, so asking now means not asking later.
+* **components/legible_failure.txt:** Legibility is retroactive and exact. A failed check names the one wrong mark, and a solved page makes every step look obvious in hindsight.
+* **components/systemic_consistency.txt:** One symbol means one thing everywhere on the page, identically on every device. A harder page departs from the primer only by a stated rule.
+* **components/environmental_storytelling.txt:** The case arrives as documents: clippings, dossiers, telegrams, a ledger.
+* **components/theme_as_mechanic.txt:** Investigation is the mechanic. Decoding, deducing, and filing are the fiction's own acts; help is a stingy institution, never a power-up.
+* **components/interface_voice.txt:** A period institution's voice that must stay truthful. Times are printed "as filed," and even errors stay in period.
+* **components/difficulty_ladder.txt:** The ladder lives inside each installment: a second page opens after the first, harder because one rule changes.
+
+### Signature Pillar 1: The Answer Is the Account
+
+In most puzzle games, a solution is a checkmark: the level ends, and whatever the player worked out is thrown away. In a Casebook-style game, the solution is a sentence, and the game keeps it. What the player proved is written into the fiction's record, and the record is the story.
+
+**Design Rules:**
+
+* **Solve in Sentences:** The answer is a statement about the case (who, with what, where, why), not an index or a button. When the player finishes, they have written something.
+  * *Example:* A page about a stolen racehorse doesn't end with "Correct!" It ends with a filled-in line of the stable ledger: "The groom led her out at four, by the east gate, for the bookmaker's cousin."
+
+* **The Record Quotes the Player:** Where the story is gathered (a case file, a dossier), show the player's own proven answers inside it, marked as theirs. The case file isn't a reward screen; it is the solving, collected. It shows only what has been proven, never a list of what's still locked.
+
+* **The Frame Is the Crib:** The prose around a page gives the player everything except the line that matters. Reading it should make the puzzle easier, never spoil it.
+  * *Example:* An article reports the harbourmaster was seen with "a man in a green coat." The cipher beneath it has a seven-letter word where a name should be. A player who read the article tries the only seven-letter name the case has mentioned, and the line falls open.
+
+* **The Revelation Is Behind the Lock:** Put the turn of the story (the confession, the name) in the answer, not the frame. A frame that gives away the twist turns the puzzle into a chore.
+
+* **You Can't Skip the Story Without Skipping the Puzzle:** Story and puzzle are the same text. If a player could tap past every story beat and still solve every page, the story is wallpaper.
+
+### Signature Pillar 2: The Committed Guess
+
+A game that says "wrong" the instant a wrong answer appears is a guessing machine. A Casebook-style game stays silent until the player commits, charges for every question, and prints what was spent.
+
+**Design Rules:**
+
+* **Silence Until Committed:** No red letters while typing, no chime on a right guess, no count of how many are still wrong. That includes interface state: a button that greys out only when a guess is correct is an oracle too. The page confirms itself only when complete and correct, or when the player pays to ask.
+
+* **A Check Costs the Same, Right or Wrong:** If a correct guess refunds the check, the check becomes a free oracle for the confident. Charge for the question, not the answer.
+
+* **Confirm Narrowly, or Confirm in Sets:** A check tests one claim, or confirms only once several claims are right together. A check that reports "four of these are wrong" is a free sweep.
+
+* **Print the Help Taken:** The result records every hint and check spent, and ranks a clean solve above a fast one. Any help outside the ration, like a free "clue of the day," is either counted and printed or doesn't exist.
+
+* **Tradecraft, Not Power-Ups:** Help is framed as the fiction's institution being stingy (the Bureau tells you one letter; the inspector allows three questions), never as a meter that refills or a pack that can be bought. Once help is for sale, a wrong guess costs money instead of pride.
+
+### Signature Pillar 3: The Sealed Page
+
+A Casebook-style game is told in installments, and each one is a promise: this page can be finished, with the evidence in front of you, in one sitting.
+
+**Design Rules:**
+
+* **Everything on the Page:** Every fact needed is in the installment, or in ones already solved. Nothing depends on outside knowledge, luck, or a guess between two equally good readings.
+
+* **Fair Play Is Provable:** Ship a solver that *deduces*, not one that reads the answer key, and run it in the tests. Every page has exactly one answer, reachable without guessing. Short texts are where ambiguity hides.
+
+* **One Sitting:** An installment fits in a coffee break. If it needs two sittings, it is two installments.
+
+* **Close the Puzzle, Open the Case:** Each page ends completely (stamped, filed, done), but the last proven line raises the next question.
+  * *Example:* A page's decoded line reads "She never boarded the train." The page is stamped solved; the widow's alibi now has a hole, and the next page is a railway timetable.
+
+* **Harder by a Rule, Not by Size:** Difficulty climbs by changing one rule the player can name (a letter that now has two symbols, a suspect who can lie), and the handbook says so.
+
+* **Progress, Not the Calendar:** Installments open when the previous one is solved, not when a date arrives, and rations belong to the installment. A dated serial invents streaks, missed days, and notifications that stop being true the moment a player falls behind.
+
+### Signature Pillar 4: The Player Works the File
+
+The player isn't a reader of the story or the famous detective. They are a clerk, an agent, or a junior inside the fiction's institution.
+
+**Design Rules:**
+
+* **A Role, Not an Avatar:** Give the player a job in the fiction (agent of the Bureau, clerk of the court) and keep the famous detective as a colleague. The player *works* the edition; they do not *read* it.
+
+* **The Institution Speaks:** Everything the interface says (hints, results, records, even errors) is said by the institution the player works for, in its voice. Its stinginess, its forms, and its stamps are the game's personality.
+
+### Field Notes
+
+How *Chronicle Cryptogram* implements each pillar, and where it broke or still breaks them, is recorded in souls/field_notes/casebook.txt. Those notes are a dated snapshot of a codebase; this file is the philosophy.
+
+### Variants & Exceptions
+
+* *The Case of the Golden Idol* is the Account in its purest form: sentence templates filled with words found in the scene. On submission it says only that slots are wrong, or that "two or fewer" are wrong, never which: "Confirm in Sets," made generous on purpose. Players can still test one word at a time, the weakness of set confirmation.
+* *Duck Detective: The Secret Salami* uses the same templates and feedback. Its easier Story Mode highlights wrong words: an opt-in Oracle for accessibility, which is the right way to bend "Silence Until Committed," as a mode the player chooses and never a leak.
+* *Sherlock Holmes Consulting Detective* is "Print the Help Taken" in its purest form: players lose points for every lead beyond the number Holmes needed. It bends "One Sitting."
+* *Clues by Sam* accepts a mark only if it can be proven, refusing unprovable marks ("not enough evidence") even when they happen to be right. It rewards proof over confidence, the purest statement of the soul.
+* *Murdle* solves in sentences ("It was X, with Y, in Z") and climbs by adding rules (liars, motives). Its comic register bends the tone toward farce, but the murders stay logic, not horror.
+* *Return of the Obra Dinn* and *The Roottrees Are Dead* are Hearthian kin: their ledgers are the Account, and Obra Dinn's confirmation in threes is "Confirm in Sets" at its best, but each is one bounded investigation rather than installments.
+* Daily-puzzle kin (*Wordle*, the *New York Times* crossword, whose gold star requires solving without Check or Reveal) share the Committed Guess, but with no case there's no Account, and their calendar pulls them toward a Ritual structure.
+
+### What This Soul Costs
+
+(Shared costs live in the component files: writing discipline, fragile economy tuning, copy as design work.)
+
+* **Every Page Is Spent Once:** A solved page can't be unsolved. Content burns at the speed of the player's best sitting; budget the next season before the first one ships.
+* **Writing Under Two Constraints:** Each answer line must advance the case and be a fair puzzle (right length, right letter patterns, one reading). Writer and puzzle-setter have to be the same person, or share a desk.
+* **Fairness Needs Tooling:** Uniqueness can't be eyeballed. A deducing solver and a test that fails on any page with two readings are part of the content pipeline.
+* **Spoilers Travel Faster than Pages:** Each answer is a line of plot; one screenshot gives away the solution and the story together.
+
+### How It Fails
+
+(Shared failure modes live in the component files: moon logic, theme as paint, the Flavourful Lie.)
+
+* **The Oracle:** Feedback leaks: wrong letters flagged as typed, a check that refunds on success, an undo that returns a spent ration, or a control that behaves differently when a guess is right. *Symptom:* players cycle letters, or read the controls instead of the page. *Fix:* audit every surface that could reveal correctness; compare the screen with a right guess and a wrong one.
+* **The Stopwatch Takeover:** Speed becomes the prestige: the clock shows tenths, the board ranks by time, and reading the frame costs seconds. *Symptom:* players skip the story and guess. *Fix:* rank by help first and time second, and stop the clock while the player reads the case.
+* **Wallpaper Story:** The case sits beside the puzzles instead of inside them. *Symptom:* players solve without reading and can't say what happened. *Fix:* apply "The Frame Is the Crib" and "The Revelation Is Behind the Lock" to every page.
+* **The Unproven Case:** The player proves every line but never decides anything about the crime. *Fix:* at the end of each arc, let the player file a finding built from lines they proved, checked by the same rationed rules.
+
+### Neighboring Souls
+
+* **Hearthian:** Both make understanding the only power. Hearthian is one bounded world assembled in any order; Casebook is a sequence of sealed pages that each close into a record the player keeps.
+* **Elysium:** Both are detective stories told in text. Elysium's information is filtered through an unreliable mind; Casebook's is fair and complete.
+* **Ampersand:** Both withhold confirmation until the player commits. Ampersand withholds another person's answer, and the reveal is the point; Casebook withholds the truth of a fixed case, and the proof is the point.
+* **Spire:** Both measure a result by efficiency. Spire shows every number; Casebook hides one answer behind a fair page and asks how little help the player needed.
+
+### The "Casebook" Litmus Test
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Account** | When the player proves an answer, does it appear in the fiction's record as a line of the story? | **Yes.** The case file is the solving, collected. |
+| **The Oracle** | Can the player learn that a guess is wrong, or right, without spending anything? | **No.** Every confirmation costs a ration. |
+| **The Receipt** | Does the result print the help taken, and rank a clean solve above a fast one? | **Yes.** The measure is how little you needed. |
+| **The Solver** | Can a program prove that every page has one answer, reachable without guessing? | **Yes.** Fair play is a test, not a promise. |
+| **The Sitting** | Can one installment be finished, with complete closure, in one sitting? | **Yes.** Close the puzzle; leave the case open. |
+
+*"You do not need a crime scene when you have a folded newspaper, three checks the Bureau begrudged you, and a line of type that turns into a confession under your pencil."*

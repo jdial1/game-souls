@@ -1,0 +1,55 @@
+## Axis: Information
+
+**The question:** How much does the player know, and how do they come to know it?
+
+### Positions
+
+* **Hidden:** The threat is deliberately withheld: fixed camera angles, darkness, sound before sight. Uncertainty is the point.
+* **Oblique:** Everything is knowable, but nothing is explained. The truth is scattered and must be assembled by the player (or the community).
+* **Observed:** The player learns by watching a running world: eavesdropping, reading notes, studying patrol routes. Information is accurate but must be gathered.
+* **Taught:** The rules are revealed by play itself, one at a time, in a safe context. The player learns by doing, not by reading.
+* **Total:** Every number, intent, and cause is shown. The challenge is deciding, not discovering.
+* **Filtered:** Information arrives through the protagonist's unreliable mind. Correct and incorrect voices speak with the same confidence.
+* **Sealed:** Each player's move is withheld from the other until both have committed, then shown to both in full at once. What's hidden is not the world but the other player's mind, and the reveal is the payoff.
+* **Fair Play:** The answer is withheld, but everything needed to deduce it is in front of the player, and nothing needed is anywhere else. The rules are explained; confirmation is rationed. The game won't say a guess is wrong until the player pays to ask.
+
+### Rules vs. State
+
+A soul can take different positions on *the rules* of the world and *the current state* of the world. This distinction is where most of the interesting design lives.
+
+* **Spire** shows both the rules and the state. Nothing is hidden; the difficulty is pure decision-making.
+* **Ashen** hides the rules of the world (lore, secrets, hidden walls) but shows combat state honestly (the enemy's wind-up is always visible).
+* **Mansion** shows the rules (the stalker hunts by sound) but hides the state (where it is right now).
+* **Hearthian** hides the rules, and discovering them is the entire game.
+* **Ampersand** shows the rules and hides exactly one piece of state, the other player's answer, from both sides equally, until both have committed.
+
+### Design Implications
+
+* Hidden and Oblique information require absolute consistency. The player can only reason about what they can't see if the rules never change (components/systemic_consistency.txt).
+* Total information moves the challenge from knowledge to optimization. Pair it with a combinatorial space deep enough to stay hard (components/synergy_engines.txt).
+* Oblique information depends on the player trusting that every clue is real (components/trusting_the_player.txt).
+
+### Tensions
+
+* **Hidden + Punishing failure** feels unfair. Mansion keeps failure at Costly for exactly this reason.
+* **Total + shallow systems** produces a solved game. If everything is visible, the possibility space has to be enormous.
+* **Sealed + a payout for matching** undermines the seal. The seal protects honest answers; a reward for matching pays players to answer what they think the other will predict. Ampersand pays flat for this reason.
+* **Fair Play + free confirmation** collapses deduction into guessing. If a wrong answer is flagged the moment it appears, the player cycles candidates instead of reasoning. Casebook charges for every check, right or wrong, for this reason.
+
+### Where Each Soul Sits
+
+| Soul | Position | In Practice |
+| --- | --- | --- |
+| Looking Glass | Observed | Passwords on clipboards, overheard conversations, stolen blueprints. |
+| Dwarven | Total (state) / Oblique (world) | Every mood and wound is itemized; the wider world's events arrive unannounced. |
+| Loathing | Oblique | Unexplained mechanics the community reverse-engineers into wikis and spreadsheets. |
+| Ashen | Oblique (rules) / Total (combat) | Lore hidden in item descriptions; every attack telegraphed. |
+| Hearthian | Oblique | The rules of the world are the mystery. |
+| Elysium | Filtered | Your own skills may be lying to you. |
+| Spire | Total | Enemy intents, damage previews, full tooltips. |
+| Toybox | Taught | The first obstacle teaches the mechanic. |
+| Mansion | Hidden (state) | Fog, darkness, sound before sight. |
+| Containment | Total (state) / Observed (consequence) | Every number on the board is shown; what a layout does over an hour is learned by running it, or forecast in a separate sandbox. |
+| Ampersand | Sealed (the other's answer) / Total (the rules) | Neither answer is readable until both exist; then both are shown whole, side by side. |
+| Gauge | Total (state) / Taught (rules) | Heaps drawn as how full their store is, and the price on the button that spends it; a tutorial that watches the world rather than instructing. |
+| Casebook | Fair Play (the answer) / Taught (the rules) | A primer teaches the tells; the page holds every clue; a wrong mark sits silently until a rationed check names it. |

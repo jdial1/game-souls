@@ -1,0 +1,50 @@
+## Component: Living World
+
+**The principle:** The world does not wait for the player. Its inhabitants have jobs, needs, grudges, and agendas, and they pursue them whether or not the player is watching.
+
+**Used by:** Looking Glass, Dwarven, Ashen, Mansion
+
+### Design Rules
+
+* **Granular Awareness States:** AI must not jump from "oblivious" to "lethally hostile." It needs a ladder of suspicion.
+  * *Example (Looking Glass):* A guard hears a footstep (Curious). They leave their post to investigate (Searching). They see an open door they know they closed (Suspicious). They find a missing lightbulb (Alert). Only when they see the player do they attack.
+
+* **Internal Agendas:** NPCs interact with the world outside of combat. Guards complain about rations, visit the bathroom, argue with rival factions, and fall asleep on duty. If the player hides in a closet for an hour, shifts change and conversations happen.
+
+* **Independent Arcs:** Characters wander the world pursuing their own goals and appear in unexpected places. If the player doesn't meet them at the right moment, they die, go mad, or turn hostile off-screen (Ashen). Most players will miss most of these stories, and that is correct.
+
+* **Relational Memory:** NPCs form relationships and remember. If a sniper accidentally shoots a miner, the miner's spouse hates the sniper forever and may refuse to heal them in a future emergency (Dwarven).
+
+* **The World Doesn't Scale to You:** Don't spawn weak enemies because the player is level one. Factions go to war, cities starve, and ecosystems collapse independently of the player.
+  * *Example (Dwarven):* You arrive at a long-anticipated trade hub to find it wiped out, because three in-game weeks ago a plague of giant acidic beetles migrated through the area.
+
+* **If You Pace, Pace the Drama, Not the Safety Net:** A "storyteller" system that times events for rhythm (a lull after a disaster, a raid sized to colony wealth) is acceptable. A system that guarantees survival is not.
+
+* **Adaptive Predators:** A pursuer that learns the player's habits turns their safest tricks into traps.
+  * *Example (Mansion):* The creature learns the player hides in lockers. After the third successful locker escape, it starts checking lockers.
+
+### Tuning by Soul
+
+* **Looking Glass:** A clockwork ecology the player can observe, predict, and manipulate.
+* **Dwarven:** An indifferent world that grinds on without you and a colony with its own psychology.
+* **Ashen:** A dying world whose few inhabitants follow tragic arcs you might only glimpse.
+* **Mansion:** A single intelligent hunter that learns you.
+
+### What It Costs
+
+* **AI Complexity:** Perception, schedules, needs, memory, and pathfinding for every agent. Adaptive predators need especially careful tuning so they terrify without exhausting.
+* **Unseen Content:** Agendas, arcs, and off-screen events are content many players will never witness.
+* **Debugging Emergence:** When NPCs act independently, bugs look like behavior and behavior looks like bugs.
+
+### How It Fails
+
+* **The Waiting Room:** NPCs stand in place until the player arrives, then begin performing. *Symptom:* the world feels like a stage set. *Fix:* give every NPC at least one routine that runs without the player.
+* **Binary AI:** Enemies flip straight from idle to hostile. *Symptom:* stealth becomes pass/fail with no tension. *Fix:* awareness ladders with readable intermediate states.
+* **The Exhausting Hunter:** An adaptive pursuer appears too often or too predictably. *Symptom:* terror curdles into irritation. *Fix:* give it rhythm, with long absences and escalation tied to player progress.
+* **The Solved Simulation:** Players find a strategy that makes them immune to the world's pressure. *Symptom:* the world stops producing stories. *Fix:* escalate external pressure over time and let internal systems (aging, grudges, decay) erode even perfect defenses.
+
+### Litmus
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Ecology** | If the player stands still in a closet for an hour, does the world keep functioning? | **Yes.** Shifts change, conversations happen, the world ticks on. |

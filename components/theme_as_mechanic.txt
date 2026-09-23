@@ -1,0 +1,48 @@
+## Component: Theme as Mechanic
+
+**The principle:** The game's theme (its joke, its fear, its ideas) lives in the systems, not just the writing. If you removed the theme, the mechanic would collapse, because they are the same thing.
+
+**Used by:** Loathing, Elysium, Mansion, Ampersand, Gauge, Casebook
+
+### Design Rules
+
+* **The Integration Check:** For every feature, ask: can the theme be removed without breaking the mechanic? If yes, rebuild it until the answer is no.
+
+* **Mechanize the Metaphor:** If an idea makes you laugh, shudder, or think, don't just write about it. Build an engine around it.
+  * *Example (Loathing):* Don't just have a drunk pirate NPC. Build a stat system around Blood Alcohol Content (Liver Capacity), where drinking grants more turns but overdrinking leaves you unable to act.
+
+* **Rename the Fundamentals:** Never use default nomenclature (Strength, Mana, Gold). Foundational vocabulary establishes the universe's logic. In *Kingdom of Loathing*, Strength/Dexterity/Wisdom became Muscle, Moxie, and Mysticality, and currency became Meat. A sci-fi game's resource could be "Bureaucratic Favor" rather than "Credits."
+
+* **Feelings and Beliefs as Resources:** Emotional states can be systems. An idea can be equipped like armor (Elysium's thoughts). Fear can drain the same stamina the player needs to run (Mansion's "Fear Is Physical").
+
+* **Tie Animation to Logic:** The theme must show up in how things work, not just how they look.
+  * *Example (Loathing):* A Disco Bandit doesn't just "buff evasion"; they perform an escalating four-step dance routine across turns to build momentum.
+
+* **Let the World Mirror the Self:** Architecture and creatures can reflect the protagonist's guilt, grief, or fear. When the theme is personal, the player is afraid not only of what's in the hallway, but of what it says about who they're playing.
+  * *Example (Mansion):* A widower's house has one door that never opens: the nursery. The creatures grow smaller and louder the closer the player gets to it.
+
+### Tuning by Soul
+
+* **Loathing:** The theme is a joke, and the joke is the mechanic.
+* **Elysium:** The theme is a person's mind, and the mind is the mechanic (skills as voices, ideology as equipment).
+* **Mansion:** The theme is fear, and fear is a resource and a place.
+* **Ampersand:** The theme is two halves joined, and joining is the mechanic: sealed pairs of answers, two colours on one plate, and a waiting state that spells half of the name.
+* **Gauge:** The theme is family, and family is a network. Help needs a line to arrive by, the line is built from both sides, and a full store is what makes something spare.
+* **Casebook:** The theme is investigation, and investigation is the mechanic. Decoding, deducing, and filing are the fiction's own acts; help is a stingy institution, never a power-up.
+
+### What It Costs
+
+* **Design Time per Feature:** Integrating theme into every system is slower than bolting flavor text onto generic mechanics.
+* **Rare Talent:** Designers and writers who can think in both systems and themes at once are hard to find.
+
+### How It Fails
+
+* **Theme as Paint:** The theme lives only in names, art, and flavor text; the mechanics underneath are generic. *Symptom:* the game is interesting for an hour and forgettable after. *Fix:* apply the Integration Check.
+* **Winking at the Camera:** The game nudges the player to notice how clever, random, or deep it is. *Symptom:* the theme reads as self-conscious. *Fix:* the world must take itself completely seriously.
+* **Mechanics That Contradict the Theme:** The story says the protagonist is desperate; the systems give them infinite resources. *Symptom:* the player stops believing the fiction. *Fix:* check each system against the tone (axes/tone.txt, "Tone Killers").
+
+### Litmus
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Integration** | Can the theme be removed without breaking the mechanic? | **No.** If you remove it, the mechanic should collapse, because they are the same thing. |

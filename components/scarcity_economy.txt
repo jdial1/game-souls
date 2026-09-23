@@ -1,0 +1,48 @@
+## Component: Scarcity Economy
+
+**The principle:** A tight bottleneck on a key resource turns every action into a decision. Scarcity is where tension, optimization, and meaning come from.
+
+**Used by:** Dwarven, Loathing, Spire, Mansion, Containment, Ampersand, Casebook
+
+### Design Rules
+
+* **Poor, Not Powerless:** Give the player the means to act, but never enough to act on everything. Every encounter becomes a question: spend, save, or find another way.
+  * *Example (Mansion):* Three shambling corpses block a corridor the player will cross a dozen times. The player has nine bullets. Kill them all, and there's nothing left for whatever waits upstairs. Dodge them every trip, and risk a bite every time. Neither answer is correct, and that is the point.
+
+* **One Hard Bottleneck:** Choose the resource that defines a session and make it genuinely tight: adventures per day, stomach and liver capacity, inventory slots, energy per turn, bullets.
+  * *Example (Loathing):* Each day grants a fixed number of adventures. Food and booze grant more, but stomach and liver capacity are limited. Every session becomes an optimization puzzle about what to eat, what to drink, and where to spend each turn.
+
+* **Inventory as Anxiety:** Keep carrying capacity small and storage far away. Picking up a key means leaving behind a healing item.
+
+* **Make Safety Cost Something:** When saving or healing is free, scarcity evaporates. Charge for it (a finite save ribbon, a rest that respawns enemies) so the player weighs "Is this worth protecting?"
+
+* **Saying No Is a Skill:** When the player is offered more than they can use, turning things down should often be correct. A thin, focused build beats a bloated one (Spire).
+
+* **A Hidden Floor:** Scarcity must never soft-lock the player. Quietly guarantee enough of the essentials to continue, for players who are truly out.
+
+### Tuning by Soul
+
+* **Mansion:** Scarcity produces dread. Bullets, healing, and saves.
+* **Loathing:** Scarcity produces optimization puzzles. Turns and consumption capacity.
+* **Spire:** Scarcity produces decisions. Energy per turn, health across a run, and deck slots.
+* **Dwarven:** Scarcity is emergent and indifferent. Food, materials, and sanity, and nobody tuned it for you.
+* **Containment:** Scarcity is space. Money inflates away; tiles don't, and every tile is either making heat or handling it.
+* **Ampersand:** Scarcity is weight. One question a day, one sealed answer, one reaction each: rare enough that each one means something, and never a budget to optimize.
+* **Casebook:** Scarcity is certainty. A few checks and revealed answers per installment, shared across its pages; a check costs the same whether the guess was right or wrong.
+
+### What It Costs
+
+* **Fragile Tuning:** Too much and the tension evaporates; too little and players get stuck. Expect many rounds of economy tuning across every difficulty level.
+* **Friction for Some Players:** Scarcity is stressful by design. Some players will find it unpleasant rather than exciting.
+
+### How It Fails
+
+* **The Soft Lock:** The player saves with no resources in front of a mandatory challenge. *Symptom:* they must restart hours of progress. *Fix:* every mandatory encounter has an evasion route or a guaranteed supply nearby.
+* **The Hoarding Trap:** Players are so afraid of running out that they never use anything and finish the game with a full inventory. *Symptom:* scarcity creates boredom, not tension. *Fix:* create pressure to spend (spoilage, carrying limits, encounters that punish holding back).
+* **Scarcity Without Choice:** Resources are tight, but there's only one way to spend them. *Symptom:* scarcity is just a tax. *Fix:* every resource needs at least two competing uses.
+
+### Litmus
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Budget** | Can the player afford to do everything the game offers? | **No.** Every resource spent is a resource not spent elsewhere. |
