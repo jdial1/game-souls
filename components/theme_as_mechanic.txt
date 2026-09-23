@@ -2,7 +2,7 @@
 
 **The principle:** The game's theme (its joke, its fear, its ideas) lives in the systems, not just the writing. If you removed the theme, the mechanic would collapse, because they are the same thing.
 
-**Used by:** Loathing, Elysium, Mansion, Ampersand, Gauge, Casebook, Chorus, Tribunal
+**Used by:** Loathing, Elysium, Mansion, Gauge, Ampersand, Casebook, Chorus, Tribunal
 
 ### Design Rules
 

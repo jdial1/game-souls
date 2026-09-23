@@ -2,7 +2,7 @@
 
 **The principle:** Assume the player is smart, literate, and curious. Replace instructions with invitations, and let curiosity be the compass.
 
-**Used by:** Looking Glass, Loathing, Ashen, Hearthian, Toybox, Containment, Ampersand, Gauge, Casebook, Assembly
+**Used by:** Looking Glass, Loathing, Ashen, Hearthian, Toybox, Containment, Gauge, Ampersand, Casebook, Assembly
 
 ### Design Rules
 

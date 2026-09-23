@@ -2,9 +2,9 @@
 
 **A Framework for Exponential Scaling, Automatic Execution, and the Screen as the Enemy**
 
-The soul of games like *Vampire Survivors*, *Brotato*, *Risk of Rain*, *Nova Drift*, and *Magic Survival* can be distilled into a single philosophy: "The player steers; the math kills."
+The soul of games like *Vampire Survivors*, *Brotato*, *Risk of Rain*, *Nova Drift*, *Halls of Torment*, and *Magic Survival* can be distilled into a single philosophy: "The player steers; the math kills."
 
-On the surface, these games look like mindless, low-budget twin-stick shooters where the screen is filled with an unreadable mess of particle effects. Beneath the surface, they are optimization puzzles masquerading as action games. The player is not testing their reflexes against an intelligent adversary; they are testing their build's exponential curve against a tide that never stops rising.
+On the surface, these games look like mindless, low-budget shooters where the screen fills with an unreadable mess of particle effects. Beneath the surface, they are optimization puzzles disguised as action games. The player is not testing reflexes against an intelligent adversary; they are testing their build's exponential curve against a tide that never stops rising.
 
 ### Axis Positions
 
@@ -13,73 +13,95 @@ On the surface, these games look like mindless, low-budget twin-stick shooters w
 | Failure | Punishing but Legible |
 | Information | Total |
 | Authorship | Player-Authored Build |
-| Power | Surplus / Optimization |
+| Power | Optimization |
 | Tone | Cool Focus / Deadpan Absurd |
 | Structure | Runs |
 
 ### Components
 
-* **components/synergy_engines.txt:** Multiply, don't add. The core loop is finding the combination of items that breaks the game's math before the swarm overwhelms you.
-* **components/difficulty_ladder.txt:** Curse levels, heat modifiers, and speedrun and endless modes.
-* **components/scarcity_economy.txt:** The scarce resources are time and weapon slots. You only have 20 minutes, and every level-up is a strict choice.
-* **components/legible_failure.txt:** Death is always because your DPS fell behind the required curve, or you routed yourself into a corner.
+* **components/automation.txt:** Weapons fire on their own cooldowns. The player's only moment-to-moment verb is positioning; their real decisions are the draft.
+* **components/synergy_engines.txt:** Multiply, don't add. Pieces arrive by draft, and the run is a race to assemble the combination that breaks the game's math.
+* **components/scarcity_economy.txt:** Scarcity is time and slots: a fixed run length, a limited number of weapons and passives, and one pick per level-up.
+* **components/difficulty_ladder.txt:** Curse levels, heat modifiers, harder characters, and endless modes stack on a clock that always wins eventually.
+* **components/legible_failure.txt:** Death means the build fell behind the curve or the player routed into a corner; the clock and the density make both visible.
 
-### Signature Pillar 1: Decoupled Execution
+### Signature Pillar 1: The Draft Under Fire
 
-In an action game, you aim and pull the trigger. In a Swarm-style game, the firing is automatic. The player's brain is reserved entirely for routing and drafting.
+The action is the setting; the draft is the game. Every level-up is a small deckbuilding decision made while the tide is still rising.
 
 **Design Rules:**
 
-* **Move to Survive, Build to Kill:** Remove the attack button entirely (or make it optional). Weapons fire on mathematical cooldowns. The player's only kinetic verb is positioning.
+* **The Chaos Pauses for the Choice:** When the player levels up, the action freezes and a small set of upgrades (three or four) appears. The player chooses in calm and returns to the storm.
 
-* **The Slot Machine Draft:** When the player levels up, the chaos immediately pauses. The game transitions from a bullet hell into a deckbuilder. The player is offered 3–4 random upgrades. This is the actual combat system.
+* **Recipes to Draft Toward:** Publish combinations the player can plan around: a maxed weapon plus a specific passive becomes an evolved form. A known recipe turns random offers into a plan.
+  * *Example:* A player who has the whip and has spotted the recipe keeps passing on better-looking offers, waiting for the one passive that will evolve it, because the evolution is worth more than any single upgrade.
+
+* **Rerolls, Skips, and Banishes as Tradecraft:** Give the player a few ways to shape the offers (reroll the set, skip it, banish an upgrade forever), each in short supply. Controlling randomness is a skill, not a menu option.
 
 ### Signature Pillar 2: The Inevitable Tide
 
-The enemy is not a distinct character with AI. The enemy is a liquid that fills the screen.
+The enemy is not a character with AI. The enemy is a liquid that fills the screen.
 
 **Design Rules:**
 
-* **Density Is Difficulty:** The game does not get harder by making the enemies smarter. It gets harder by removing empty pixels from the screen. The swarm acts as a slowly constricting wall of damage.
+* **Density Is Difficulty:** The game doesn't get harder by making enemies smarter. It gets harder by removing empty pixels from the screen. The swarm is a slowly constricting wall of damage.
 
-* **Time Is the True Boss:** The clock is always visible and always ticking. The swarm scales with the timer. If the player spends 30 seconds walking in a circle not gaining XP, they haven't just wasted time; they have mathematically lost the run, they just don't know it yet.
+* **Time Is the True Boss:** The clock is always visible, and the swarm scales with it. A player who spends thirty seconds circling without gaining experience hasn't just wasted time; they have fallen behind a curve that won't wait.
+
+* **New Threats on the Clock:** Every few minutes, the tide changes shape: ranged enemies, exploders, knockback-immune elites, a boss. The player's build must answer a new question just as it gets comfortable with the old one.
+
+* **A Known End:** Runs have a fixed length the player can see, a number of waves or a final minute. Knowing when the run ends is what makes every minute's budget legible.
+  * *Example:* At the thirty-minute mark of *Vampire Survivors*, an overwhelming reaper arrives to end the run. The end is not a surprise; it is the deadline the whole build was racing toward.
 
 ### Signature Pillar 3: Exponential Escalation
 
-The player's power must scale at an absurd, exponential rate, because the swarm is scaling at the exact same rate.
+The player's power must scale at an absurd rate, because the swarm is scaling at the same rate.
 
 **Design Rules:**
 
-* **Screen-Clearing Power:** By minute 25, the player should be outputting so much damage that the screen is literally unreadable. This is not a balance flaw; this is the emotional payoff for surviving minute 5.
+* **The Breakpoint:** Every successful run has a breakpoint: the moment the build clicks together and the player stops being hunted by the swarm and starts harvesting it. The game is about reaching that moment.
 
-* **The Breakpoint:** Every successful run features a "breakpoint": the exact second the player's synergy engine clicks together and they transition from being hunted by the swarm to harvesting it. The game is entirely about reaching that breakpoint.
+* **Screen-Clearing Power:** Late in a strong run, the player should be erasing enemies faster than they can arrive. That is not a balance flaw; it is the emotional payoff for surviving the early minutes.
+
+* **Readable Chaos:** However dense the effects become, the player's character, the enemy projectiles, and the one thing that will kill them must stay readable. Give enemy threats a visual language the player's effects never use, and let players dim their own effects.
 
 ### Variants & Exceptions
 
-* *Risk of Rain* (1 and 2) requires manual aiming and platforming, making it kinetic. However, it perfectly retains the Inevitable Tide (the difficulty clock is always ticking) and Exponential Escalation (stacking 40 ukuleles to chain-lightning the entire map).
-* *Brotato* bounds the swarm into distinct 60-second waves with a shop phase in between, trading continuous tension for a tighter economic puzzle.
+* *Vampire Survivors* is the template: no attack button, a thirty-minute run, weapon evolutions, and rerolls, skips, and banishes.
+* *Risk of Rain* (1 and 2) requires manual aiming and platforming, but keeps the Inevitable Tide (a difficulty that climbs with time) and Exponential Escalation: stacking copies of one item until chain lightning covers the map.
+* *Brotato* splits the run into short waves with a shop between them, trading continuous tension for a tighter economic puzzle.
+* *Nova Drift* puts the soul on an *Asteroids*-style ship with a branching web of upgrades, where the build can transform the ship's whole way of fighting.
+* *Halls of Torment* wraps the formula in a dark fantasy look with slower, heavier combat, showing that the tide doesn't need cartoon absurdity.
 
 ### What This Soul Costs
 
-* **Engine Limits:** Having 5,000 active enemies and 10,000 projectiles on screen will melt standard physics engines. Collision detection must be heavily abstracted (merging hitboxes, grid-based spatial hashing) to maintain 60 FPS.
-* **Visual Hierarchy:** When the screen is 90% particle effects, the player still needs to know where their character is and what will hurt them. UI and color-coding become a matter of life and death.
+(Shared costs live in the component files: combinatorial balance, the content treadmill, a deliberately tedious start.)
+
+* **Engine Limits:** Thousands of enemies and projectiles on screen will overwhelm a standard physics engine. Collision must be simplified (merged hitboxes, spatial grids) to hold the frame rate.
+* **Breadth of Pieces:** Replay depends on many weapons, passives, characters, and evolutions. Each new piece multiplies the balance work and the art.
 
 ### How It Fails
 
-* **The Stagnant Mid-Game:** The player's build matures at minute 15, but the run goes to minute 30, and the enemies just become damage sponges. *Symptom:* the player puts the controller down and watches YouTube while the game plays itself. *Fix:* the swarm must introduce a new threat type (ranged, exploding, immune to knockback) right as the player gets comfortable.
-* **Additive Blandness:** Upgrades are just "+5% damage." *Symptom:* the run doesn't escalate; it just inflates. *Fix:* weapons must change behavior, add projectiles, or multiply other systems (see components/synergy_engines.txt).
+(Shared failure modes live in the component files: additive blandness, the dominant strategy, the game plays itself.)
+
+* **The Stagnant Mid-Game:** The build matures at minute fifteen, the run lasts thirty, and enemies just become damage sponges. *Symptom:* the player stops paying attention. *Fix:* introduce a new threat type exactly when the player gets comfortable.
+* **The Unreadable Screen:** Effects bury the player's character and the lethal projectiles. *Symptom:* deaths feel random, even to experts. *Fix:* a visual hierarchy where threats always sit on top, and options to dim the player's own effects.
+* **The Dead Draft:** Offers ignore what the player already owns, so most level-ups are irrelevant. *Symptom:* drafting becomes clicking through. *Fix:* weight offers toward the player's current weapons and recipes.
 
 ### Neighboring Souls
 
-* **Spire:** Both are built on rapid drafting, synergy engines, and runs. Spire is turn-based and deeply cerebral; Swarm is real-time and instinctual.
-* **Toybox:** Both prioritize immediate kinetic joy. Toybox is about interacting with a rich environment; Swarm environments are mostly empty arenas designed to hold the math.
+* **Spire:** Both are built on drafting, synergy engines, and runs. Spire is turn-based and deeply cerebral; Swarm is real-time, and the thinking happens in pauses between storms.
+* **Toybox:** Both deliver immediate kinetic joy. Toybox's joy is a verb performed well in a rich space; Swarm's arenas are mostly empty, built to hold the math.
+* **Assembly:** Both automate the verb. Assembly automates production so the player can design a factory; Swarm automates shooting so the player can design a build.
 
 ### The "Swarm" Litmus Test
 
 | Check | Question | Correct Answer |
 | --- | --- | --- |
-| **The Aim** | Does the player need to manually aim at individual enemies to succeed? | **No.** The weapons target automatically; the player just steers the ship. |
-| **The Density** | By the end of the run, are there hundreds of enemies on the screen at once? | **Yes.** The screen is the enemy. |
-| **The Scaling** | Does the game get harder strictly based on a ticking clock, regardless of player progress? | **Yes.** The tide always rises. |
+| **The Aim** | Does the player need to manually aim at individual enemies to succeed? | **No.** Weapons target themselves; the player steers. |
+| **The Density** | By the end of a run, are there hundreds of enemies on screen at once? | **Yes.** The screen is the enemy. |
+| **The Scaling** | Does the game get harder with the clock, regardless of the player's progress? | **Yes.** The tide always rises. |
+| **The Breakpoint** | Does a successful run have a moment when the build turns the player from hunted to hunter? | **Yes.** Reaching it is the point. |
+| **The Readability** | At the densest moment, can the player still find their character and what will kill them? | **Yes.** Chaos is the spectacle, never the excuse. |
 
 *"You do not need complex AI when you have ten thousand bats, a weapon that triggers every 0.3 seconds, and a player desperate for one inch of open screen space."*

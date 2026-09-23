@@ -1,10 +1,10 @@
 ## The "Chorus" Game Soul
 
-**A Framework for Synesthetic Action, Rhythmic State of Flow, and the Metronome as the Arbiter**
+**A Framework for Synesthetic Action, Rhythmic Flow, and the Metronome as the Arbiter**
 
-The soul of games like *Thumper*, *Crypt of the NecroDancer*, *Hi-Fi Rush*, *Beat Saber*, and *BPM: Bullets Per Minute* can be distilled into a single philosophy: "The beat is the only law, and the groove is the only survival."
+The soul of games like *Thumper*, *Crypt of the NecroDancer*, *Hi-Fi Rush*, *Beat Saber*, *Rhythm Heaven*, and *BPM: Bullets Per Minute* can be distilled into a single philosophy: "The beat is the only law, and the groove is the only survival."
 
-On the surface, these games look like action games, shooters, or puzzle games with a great soundtrack. Beneath the surface, they are pure rhythm games wearing different masks. The music is not a backdrop; it is the collision mesh. The player is not reacting to visuals on a screen, but anticipating a tempo. When the soul is working, conscious thought shuts down, muscle memory takes over, and the player enters a state of unbroken synesthetic flow.
+On the surface, these games look like action games, shooters, or puzzle games with a great soundtrack. Beneath the surface, they are rhythm games wearing different masks. The music is not a backdrop; it is the collision mesh. The player is not reacting to visuals on a screen, but anticipating a tempo. When the soul is working, conscious thought shuts down, muscle memory takes over, and the player enters a state of unbroken synesthetic flow.
 
 ### Axis Positions
 
@@ -15,13 +15,15 @@ On the surface, these games look like action games, shooters, or puzzle games wi
 | Authorship | Designer-Authored |
 | Power | Kinetic |
 | Tone | Cool Focus / Joyful |
-| Structure | Levels |
+| Structure | Levels (one song, one level) |
 
 ### Components
 
-* **components/legible_failure.txt:** Sound before sight. The attack is telegraphed musically before the animation finishes. If you miss, you know you were off-beat.
+* **components/audio_information.txt:** Sound is the rules. Every threat is written into the music before it lands, and a miss removes a sound rather than adding a buzzer.
+* **components/interface_voice.txt:** The mix follows the state. A player in the groove hears the full arrangement; a broken combo drops layers until they earn them back.
+* **components/legible_failure.txt:** Every miss is audible and explicable: the player was early, or late, and knows which.
 * **components/theme_as_mechanic.txt:** The theme is the music, and the music is the mechanic. Without the backing track, the game is unplayable.
-* **components/difficulty_ladder.txt:** The ladder is speed, syncopation, and strictness of timing. Mastery is measured in perfectly chained combos.
+* **components/difficulty_ladder.txt:** The ladder is tempo, syncopation, and a narrower timing window. Mastery is a full combo on the hardest chart.
 * **components/systemic_consistency.txt:** The metronome never lies. If a rule says action happens on the quarter-note, it happens on the quarter-note forever.
 
 ### Signature Pillar 1: The Universal Metronome
@@ -30,61 +32,75 @@ In an action game, an enemy attacks when its AI cooldown resets. In a Chorus-sty
 
 **Design Rules:**
 
-* **The World Dances:** Everything in the environment, from idle animations to traps to UI pulses, must sync to the BPM of the current track. The player should be able to play the game with their eyes closed just by listening to the world.
+* **The World Dances:** Everything in the environment (idle animations, traps, lights, UI pulses) syncs to the tempo of the current track. The player should be able to feel the beat from the scenery alone.
 
-* **Quantized Inputs:** The game engine rounds the player's inputs to the nearest valid musical beat. Pressing a button is not a free action; it is an instrument joining the track.
+* **Judge the Window, Don't Snap the Input:** The game measures how far each input lands from the beat and grades it within a window (perfect, good, miss). It never silently moves the input onto the beat: snapping would make every press correct and erase the skill the game exists to test.
 
-* **The Metronome as the Arbiter:** If a player dodges early, they do not get hit because they were physically in the wrong space; they get hit because they broke the rhythm. The beat is the hitbox.
+* **The Beat Is the Hitbox:** A player who dodges early doesn't get hit because they were in the wrong place; they get hit because they broke the rhythm. Position matters less than timing.
 
 ### Signature Pillar 2: Synesthetic Forgiveness
 
-Because the brain processes sound, sight, and touch at different speeds, the game must secretly align them for the player to feel like a god.
+The brain processes sound, sight, and touch at different speeds, and hardware adds its own delays. The game must secretly align them so the player feels like a god.
 
 **Design Rules:**
 
-* **The Trinity of Feedback:** A successful input must produce a visual flash, a controller rumble, and a distinct musical note. If any of the three is missing, the player feels disconnected.
+* **The Trinity of Feedback:** A successful input produces a visual flash, a controller rumble, and a musical note at the same instant. If any of the three is missing or late, the player feels disconnected.
 
-* **The Generous Window:** Secretly widen the input window just enough that slight human imperfection still registers as a "Perfect" hit. If the player feels like they hit the beat, the game must agree. The punishment is for missing the beat entirely, not for being 10 milliseconds late.
+* **The Generous Window:** Widen the window just enough that slight human imperfection still reads as perfect. If the player felt the beat, the game must agree. The punishment is for missing the beat, not for being ten milliseconds late.
+
+* **Calibrate Before You Judge:** Every screen, speaker, and pair of headphones adds its own lag. Give the player a calibration step (tap along to a beat) and apply it to both audio and video offsets before judging a single input.
 
 ### Signature Pillar 3: Flow Over Thought
 
-The conscious mind is too slow to process a dense rhythm chart. The game must force the player out of their head and into their hands.
+The conscious mind is too slow to process a dense rhythm chart. The game must move the player out of their head and into their hands.
 
 **Design Rules:**
 
-* **Sight-Reading vs. Memorization:** Build patterns that make logical musical sense. A player should be able to "sight-read" a new boss because the boss follows a standard 4/4 musical escalation (verse, chorus, drop), not a random number generator.
+* **Sight-Reading Over Memorization:** Build patterns that make musical sense. A player should be able to sight-read a new boss because it follows musical structure (verse, chorus, drop), not a random number generator.
 
-* **The Unbroken Combo:** Reward continuous momentum. The score multiplier builds as long as the player doesn't miss a beat. Breaking the combo should feel like a record scratch: a sudden, jarring loss of musical layers that physically hurts to hear.
+* **Teach the Figure Before the Phrase:** Introduce each new rhythm pattern alone, in a quiet moment, before combining it with others. A syncopated triplet first appears on its own; two bars later it appears under the melody.
+
+* **The Unbroken Combo:** Reward continuous momentum. The score multiplier builds as long as the player doesn't miss. Breaking the combo drops layers from the music (the bass, then the drums) so the player hears what they lost, and each layer returns as they recover. The loss is felt as absence, never as noise.
+  * *Example:* Mid-chorus, the player misses twice. The drums drop out, and the track thins to melody and pads. Eight clean hits later, the drums crash back in on the downbeat, and the player feels it in their chest.
 
 ### Variants & Exceptions
 
-* *Hi-Fi Rush* and *BPM* are character action games and shooters forced onto a rhythmic grid. They bend Pillar 1 slightly by allowing the player to act off-beat, but heavily penalize the damage and score for doing so.
-* *Crypt of the NecroDancer* turns a grid-based roguelike into a metronome. Enemies don't just attack on the beat; they move on it, turning spatial positioning into a dance routine.
-* *Sekiro* is not officially a rhythm game, but its posture system and deflection timing heavily borrow from this soul. The clash of swords creates its own internal metronome, making it a rhythmic action game in disguise.
+* *Hi-Fi Rush* is a character action game with the whole world synced to the soundtrack. Off-beat actions still work; on-beat actions deal more damage and earn a better rank. It bends "The Beat Is the Hitbox" by rewarding rhythm rather than requiring it, the gentlest form of the soul.
+* *BPM: Bullets Per Minute* ties shooting, reloading, and dodging to the beat of a rock soundtrack, turning a first-person shooter into a rhythm game.
+* *Crypt of the NecroDancer* turns a grid-based roguelike into a metronome. Enemies don't just attack on the beat; they move on it, so spatial positioning becomes a dance routine.
+* *Beat Saber* judges the swing as well as the timing: blocks must be cut in a set direction, and the score rewards a full, accurate swing. The body is the instrument.
+* *Rhythm Heaven* is "Sound Before Sight" at its purest: many of its games hide or mislead the visual cue, so only players listening to the music succeed.
+* *Sekiro* is distant kin: its deflection timing creates a rhythm of its own, but the rhythm comes from the enemy's animations rather than a soundtrack, which places it in Ashen.
 
 ### What This Soul Costs
 
-* **Audio-Visual Latency Tuning:** If the game lags by 3 frames, it is unplayable. Engine optimization and latency calibration tools become the most expensive engineering tasks on the project.
-* **Bespoke Audio Design:** Tracks cannot simply be licensed and slapped on top. Music must be stem-separated, dynamic, and structured mathematically to match level design.
-* **Content Limits:** A level's length is strictly dictated by the length of its song.
+(Shared costs live in the component files: audio as a core department, latency engineering, accessibility debt.)
+
+* **Bespoke Audio Design:** Tracks can't simply be licensed and laid on top. Music must be split into stems, arranged dynamically, and structured to match the level, so composers and level designers work as one team.
+* **Content Is Song Length:** A level's length is dictated by its song. More content means more music, and every track has to be charted by hand for every difficulty.
 
 ### How It Fails
 
-* **Visual Desync:** The animation takes 30 frames to play, but the beat hits at frame 25. *Symptom:* players consistently fail despite knowing the rhythm. *Fix:* the animation must snap to the beat, even if it means dropping frames to catch up.
-* **Arbitrary Syncopation:** The designer places an obstacle on an off-beat that has no corresponding musical cue in the backing track. *Symptom:* the hit feels random and unfair. *Fix:* if you want an off-beat hit, add a hi-hat or a synth stab to the track to justify it.
-* **Punishing the Ear:** When the player misses, the game plays a loud, obnoxious error buzzer that ruins the song. *Symptom:* players get annoyed and mute the game. *Fix:* a miss should result in the absence of a rewarding sound, not the presence of a painful one.
+(Shared failure modes live in the component files: the Buzzer, the Lying Ear, hearing required.)
+
+* **Visual Desync:** An animation takes 30 frames to play, but the beat lands at frame 25. *Symptom:* players fail despite knowing the rhythm. *Fix:* animations snap to the beat, even if it means dropping frames to catch up.
+* **Arbitrary Syncopation:** An obstacle sits on an off-beat with no musical cue. *Symptom:* the hit feels random and unfair. *Fix:* if you want an off-beat hit, add a hi-hat or a synth stab to the track to justify it.
+* **The Snapped Input:** The engine quantizes inputs onto the beat. *Symptom:* sloppy play scores the same as precise play, and experts stop improving. *Fix:* judge the window; never move the input.
 
 ### Neighboring Souls
 
 * **Toybox:** Both treat kinetic movement as the highest joy. Toybox is about expressive freedom; Chorus is about disciplined, restricted mastery.
-* **Spire:** Both demand entering a state of flow. Spire's flow is cognitive (calculating the math); Chorus's flow is sensory (feeling the math).
+* **Spire:** Both demand a state of flow. Spire's flow is cognitive (calculating the math); Chorus's flow is sensory (feeling the math).
+* **Ashen:** Both teach timing through repeated failure. Ashen's tells are animations that can be read; Chorus's tells are music that can be heard, and every threat in a level runs on one shared tempo.
 
 ### The "Chorus" Litmus Test
 
 | Check | Question | Correct Answer |
 | --- | --- | --- |
-| **The Arbiter** | If the player performs the correct action, but does it completely off-beat, do they take damage? | **Yes.** The rhythm is the collision mesh. |
-| **The Blindfold** | Could a skilled player survive an encounter purely by listening to the audio cues? | **Yes.** The music tells you what is about to happen. |
-| **The Sync** | Do the background elements (trees, lights, idle enemies) bounce to the track? | **Yes.** The whole world knows what song is playing. |
+| **The Arbiter** | If the player performs the correct action completely off-beat, does it fail, or at least earn less? | **Yes.** The rhythm is the collision mesh. |
+| **The Blindfold** | Could a skilled player survive an encounter purely by listening? | **Yes.** The music tells you what is about to happen. |
+| **The Sync** | Do the background elements (trees, lights, idle enemies) move to the track? | **Yes.** The whole world knows what song is playing. |
+| **The Window** | Is each input judged by how close it landed to the beat, rather than snapped onto it? | **Yes.** Precision must be measurable to be mastered. |
+| **The Miss** | When the player misses, does the game remove a sound rather than play a punishing one? | **Yes.** The song thins; it never shrieks. |
 
 *"You do not need a complex combat tree when you have a 140 BPM backing track, a perfectly tuned snare, and a player whose hands are moving faster than their conscious mind."*

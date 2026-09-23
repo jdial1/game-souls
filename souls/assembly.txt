@@ -4,82 +4,110 @@
 
 The soul of games like *Factorio*, *Satisfactory*, *Dyson Sphere Program*, *Mindustry*, and *Shapez* can be distilled into a single philosophy: "The factory must grow, and the bottleneck is always moving."
 
-On the surface, these games look like management simulators or sandbox builders. Beneath the surface, they are pure throughput puzzles played on an infinite canvas. You are not building a static town that eventually finishes; you are building an organic machine that constantly hungers for more scale. Fixing one problem immediately exposes the next, creating a mesmerizing loop of refactoring, expanding, and automating away the very game you were playing an hour ago.
+On the surface, these games look like management simulators or sandbox builders. Beneath the surface, they are throughput puzzles played on an infinite canvas. You are not building a town that eventually finishes; you are building a machine that constantly hungers for more scale. Fixing one problem immediately exposes the next, creating a loop of refactoring, expanding, and automating away the very game you were playing an hour ago.
 
 ### Axis Positions
 
 | Axis | Position |
 | --- | --- |
-| Failure | Forgone (or Trivial) |
-| Information | Total (state) |
+| Failure | Trivial |
+| Information | Total |
 | Authorship | Player-Authored Build |
-| Power | Surplus / Optimization |
+| Power | Optimization |
 | Tone | Cool Focus |
-| Structure | Persistent World (Sandbox Chronicle) |
+| Structure | Persistent World |
 
 ### Components
 
-* **components/scarcity_economy.txt:** The scarce resource is never money; it is throughput, space, and the player's own attention.
-* **components/systemic_consistency.txt:** Math and matter are perfectly conserved. An item on a belt exists physically and mathematically until consumed.
-* **components/legible_failure.txt:** A stalled production line is a receipt. You can walk down the belt and pinpoint the exact missing input.
-* **components/trusting_the_player.txt:** The game gives you the math and the parts, but never the layout.
+* **components/automation.txt:** Automation is the progression system. Every unlock retires a chore, until the player is an architect who never touches an item.
+* **components/workbench.txt:** Blueprints travel as text, deconstruction refunds everything, and production statistics are built in. The factory is redesigned constantly, so the tools for redesigning are the core features.
+* **components/systemic_consistency.txt:** Matter is conserved. An item on a belt exists physically and mathematically until something consumes it, and every ratio holds everywhere.
+* **components/legible_failure.txt:** A stalled line is a receipt: walk down the belt and find the exact missing input.
+* **components/scarcity_economy.txt:** The scarce resource is never money; it is throughput, space, and the player's attention.
+* **components/trusting_the_player.txt:** The game gives the math and the parts, but never the layout.
 
-### Signature Pillar 1: Automation as Progression
+### Signature Pillar 1: The Moving Bottleneck
 
-In an RPG, you level up to deal more damage. In an Assembly-style game, you level up by never having to do a chore again.
-
-**Design Rules:**
-
-* **The Manual Tax:** The player must perform a task by hand just long enough to find it tedious. The exact moment they think, "I never want to hand-craft a copper wire again," the game unlocks the machine that does it for them.
-
-* **Redundancy Is the Goal:** Upgrades do not make the player character stronger; they render the player character obsolete. By the endgame, the player is a floating camera or a logistical architect, completely divorced from manual labor.
-
-### Signature Pillar 2: The Moving Bottleneck
-
-The game has no hard win condition because the puzzle solves itself into a new puzzle.
+The game has no hard win condition, because the puzzle solves itself into a new puzzle.
 
 **Design Rules:**
 
-* **The Squeeze:** Increasing the output of iron plates solves the iron shortage, but immediately reveals that copper wire production cannot keep up. When the copper is fixed, the power grid collapses. The game is a perpetual motion machine of localized crises.
+* **The Squeeze:** Increasing iron plate output solves the iron shortage, and immediately reveals that copper wire can't keep up. Fix the copper, and the power grid collapses. The game is a perpetual machine of localized crises.
 
-* **Ratio over Capacity:** The challenge isn't acquiring a resource; it's matching the consumption rate to the production rate. Two gears per second requires four plates per second. The math must be clean, legible, and relentless.
+* **Ratio over Capacity:** The challenge isn't acquiring a resource; it's matching the consumption rate to the production rate. Two gears per second require four plates per second. The math must be clean, legible, and relentless.
+
+* **Show the Rates:** Production and consumption per item, per minute, are one click away, with history graphs. A player should never have to count items on a belt to learn their ratio.
+
+### Signature Pillar 2: Everything Travels
+
+In a Gauge-style game, a delivery is a gift you watch arrive. In an Assembly-style game, every item's journey is part of the puzzle.
+
+**Design Rules:**
+
+* **No Magic Inventory:** Items never teleport from a mine into a global stockpile. Everything moves through physical space (belts, pipes, drones, trains), and the route is a design decision.
+
+* **The Jam Is Visible:** A backed-up belt, an empty inserter, an idle machine: bottlenecks show up in the world, where the player can see them spread upstream.
+
+* **Distance Unlocks New Logistics:** Short distances are belts; long distances need trains; the largest need drones, rockets, or interstellar freight. Each scale of distance introduces a new logistics system with its own puzzle.
+  * *Example:* Coal 500 meters away needs a belt. Coal 5 kilometers away needs a rail network with stations, signals, and schedules, and the rail network becomes a second game inside the first.
 
 ### Signature Pillar 3: The Infinite Canvas
 
-Unlike the Containment soul, which forces the player to optimize a tiny, rigid board, the Assembly soul gives the player infinite space.
+Unlike the Containment soul, which forces the player to optimize a tiny, rigid board, the Assembly soul gives the player effectively unlimited space.
 
 **Design Rules:**
 
-* **Sprawl as a Mechanic:** The map must be vast enough that distance itself becomes a logistical puzzle. Transporting coal from 500 meters away requires a belt. Transporting it from 5 kilometers away requires engineering a train network.
+* **Sprawl as a Mechanic:** The map is vast enough that distance itself is a logistics puzzle, and resources run out locally, pushing the factory outward.
 
-* **Tearing Down Is Free:** Because the factory must constantly be refactored to scale up, destroying a building must refund 100% of its cost. The penalty for redesigning is the time it takes, not a loss of materials.
+* **The Main Bus and Other Emergent Patterns:** Give the player simple, composable parts and let them discover organizing patterns (a main bus, city blocks, modular cells). The community's patterns become part of the game's culture without the game ever teaching them.
+
+### Signature Pillar 4: Always a Reason to Consume
+
+Production that nothing consumes is a factory that has stopped.
+
+**Design Rules:**
+
+* **The Infinite Sink:** Provide a goal that consumes without limit: infinite research, a megastructure built in phases, a sphere around a star. The factory always has a reason to grow.
+
+* **Milestones, Not Endings:** A "win" (launching a rocket, completing a project) is a milestone the player can pass and keep playing. The credits roll, and the factory keeps running.
 
 ### Variants & Exceptions
 
-* *Factorio* and *Mindustry* feature hostile alien swarms that attack your pollution. This introduces a Costly failure state and a tower defense mechanic, but the core soul remains Assembly: you automate the creation and delivery of ammunition to the turrets.
-* *Satisfactory* shifts the camera to first person and adds verticality. The math is identical, but the architectural constraint is gravity and player traversal rather than purely 2D grid space.
+* *Factorio* adds hostile aliens that attack in response to pollution. That brings in a Costly failure state and tower defense, but the core stays Assembly: you automate the production and delivery of ammunition to the turrets. Its blueprint strings are the clearest example of designs traveling as text.
+* *Satisfactory* shifts to first person and adds verticality. The math is the same, but the constraint becomes gravity and traversal, and its space elevator consumes the factory's output in escalating phases.
+* *Dyson Sphere Program* stretches the canvas across star systems, with interstellar logistics and a sphere around a star as the ultimate sink.
+* *Mindustry* folds the soul into tower defense: the factory exists to supply turrets against waves.
+* *Shapez* strips away enemies and realism entirely. Abstract shapes are cut, rotated, and painted, and nothing can ever go wrong, which makes it Assembly at its purest and gentlest.
 
 ### What This Soul Costs
 
-* **Deterministic Simulation at Scale:** The engine must be able to track millions of individual items moving on belts at 60 FPS without dropping a frame. This requires bespoke, highly optimized data-oriented programming.
-* **The UI Tax:** The player needs to read throughput rates, power graphs, and fluid dynamics at a glance. The interface must be as crisp as spreadsheet software.
+(Shared costs live in the component files: tools as product work, format stability, the UI tax.)
+
+* **Deterministic Simulation at Scale:** The engine must track enormous numbers of items moving on belts without dropping frames. Late-game simulation speed is a design constraint that shapes every system.
+* **A Long Game With No Script:** Hundreds of hours of play come from the systems alone. Each new tier has to open a new kind of problem, not just a bigger version of the last one.
 
 ### How It Fails
 
-* **The Magic Void:** Items teleport from a resource node directly into a global inventory. *Symptom:* the logistics puzzle evaporates, and the game becomes a generic clicker. *Fix:* everything must travel through physical space (belts, pipes, drones, trains).
-* **The Sinkhole Economy:** Production outpaces consumption, and the player is left with chests full of useless items. *Symptom:* the factory stops moving. *Fix:* provide an infinite sink (for example, a research tree that scales infinitely) so the factory always has a reason to consume.
+(Shared failure modes live in the component files: the Babysat Machine, chores forever, the Lab That Lies.)
+
+* **The Magic Void:** Items teleport into a global inventory. *Symptom:* the logistics puzzle evaporates, and the game becomes a clicker. *Fix:* everything travels through physical space.
+* **The Sinkhole Economy:** Production outpaces consumption, and chests fill with useless items. *Symptom:* the factory stops moving. *Fix:* an infinite sink, so the factory always has a reason to consume.
+* **The Spaghetti Wall:** The factory becomes too tangled to change, and rebuilding is punished. *Symptom:* players abandon saves rather than refactor. *Fix:* free deconstruction and blueprints, so rebuilding is cheaper than living with the mess.
 
 ### Neighboring Souls
 
-* **Containment:** Both are optimization puzzles built on inputs and outputs. Containment is about heat, danger, and a small, restricted footprint; Assembly is about throughput and infinite sprawl.
-* **Gauge:** Both feature resources moving in real time. Gauge is a gentle desk toy where you wait for surplus; Assembly is an active, demanding mathematical puzzle.
+* **Containment:** Both are optimization puzzles built on inputs and outputs, and both need a workbench. Containment is about heat, danger, and a small footprint; Assembly is about throughput and infinite sprawl.
+* **Gauge:** Both show goods moving in real time. Gauge is a gentle desk toy where the player waits for surplus to give away; Assembly is an active, demanding mathematical puzzle.
+* **Spire:** Both reward optimizing a build. Spire's build is drafted and thrown away within the hour; Assembly's is kept, refactored, and grown for hundreds of hours.
 
 ### The "Assembly" Litmus Test
 
 | Check | Question | Correct Answer |
 | --- | --- | --- |
-| **The Math** | Is the core gameplay loop about balancing the ratio of items produced vs. items consumed? | **Yes.** Throughput is the only metric that matters. |
-| **The Chores** | Can the player eventually build a machine to do the tasks they started the game doing by hand? | **Yes.** Automation is the progression system. |
-| **The Canvas** | Is the player penalized (via resource loss) for tearing down a factory and rebuilding it? | **No.** Refactoring must be free to encourage infinite scaling. |
+| **The Math** | Is the core loop about balancing the rate of items produced against items consumed? | **Yes.** Throughput is the metric. |
+| **The Chores** | Can the player eventually build machines to do the tasks they started the game doing by hand? | **Yes.** Automation is the progression system. |
+| **The Canvas** | Is the player penalized, through resource loss, for tearing down and rebuilding? | **No.** Refactoring must be free. |
+| **The Belt** | Does every item physically travel from where it's made to where it's used? | **Yes.** The journey is the puzzle. |
+| **The Sink** | Is there always a reason to make more? | **Yes.** The factory must grow. |
 
 *"You do not need a narrative climax when you have a 400-hour save file, a newly unlocked nuclear reactor, and a crippling shortage of green circuit boards."*

@@ -26,14 +26,13 @@ On the surface, these games look like action or adventure titles with monsters i
 * **components/theme_as_mechanic.txt:** The building is a mirror of the protagonist's guilt, and fear itself is a resource.
 * **components/environmental_storytelling.txt:** Diaries and files reveal what happened here, and what is probably still here.
 * **components/diegetic_interface.txt:** Health is read from the body, not a bar.
+* **components/audio_information.txt:** Sound creates dread. The player hears the threat long before seeing it: footsteps in the ceiling, scraping in the vents, breathing on the other side of a door.
 
 ### Signature Pillar 1: The Terror of the Unseen
 
 What the player imagines will always be worse than what the artists can render.
 
 **Design Rules:**
-
-* **Sound Before Sight:** The player should hear the threat long before seeing it. Footsteps in the ceiling. Scraping inside the vents. Breathing on the other side of a door.
 
 * **Imperfect Information:** Restrict vision with fixed camera angles, a narrow flashlight cone, fog, or darkness. What sits just outside the frame is more terrifying than anything inside it.
 
@@ -78,9 +77,8 @@ The building is also a lock. Its puzzles aren't a break from the horror; they ar
 
 ### What This Soul Costs
 
-(Shared costs live in the component files: fragile scarcity tuning, adaptive AI, writing discipline.)
+(Shared costs live in the component files: audio as a core department, fragile scarcity tuning, adaptive AI, writing discipline.)
 
-* **Audio Is a Core Department:** Sound before sight demands positional audio, layered ambience, and bespoke creature sound design. Budget audio like a main system, not polish.
 * **A Short Shelf Life:** Horror depends on the unknown. Once the building is mapped and the monsters understood, fear drains away. Plan for a tight, well-paced playthrough rather than endless content.
 
 ### How It Fails

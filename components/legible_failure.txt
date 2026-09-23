@@ -2,7 +2,7 @@
 
 **The principle:** Every loss must be traceable to a cause the player can see. Unexplained failure feels like a random number generator; explained failure feels like a lesson or a story.
 
-**Used by:** Dwarven, Ashen, Hearthian, Spire, Mansion, Containment, Gauge, Casebook, Chorus, Swarm, Assembly, Tribunal
+**Used by:** Dwarven, Ashen, Hearthian, Spire, Mansion, Containment, Gauge, Casebook, Chorus, Swarm, Tapestry, Assembly, Tribunal
 
 ### Design Rules
 
@@ -37,6 +37,7 @@
 * **Swarm:** Death is a curve the build fell behind, or a corner the player routed into; the clock and the density make both visible.
 * **Assembly:** A stalled line is a receipt: walk down the belt and find the exact missing input.
 * **Tribunal:** Retroactive: at the end of the match every role is revealed, and every lie is laid bare for the autopsy.
+* **Tapestry:** Every number has a receipt. Opinion, income, and war score break down into itemized modifiers, with tooltips nested inside tooltips.
 
 ### What It Costs
 

@@ -2,7 +2,7 @@
 
 **The principle:** The words, colours, and sounds of the interface are part of the mechanics. They must say only what is true, say it once, and never contradict what the systems actually do.
 
-**Used by:** Ampersand, Gauge, Casebook, Containment
+**Used by:** Containment, Gauge, Ampersand, Casebook, Chorus
 
 ### Design Rules
 
@@ -20,7 +20,7 @@
 
 * **Even Errors Stay in Voice:** Network failures, loading, and empty states speak in the game's voice (the wire is down; the file is with the typist) and never break character with "Error 503."
 
-* **The Mix Follows the State:** Sound carries state. As danger rises, other sounds duck until the dangerous thing is the loudest; when a system is at rest, the game grows quiet. Nothing plays that a player's action or the world didn't cause.
+* **Sound Is Part of the Voice:** How sound carries information (sound before sight, the mix following the state, mistakes removing sound rather than adding it) is covered in components/audio_information.txt.
 
 * **Written to Last:** Copy that players will read daily for years avoids slang, emoji, and borrowed art. Contractions are fine. An emoji is someone else's art direction, drawn by someone else's font.
 
@@ -30,6 +30,7 @@
 * **Gauge:** The vocabulary of pause, and no red anywhere a store is simply full. "Idle" became "In the shed" because idle reads as broken.
 * **Casebook:** A period institution's voice that must stay truthful: the Bureau prints times "as filed," and even errors are in period.
 * **Containment:** Say it once: the board, the bars, and the hum are the interface, and at the limit the reactor is the loudest thing in the game.
+* **Chorus:** The mix follows the state. A player in the groove hears the full arrangement; a broken combo drops layers until they earn them back.
 
 ### What It Costs
 

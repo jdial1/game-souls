@@ -57,5 +57,5 @@ A soul can take different positions on *the rules* of the world and *the current
 | Swarm | Total | Every stat, weapon, and upgrade is shown; the clock is always visible. |
 | Tapestry | Total (state) / Oblique (intent) | Every number has a tooltip; what your vassals intend is the mystery. |
 | Assembly | Total | Every rate, ratio, and stall is visible; the puzzle is the math, not discovery. |
-| Tribunal | Sealed / Hidden (asymmetric) | The traitors know everything; the majority knows almost nothing, and some of what it hears is a lie. |
+| Tribunal | Hidden (asymmetric) | The traitors know everything; the majority knows almost nothing, and some of what it hears is a lie. |
 | Tether | Hidden | No minimap and no markers; sound is the radar. |

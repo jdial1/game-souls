@@ -1,0 +1,41 @@
+## Component: Automate the Verb, Keep the Decision
+
+**The principle:** Hand the repetitive action to the machine so the player's attention goes to the decisions only they can make. Automation is a reward the player earns, never a way for the game to play itself.
+
+**Used by:** Containment, Gauge, Swarm, Assembly
+
+### Design Rules
+
+* **The Manual Tax:** Make the player do a task by hand just long enough to find it tedious. The moment they think "I never want to do that again," offer the machine that does it for them. Automation feels like a reward only after the chore has been felt.
+
+* **Hands on the Design, Not the Machine:** Once a system is built, it runs without a hand on it: no manual refuelling, no manual selling, no valve to hold. The player's hands belong on the design.
+
+* **Commission, Don't Carry:** The player decides where things go and never carries the pieces. No inventory to sort, no parts to place one at a time. Every decision is a routing decision, and the machinery does the holding.
+
+* **Fire Automatically, Steer Deliberately:** When the moment-to-moment action is automatic (weapons that fire on cooldowns, belts that move on their own), the player's verbs narrow to the ones that matter: where to stand, what to build, what to pick.
+
+* **Never Automate the Decision:** Automate the repeated action, never the choice. An auto-drafter, an auto-router, or an "optimize layout" button deletes the game it was meant to serve.
+
+### Tuning by Soul
+
+* **Gauge:** The player commissions; trains, carts, and barges do the carrying.
+* **Containment:** Automation (rebuying spent cells, selling power) is bought early, so a good reactor runs while the player looks away.
+* **Swarm:** Weapons fire themselves. The player steers and drafts.
+* **Assembly:** Automation *is* the progression. Every unlock retires a chore, until the player is an architect who never touches an item.
+
+### What It Costs
+
+* **A Deliberately Tedious Start:** The Manual Tax only works if the chore is real, so the first hour contains work the designers know players will dislike.
+* **Watching Must Stay Interesting:** Once the game runs itself, the view of it running has to be worth looking at, and the next decision has to be close.
+
+### How It Fails
+
+* **The Babysat Machine:** The design can't run without a hand on it. *Symptom:* players quit from chores, not difficulty. *Fix:* sell automation early; the player's hands belong on the design.
+* **Chores Forever:** Automation arrives long after the task stopped being interesting. *Symptom:* the first hours are remembered as a grind. *Fix:* unlock the machine the moment the manual task stops teaching anything.
+* **The Game Plays Itself:** Automation reaches the decisions, or the player's build is so complete that nothing is left to decide. *Symptom:* players put the controller down and watch. *Fix:* automate verbs, never choices, and keep introducing a new problem the automation can't solve.
+
+### Litmus
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Chores** | Can the player eventually build or earn a machine that does the tasks they started the game doing by hand, without it making their decisions? | **Yes.** Automate the verb; keep the decision. |

@@ -27,6 +27,9 @@ On the surface, these games are a grid of squares, a few bars, and numbers that 
 * **components/difficulty_ladder.txt:** Rebirth trades the board for research. Restriction runs and time-to-output records give the top somewhere to go.
 * **components/trusting_the_player.txt:** The numbers are shown and the advice is not. The tutorial teaches controls and never states the physics; the square law is the player's first discovery.
 * **components/shared_discovery.txt:** Designs travel as codes between players, and the classic designs are named and waiting to be found.
+* **components/workbench.txt:** A planner beside the reactor, a lab that runs the floor's rules, share codes that carry their stamina, and no rewinding.
+* **components/automation.txt:** Rebuying spent cells and selling power are bought early, so a good reactor runs while the player looks away.
+* **components/audio_information.txt:** The hum reports stability: it rises with heat, and its tremor deepens as heat trends upward.
 
 ### Signature Pillar 1: The Ledger
 
@@ -77,19 +80,13 @@ A design isn't finished when it is placed. It is finished when it has run. The c
 
 ### Signature Pillar 4: The Workbench Ships with the Game
 
-The communities of these games built planners, calculators, and share codes because the design was the product. If the community would have to build a tool to play well, build it in.
+The communities of these games built planners, calculators, and share codes because the design was the product. The general rules for shipping those tools live in components/workbench.txt; what Containment adds is a workbench built around time.
 
 **Design Rules:**
 
-* **A Lab Beside the Floor:** Give the player a sandbox copy where nothing is lost and predictions are allowed. Forecasts live in the lab; the floor reports only what has happened.
+* **Forecast the Failure Tick:** The lab doesn't just show whether a design holds; it runs the design forward and names the tick it will fail. Stamina can be proven in seconds instead of hours.
 
-* **The Lab Runs the Floor's Rules:** The lab changes money and nothing else. If it drops the power cap, selling, or upkeep, some designs will forecast one way and run another, and the lab has lied.
-
-* **Designs Travel as Text, With Their Context:** Every machine becomes a string and back. The string carries its measured numbers and the upgrades it assumes, so "Mark I" means the same machine in the reader's game as in the writer's.
-
-* **Measure, Don't Grade:** Report output, cost, heat, and stamina. Don't award stars and don't advise.
-
-* **Rebuild, Never Rewind:** Saved designs can be rebuilt on today's board, but the game can't be rolled back. The workbench helps you build; it never undoes a consequence.
+* **Stamina Travels With the Design:** A shared code carries the stamina rating it earned on a real board, so "Mark I" is a measured claim, not a boast.
 
 ### Variants & Exceptions
 
@@ -110,12 +107,10 @@ The communities of these games built planners, calculators, and share codes beca
 
 ### How It Fails
 
-(Shared failure modes live in the component files: the dominant strategy, hidden math, grind disguised as progress.)
+(Shared failure modes live in the component files: the Babysat Machine, the Lab That Lies, the dominant strategy, hidden math, grind disguised as progress.)
 
 * **The Checkerboard Forever:** One layout is best at every tier. *Symptom:* shared codes converge, and nobody redesigns after an upgrade. *Fix:* upgrades that move ratios, and tiers that change the shape of the heat, not only its size.
-* **The Babysat Machine:** The design can't run without a hand on it: manual refuelling, manual selling. *Symptom:* players quit from chores, not difficulty. *Fix:* sell automation early. The player's hands belong on the design, not the machine.
 * **The Friendly Leak:** A little heat disappears for free. It feels generous. *Symptom:* designs that exploit the leak earn top stamina ratings, and players who reason from conservation get the wrong answer. *Fix:* every sink is a part the player places; if the game wants to be generous, give them a better vent.
-* **The Lab That Lies:** The forecast's setup differs from the floor's. *Symptom:* a design forecast to hold melts on the floor, and players stop trusting the workbench. *Fix:* a test runs every example layout in both and requires them to agree.
 * **The Backdoor Rewind:** A save import or cloud restore undoes a meltdown. *Symptom:* the receipt stops mattering. *Fix:* refuse it in Hardcore, and mark the run as restored everywhere else.
 * **Proof Nobody Sees:** The only prestige number is peak output, which a doomed board can hit. *Symptom:* players chase one-minute stunts. *Fix:* rate stamina, and lead the records with output from a machine that holds.
 

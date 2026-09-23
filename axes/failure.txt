@@ -45,6 +45,6 @@ Every game answers this, whether on purpose or by accident. The answer sets the 
 | Chorus | Punishing but Legible | An off-beat input is punished, and the player can hear exactly why. |
 | Swarm | Punishing but Legible | The run ends when the build falls behind the clock; the next run starts in seconds. |
 | Tapestry | Narrative / Terminal | A lost war or a dead ruler becomes the heir's problem; only losing every title ends the game. |
-| Assembly | Forgone (or Trivial) | A stalled line pauses; nothing is lost, and tearing down refunds everything. |
+| Assembly | Trivial | A stalled line costs time, never materials; tearing down refunds everything. |
 | Tribunal | Terminal (for the match) | An eliminated player is out until the next match, and a wrong vote hands the traitors the game. |
 | Tether | Costly | Death in a raid loses everything you carried in; the stash survives. |

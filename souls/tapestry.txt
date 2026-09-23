@@ -2,9 +2,9 @@
 
 **A Framework for Institutional Inertia, Map-Painting, and the Generative Dynasty**
 
-The soul of games like *Crusader Kings*, *Stellaris*, *Europa Universalis*, *Victoria*, and *RimWorld* (at a macro scale) can be distilled into a single philosophy: "You direct the stream, but you do not steer the boat."
+The soul of games like *Crusader Kings*, *Stellaris*, *Europa Universalis*, *Victoria*, and *Mount & Blade* can be distilled into a single philosophy: "You direct the stream, but you do not steer the boat."
 
-On the surface, these games look like impenetrable spreadsheets stapled to a world map. Beneath the surface lies a ruthless generative story engine. The player plays as a ruler, an empire, or a dynasty, but they do not possess absolute control. Power is delegated, subjects have their own traits, and every order is filtered through layers of institutional friction. It is a game about watching a meticulously laid plan fall apart because your spymaster hates your heir.
+On the surface, these games look like impenetrable spreadsheets stapled to a world map. Beneath the surface lies a ruthless generative story engine. The player rules a realm, an empire, or a dynasty, but never with absolute control. Power is delegated, subjects have their own traits, and every order is filtered through layers of institutional friction. It is a game about watching a meticulously laid plan fall apart because your spymaster hates your heir.
 
 ### Axis Positions
 
@@ -19,68 +19,100 @@ On the surface, these games look like impenetrable spreadsheets stapled to a wor
 
 ### Components
 
-* **components/living_world.txt:** Vassals, factions, and neighboring empires have their own internal agendas, economies, and grudges. They act whether you prompt them or not.
-* **components/failure_as_content.txt:** Losing a war doesn't end the game; it creates a revenge arc for your grandson to inherit.
-* **components/scarcity_economy.txt:** The real scarce resources are abstract political capital: influence, legitimacy, prestige, and mana.
-* **components/systemic_consistency.txt:** The AI plays by the exact same rules as the player. They suffer the same attrition, the same rebellions, and the same marriage logic.
+* **components/living_world.txt:** Vassals, factions, and rival realms pursue their own agendas and grudges, and wars on the far side of the map eventually reach the player.
+* **components/failure_as_content.txt:** A lost war or a bad heir doesn't end the game; it becomes the next generation's inheritance and revenge arc.
+* **components/legible_failure.txt:** Every number has a receipt. Opinion, income, and war score break down into itemized modifiers, with tooltips nested inside tooltips.
+* **components/scarcity_economy.txt:** The scarce resources are political: influence, legitimacy, prestige, and the patience of the nobles who own the armies.
+* **components/systemic_consistency.txt:** The AI plays by the same rules as the player: the same attrition, rebellions, succession, and marriage logic.
 
 ### Signature Pillar 1: The Friction of Command
 
-In a traditional strategy game, you click a tank, right-click an enemy, and the tank fires. In a Tapestry-style game, orders are suggestions made to a system that might refuse them.
+In a traditional strategy game, you click a tank, click an enemy, and the tank fires. In a Tapestry-style game, orders are requests made to a system that might refuse them.
 
 **Design Rules:**
 
-* **People Are the Machine:** The empire is made of characters (or factions, or estates). To raise an army, you must ask the nobles who own the land. If the nobles hate you, you get no army.
+* **People Are the Machine:** The realm is made of characters, factions, or estates. To raise an army, you ask the nobles who own the land. If the nobles hate you, you get no army.
 
-* **Action Requires Justification:** A player cannot simply declare war because they want land. They must possess a *casus belli* (a legal or religious justification). The rules apply to the ruler, and breaking them incurs massive institutional penalties (tyranny, aggressive expansion).
+* **Action Requires Justification:** A ruler can't declare war just because they want land. They need a *casus belli*, a legal or religious justification, and breaking the rules brings heavy institutional penalties (tyranny, aggressive expansion, coalitions against you).
+
+* **Delegation Has a Personality:** Tasks are carried out by councillors, governors, and generals with their own skills, traits, and loyalties. The same order succeeds, fails, or backfires depending on who carries it out.
 
 ### Signature Pillar 2: The Succession Crisis
 
-The player is not an immortal god. The entity they control will die, and the transition of power is the central tension of the game.
+The player is not an immortal god. The ruler they play will die, and the transfer of power is the central tension of the game.
 
 **Design Rules:**
 
-* **The Rules Change with the Ruler:** When the current leader dies, the empire remains, but the network of loyalty resets. The new heir inherits the land, but not the respect. A stable empire can fracture into civil war purely because the new king is a coward.
+* **The Rules Change with the Ruler:** When a ruler dies, the realm remains but the network of loyalty resets. The heir inherits the land, not the respect. A stable realm can fracture into civil war because the new king is a coward.
 
-* **The Unwanted Heir:** The player must often play as a character they did not optimize and do not like. The system forces them to adapt their playstyle to the flaws of their current avatar.
+* **The Unwanted Heir:** The player must often continue as a character they didn't choose and don't like. The system forces them to adapt their play to the flaws of their new avatar.
+
+* **Play the Dynasty, Not the Person:** The game ends only when the family or the state has nobody left to carry on. A single death is a chapter break, not a game over.
 
 ### Signature Pillar 3: The Map Is the Ledger
 
-Progress is fundamentally territorial and geographical. The story of the game is written in how the borders shift over time.
+Progress is territorial. The story of the game is written in how the borders shift over time.
 
 **Design Rules:**
 
-* **Painting the Map:** The visual reward for hours of spreadsheet optimization is seeing your faction's color spread across the geography. The map must clearly display political, religious, and cultural borders.
+* **Painting the Map:** The visual reward for hours of management is seeing your color spread across the geography.
 
-* **The Ripple Effect:** If two AI empires go to war on the other side of the map, it should eventually affect the player (trade routes collapse, refugees arrive, a massive blob threatens the balance of power).
+* **Many Maps of One World:** The same territory is drawn in several layers (political, religious, cultural, economic), and tension lives where the layers disagree: a province you own but whose faith and culture belong to your rival.
+
+* **Growth Creates Resistance:** The larger the realm, the harder it is to steer. Distant provinces drift, neighbors form coalitions, and vassals grow powerful enough to demand things. Size is never a pure win.
+
+### Signature Pillar 4: Systems That Tell Stories
+
+The numbers are the engine; the stories are the reason anyone plays. The game must translate its simulation into people.
+
+**Design Rules:**
+
+* **Events Translate Numbers into Scenes:** When the simulation produces something notable, it arrives as a short, human-readable event with choices: "Your brother was caught stealing from the treasury."
+
+* **Traits Are Plot:** Character traits (ambitious, craven, zealous, lustful) drive AI decisions and unlock event choices. A trait on a character sheet is a promise that something will happen.
+
+* **Secrets and Leverage:** Characters hold secrets and owe favors, and both can be discovered, traded, and used. Intrigue is a system, not a cutscene.
 
 ### Variants & Exceptions
 
-* *Stellaris* replaces dynasties with species and political ethics. The succession crisis is replaced by factional demands and elections, but the friction of command remains.
-* *Victoria* replaces dynastic characters with population demographics (POPs). The player's enemy isn't an angry duke, but a rising middle class demanding voting rights that conflict with the player's economic goals.
-* *Mount & Blade* translates this soul into a third-person action game. You command armies in person, but the kingdom-level map-painting, vassal management, and defection mechanics are pure Tapestry.
+* *Crusader Kings* is the purest form: you play a dynasty, not a realm, and the game ends only when your family holds no titles.
+* *Europa Universalis* shifts from people to institutions: estates demand privileges, and aggressive expansion provokes coalitions of neighbors. The friction of command comes from a state rather than a court.
+* *Stellaris* replaces dynasties with species and political ethics. Factions press their demands, and democratic empires hold elections, but the friction of command remains.
+* *Victoria* replaces characters with population groups and political interest groups. The enemy isn't an angry duke but a rising middle class demanding reforms that conflict with the player's economic goals.
+* *Mount & Blade* puts this soul in a third-person action game. You fight battles in person, but the kingdom-level map-painting, vassal management, and defections are pure Tapestry.
+* *RimWorld* touches the soul only at the level of its factions and world map; its heart is Dwarven.
 
 ### What This Soul Costs
 
-* **The UI Tax:** Exposing thousands of interrelated variables (loyalty, tax rates, cultural drift) without overwhelming the player requires massive UI engineering. Tooltips nested inside tooltips become mandatory.
-* **Performance Degradation:** Simulating the daily lives, genetics, and wealth of 20,000 AI characters will eventually bring any CPU to its knees. Late-game lag is a notorious genre staple.
+(Shared costs live in the component files: the UI tax, AI complexity, performance.)
+
+* **Late-Game Performance:** Simulating thousands of characters, pops, or planets eventually strains any computer. Late-game slowdown is a notorious staple of the genre, and it must be budgeted for from the start.
+* **The Learning Cliff:** The depth that makes these games last also makes the first hours brutal. Tutorials, tooltips, and a gentle starting position are features, not concessions.
+* **Event Writing:** Stories need a large, varied library of events, and players notice repeats quickly.
 
 ### How It Fails
 
-* **Spreadsheet Blindness:** The numbers go up, but no stories emerge. *Symptom:* the game feels like a math problem rather than an empire. *Fix:* ensure that systemic events are translated into human-readable narrative pop-ups (for example, "Your brother was caught stealing").
-* **The Omnipotent Ruler:** The player has too much direct control, and subordinates never disobey. *Symptom:* the game becomes too easy once the economy snowballs. *Fix:* introduce institutional inertia. The larger the empire gets, the harder it should be to steer.
+(Shared failure modes live in the component files: illegible chaos, the solved simulation, the waiting room.)
+
+* **Spreadsheet Blindness:** The numbers go up, but no stories emerge. *Symptom:* the game feels like a math problem rather than a realm. *Fix:* translate notable simulation events into people and choices.
+* **The Omnipotent Ruler:** The player has too much direct control, and subordinates never disobey. *Symptom:* the game becomes easy once the economy snowballs. *Fix:* institutional inertia; the larger the realm, the harder it is to steer.
+* **The Blob:** One realm grows until nothing can threaten it. *Symptom:* the last hundred years are a formality. *Fix:* growth creates resistance: coalitions, internal instability, succession crises that split large realms.
+* **The Rerun:** The same events fire again and again. *Symptom:* players click through without reading. *Fix:* a deep event library, and events that remember they've happened.
 
 ### Neighboring Souls
 
-* **Dwarven:** Both rely heavily on system-authored stories and generative chaos. Dwarven operates at a micro, granular level (individual limbs and meals); Tapestry operates at a macro, institutional level (borders and marriages).
-* **Casebook:** Both use an Armchair Intrigue tone. Casebook asks you to passively solve a puzzle; Tapestry asks you to actively manage a chaotic system.
+* **Dwarven:** Both rely on system-authored stories and generative chaos. Dwarven works at a granular level (individual limbs and meals); Tapestry works at an institutional level (borders, marriages, and successions).
+* **Casebook:** Both hold an Armchair Intrigue tone. Casebook asks the player to prove one fixed truth; Tapestry asks them to manage a court full of people who are lying to each other.
+* **Elysium:** Both make traits into personalities that shape outcomes. Elysium's traits argue inside one head; Tapestry's argue across a whole court.
 
 ### The "Tapestry" Litmus Test
 
 | Check | Question | Correct Answer |
 | --- | --- | --- |
-| **The Friction** | If the player orders a subordinate to do something against their own interests, will they hesitate or refuse? | **Yes.** You manage the system; you do not possess mind control. |
-| **The Justification** | Can the player attack a peaceful neighbor simply because they want the territory, without any systemic pushback? | **No.** Action requires a justification or incurs a heavy penalty. |
-| **The Succession** | If the current leader dies, does the game continue under new, more difficult political circumstances? | **Yes.** The empire remains, but the loyalties reset. |
+| **The Friction** | If the player orders a subordinate to act against their own interests, will they hesitate or refuse? | **Yes.** You manage the system; you do not possess mind control. |
+| **The Justification** | Can the player attack a peaceful neighbor just because they want the territory, with no systemic pushback? | **No.** Action requires a justification, or it carries a heavy penalty. |
+| **The Succession** | When the ruler dies, does the game continue under new, harder political circumstances? | **Yes.** The realm remains; the loyalties reset. |
+| **The Story** | Can the player retell their game as a story about people rather than numbers? | **Yes.** The simulation speaks in scenes. |
+| **The Blob** | Does growth create its own resistance? | **Yes.** The bigger the realm, the harder it is to steer. |
 
 *"You do not need a scripted villain when you have a sprawling empire, a weak heir, and a spymaster who just fabricated a claim on your richest province."*

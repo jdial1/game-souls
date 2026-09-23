@@ -62,8 +62,6 @@ Between the fights, the map is itself a decision. The player sees the road ahead
 * **Risk Is a Path You Choose:** Put optional danger (elite enemies, cursed events, harder encounters) on the map with better rewards behind it. A strong run seeks out risk to grow faster; a weak run routes around it to survive. The same map plays differently depending on the deck.
   * *Example:* A player with a fragile but explosive deck sees two paths: one with two elite fights and a rare relic, one with a rest site and a shop. Taking the elites now could win the run or end it. Reading the deck honestly is the skill.
 
-* **Offer a Few, Always Including None:** Reward screens offer a small, fixed number of options (usually three) and always allow skipping. Too many options is shopping; too few is a slot machine; a forced pick bloats the build.
-
 * **Rest Is a Choice, Not a Refill:** Safe stops offer a trade (heal, *or* upgrade a card, *or* remove one) rather than a free top-up. Even recovery costs power.
 
 ### Variants & Exceptions

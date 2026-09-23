@@ -1,0 +1,47 @@
+## Component: Audio as Information
+
+**The principle:** Sound is not decoration. It is the channel that arrives first, reaches around corners, and can't be switched off by looking away, so the game treats it as information with the same honesty it gives the screen.
+
+**Used by:** Mansion, Containment, Chorus, Tether
+
+### Design Rules
+
+* **Sound Before Sight:** The player should hear a threat before they see it: footsteps in the ceiling, scraping in the vents, a musical cue before the attack animation. The ear is the early-warning system.
+
+* **Every Threat Has a Cue:** Anything that can hurt the player announces itself audibly, and the cue is the same every time. A threat with no sound is unfair; a threat with an inconsistent sound is worse.
+  * *Example (Chorus):* An obstacle placed on an off-beat with no hi-hat or synth stab to mark it feels random. Add the stab, and the same obstacle feels like part of the song.
+
+* **Every Action Has a Sound:** The player's own actions (footsteps, reloading, healing, opening a door) make noise that others can hear. Noise is a cost the player pays, and silence is a skill.
+  * *Example (Tether):* Healing takes five seconds and rustles loudly. A player with a full backpack has to decide whether to bleed quietly or heal and be heard.
+
+* **Positional Honesty:** Direction, distance, and occlusion must be accurate. If a sound seems to come from above when its source is below, the audio has lied, and players stop trusting their ears.
+
+* **The Mix Follows the State:** The mix is a readout. As danger rises, other sounds duck until the dangerous thing is the loudest; when a system is at rest, the game grows quiet. A board in balance sounds different from one slowly building toward failure (Containment).
+
+* **Mistakes Remove Sound; They Don't Add It:** A miss or a failure is marked by the absence of a rewarding sound (a dropped music layer, a silent hit), never by a loud buzzer. A punishing noise makes players mute the game, and a muted game has lost its most important channel.
+
+### Tuning by Soul
+
+* **Mansion:** Sound creates dread. What the player hears but can't see is scarier than anything rendered.
+* **Containment:** Sound reports stability. The reactor's hum rises with heat, and a tremor deepens as heat trends upward.
+* **Chorus:** Sound is the rules. Every threat is written into the music, and the player can survive with their eyes closed.
+* **Tether:** Sound is radar and liability. Every shot, step, and heal broadcasts the player's position to the whole server.
+
+### What It Costs
+
+* **Audio Is a Core Department:** Positional audio, occlusion, dynamic mixing, and bespoke cues need budget and staff like a main system, not polish at the end.
+* **Latency Engineering:** When sound carries timing or position, audio latency and synchronization become engineering problems. Calibration tools for the player's own hardware are part of the game.
+* **Accessibility Debt:** A game that relies on hearing excludes deaf and hard-of-hearing players unless every important cue has a visual equivalent (a direction indicator, a pulse on the beat, captions for threats).
+
+### How It Fails
+
+* **The Decorative Mix:** Music and effects are layered for mood, but none of them tell the player anything. *Symptom:* players play with sound off and lose nothing. *Fix:* audit every threat and state change; each needs an audible cue.
+* **The Lying Ear:** Occlusion or panning is wrong, so enemies sound like they're somewhere they aren't. *Symptom:* players die "to a sound from the wrong floor" and stop trusting audio. *Fix:* test positional audio as rigorously as hitboxes.
+* **The Buzzer:** Mistakes trigger loud, unpleasant sounds. *Symptom:* players mute the game, and with it the game's best information. *Fix:* a mistake removes a sound; it never adds a punishing one.
+* **Hearing Required:** A cue exists only as sound. *Symptom:* deaf players can't play at all. *Fix:* give every critical cue a visual twin.
+
+### Litmus
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Blindfold** | With their eyes closed, could a skilled player tell that danger is coming, and roughly where? | **Yes.** The ear is the first warning. |

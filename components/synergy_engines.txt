@@ -13,6 +13,8 @@
   * *Example (Loathing):* A hat that gives +2 to linguistic damage combos with a pet that drops punctuation marks, creating an unexpected micro-build.
   * *Example (Looking Glass):* A proximity mine stuck to a thrown severed arm.
 
+* **Pieces Arrive by Draft:** Offer a small, fixed number of options (usually three) and always allow skipping. Too many options is shopping; too few is a slot machine; a forced pick bloats the build. In real-time games, pause the action for the choice. Limited rerolls, skips, and banishes turn luck into a skill.
+
 * **Balance the Average, Not the Ceiling:** Tune so an average build or run is tense and winnable, then let skilled players break it wide open. Patching out a legendary combo punishes the players who found it.
 
 * **Unwritten Interactions:** Don't spell out every combo. Let players discover that two unrelated pieces form an infinite loop.

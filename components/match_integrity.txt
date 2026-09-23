@@ -1,0 +1,39 @@
+## Component: Match Integrity
+
+**The principle:** When strangers compete with hidden information and real stakes, the match itself must be protected. The dead stay silent, the server decides, the truth comes out only at the end, and the conversation around the game is moderated like any public space.
+
+**Used by:** Tribunal, Tether
+
+### Design Rules
+
+* **The Dead Are Sealed:** An eliminated player can't pass information to the living until the match ends. Spectating, kill-cams, and ghost chat are restricted or delayed so the dead can't name a killer or point out a sniper.
+
+* **The Server Decides:** Every item, shot, vote, and role is tracked on an authoritative server. When the stakes are real (a stash, a win, a reputation), anything the client decides is something a cheater will decide instead.
+
+* **The Truth Comes Out at the End:** When the match ends, the hidden information is revealed to everyone: every role, every lie, every position. The reveal is the reward for surviving the uncertainty.
+
+* **Security Scales With the Stakes:** The more a loss costs (hours of progress, a persistent stash), the more incentive there is to cheat. Anti-cheat investment has to grow with what players can lose.
+
+* **Deception Stays Inside the Game:** Lying to another player's character is the game; harassing the player is not. Chat that carries the game needs muting, reporting, and moderation, and the game's framing should make clear that the betrayal ends when the match does.
+
+### Tuning by Soul
+
+* **Tribunal:** The dead get their own channel or tasks, never the living's ear; roles are revealed the moment the match ends; voice chat needs moderation because the game is deception.
+* **Tether:** Spectating is restricted until the raid is over, every item lives on the server, and anti-cheat is the defining battle of the game's life.
+
+### What It Costs
+
+* **Servers and Anti-Cheat:** Authoritative servers and an anti-cheat arms race are permanent operating costs, not launch tasks.
+* **Moderation:** Reporting, review, and enforcement for voice and text chat need staff for as long as the game is live.
+
+### How It Fails
+
+* **Dead Men Tell Tales:** Eliminated players reach the living through spectating, kill-cams, or chat. *Symptom:* a dead player names the killer or the sniper's window, and the match collapses. *Fix:* seal the dead from the living until the match ends.
+* **The Cheater Epidemic:** Stakes grow but security doesn't. *Symptom:* every loss is blamed on cheaters, and many of them are. *Fix:* server authority and anti-cheat sized to the stakes.
+* **The Toxic Lobby:** In-game betrayal spills into real abuse. *Symptom:* players leave after one bad match. *Fix:* moderation tools, and a game frame that ends the betrayal at the reveal.
+
+### Litmus
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Seal** | Can an eliminated player tell a living one anything the living player couldn't have found out alone? | **No.** The dead are silent until the match ends. |

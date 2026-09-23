@@ -27,6 +27,7 @@ The name comes from the rule that turns separate railways into one network: a co
 * **components/systemic_consistency.txt:** Kindness obeys the same rules as haulage. A gift runs on the same rails and stops at the same full yard as every other load. Deterministic throughout, down to where the animals stand.
 * **components/legible_failure.txt:** There is no failure, only stalls, and each gets a present-tense receipt: what is paused, and what resumes it.
 * **components/theme_as_mechanic.txt:** The theme is a family, and the family is a network. Help needs a connection to arrive by, built from both sides.
+* **components/automation.txt:** Commission, don't carry. The player decides where things go; trains, carts, and barges do the carrying.
 * **components/trusting_the_player.txt:** Hints, never gates. The tutorial passes over any lesson already learned and never disables a control to force an order.
 
 ### Signature Pillar 1: Nothing Is Taken Back
@@ -59,7 +60,6 @@ In most games, value is a number and time is a bar. In a Gauge-style game, both 
 
 * **The Heap Is the Readout:** Draw a quantity as a fraction of the room it stands in, so "full" looks full at every size of store.
 
-* **Commission, Don't Carry:** The player decides where things go and never carries the pieces. Every decision is a routing decision, and the machinery does the holding.
 
 ### Signature Pillar 3: Spare Is the Gift
 

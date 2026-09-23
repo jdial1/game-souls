@@ -41,17 +41,17 @@ archive/ holds the original single-file versions of each soul, untouched.
 | Gauge | Forgone | Total / Taught | Kin-Authored | Surplus | Unhurried Warmth | Persistent World |
 | Casebook | Trivial / Costly | Fair Play | Designer-Authored / Player Solution | Understanding | Armchair Intrigue | Serial |
 | Chorus | Punishing but Legible | Total (taught through sound) | Designer-Authored | Kinetic | Cool Focus / Joyful | Levels |
-| Swarm | Punishing but Legible | Total | Player-Authored Build | Surplus / Optimization | Cool Focus / Deadpan Absurd | Runs |
+| Swarm | Punishing but Legible | Total | Player-Authored Build | Optimization | Cool Focus / Deadpan Absurd | Runs |
 | Tapestry | Narrative / Terminal | Total / Oblique | System-Authored | Custodial | Armchair Intrigue | Sandbox Chronicle |
-| Assembly | Forgone (or Trivial) | Total | Player-Authored Build | Surplus / Optimization | Cool Focus | Persistent World |
-| Tribunal | Terminal (for the match) | Sealed / Hidden | Mutual | Social / Interior | Tense Paranoia | Runs (matches) |
+| Assembly | Trivial | Total | Player-Authored Build | Optimization | Cool Focus | Persistent World |
+| Tribunal | Terminal (for the match) | Hidden (asymmetric) | Mutual | Social / Interior | Tense Paranoia | Runs (matches) |
 | Tether | Costly | Hidden | Player-Authored Build / System-Authored | Toolkit / Earned Mastery | Dread / Tense Paranoia | Runs feeding a Rebirth Account |
 
 ### Components Used by Each Soul
 
 | Component | Looking Glass | Dwarven | Loathing | Ashen | Hearthian | Elysium | Spire | Toybox | Mansion | Containment | Gauge | Ampersand | Casebook | Chorus | Swarm | Tapestry | Assembly | Tribunal | Tether |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| legible_failure | | x | | x | x | | x | | x | x | x | | x | x | x | | x | x | |
+| legible_failure | | x | | x | x | | x | | x | x | x | | x | x | x | x | x | x | |
 | failure_as_content | | x | | x | x | x | | | | | | x | | | | x | | | |
 | systemic_consistency | x | x | | | x | | | x | | x | x | | x | x | | x | x | | |
 | living_world | x | x | | x | | | | | x | | | | | | | x | | | x |
@@ -62,10 +62,14 @@ archive/ holds the original single-file versions of each soul, untouched.
 | synergy_engines | x | | x | | | | x | | | x | | | | | x | | | | |
 | difficulty_ladder | | | x | | | | x | | | x | | | x | x | x | | | | |
 | theme_as_mechanic | | | x | | | x | | | x | | x | x | x | x | | | | x | |
-| diegetic_interface | x | | | x | | | | | x | | x | | | | | | | | x |
+| diegetic_interface | x | | | x | | | | | x | | x | | | | | | | x | x |
 | shared_discovery | | | x | x | x | | | | | x | | | | | | | | x | |
 | social_safety | | | | | | | | | | | x | x | | | | | | | |
-| interface_voice | | | | | | | | | | x | x | x | x | | | | | | |
+| interface_voice | | | | | | | | | | x | x | x | x | x | | | | | |
+| audio_information | | | | | | | | | x | x | | | | x | | | | | x |
+| workbench | | | | | | | | | | x | | | | | | | x | | |
+| automation | | | | | | | | | | x | x | | | | x | | x | | |
+| match_integrity | | | | | | | | | | | | | | | | | | x | x |
 
 ### How to Use This Library
 

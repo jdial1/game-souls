@@ -1,0 +1,43 @@
+## Component: The Workbench
+
+**The principle:** When the design is the product, the tools for designing are part of the game. If players would have to build an outside planner, calculator, or sharing format to play well, ship it.
+
+**Used by:** Containment, Assembly
+
+### Design Rules
+
+* **A Lab Beside the Floor:** Give the player a sandbox copy where nothing is lost and predictions are allowed. Forecasts live in the lab; the real game reports only what has happened.
+
+* **The Lab Runs the Floor's Rules:** The lab changes money (or unlocks) and nothing else. If it drops a power cap, selling, or upkeep, some designs will behave one way in the lab and another for real, and the lab has lied.
+
+* **Designs Travel as Text, With Their Context:** Every design becomes a string and back again. The string carries the numbers it was measured at and the upgrades it assumes, so a posted design arrives with its claim attached and means the same thing in the reader's game.
+  * *Example (Assembly):* A factory blueprint copied as a text string is pasted into a forum, then into another player's game, and a whole smelting column appears as a ghost ready to be built.
+
+* **Measure, Don't Grade:** Report output, cost, throughput, and stamina. Don't award stars and don't advise. Players judge their designs against their own and each other's.
+  * *Example:* *Opus Magnum* shows each solution's cost, cycles, and area as a histogram against everyone else's, and never says whether it was good.
+
+* **Refactoring Is Free:** Tearing a design down refunds everything it cost. The penalty for redesigning is time, not materials, so players are never punished for improving.
+
+* **Rebuild, Never Rewind:** Saved designs can be rebuilt on today's board, but the game can't be rolled back. The workbench helps the player build; it never undoes a consequence.
+
+### Tuning by Soul
+
+* **Containment:** A planner beside the reactor, a forecast of when a design fails, and share codes that carry the stamina rating they earned.
+* **Assembly:** Blueprints, free deconstruction, and production statistics. The factory is redesigned constantly, so the tools for redesigning are the most-used features in the game.
+
+### What It Costs
+
+* **Tools Are Product Work:** A planner, a forecast, and a sharing format are features with their own UI, bugs, and tests, not debug tools left in.
+* **Format Stability:** Shared strings live for years on forums. A game update that breaks old codes breaks the community's library.
+
+### How It Fails
+
+* **The Lab That Lies:** The lab's setup differs from the real game's. *Symptom:* a design that worked in the lab fails for real, and players stop trusting the tools. *Fix:* a test runs every example design in both and requires them to agree.
+* **The Outside Tool:** The community has to build the planner or calculator. *Symptom:* every serious player keeps a browser tab open beside the game. *Fix:* whatever the community keeps building, build in.
+* **Broken Codes:** An update silently invalidates shared designs. *Symptom:* forum posts full of designs that no longer paste. *Fix:* version the format, and migrate old codes forward.
+
+### Litmus
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Workbench** | If players would need an outside tool to design well, does the game ship it? | **Yes.** The lab, the code, and the measurements are in the box. |

@@ -2,7 +2,7 @@
 
 **The principle:** A social layer between people who already know each other must never become an audience, a scoreboard, or a lever one person pulls on another. The game connects people; it never makes them owe each other.
 
-**Used by:** Ampersand, Gauge
+**Used by:** Gauge, Ampersand
 
 ### Design Rules
 

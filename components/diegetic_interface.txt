@@ -2,7 +2,7 @@
 
 **The principle:** The interface lives inside the world. Menus don't pause time, and status is read from the body and the environment, not from floating bars.
 
-**Used by:** Looking Glass, Ashen, Mansion, Gauge, Tether
+**Used by:** Looking Glass, Ashen, Mansion, Gauge, Tribunal, Tether
 
 ### Design Rules
 
@@ -23,6 +23,7 @@
 * **Mansion:** Diegetic health and real-time inventory management keep fear constant.
 * **Gauge:** Diegetic for warmth, not vulnerability. Stores are read off the heaps, waits off the vehicles doing the carrying, and a gift off the colour of the train it came on. Numbers caption objects; they never replace them.
 * **Tether:** Ammo is checked by pulling the magazine and healing takes a long animation; every menu action leaves you exposed and audible.
+* **Tribunal:** Doing a task covers the screen, blinding the player to what's happening around them. Being useful means being vulnerable.
 
 ### What It Costs
 
