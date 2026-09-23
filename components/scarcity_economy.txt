@@ -2,7 +2,7 @@
 
 **The principle:** A tight bottleneck on a key resource turns every action into a decision. Scarcity is where tension, optimization, and meaning come from.
 
-**Used by:** Dwarven, Loathing, Spire, Mansion, Containment, Ampersand, Casebook, Swarm, Tapestry
+**Used by:** Dwarven, Loathing, Spire, Mansion, Containment, Ampersand, Casebook, Swarm, Tapestry, Assembly, Tether
 
 ### Design Rules
 
@@ -31,6 +31,8 @@
 * **Casebook:** Scarcity is certainty. A few checks and revealed answers per installment, shared across its pages; a check costs the same whether the guess was right or wrong.
 * **Swarm:** Scarcity is time and weapon slots: a fixed run length and a strict pick at every level-up.
 * **Tapestry:** Scarcity is political capital: influence, legitimacy, prestige, and the patience of the nobles who own the armies.
+* **Assembly:** Scarcity is throughput, space, and the player's attention, never money.
+* **Tether:** Gear Fear: the stash is the economy, and bringing good gear raises both your power and the cost of dying.
 
 ### What It Costs
 

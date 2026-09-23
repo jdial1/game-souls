@@ -50,3 +50,6 @@ This axis is not just "how strong is the player." It is *what kind* of strength 
 | Chorus | Kinetic |
 | Swarm | Surplus / Optimization |
 | Tapestry | Custodial |
+| Assembly | Surplus / Optimization |
+| Tribunal | Social / Interior |
+| Tether | Toolkit / Earned Mastery |

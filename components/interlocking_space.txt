@@ -2,7 +2,7 @@
 
 **The principle:** The world is not a sequence of levels but a single, folded, hand-authored space that the player learns room by room. Familiarity is the reward, and sometimes the weapon.
 
-**Used by:** Looking Glass, Ashen, Hearthian, Mansion
+**Used by:** Looking Glass, Ashen, Hearthian, Mansion, Tether
 
 ### Design Rules
 
@@ -26,6 +26,7 @@
 * **Ashen:** The whole world is one labyrinth; shortcuts are the primary reward.
 * **Hearthian:** The world is bounded and mappable; every piece fits a whole.
 * **Mansion:** A single building revisited until it is known, then turned against the player.
+* **Tether:** Map knowledge is power: exits, choke points, and loot spawns matter more than aim.
 
 ### What It Costs
 

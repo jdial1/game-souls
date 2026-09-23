@@ -41,6 +41,9 @@ Every tone has a mechanic that destroys it. Identify yours before production sta
 | Chorus | Cool Focus / Joyful | A loud error buzzer that ruins the song on a miss. |
 | Swarm | Cool Focus / Deadpan Absurd | A mid-game where the build is finished and nothing new threatens it. |
 | Tapestry | Armchair Intrigue | Subordinates who always obey. |
+| Assembly | Cool Focus | A global inventory that teleports items, so nothing has to travel. |
+| Tribunal | Tense Paranoia | A way for the innocent to confirm each other with certainty. |
+| Tether | Dread / Tense Paranoia | A secure container big enough to carry out the loot that matters. |
 
 ### Design Implications
 

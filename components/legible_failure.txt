@@ -2,7 +2,7 @@
 
 **The principle:** Every loss must be traceable to a cause the player can see. Unexplained failure feels like a random number generator; explained failure feels like a lesson or a story.
 
-**Used by:** Dwarven, Ashen, Hearthian, Spire, Mansion, Containment, Gauge, Casebook, Chorus, Swarm
+**Used by:** Dwarven, Ashen, Hearthian, Spire, Mansion, Containment, Gauge, Casebook, Chorus, Swarm, Assembly, Tribunal
 
 ### Design Rules
 
@@ -35,6 +35,8 @@
 * **Casebook:** Legibility is retroactive and exact. A failed check names the one wrong mark; a solved page makes every step look obvious in hindsight.
 * **Chorus:** Legibility lives in the soundtrack: every threat is telegraphed by a musical cue, so a miss is always an off-beat the player can hear.
 * **Swarm:** Death is a curve the build fell behind, or a corner the player routed into; the clock and the density make both visible.
+* **Assembly:** A stalled line is a receipt: walk down the belt and find the exact missing input.
+* **Tribunal:** Retroactive: at the end of the match every role is revealed, and every lie is laid bare for the autopsy.
 
 ### What It Costs
 

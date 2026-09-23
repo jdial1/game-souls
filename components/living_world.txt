@@ -2,7 +2,7 @@
 
 **The principle:** The world does not wait for the player. Its inhabitants have jobs, needs, grudges, and agendas, and they pursue them whether or not the player is watching.
 
-**Used by:** Looking Glass, Dwarven, Ashen, Mansion, Tapestry
+**Used by:** Looking Glass, Dwarven, Ashen, Mansion, Tapestry, Tether
 
 ### Design Rules
 
@@ -30,6 +30,7 @@
 * **Ashen:** A dying world whose few inhabitants follow tragic arcs you might only glimpse.
 * **Mansion:** A single intelligent hunter that learns you.
 * **Tapestry:** Vassals, factions, and rival realms pursue their own agendas and grudges, and every order is filtered through them.
+* **Tether:** AI enemies exist less to kill the player than to make them fire, turning every gunshot into an alarm for other players.
 
 ### What It Costs
 

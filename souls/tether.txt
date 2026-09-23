@@ -1,0 +1,97 @@
+## The "Tether" Game Soul
+
+**A Framework for the Extraction Contract, Gear Fear, and the Exit as the Win Condition**
+
+The soul of games like *Escape from Tarkov*, *Hunt: Showdown*, *Dark and Darker*, *Marauders*, and the Dark Zone in *The Division* can be distilled into a single philosophy: "Loot is only yours if you make it to the door."
+
+On the surface, these are hardcore first-person shooters or medieval slashers with a punishing time-to-kill. Beneath the surface, they are gambling games played with your own persistent inventory. The tension does not come from killing the enemy; the tension comes from the terrifying walk to the extraction point with a backpack full of treasure, knowing a single bullet will erase your last three hours of progress.
+
+### Axis Positions
+
+| Axis | Position |
+| --- | --- |
+| Failure | Costly (permadeath of inventory) |
+| Information | Hidden (fog of war, acoustics) |
+| Authorship | Player-Authored Build / System-Authored |
+| Power | Toolkit / Earned Mastery |
+| Tone | Dread / Tense Paranoia |
+| Structure | Runs (raids) feeding a Rebirth Account (stash) |
+
+### Components
+
+* **components/scarcity_economy.txt:** "Gear Fear." The economy is your stash, and bringing good gear makes you powerful but drastically increases the cost of failure.
+* **components/diegetic_interface.txt:** Checking ammo requires pulling the magazine out of the gun. Healing requires a five-second animation. The UI does not hold your hand.
+* **components/living_world.txt:** AI enemies exist on the map not to kill you, but to act as acoustic alarms that draw other players to your location.
+* **components/interlocking_space.txt:** Map knowledge is everything. Knowing where the exits are, where the choke points are, and where the loot spawns is more important than aiming.
+
+### Signature Pillar 1: The Extraction Contract
+
+In a traditional multiplayer shooter, the goal is to kill the other team or stand on a point until the match ends. In a Tether-style game, the only win condition is leaving the map alive.
+
+**Design Rules:**
+
+* **Asymmetrical Victory:** You can load into a map, hide in a bush for 20 minutes, pick up a single valuable item left on a corpse, extract, and "win." Survival supersedes kill/death ratios.
+
+* **The Turning Point:** Every raid has a psychological fulcrum. You enter as a hunter, looking for loot and fights. The moment your backpack is full, you become the hunted. Your objective shifts 180 degrees from aggression to survival.
+
+* **The Countdown:** Extracts are tied to a ticking raid timer. If the clock hits zero and you are not at the door, you are marked Missing in Action and lose everything.
+
+### Signature Pillar 2: The Stash Wager (Gear Fear)
+
+Power is not a static loadout chosen from a menu. Power is physical property that must be risked.
+
+**Design Rules:**
+
+* **You Keep What You Carry:** If you survive, the items in your backpack are added to your persistent stash. If you die, another player can pick up your gun and keep it forever.
+
+* **The Bet:** Taking your best armor into a raid increases your chances of surviving, but it also paints a target on your back and maximizes your loss if you die. Taking nothing (a "naked" run) minimizes risk but leaves you defenseless. Every match begins with a bet.
+
+### Signature Pillar 3: Acoustics as Radar
+
+Because there is no minimap and no friendly UI markers, sound is the most vital piece of information in the game.
+
+**Design Rules:**
+
+* **The Danger of Action:** Every action makes a sound. Healing, reloading, walking through bushes, and aiming down sights all broadcast your location to anyone in the same building.
+
+* **PvPvE Friction:** The map must be populated with low-threat AI enemies (zombies, scavengers, grunts). Their purpose is to force the player to make noise. Shooting a zombie is easy, but the gunshot tells the server exactly where you are.
+
+### Signature Pillar 4: The Inevitable Wipe
+
+Because the economy is entirely based on acquiring gear, the player base eventually becomes too rich, breaking the tension of Gear Fear.
+
+**Design Rules:**
+
+* **Seasonal Erasure:** Every few months, the developer must delete everyone's stash, reset all levels to zero, and put everyone back in rags.
+
+* **The Reset Is the Draw:** Players do not hate the wipe; they crave it. It returns the game to its highest state of tension, where a rusty shotgun feels like treasure.
+
+### Variants & Exceptions
+
+* *Hunt: Showdown* centers the raid around a boss monster. This forces players to converge on a single point, guaranteeing PvP friction, rather than wandering the map looting at random.
+* *Dark and Darker* replaces guns with swords and spells, proving that the soul does not require modern ballistics. It tightens the space with a battle-royale-style shrinking circle, forcing confrontation at the extraction portals.
+
+### What This Soul Costs
+
+* **Cheater Epidemics:** Because dying costs the player hours of real persistent progress, the frustration is immense. This creates a massive financial incentive for players to buy cheats, and for cheat-makers to develop them. Anti-cheat is the defining battle of a Tether game's lifespan.
+* **Server Authority:** Every bullet and item must be tracked server-side to prevent inventory hacking. Netcode must be flawless, or legible failure breaks down and players quit out of perceived unfairness.
+
+### How It Fails
+
+* **The Safe Pocket:** The player gets an unlootable "secure container" that is too large. *Symptom:* players run to the high-tier loot, put it in their secure container, and then die on purpose to leave the match quickly. *Fix:* secure containers must be tiny (only for keys and meds), or items lose value if you die with them (for example, *Tarkov*'s "Found in Raid" status).
+* **Information Leaks:** Kill-cams or spectator modes are enabled before the raid ends. *Symptom:* a dead player tells their living teammate exactly where the sniper is hiding. *Fix:* restrict spectating, and hold back post-match information until the server shuts down.
+
+### Neighboring Souls
+
+* **Mansion:** Both run on dread, scarcity, and hostile architecture. Mansion is a curated, designer-authored haunted house; Tether is a multiplayer haunted house where the ghosts are other people.
+* **Looking Glass:** Both demand you use the environment, sound, and a flexible toolkit to survive. Looking Glass wants you to author a clever solution; Tether wants you to survive a brutal mugging.
+
+### The "Tether" Litmus Test
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Door** | Is the primary win condition of the match simply reaching a designated exit point alive? | **Yes.** You don't have to kill a single person to win. |
+| **The Wager** | If the player dies in the match, do they permanently lose the equipment they brought in with them? | **Yes.** Every run is a gamble with your own property. |
+| **The Echo** | Does the game populate the map with AI enemies specifically designed to make players reveal their location via sound? | **Yes.** PvE exists to instigate PvP. |
+
+*"You do not need a scoreboard when you have a bleeding character, a backpack full of stolen rifles, and 300 meters of open ground between you and the extraction helicopter."*

@@ -47,3 +47,6 @@
 | Chorus | Levels (one song, one level) |
 | Swarm | Runs |
 | Tapestry | Sandbox Chronicle |
+| Assembly | Persistent World (Sandbox Chronicle) |
+| Tribunal | Runs (matches) |
+| Tether | Runs (raids) feeding a Rebirth Account (stash) |

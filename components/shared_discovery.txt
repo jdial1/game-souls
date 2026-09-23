@@ -2,7 +2,7 @@
 
 **The principle:** The game is bigger than any single player. Players help, warn, mislead, and collaborate with one another, and some secrets can only be solved together.
 
-**Used by:** Loathing, Ashen, Hearthian, Containment
+**Used by:** Loathing, Ashen, Hearthian, Containment, Tribunal
 
 ### Design Rules
 
@@ -26,6 +26,7 @@
 * **Loathing:** A living alternate reality game. A secret society in conversation with the developers.
 * **Hearthian:** Collaborative puzzle-solving, usually after launch, in forums and notebooks.
 * **Containment:** Designs travel as text. Players post layout codes with their numbers attached, and the classic designs wait offline under their old names.
+* **Tribunal:** Discovery within one match, among players who are partly lying: some of the group are polluting the evidence on purpose.
 
 ### What It Costs
 

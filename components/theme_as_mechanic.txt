@@ -2,7 +2,7 @@
 
 **The principle:** The game's theme (its joke, its fear, its ideas) lives in the systems, not just the writing. If you removed the theme, the mechanic would collapse, because they are the same thing.
 
-**Used by:** Loathing, Elysium, Mansion, Ampersand, Gauge, Casebook, Chorus
+**Used by:** Loathing, Elysium, Mansion, Ampersand, Gauge, Casebook, Chorus, Tribunal
 
 ### Design Rules
 
@@ -30,6 +30,7 @@
 * **Gauge:** The theme is family, and family is a network. Help needs a line to arrive by, the line is built from both sides, and a full store is what makes something spare.
 * **Casebook:** The theme is investigation, and investigation is the mechanic. Decoding, deducing, and filing are the fiction's own acts; help is a stingy institution, never a power-up.
 * **Chorus:** The theme is the music, and the music is the mechanic. Without the backing track, the game is unplayable.
+* **Tribunal:** The theme is deception. Strip away the hidden roles and there is no game left.
 
 ### What It Costs
 

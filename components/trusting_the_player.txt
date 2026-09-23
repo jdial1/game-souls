@@ -2,7 +2,7 @@
 
 **The principle:** Assume the player is smart, literate, and curious. Replace instructions with invitations, and let curiosity be the compass.
 
-**Used by:** Looking Glass, Loathing, Ashen, Hearthian, Toybox, Containment, Ampersand, Gauge, Casebook
+**Used by:** Looking Glass, Loathing, Ashen, Hearthian, Toybox, Containment, Ampersand, Gauge, Casebook, Assembly
 
 ### Design Rules
 
@@ -35,6 +35,7 @@
 * **Ampersand:** Trust the couple to have the conversation. Show both answers, interpret neither, and give one instruction: go and ask them about it.
 * **Gauge:** Hints, never gates. The tutorial reads the state of the world, passes over lessons already learned, and never disables a control to force an order.
 * **Casebook:** Trust the player to deduce. Record what they have spotted, show counts without advice, and say nothing about a wrong mark until they pay to ask.
+* **Assembly:** Give the math and the parts, never the layout.
 
 ### What It Costs
 

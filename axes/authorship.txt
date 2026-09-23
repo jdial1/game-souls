@@ -44,3 +44,6 @@
 | Chorus | Designer-Authored | "I finally full-combo'd the last track." |
 | Swarm | Player-Authored Build | "Minute twelve, the garlic and the whip clicked, and I stopped running." |
 | Tapestry | System-Authored | "My grandfather's spymaster murdered my heir, so I started a war over it." |
+| Assembly | Player-Authored Build | "I finally rebuilt the whole smelting column so the green circuits stopped starving." |
+| Tribunal | Mutual | "I was the impostor, and I got my best friend voted out for my kill." |
+| Tether | Player-Authored Build / System-Authored | "I had the rarest item in the game and died ten meters from the exit." |

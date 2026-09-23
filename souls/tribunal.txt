@@ -1,0 +1,98 @@
+## The "Tribunal" Game Soul
+
+**A Framework for Asymmetric Information, Paranoia, and the Democratic Weapon**
+
+The soul of games like *Among Us*, *Blood on the Clocktower*, *Town of Salem*, *Secret Hitler*, and *Project Winter* can be distilled into a single philosophy: "The monster looks like your friend, and the only weapon you have is a majority vote."
+
+On the surface, these games are party games, digital board games, or casual survival games. Beneath the surface, they are ruthless engines of social engineering. The game does not test your mechanical skill; it tests your ability to lie under pressure, parse body language, and manipulate a crowd. The game is just a framework; the actual puzzle is the other players in the voice call.
+
+### Axis Positions
+
+| Axis | Position |
+| --- | --- |
+| Failure | Terminal (for the match) |
+| Information | Sealed / Hidden (Asymmetric) |
+| Authorship | Mutual |
+| Power | Social / Interior |
+| Tone | Tense Paranoia |
+| Structure | Runs (Matches) |
+
+### Components
+
+* **components/legible_failure.txt:** Retroactive legibility. At the end of the match, the roles are revealed, and every lie and clever play is laid bare for the post-game autopsy.
+* **components/shared_discovery.txt:** The entire game is a localized, high-speed shared discovery where some players are actively polluting the data stream.
+* **components/theme_as_mechanic.txt:** The theme is deception. If you strip away the hidden roles, there is no game left.
+
+### Signature Pillar 1: Asymmetric Knowledge vs. Asymmetric Power
+
+The soul is built on a perfectly balanced scale. One side has the information; the other side has the numbers.
+
+**Design Rules:**
+
+* **The Informed Minority:** The traitors (impostors, werewolves) know who everyone is. They hold all the answers, but they do not have the numerical majority to win in a fair fight.
+
+* **The Ignorant Majority:** The innocents (crewmates, townsfolk) have the numbers, but they do not know whom to trust. Their goal is to acquire information without dying.
+
+* **The Sabotage:** The informed minority must be given tools to control the flow of information (cutting the lights, locking doors, falsifying roles) to keep the majority blind.
+
+### Signature Pillar 2: The Democratic Weapon
+
+In a Tribunal game, players usually cannot pull a trigger to kill a suspect. Execution is a civic process.
+
+**Design Rules:**
+
+* **The Vote Is the Bullet:** The only way the innocent team can permanently remove a threat is by convincing a majority to vote with them. Combat is entirely rhetorical.
+
+* **The Cost of a Miss:** Voting out an innocent player must be devastating. It doesn't just lower the innocent team's numbers; it actively aids the traitors' win condition. The tension comes from the fear of pulling the trigger on the wrong person.
+
+* **The Talking Phase:** The game must strictly separate the action phase from the deliberation phase. The meeting is where the game is actually won or lost.
+
+### Signature Pillar 3: The Alibi Engine (Forced Separation)
+
+If the innocent players stay grouped together in a ball, the traitors can never kill, and the game breaks. The game must force them to separate.
+
+**Design Rules:**
+
+* **The Distraction Tasks:** Give the innocent players a checklist of mandatory, mundane chores spread across the map. These tasks act as an alibi engine. "I was in Electrical fixing wires" is only a defense because the game required someone to be there.
+
+* **Vulnerability in Interface:** (Borrowed from Looking Glass.) When an innocent player is doing a task, their screen is covered by a minigame, blinding them to their surroundings. They are forced to make themselves vulnerable to win.
+
+### Signature Pillar 4: The Post-Game Autopsy
+
+A match does not end when the victory screen appears. It ends ten minutes later in the lobby.
+
+**Design Rules:**
+
+* **The Reveal:** When the game ends, all hidden information must be instantly broadcast to all players.
+
+* **The Catharsis:** The lobby must allow free voice chat so players can scream, explain their bluffs, and apologize for false accusations. The game is a tension-building machine, and the post-game lobby is the pressure release valve. Without it, the paranoia lingers and players quit.
+
+### Variants & Exceptions
+
+* *Blood on the Clocktower* (and to some extent *Town of Salem*) removes the physical map entirely. The Alibi Engine is replaced by complex role interactions and logic puzzles, but the Democratic Weapon remains identical.
+* *Project Winter* adds survival mechanics (freezing, starvation) and a physical combat system. You can hit suspects with an axe, bypassing the vote, but because health pools are high, attacking a suspect without a crowd to help you is essentially suicide.
+
+### What This Soul Costs
+
+* **No Single-Player Mode:** The game is literally unplayable without a critical mass of human beings. Bots cannot simulate social manipulation.
+* **Moderation and Toxicity:** Because the game relies heavily on voice and text chat and on deception, it is a breeding ground for toxic behavior. Community moderation is not a feature; it is a structural necessity.
+
+### How It Fails
+
+* **The Solved Meta:** A mechanical exploit lets innocent players confirm their roles with 100% certainty (for example, watching a visual task like the med-bay scan in *Among Us*). *Symptom:* the social deduction vanishes, and the game becomes a checklist. *Fix:* information must always be slightly unreliable. The traitors must have a way to fake the confirmation.
+* **Dead Men Tell Tales:** Eliminated players can communicate with living players. *Symptom:* the game instantly breaks because the dead reveal their killer. *Fix:* the dead must be hermetically sealed from the living until the match ends.
+
+### Neighboring Souls
+
+* **Elysium:** Both elevate conversation to the primary combat mechanic. Elysium is an interior dialogue with yourself; Tribunal is an exterior dialogue with liars.
+* **Ampersand:** Both are games about other people. Ampersand wants to reveal a heartwarming truth; Tribunal wants you to successfully sell a lie.
+
+### The "Tribunal" Litmus Test
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Weapon** | Can a single innocent player independently eliminate a suspect on their own? | **No.** Execution requires a democratic consensus. |
+| **The Scale** | Does one side possess the majority of the information, while the other possesses the majority of the numbers? | **Yes.** The imbalance is the engine of the game. |
+| **The Autopsy** | Is the post-game conversation where players explain their lies just as engaging as the game itself? | **Yes.** The reveal is the emotional payoff. |
+
+*"You do not need a boss fight when you have eight friends in a voice call, a dead body in the cafeteria, and ten seconds left on the voting timer."*

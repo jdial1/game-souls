@@ -1,0 +1,85 @@
+## The "Assembly" Game Soul
+
+**A Framework for Infinite Expansion, Logistic Bottlenecks, and the Moving Constraint**
+
+The soul of games like *Factorio*, *Satisfactory*, *Dyson Sphere Program*, *Mindustry*, and *Shapez* can be distilled into a single philosophy: "The factory must grow, and the bottleneck is always moving."
+
+On the surface, these games look like management simulators or sandbox builders. Beneath the surface, they are pure throughput puzzles played on an infinite canvas. You are not building a static town that eventually finishes; you are building an organic machine that constantly hungers for more scale. Fixing one problem immediately exposes the next, creating a mesmerizing loop of refactoring, expanding, and automating away the very game you were playing an hour ago.
+
+### Axis Positions
+
+| Axis | Position |
+| --- | --- |
+| Failure | Forgone (or Trivial) |
+| Information | Total (state) |
+| Authorship | Player-Authored Build |
+| Power | Surplus / Optimization |
+| Tone | Cool Focus |
+| Structure | Persistent World (Sandbox Chronicle) |
+
+### Components
+
+* **components/scarcity_economy.txt:** The scarce resource is never money; it is throughput, space, and the player's own attention.
+* **components/systemic_consistency.txt:** Math and matter are perfectly conserved. An item on a belt exists physically and mathematically until consumed.
+* **components/legible_failure.txt:** A stalled production line is a receipt. You can walk down the belt and pinpoint the exact missing input.
+* **components/trusting_the_player.txt:** The game gives you the math and the parts, but never the layout.
+
+### Signature Pillar 1: Automation as Progression
+
+In an RPG, you level up to deal more damage. In an Assembly-style game, you level up by never having to do a chore again.
+
+**Design Rules:**
+
+* **The Manual Tax:** The player must perform a task by hand just long enough to find it tedious. The exact moment they think, "I never want to hand-craft a copper wire again," the game unlocks the machine that does it for them.
+
+* **Redundancy Is the Goal:** Upgrades do not make the player character stronger; they render the player character obsolete. By the endgame, the player is a floating camera or a logistical architect, completely divorced from manual labor.
+
+### Signature Pillar 2: The Moving Bottleneck
+
+The game has no hard win condition because the puzzle solves itself into a new puzzle.
+
+**Design Rules:**
+
+* **The Squeeze:** Increasing the output of iron plates solves the iron shortage, but immediately reveals that copper wire production cannot keep up. When the copper is fixed, the power grid collapses. The game is a perpetual motion machine of localized crises.
+
+* **Ratio over Capacity:** The challenge isn't acquiring a resource; it's matching the consumption rate to the production rate. Two gears per second requires four plates per second. The math must be clean, legible, and relentless.
+
+### Signature Pillar 3: The Infinite Canvas
+
+Unlike the Containment soul, which forces the player to optimize a tiny, rigid board, the Assembly soul gives the player infinite space.
+
+**Design Rules:**
+
+* **Sprawl as a Mechanic:** The map must be vast enough that distance itself becomes a logistical puzzle. Transporting coal from 500 meters away requires a belt. Transporting it from 5 kilometers away requires engineering a train network.
+
+* **Tearing Down Is Free:** Because the factory must constantly be refactored to scale up, destroying a building must refund 100% of its cost. The penalty for redesigning is the time it takes, not a loss of materials.
+
+### Variants & Exceptions
+
+* *Factorio* and *Mindustry* feature hostile alien swarms that attack your pollution. This introduces a Costly failure state and a tower defense mechanic, but the core soul remains Assembly: you automate the creation and delivery of ammunition to the turrets.
+* *Satisfactory* shifts the camera to first person and adds verticality. The math is identical, but the architectural constraint is gravity and player traversal rather than purely 2D grid space.
+
+### What This Soul Costs
+
+* **Deterministic Simulation at Scale:** The engine must be able to track millions of individual items moving on belts at 60 FPS without dropping a frame. This requires bespoke, highly optimized data-oriented programming.
+* **The UI Tax:** The player needs to read throughput rates, power graphs, and fluid dynamics at a glance. The interface must be as crisp as spreadsheet software.
+
+### How It Fails
+
+* **The Magic Void:** Items teleport from a resource node directly into a global inventory. *Symptom:* the logistics puzzle evaporates, and the game becomes a generic clicker. *Fix:* everything must travel through physical space (belts, pipes, drones, trains).
+* **The Sinkhole Economy:** Production outpaces consumption, and the player is left with chests full of useless items. *Symptom:* the factory stops moving. *Fix:* provide an infinite sink (for example, a research tree that scales infinitely) so the factory always has a reason to consume.
+
+### Neighboring Souls
+
+* **Containment:** Both are optimization puzzles built on inputs and outputs. Containment is about heat, danger, and a small, restricted footprint; Assembly is about throughput and infinite sprawl.
+* **Gauge:** Both feature resources moving in real time. Gauge is a gentle desk toy where you wait for surplus; Assembly is an active, demanding mathematical puzzle.
+
+### The "Assembly" Litmus Test
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Math** | Is the core gameplay loop about balancing the ratio of items produced vs. items consumed? | **Yes.** Throughput is the only metric that matters. |
+| **The Chores** | Can the player eventually build a machine to do the tasks they started the game doing by hand? | **Yes.** Automation is the progression system. |
+| **The Canvas** | Is the player penalized (via resource loss) for tearing down a factory and rebuilding it? | **No.** Refactoring must be free to encourage infinite scaling. |
+
+*"You do not need a narrative climax when you have a 400-hour save file, a newly unlocked nuclear reactor, and a crippling shortage of green circuit boards."*
