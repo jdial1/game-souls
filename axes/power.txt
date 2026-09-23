@@ -47,3 +47,6 @@ This axis is not just "how strong is the player." It is *what kind* of strength 
 | Ampersand | Understanding (of a person, who keeps changing) |
 | Gauge | Surplus |
 | Casebook | Understanding (of the craft and of the case) |
+| Chorus | Kinetic |
+| Swarm | Surplus / Optimization |
+| Tapestry | Custodial |

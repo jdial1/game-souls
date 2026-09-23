@@ -42,3 +42,6 @@ Every game answers this, whether on purpose or by accident. The answer sets the 
 | Ampersand | Trivial (absence) / Narrative (the wrong guess) | A missed day costs a brick, not a lecture; a wrong guess about your partner is the best reveal of the day. |
 | Gauge | Forgone | A full yard makes trains wait; an unaffordable line says "Not enough goods." Nothing spoils, reverts, or is taken while the player is away. |
 | Casebook | Trivial (the board) / Costly (the receipt) | A wrong mark costs nothing and can sit unfiled forever; every check and revealed answer comes from a small ration and is printed on the result. |
+| Chorus | Punishing but Legible | An off-beat input is punished, and the player can hear exactly why. |
+| Swarm | Punishing but Legible | The run ends when the build falls behind the clock; the next run starts in seconds. |
+| Tapestry | Narrative / Terminal | A lost war or a dead ruler becomes the heir's problem; only losing every title ends the game. |

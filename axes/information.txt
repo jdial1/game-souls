@@ -53,3 +53,6 @@ A soul can take different positions on *the rules* of the world and *the current
 | Ampersand | Sealed (the other's answer) / Total (the rules) | Neither answer is readable until both exist; then both are shown whole, side by side. |
 | Gauge | Total (state) / Taught (rules) | Heaps drawn as how full their store is, and the price on the button that spends it; a tutorial that watches the world rather than instructing. |
 | Casebook | Fair Play (the answer) / Taught (the rules) | A primer teaches the tells; the page holds every clue; a wrong mark sits silently until a rationed check names it. |
+| Chorus | Total (taught through sound) | Every threat is announced by the music before it lands. |
+| Swarm | Total | Every stat, weapon, and upgrade is shown; the clock is always visible. |
+| Tapestry | Total (state) / Oblique (intent) | Every number has a tooltip; what your vassals intend is the mystery. |

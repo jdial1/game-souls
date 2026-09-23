@@ -2,7 +2,7 @@
 
 **The principle:** The world runs on universal laws that never switch off for a narrative beat, a boss fight, or the player's convenience. If fire burns wood in the tutorial, fire burns all wood, everywhere, forever.
 
-**Used by:** Looking Glass, Dwarven, Hearthian, Toybox, Containment, Gauge, Casebook
+**Used by:** Looking Glass, Dwarven, Hearthian, Toybox, Containment, Gauge, Casebook, Chorus, Tapestry
 
 ### Design Rules
 
@@ -31,6 +31,8 @@
 * **Containment:** The laws are thermodynamics. Consistency is what makes a shared design the same machine in anyone's game, and a sandbox forecast worth trusting.
 * **Gauge:** Kindness obeys the same laws as haulage. A gift runs on the same rails and stops at the same full yard as every other load, so it can never be lost to a special case.
 * **Casebook:** One symbol means one thing everywhere on the page, and the page is identical on every device. A harder page departs from the primer only by a stated rule, so a solver can prove every page fair.
+* **Chorus:** The metronome never lies. If a rule says action happens on the quarter-note, it happens on the quarter-note forever.
+* **Tapestry:** The AI plays by the same rules as the player: the same attrition, rebellions, succession, and marriage logic.
 
 ### What It Costs
 

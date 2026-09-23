@@ -41,3 +41,6 @@
 | Ampersand | Mutual | "Nine years together and I had no idea he hated his middle name." |
 | Gauge | Kin-Authored | "I was stuck for timber, and the next morning my sister's came up my line in her colour." |
 | Casebook | Designer-Authored (the case) / Designer Space, Player Solution (each page) | "I broke the Night Extra off one name in the article, and it turned out the widow lied." |
+| Chorus | Designer-Authored | "I finally full-combo'd the last track." |
+| Swarm | Player-Authored Build | "Minute twelve, the garlic and the whip clicked, and I stopped running." |
+| Tapestry | System-Authored | "My grandfather's spymaster murdered my heir, so I started a war over it." |

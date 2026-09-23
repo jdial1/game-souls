@@ -2,7 +2,7 @@
 
 **The principle:** Losing should produce something new (a scene, a story, a changed world, a lesson) rather than just rewinding the clock.
 
-**Used by:** Dwarven, Ashen, Hearthian, Elysium, Ampersand
+**Used by:** Dwarven, Ashen, Hearthian, Elysium, Ampersand, Tapestry
 
 ### Design Rules
 
@@ -28,6 +28,7 @@
 * **Hearthian:** Failure is free. Dying resets the world but keeps everything the player learned, and often reveals something new on the way out.
 * **Elysium:** Failure is narrative. A failed check is a scene, not a wall.
 * **Ampersand:** Failure is a wrong guess about someone you love, and it is the best reveal of the day. Absence costs a piece and is never scolded.
+* **Tapestry:** A lost war or a bad heir doesn't end the game; it becomes the next generation's inheritance and revenge arc.
 
 ### What It Costs
 

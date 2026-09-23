@@ -2,7 +2,7 @@
 
 **The principle:** Pieces (cards, gear, tools, pets, perks) interlock in non-obvious ways, and the right combination produces results far greater than the sum of its parts.
 
-**Used by:** Looking Glass, Loathing, Spire, Containment
+**Used by:** Looking Glass, Loathing, Spire, Containment, Swarm
 
 ### Design Rules
 
@@ -25,6 +25,7 @@
 * **Loathing:** Synergies accumulate across gear, familiars, buffs, and permanent skills, over years.
 * **Looking Glass:** Synergies are between tools and the environment, and are improvised in the moment.
 * **Containment:** Synergies are geometric. Parts multiply the parts they touch, so the combination is an arrangement, not a set.
+* **Swarm:** Synergies are drafted mid-run under pressure; the run is a race to the breakpoint where the build starts harvesting the swarm.
 
 ### What It Costs
 

@@ -2,7 +2,7 @@
 
 **The principle:** Finishing the game is only the beginning. Winning unlocks a harder, stranger way to play, and mastery is measured by how high the player climbs.
 
-**Used by:** Loathing, Spire, Containment, Casebook
+**Used by:** Loathing, Spire, Containment, Casebook, Chorus, Swarm
 
 ### Design Rules
 
@@ -25,6 +25,8 @@
 * **Loathing:** The ladder is a rebirth economy. Each ascension adds permanent breadth, and restriction paths add self-imposed friction.
 * **Containment:** The ladder is a rebirth economy plus restriction runs, and the top is stamina: the most output from a design that holds.
 * **Casebook:** The ladder lives inside each installment. A harder second page opens after the first, harder because one named rule changes.
+* **Chorus:** The ladder is speed, syncopation, and strictness of timing; mastery is a perfectly chained combo.
+* **Swarm:** Curse levels, heat modifiers, and endless and speedrun modes stack on top of a clock that always wins eventually.
 
 ### What It Costs
 

@@ -38,6 +38,9 @@ Every tone has a mechanic that destroys it. Identify yours before production sta
 | Ampersand | Plain Warmth | A verdict: any score, reading, or celebration that grades the pair. |
 | Gauge | Unhurried Warmth | A loss that happens while the player is away: spoilage, decay, a broken streak, a lapsed upkeep. |
 | Casebook | Armchair Intrigue | Live correctness feedback: a wrong answer flagged before the player commits to it. |
+| Chorus | Cool Focus / Joyful | A loud error buzzer that ruins the song on a miss. |
+| Swarm | Cool Focus / Deadpan Absurd | A mid-game where the build is finished and nothing new threatens it. |
+| Tapestry | Armchair Intrigue | Subordinates who always obey. |
 
 ### Design Implications
 

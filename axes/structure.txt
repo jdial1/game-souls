@@ -44,3 +44,6 @@
 | Ampersand | Ritual (a day at a time, sealed weekly, for years) |
 | Gauge | Persistent World (visited in short sessions; it grows between visits) |
 | Casebook | Serial (a season of installments, one sitting each) |
+| Chorus | Levels (one song, one level) |
+| Swarm | Runs |
+| Tapestry | Sandbox Chronicle |
