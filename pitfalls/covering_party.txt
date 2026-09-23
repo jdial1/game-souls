@@ -1,0 +1,22 @@
+## Pitfall: The Covering Party
+
+**Area:** Soul-Specific: Vigil
+**Found in:** souls/vigil.txt (Vigil)
+
+### What Happens
+
+The seats the player does not hold are played so well that the player's own seat stops mattering. Teammates are limited only by throughput -- a pool that can run dry, a rotation that is merely slow -- and never by judgment, so they never make a mistake the player has to answer. A run then succeeds or fails on whether the machine's fuel held out, and the player's contribution is invisible inside that.
+
+### Symptom
+
+Players cannot tell a good run of their own from a bad one, and stop being able to say what their seat did.
+
+### Fix
+
+Limit teammates by decision, not only by capacity: a reaction delay, a priority order they can get wrong, a defensive spent early. Then make the consequence land where the player can see it, so the gap the player filled has a shape.
+
+### Related Pitfalls
+
+* pitfalls/game_plays_itself.txt
+* pitfalls/binary_ai.txt
+* pitfalls/detail_nobody_feels.txt

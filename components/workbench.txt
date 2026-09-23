@@ -2,7 +2,7 @@
 
 **The principle:** When the design is the product, the tools for designing are part of the game. If players would have to build an outside planner, calculator, or sharing format to play well, ship it.
 
-**Used by:** Containment, Assembly
+**Used by:** Containment, Assembly, Vigil
 
 **Requires:** systemic_consistency (forecasts and shared designs need determinism)
 **Supports:** trusting_the_player, synergy_engines, shared_discovery
@@ -28,6 +28,7 @@
 
 * **Containment:** A planner beside the reactor, a forecast of when a design fails, and share codes that carry the stamina rating they earned.
 * **Assembly:** Blueprints, free deconstruction, and production statistics. The factory is redesigned constantly, so the tools for redesigning are the most-used features in the game.
+* **Vigil:** The build tools ship because this soul's player is often alone on one device, with no community to write the wiki the numbers deserve.
 
 ### What It Costs
 

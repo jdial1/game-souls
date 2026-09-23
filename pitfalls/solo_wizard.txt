@@ -1,0 +1,22 @@
+## Pitfall: The Solo Wizard
+
+**Area:** Soul-Specific: Vigil
+**Found in:** souls/vigil.txt (Vigil)
+
+### What Happens
+
+One seat accumulates tools that do every other seat's job. It heals a little, holds attention a little, and deals damage a little, usually added one reasonable-sounding ability at a time. The team stops being a set of holes that need filling and becomes an audience for a single player with a long bar.
+
+### Symptom
+
+Players stop wanting a group, and the seat everyone picks is the one that needs nobody.
+
+### Fix
+
+Check every new ability against the hole it is filling. A seat may *mitigate* another seat's absence and must never *replace* it: a stopgap on a long cooldown is a decision, a permanent second job is a merger. Where a seat must cover for a missing one, make the cover visibly worse than the real thing.
+
+### Related Pitfalls
+
+* pitfalls/dominant_strategy.txt
+* pitfalls/illusion_of_choice.txt
+* pitfalls/tunnel_vision_boss.txt

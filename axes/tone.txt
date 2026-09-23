@@ -45,6 +45,7 @@ Every tone has a mechanic that destroys it. Identify yours before production sta
 | Assembly | Cool Focus | A global inventory that teleports items, so nothing has to travel. |
 | Tribunal | Tense Paranoia | A way for the innocent to confirm each other with certainty. |
 | Tether | Dread / Tense Paranoia | A secure container big enough to carry out the loot that matters. |
+| Vigil | Answerable Vigilance | A team competent enough that the player's seat stops mattering. |
 
 ### Design Implications
 
@@ -76,5 +77,6 @@ MDA's eight aesthetics (see frameworks/mda.txt) are a cross-check on each soul's
 | Assembly | Cool Focus | Expression, Challenge, Submission |
 | Tribunal | Tense Paranoia | Fellowship, Challenge, Expression |
 | Tether | Dread / Tense Paranoia | Challenge, Sensation, Fellowship |
+| Vigil | Answerable Vigilance | Challenge, Fellowship, Expression |
 
 **Submission** (game as pastime) is not a lesser aesthetic. It is the heart of the souls built to be glanced at and returned to (Gauge, Containment, Assembly), and a design that denies it (demanding constant attention) breaks them.

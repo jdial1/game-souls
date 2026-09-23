@@ -47,3 +47,4 @@
 | Assembly | Player-Authored Build | "I finally rebuilt the whole smelting column so the green circuits stopped starving." |
 | Tribunal | Mutual | "I was the impostor, and I got my best friend voted out for my kill." |
 | Tether | Player-Authored Build / System-Authored | "I had the rarest item in the game and died ten meters from the exit." |
+| Vigil | Player-Authored Build | "Nobody went down, and I did it on a third of the mana I used last time." |

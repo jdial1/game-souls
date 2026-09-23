@@ -52,3 +52,4 @@
 | Assembly | Persistent World |
 | Tribunal | Runs (matches) |
 | Tether | Runs (raids) feeding a Rebirth Account (stash) |
+| Vigil | Career (one character, levelled across runs that never reset it) |

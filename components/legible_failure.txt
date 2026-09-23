@@ -2,7 +2,7 @@
 
 **The principle:** Every loss must be traceable to a cause the player can see. Unexplained failure feels like a random number generator; explained failure feels like a lesson or a story.
 
-**Used by:** Dwarven, Ashen, Hearthian, Spire, Mansion, Containment, Gauge, Casebook, Chorus, Swarm, Tapestry, Assembly, Tribunal
+**Used by:** Dwarven, Ashen, Hearthian, Spire, Mansion, Containment, Gauge, Casebook, Chorus, Swarm, Tapestry, Assembly, Tribunal, Vigil
 
 **Requires:** systemic_consistency (a cause can only be named if the same cause always has the same effect)
 **Supports:** failure_as_content, trusting_the_player, synergy_engines, kinetic_profile
@@ -42,6 +42,7 @@
 * **Assembly:** A stalled line is a receipt: walk down the belt and find the exact missing input.
 * **Tribunal:** Retroactive: at the end of the match every role is revealed, and every lie is laid bare for the autopsy.
 * **Tapestry:** Every number has a receipt. Opinion, income, and war score break down into itemized modifiers, with tooltips nested inside tooltips.
+* **Vigil:** Legibility has to survive a loss the player did not personally cause, so the receipt names whose seat was short and when, never how well anyone played.
 
 ### What It Costs
 

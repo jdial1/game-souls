@@ -48,3 +48,4 @@ Every game answers this, whether on purpose or by accident. The answer sets the 
 | Assembly | Trivial | A stalled line costs time, never materials; tearing down refunds everything. |
 | Tribunal | Terminal (for the match) | An eliminated player is out until the next match, and a wrong vote hands the traitors the game. |
 | Tether | Costly | Death in a raid loses everything you carried in; the stash survives. |
+| Vigil | Costly | A lost run returns a fraction of its reward and spends what was carried in; the level and the records survive. |

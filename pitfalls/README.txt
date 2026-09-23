@@ -173,3 +173,5 @@ Some pitfalls list a TV Tropes name under "Also known as." Only mechanical trope
 | The Idle Dead | Tribunal | They leave, and matches empty out early. | idle_dead.txt |
 | The Loudest Wins | Tribunal | Quiet players are voted out for being quiet. | loudest_wins.txt |
 | The Solved Meta | Tribunal | The deduction vanishes, and the game becomes a checklist. | solved_meta.txt |
+| The Covering Party | Vigil | Players cannot tell a good run of their own from a bad one. | covering_party.txt |
+| The Solo Wizard | Vigil | Players stop wanting a group, and the seat everyone picks is the one that needs nobody. | solo_wizard.txt |

@@ -2,7 +2,7 @@
 
 **The principle:** Sound is not decoration. It is the channel that arrives first, reaches around corners, and can't be switched off by looking away, so the game treats it as information with the same honesty it gives the screen.
 
-**Used by:** Mansion, Containment, Chorus, Tether
+**Used by:** Mansion, Containment, Chorus, Tether, Vigil
 
 **Requires:** low, stable latency and positional audio
 **Supports:** diegetic_interface, living_world, kinetic_profile, legible_failure
@@ -30,6 +30,7 @@
 * **Containment:** Sound reports stability. The reactor's hum rises with heat, and a tremor deepens as heat trends upward.
 * **Chorus:** Sound is the rules. Every threat is written into the music, and the player can survive with their eyes closed.
 * **Tether:** Sound is radar and liability. Every shot, step, and heal broadcasts the player's position to the whole server.
+* **Vigil:** The seat's eyes are on the team's state, so the ear carries confirmation: what you cast, and who just dropped. Nothing sounds once per tick, or it is noise rather than feedback.
 
 ### What It Costs
 

@@ -2,7 +2,7 @@
 
 **The principle:** A social layer between people who already know each other must never become an audience, a scoreboard, or a lever one person pulls on another. The game connects people; it never makes them owe each other.
 
-**Used by:** Gauge, Ampersand
+**Used by:** Gauge, Ampersand, Vigil
 
 **Requires:** None.
 **Supports:** interface_voice, automation
@@ -31,6 +31,7 @@
 
 * **Ampersand:** Two people, one pair. The danger is one partner grading or pressuring the other, so every number is about the pair, and there is no witness but the other half.
 * **Gauge:** A family or a few friends, including children. The danger is the family becoming a leaderboard or a debt ledger, so gifts come only from spare, need is never sent, and there is no free text anywhere.
+* **Vigil:** Strangers, not kin, so the safety is subtraction: no chat, no standings, and no grade on anybody's performance. The danger is a group that turns vigilance into blame.
 
 ### What It Costs
 

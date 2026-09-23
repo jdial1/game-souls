@@ -2,7 +2,7 @@
 
 **The principle:** Pieces (cards, gear, tools, pets, perks) interlock in non-obvious ways, and the right combination produces results far greater than the sum of its parts.
 
-**Used by:** Looking Glass, Loathing, Spire, Containment, Swarm
+**Used by:** Looking Glass, Loathing, Spire, Containment, Swarm, Vigil
 
 **Requires:** legible_failure (each piece's rule must be clear, even when combinations are hidden)
 **Supports:** difficulty_ladder, shared_discovery, workbench
@@ -32,6 +32,7 @@
 * **Looking Glass:** Synergies are between tools and the environment, and are improvised in the moment.
 * **Containment:** Synergies are geometric. Parts multiply the parts they touch, so the combination is an arrangement, not a set.
 * **Swarm:** Synergies are drafted mid-run under pressure; the run is a race to the breakpoint where the build starts harvesting the swarm.
+* **Vigil:** One effect funnel shared by every source of modification, so anything a talent can do to an ability an item can too. The build is assembled before the run and cannot be touched inside it.
 
 ### What It Costs
 

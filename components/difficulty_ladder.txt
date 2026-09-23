@@ -2,7 +2,7 @@
 
 **The principle:** Finishing the game is only the beginning. Winning unlocks a harder, stranger way to play, and mastery is measured by how high the player climbs.
 
-**Used by:** Loathing, Spire, Containment, Casebook, Chorus, Swarm
+**Used by:** Loathing, Spire, Containment, Casebook, Chorus, Swarm, Vigil
 
 **Requires:** Structure: Runs or Rebirth Account (a ladder needs repeated attempts)
 **Supports:** synergy_engines, shared_discovery
@@ -31,6 +31,7 @@
 * **Casebook:** The ladder lives inside each installment. A harder second page opens after the first, harder because one named rule changes.
 * **Chorus:** The ladder is speed, syncopation, and strictness of timing; mastery is a perfectly chained combo.
 * **Swarm:** Curse levels, heat modifiers, and endless and speedrun modes stack on top of a clock that always wins eventually.
+* **Vigil:** Rungs are fixed per place rather than rolled, so a harder run is something to prepare for. The top is efficiency: fastest, cleanest, least wasted, measured against your own record and nobody else's.
 
 ### What It Costs
 

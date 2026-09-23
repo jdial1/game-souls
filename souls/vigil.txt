@@ -1,0 +1,133 @@
+## The "Vigil" Game Soul
+
+**A Framework for the Held Seat, Answerable Attention, and the Mistakes of Others**
+
+The soul of games like *World of Warcraft*'s and *Final Fantasy XIV*'s five-person role play, *Barotrauma*'s crew stations, and *Overheal* can be distilled into a single philosophy: "You hold one seat, and the game is what the other seats cost you."
+
+On the surface these are team games, and the pitch sounds social: pick a job, join a group, clear the place. Beneath the surface each one is a solitary optimization problem wearing a group's clothes. You cannot play the other seats and you cannot command them. You can only read what they are doing to your resources and stay ahead of it. Power is measured in how little of your effort was wasted, and the fight is something you mostly infer from its effect on people who are not you.
+
+### Axis Positions
+
+| Axis | Position |
+| --- | --- |
+| Failure | Costly |
+| Information | Total (state) / Taught (rules) |
+| Authorship | Player-Authored Build |
+| Power | Optimization |
+| Tone | Answerable Vigilance |
+| Structure | Career |
+
+### Psychological Target
+
+What the ideal player of this soul wants from play, described with the six motivation pairs of the Quantic Foundry Gamer Motivation Model (see frameworks/gamer_motivation.txt). This is design intent, not a market segment: it names who the design serves, so that features built for someone else can be spotted.
+
+| Motivation Pair | Level | Why |
+| --- | --- | --- |
+| Action | Medium | Real-time and thumb-paced, but nothing is aimed and nothing is dodged. |
+| Social | Medium | The pleasure is holding a role inside a group, not talking to it. Teammates may be people or machines and the play is the same. |
+| Mastery | High | Strategy: triage order, resource curves, and staying ahead of somebody else's error. |
+| Achievement | Medium | Completion: a record per place, and a level that runs out. |
+| Immersion | Medium | Fantasy: the role is the fiction, and players arrive already knowing what their job means. |
+| Creativity | Medium | Design: a build assembled before the run and not touched during it. |
+
+**Design note:** Players who want Competition will find no standings here, and players who want Community will find no chat. The group is a set of demands, not an audience. A leaderboard or a performance grade serves neither, and both break the soul (see components/social_safety.txt).
+
+### Components
+
+* **components/scarcity_economy.txt:** One bottleneck per seat, spent in real time. The shape is a **Drain inside a run** (the pool only shrinks until the fight ends) nested in a **Generator across the career** (the level, the records, and the kit only grow).
+* **components/legible_failure.txt:** Total state and telegraphed intent, plus a receipt that names whose seat was short and when. Legibility here has to survive a loss the player did not personally cause.
+* **components/synergy_engines.txt:** One effect funnel shared by every source of modification, so a trinket can do anything a talent can.
+* **components/difficulty_ladder.txt:** Rungs are fixed per place, not rolled, and prestige is efficiency: fastest, cleanest, least wasted.
+* **components/trusting_the_player.txt:** The sheet shows the number and withholds the advice. No arrows, and no warning about a fight the player has not met.
+* **components/audio_information.txt:** The seat's hands are on the team and its eyes are on their state, so the ear carries confirmation: what you cast, and who just dropped.
+* **components/social_safety.txt:** No chat, no standings, no grade on anybody's performance. This is also how the soul resolves its one relationship conflict; see below.
+* **components/workbench.txt:** The build tools ship in the box, because this soul's audience is often one person on one device with no community to write the wiki.
+
+**Relationship conflicts, resolved.** Three pairs the soul uses carry conflicting tags, and each needs a stated answer:
+
+* **difficulty_ladder against social_safety** (leaderboards and ranking). Vigil keeps the ladder and drops the comparison: every record is held per character and measured against that character's own history, never against another player's. A ladder needs somewhere to climb, not somebody to beat.
+* **scarcity_economy against synergy_engines late in a run** (compounding power ends the pressure). The build is assembled before the run and cannot be added to inside it, so synergies never snowball mid-fight. The pool is as tight on the last pull as on the first.
+* **legible_failure against outcome randomness** (dice that decide after the player commits). Rolls that favour the player -- a critical heal, a proc -- are reward rolls and never a cause of failure. Rolls that pick a *target* are permitted, because in this soul the question "who is it hitting now" is an input to the player's next decision rather than the verdict on their last one. A roll that decides whether the player's own action worked is not allowed.
+
+### Signature Pillar 1: The Seat You Do Not Hold
+
+Other souls hand the player's repeated action to the machine and keep the decision (components/automation.txt). This soul does the reverse: it hands *other agents' decisions* to the machine, or to strangers, and makes the player answerable for the result. You do not command your team. You absorb it.
+
+**Design Rules:**
+
+* **The Hole Is the Job:** A seat exists because of what the others cannot do. Every ability must be checked against this: a tool that lets one seat do another's job does not add options, it removes the reason the seat was interesting.
+
+* **Competent Enough to Play With, Fallible Enough to Matter:** Teammates must be limited by judgment, not only by throughput. A teammate who is merely under-powered is a resource pool; a teammate who reacts a beat late, or triages in the wrong order, is a game.
+  * *Example:* A support teammate who tops up anyone below a fixed threshold never makes a mistake the player can feel, so the player's own contribution is graded only on whether that teammate ran out of fuel. Give the teammate an order of priorities it can get wrong, and every point the player contributes lands somewhere specific.
+
+* **No Handover Path:** When a teammate stops answering, whatever fills the seat must be the same thing that fills an empty seat at the start. A special "somebody left" path only ever runs when something has already gone wrong, which is the worst kind of code to have and the worst kind of rule to balance.
+
+* **Never Grade the Others:** The player is answerable for their own seat and told nothing about anybody else's quality. A scoreboard of teammates turns vigilance into blame and ends the soul.
+
+### Signature Pillar 2: Waste Is the Score
+
+Most games measure output. This soul measures the share of your output that achieved nothing, and then makes that share playable.
+
+**Design Rules:**
+
+* **Name the Waste, Then Price It:** Every seat gets a metric for effort that did nothing, shown plainly and never rounded away. A number the player would rather not look at is the one worth putting on the screen.
+  * *Example:* A support seat reports the fraction of its healing that landed on people who were already full. It is a confession, and it is also the only honest way to compare two builds that both kept the team alive.
+
+* **At Least One Build Buys the Waste Back:** Somewhere in the kit, the wasted quantity must convert into something real. That is what turns a shameful number into a resource and a whole archetype.
+
+* **Efficiency, Not Volume, Is the Prestige Number:** Rank a run by resource spent per unit of effect and by time taken, never by the raw total. A player who fires everything constantly should post worse numbers than one who waited.
+
+* **A Pure-Upside Reward Is a Reward Nobody Thinks About:** Most items carry a cost as well as a gain, or every player converges on the same loadout and the build stops being a decision.
+
+### Signature Pillar 3: One Fight, Several Windows
+
+Seats are not button sets. Each seat changes what the player can *observe*, so the same encounter is a different reading problem depending on where you sit.
+
+**Design Rules:**
+
+* **Change the Window, Not Just the Verbs:** A new seat earns its place by making the same fight a different inference problem. If it only reshuffles the buttons, it is a costume.
+  * *Example:* One seat sees the enemy's intent directly and reacts to it. Another never looks at the enemy at all and reconstructs what it just did from the damage pattern across the team. Same encounter, same numbers, two different games.
+
+* **One Simulation, Every Seat:** All seats run through the same rules, with the acting party swapped in rather than a separate path per role. Seats that share no code become separate balance problems, and the least-played one rots first.
+
+* **Each Seat Owns One Number:** Give every seat a single signature quantity that drives its mechanic, and put what that number buys in front of the player. That is how a seat teaches itself without a tutorial.
+
+### Variants & Exceptions
+
+* *World of Warcraft* and *Final Fantasy XIV* are the ancestors, and the soul lives in their five-person content rather than in the whole game. Both break "Never Grade the Others": third-party damage meters made every seat public, and the culture that followed is the clearest evidence of what that rule protects. (Confidence: high on the role structure, medium on how far the developers endorsed the grading.)
+* *Barotrauma* moves the soul onto a submarine. The stations are the seats, the emergencies are largely produced by the crew itself, and the medic spends the round answering damage other people caused. It bends "One Simulation, Every Seat" only in that some stations barely share verbs. (Confidence: medium; verify before building on it.)
+* *Overheal* is the purest single-player form: the other four seats are always filled, by people or by the machine, so the soul survives with nobody else present. It also holds the Career structure most plainly, with a level that runs out and per-place records that do not.
+
+### What This Soul Costs
+
+(Shared costs live in the component files: fragile economy tuning, the UI tax, tuning every rung, the content treadmill.)
+
+* **The Teammates Are the Budget:** Every seat the player does not occupy has to be written as a teammate that is good enough to play beside and wrong often enough to matter. This is the hardest tuning in the game and the least visible work in it: nobody praises an AI, and everybody notices a bad one.
+* **Balancing One Fight Three Times:** The same encounter must be a genuinely different problem from each seat, without becoming three sets of numbers that drift apart. Every change to a mechanic has to be checked from every window.
+* **A Group Fantasy With No Group:** If the soul is to work solo, the design has to deliver the feeling of a team without requiring one, which means the machine must never say "waiting for players."
+
+### How It Fails
+
+(Shared pitfalls come through the components: hidden math, grind disguised as progress, proof nobody sees, scarcity without choice. Every pitfall has its own file in pitfalls/.)
+
+* **The Covering Party** (pitfalls/covering_party.txt): Teammates are competent enough that the player's seat stops mattering.
+* **The Solo Wizard** (pitfalls/solo_wizard.txt): One seat is given tools for every other seat's job, and the team dissolves into one player with a long bar.
+
+### Neighboring Souls
+
+* **Spire:** Both are total-state optimization with a build and a ladder. A Spire run is self-contained, drafted in-run and thrown away within the hour; a Vigil character persists, and its pressure comes from agents the player cannot control rather than from a map they chose.
+* **Containment:** Both make the player answerable for a system they watch rather than drive. Containment's machine is one the player built and is rewarded for being able to stop watching; Vigil's is four people who keep moving, and looking away is never the reward.
+* **Tribunal:** Both put the player in a group they cannot control. Tribunal's uncertainty is whether the others are honest; Vigil's is whether they are any good, and nobody is lying.
+* **Dwarven and Tapestry:** Both are Custodial: the player commands willful people badly. Vigil cannot command at all, which is a different game entirely. Custodial power is a clumsy remote control; Vigil has no remote.
+
+### The "Vigil" Litmus Test
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Seat** | Could the player do this alone, or use it to do another seat's job? | **No.** The hole is the job. |
+| **The Fallible Team** | Can a teammate be wrong in a way the player can feel and name? | **Yes.** A teammate who only runs out of fuel is furniture. |
+| **The Waste** | Does this feature make it possible to spend effort that achieves nothing? | **Yes.** Waste has to be possible before efficiency can be a skill. |
+| **The Window** | Does this change what a seat can observe, or only which buttons it presses? | **Observe.** Buttons alone are a costume. |
+| **The Grade** | Does the game tell the player how well anybody else played? | **No.** Answerable for your seat, told nothing about theirs. |
+
+*"You do not need to see the boss when you can see five health bars, a pool that will not last, and the exact moment you spent everything you had on somebody who was already full."*

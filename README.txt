@@ -55,31 +55,32 @@ archive/ holds the original single-file versions of the first nine souls, untouc
 | Assembly | Trivial | Total | Player-Authored Build | Optimization | Cool Focus | Persistent World |
 | Tribunal | Terminal (for the match) | Hidden (asymmetric) | Mutual | Social / Interior | Tense Paranoia | Runs (matches) |
 | Tether | Costly | Hidden | Player-Authored Build / System-Authored | Toolkit / Earned Mastery | Dread / Tense Paranoia | Runs feeding a Rebirth Account |
+| Vigil | Costly | Total / Taught | Player-Authored Build | Optimization | Answerable Vigilance | Career |
 
 ### Components Used by Each Soul
 
-| Component | Looking Glass | Dwarven | Loathing | Ashen | Hearthian | Elysium | Spire | Toybox | Mansion | Containment | Gauge | Ampersand | Casebook | Chorus | Swarm | Tapestry | Assembly | Tribunal | Tether |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| legible_failure | | x | | x | x | | x | | x | x | x | | x | x | x | x | x | x | |
-| failure_as_content | | x | | x | x | x | | | | | | x | | | | x | | | |
-| systemic_consistency | x | x | | | x | | | x | | x | x | | x | x | | x | x | | |
-| living_world | x | x | | x | | | | | x | | | | | | | x | | | x |
-| environmental_storytelling | x | | | x | x | | | | x | | | | x | | | | | | |
-| trusting_the_player | x | | x | x | x | | | x | | x | x | x | x | | | | x | | |
-| interlocking_space | x | | | x | x | | | | x | | | | | | | | | | x |
-| scarcity_economy | | x | x | | | | x | | x | x | | x | x | | x | x | x | | x |
-| synergy_engines | x | | x | | | | x | | | x | | | | | x | | | | |
-| difficulty_ladder | | | x | | | | x | | | x | | | x | x | x | | | | |
-| theme_as_mechanic | | | x | | | x | | | x | | x | x | x | x | | | | x | |
-| diegetic_interface | x | | | x | | | | | x | | x | | | | | | | x | x |
-| shared_discovery | | | x | x | x | | | | | x | | | | | | | | x | |
-| social_safety | | | | | | | | | | | x | x | | | | | | | |
-| interface_voice | | | | | | | | | | x | x | x | x | x | | | | | |
-| audio_information | | | | | | | | | x | x | | | | x | | | | | x |
-| workbench | | | | | | | | | | x | | | | | | | x | | |
-| automation | | | | | | | | | | x | x | | | | x | | x | | |
-| match_integrity | | | | | | | | | | | | | | | | | | x | x |
-| kinetic_profile | | | | x | | | | x | x | | | | | x | | | | | |
+| Component | Looking Glass | Dwarven | Loathing | Ashen | Hearthian | Elysium | Spire | Toybox | Mansion | Containment | Gauge | Ampersand | Casebook | Chorus | Swarm | Tapestry | Assembly | Tribunal | Tether | Vigil |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| legible_failure | | x | | x | x | | x | | x | x | x | | x | x | x | x | x | x | | x |
+| failure_as_content | | x | | x | x | x | | | | | | x | | | | x | | | |  |
+| systemic_consistency | x | x | | | x | | | x | | x | x | | x | x | | x | x | | |  |
+| living_world | x | x | | x | | | | | x | | | | | | | x | | | x |  |
+| environmental_storytelling | x | | | x | x | | | | x | | | | x | | | | | | |  |
+| trusting_the_player | x | | x | x | x | | | x | | x | x | x | x | | | | x | | | x |
+| interlocking_space | x | | | x | x | | | | x | | | | | | | | | | x |  |
+| scarcity_economy | | x | x | | | | x | | x | x | | x | x | | x | x | x | | x | x |
+| synergy_engines | x | | x | | | | x | | | x | | | | | x | | | | | x |
+| difficulty_ladder | | | x | | | | x | | | x | | | x | x | x | | | | | x |
+| theme_as_mechanic | | | x | | | x | | | x | | x | x | x | x | | | | x | |  |
+| diegetic_interface | x | | | x | | | | | x | | x | | | | | | | x | x |  |
+| shared_discovery | | | x | x | x | | | | | x | | | | | | | | x | |  |
+| social_safety | | | | | | | | | | | x | x | | | | | | | | x |
+| interface_voice | | | | | | | | | | x | x | x | x | x | | | | | |  |
+| audio_information | | | | | | | | | x | x | | | | x | | | | | x | x |
+| workbench | | | | | | | | | | x | | | | | | | x | | | x |
+| automation | | | | | | | | | | x | x | | | | x | | x | | |  |
+| match_integrity | | | | | | | | | | | | | | | | | | x | x |  |
+| kinetic_profile | | | | x | | | | x | x | | | | | x | | | | | |  |
 
 ### How to Use This Library
 

@@ -2,7 +2,7 @@
 
 **The principle:** A tight bottleneck on a key resource turns every action into a decision. Scarcity is where tension, optimization, and meaning come from.
 
-**Used by:** Dwarven, Loathing, Spire, Mansion, Containment, Ampersand, Casebook, Swarm, Tapestry, Assembly, Tether
+**Used by:** Dwarven, Loathing, Spire, Mansion, Containment, Ampersand, Casebook, Swarm, Tapestry, Assembly, Tether, Vigil
 
 **Requires:** a deliberate topology (see Economic Topology below): a bottleneck only exists where sources and drains are deliberately unbalanced
 **Supports:** legible_failure, failure_as_content, difficulty_ladder
@@ -30,7 +30,7 @@ Every economy has a shape: where resources come from, where they go, and whether
 
 * **Drain (Deflationary):** Sources are capped and the game steadily takes resources away. The total only shrinks. *The feeling:* dread and careful stewardship. Every bullet spent is gone. *Souls:* Mansion, Dwarven, Tether (within a raid), Casebook (within an installment: the ration of checks and hints only shrinks, and refills only when the next installment opens).
 
-* **Generator (Inflationary):** Sources grow with investment, and the total climbs without limit. Drains exist only to keep growth meaningful. *The feeling:* momentum and mastery. The bottleneck keeps moving because the output never stops rising. *Souls:* Assembly, Swarm, Containment, Loathing.
+* **Generator (Inflationary):** Sources grow with investment, and the total climbs without limit. Drains exist only to keep growth meaningful. *The feeling:* momentum and mastery. The bottleneck keeps moving because the output never stops rising. *Souls:* Assembly, Swarm, Containment, Loathing, Vigil (across a career; a Drain inside each run).
 
 * **Zero-Sum:** Resources mostly move between players, factions, or characters rather than being created or destroyed. One side's gain is another's loss. *The feeling:* rivalry and intrigue. *Souls:* Tapestry, Tribunal (information, not goods), Tether (between raids, gear changes hands).
 
@@ -61,6 +61,7 @@ Every economy has a shape: where resources come from, where they go, and whether
 * **Tapestry:** Scarcity is political capital: influence, legitimacy, prestige, and the patience of the nobles who own the armies.
 * **Assembly:** Scarcity is throughput, space, and the player's attention, never money.
 * **Tether:** Gear Fear: the stash is the economy, and bringing good gear raises both your power and the cost of dying.
+* **Vigil:** Scarcity is the seat's own pool, spent in real time against damage somebody else let through. A Drain inside a run, a Generator across the career.
 
 ### What It Costs
 

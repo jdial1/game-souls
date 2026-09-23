@@ -59,3 +59,4 @@ A soul can take different positions on *the rules* of the world and *the current
 | Assembly | Total | Every rate, ratio, and stall is visible; the puzzle is the math, not discovery. |
 | Tribunal | Hidden (asymmetric) | The traitors know everything; the majority knows almost nothing, and some of what it hears is a lie. |
 | Tether | Hidden | No minimap and no markers; sound is the radar. |
+| Vigil | Total (state) / Taught (rules) | Every teammate's exact state and every enemy wind-up is shown; what a build's numbers add up to is learned by running it. |
