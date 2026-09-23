@@ -17,6 +17,21 @@ On the surface, these are party games, digital board games, or casual survival g
 | Tone | Tense Paranoia |
 | Structure | Runs (matches) |
 
+### Psychological Target
+
+What the ideal player of this soul wants from play, described with the six motivation pairs of the Quantic Foundry Gamer Motivation Model (see frameworks/gamer_motivation.txt). This is design intent, not a market segment: it names who the design serves, so that features built for someone else can be spotted.
+
+| Motivation Pair | Level | Why |
+| --- | --- | --- |
+| Action | Low | Actions are simple; the fight is rhetorical. |
+| Social | High | Competition and Community at once: betray friends, then laugh about it. |
+| Mastery | High | Strategy: reading people and managing a lie. |
+| Achievement | Low | Little persistent progression. |
+| Immersion | Low | The fiction is a thin frame for the people. |
+| Creativity | Low | Expression lives in performance, not creation. |
+
+**Design note:** Solitary or Immersion-focused players will find nothing here; the game is the other people.
+
 ### Components
 
 * **components/match_integrity.txt:** The dead are sealed from the living, the truth comes out at the end, and the voice chat that carries the game is moderated, because the game is deception.
@@ -93,11 +108,11 @@ The match doesn't end at the victory screen. It ends later, in the lobby or arou
 
 ### How It Fails
 
-(Shared failure modes live in the component files: Dead Men Tell Tales, the toxic lobby, theme as paint.)
+(Shared pitfalls come through the components: Dead Men Tell Tales, the toxic lobby, theme as paint. Every pitfall has its own file in pitfalls/.)
 
-* **The Solved Meta:** An exploit lets innocents confirm each other with certainty. *Symptom:* the deduction vanishes, and the game becomes a checklist. *Fix:* every proof can be faked, or can be turned off.
-* **The Idle Dead:** Eliminated players have nothing to do. *Symptom:* they leave, and matches empty out early. *Fix:* give the dead something to do that can't leak information: tasks, a ghost vote, a spectator role.
-* **The Loudest Wins:** Discussion is dominated by whoever talks most. *Symptom:* quiet players are voted out for being quiet. *Fix:* structure the talking phase (speaking order, timers, private claims).
+* **The Solved Meta** (pitfalls/solved_meta.txt): An exploit lets innocents confirm each other with certainty.
+* **The Idle Dead** (pitfalls/idle_dead.txt): Eliminated players have nothing to do.
+* **The Loudest Wins** (pitfalls/loudest_wins.txt): Discussion is dominated by whoever talks most.
 
 ### Neighboring Souls
 

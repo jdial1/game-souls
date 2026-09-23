@@ -1,0 +1,19 @@
+## Framework: Game Feel
+
+**Source:** Steve Swink, *Game Feel: A Game Designer's Guide to Virtual Sensation* (2008).
+
+### What It Is
+
+Swink defines game feel as "real-time control of virtual objects in a simulated space, with interactions emphasized by polish." He breaks it into three building blocks (real-time control, simulated space, and polish), and measures it with six elements, one chapter each: **Input, Response, Context, Polish, Metaphor, and Rules.** Measuring them is how vague words like "floaty," "tight," and "loose" become design decisions.
+
+For response, he borrows the ADSR envelope from sound synthesis: **Attack** (the ramp from input to peak), **Decay** (the fall from peak to a steady level), **Sustain** (the level held while the input is held), and **Release** (the fall-off after the input ends). A sharp attack and release feels immediate; a gradual ramp feels weighty.
+
+His closing principles include predictable results, instantaneous response, "easy but deep," novelty, appealing response, organic motion, harmony, and ownership.
+
+### What Game Souls Takes
+
+**The kinetic profile** (components/kinetic_profile.txt). Each soul's core verb is described by its envelope, in plain bands: a deliberate attack and committed release (Ashen), an instant attack and cancellable release (Toybox), a heavy, rooted verb (Mansion), an input judged against the beat (Chorus). The central question is whether the soul commits the player or forgives them. The six elements become a checklist for diagnosing a verb that feels wrong.
+
+### What We Leave Behind
+
+The measurements. Game Souls describes execution conceptually and never asks for frame counts, gravity values, or millisecond thresholds. A model can't playtest a jump arc, and a design document that demands those numbers is guessing. The exact values are tuned by the designer, in the engine, by hand.

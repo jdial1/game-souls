@@ -4,6 +4,10 @@
 
 **Used by:** Containment, Gauge, Ampersand, Casebook, Chorus
 
+**Requires:** systemic_consistency (the interface can only speak truthfully about systems that behave consistently)
+**Supports:** audio_information, diegetic_interface, social_safety
+**Conflicts With:** retention-driven celebration UI (confetti, streak rewards, escalating reminders)
+
 ### Design Rules
 
 * **Say It Once:** If a bar, a heap, a glow, or a sound already carries a piece of information, no toast, badge, or popup repeats it. Redundant alerts train the player to ignore alerts.
@@ -39,9 +43,9 @@
 
 ### How It Fails
 
-* **The Cheerful Toast:** Confirmations and celebrations pile on top of feedback the world already gave. *Symptom:* players dismiss popups without reading, including the important ones. *Fix:* delete every message the world already says.
-* **The Red Signal:** Warning colours or words contradict the mechanics. *Symptom:* players read a full store or a quiet line as a problem. *Fix:* reserve warning styling for real danger.
-* **The Flavourful Lie:** In-character copy claims something the game didn't do ("Officially certified"). *Symptom:* nobody notices until a player relies on it. *Fix:* audit in-character claims against what the systems measure, and pin them with tests.
+* **The Cheerful Toast** (pitfalls/cheerful_toast.txt): Confirmations and celebrations pile on top of feedback the world already gave.
+* **The Red Signal** (pitfalls/red_signal.txt): Warning colours or words contradict the mechanics.
+* **The Flavourful Lie** (pitfalls/flavourful_lie.txt): In-character copy claims something the game didn't do ("Officially certified").
 
 ### Litmus
 

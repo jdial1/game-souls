@@ -1,0 +1,21 @@
+## Pitfall: The Magic Void
+
+**Area:** Soul-Specific: Assembly
+**Found in:** souls/assembly.txt (Assembly)
+
+### What Happens
+
+Items teleport into a global inventory.
+
+### Symptom
+
+The logistics puzzle evaporates, and the game becomes a clicker.
+
+### Fix
+
+Everything travels through physical space.
+
+### Related Pitfalls
+
+* **The Sinkhole Economy** (pitfalls/sinkhole_economy.txt)
+* **The Spaghetti Wall** (pitfalls/spaghetti_wall.txt)

@@ -1,0 +1,21 @@
+## Pitfall: Chores Forever
+
+**Area:** Progression & Replay
+**Found in:** components/automation.txt (used by Containment, Gauge, Swarm, Assembly)
+
+### What Happens
+
+Automation arrives long after the task stopped being interesting.
+
+### Symptom
+
+The first hours are remembered as a grind.
+
+### Fix
+
+Unlock the machine the moment the manual task stops teaching anything.
+
+### Related Pitfalls
+
+* **The Babysat Machine** (pitfalls/babysat_machine.txt)
+* **The Game Plays Itself** (pitfalls/game_plays_itself.txt)

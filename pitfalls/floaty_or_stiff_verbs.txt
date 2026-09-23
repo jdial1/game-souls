@@ -1,0 +1,20 @@
+## Pitfall: Floaty or Stiff Verbs
+
+**Area:** Soul-Specific: Toybox
+**Found in:** souls/toybox.txt (Toybox)
+
+### What Happens
+
+The core action is technically functional but not joyful.
+
+### Symptom
+
+Playtesters stop moving around between objectives.
+
+### Fix
+
+Go back to the gray box; no new content until the empty room is fun.
+
+### Related Pitfalls
+
+* **The Overstayed Gimmick** (pitfalls/overstayed_gimmick.txt)

@@ -1,0 +1,20 @@
+## Pitfall: The Overstayed Gimmick
+
+**Area:** Soul-Specific: Toybox
+**Found in:** souls/toybox.txt (Toybox)
+
+### What Happens
+
+A mechanic appears unchanged space after space.
+
+### Symptom
+
+Players sigh when it shows up again.
+
+### Fix
+
+Introduce, develop, twist, conclude, retire.
+
+### Related Pitfalls
+
+* **Floaty or Stiff Verbs** (pitfalls/floaty_or_stiff_verbs.txt)

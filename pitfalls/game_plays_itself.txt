@@ -1,0 +1,21 @@
+## Pitfall: The Game Plays Itself
+
+**Area:** Progression & Replay
+**Found in:** components/automation.txt (used by Containment, Gauge, Swarm, Assembly)
+
+### What Happens
+
+Automation reaches the decisions, or the player's build is so complete that nothing is left to decide.
+
+### Symptom
+
+Players put the controller down and watch.
+
+### Fix
+
+Automate verbs, never choices, and keep introducing a new problem the automation can't solve.
+
+### Related Pitfalls
+
+* **The Babysat Machine** (pitfalls/babysat_machine.txt)
+* **Chores Forever** (pitfalls/chores_forever.txt)

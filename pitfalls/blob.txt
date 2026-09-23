@@ -1,0 +1,22 @@
+## Pitfall: The Blob
+
+**Area:** Soul-Specific: Tapestry
+**Found in:** souls/tapestry.txt (Tapestry)
+
+### What Happens
+
+One realm grows until nothing can threaten it.
+
+### Symptom
+
+The last hundred years are a formality.
+
+### Fix
+
+Growth creates resistance: coalitions, internal instability, succession crises that split large realms.
+
+### Related Pitfalls
+
+* **Spreadsheet Blindness** (pitfalls/spreadsheet_blindness.txt)
+* **The Omnipotent Ruler** (pitfalls/omnipotent_ruler.txt)
+* **The Rerun** (pitfalls/rerun.txt)

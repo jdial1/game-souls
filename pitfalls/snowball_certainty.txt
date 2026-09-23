@@ -1,0 +1,20 @@
+## Pitfall: Snowball Certainty
+
+**Area:** Soul-Specific: Spire
+**Found in:** souls/spire.txt (Spire)
+
+### What Happens
+
+Runs are effectively decided in the first ten minutes.
+
+### Symptom
+
+The rest of the run is a formality, won or lost.
+
+### Fix
+
+Escalate threats and change their type as the run progresses, so even strong starts must keep adapting.
+
+### Related Pitfalls
+
+* None yet.

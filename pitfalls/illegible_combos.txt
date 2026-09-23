@@ -1,0 +1,21 @@
+## Pitfall: Illegible Combos
+
+**Area:** Economy
+**Found in:** components/synergy_engines.txt (used by Looking Glass, Loathing, Spire, Containment, Swarm)
+
+### What Happens
+
+Interactions are so opaque that nobody can reason about them.
+
+### Symptom
+
+Players pick at random.
+
+### Fix
+
+Keep each piece's own rule clear, even if the combinations are hidden.
+
+### Related Pitfalls
+
+* **The Dominant Strategy** (pitfalls/dominant_strategy.txt)
+* **Additive Blandness** (pitfalls/additive_blandness.txt)

@@ -1,0 +1,17 @@
+## Framework: A Grammar of Gameplay
+
+**Source:** Raph Koster, "A Grammar of Gameplay: Game Atoms: Can Games Be Diagrammed?" (GDC 2005), and later writing on game atoms.
+
+### What It Is
+
+Koster proposes that games are built from "atoms." At the nucleus of each atom is a **verb** (following Chris Crawford: without a verb, there is no atom). Around the verb sit the ingredients of a challenge: the territory (the information exposed to the player), the preparation (prior choices that shape this one), the core mechanic, the range of challenges, the abilities available, the skill required, variable feedback (more than one possible outcome), the cost of failure (every atom needs a failure state, even if it's only an opportunity cost), and the mastery problem ("any loop that trends toward certainty is a bad loop"). Atoms combine in sequence, by nesting, and in parallel.
+
+### What Game Souls Takes
+
+**The verb inventory** (Step 1 of LLM_SOUL_GUIDE.txt). Before discussing philosophy, list the literal actions the player performs most: the three buttons, gestures, or menu choices that make up most of play. In Elysium, it's selecting dialogue. In Mansion, it's walking, aiming, and managing the inventory. In Loathing, it's navigating menus and choosing where to spend a turn. Grounding the analysis in verbs keeps it from drifting into theme and plot.
+
+Koster's mastery problem also echoes across the library: Spire's "Snowball Certainty," Swarm's "Stagnant Mid-Game," and Containment's "Checkerboard Forever" are all loops trending toward certainty.
+
+### What We Leave Behind
+
+The diagrams. Game Souls uses the verb as an anchor, not as a notation to be drawn.

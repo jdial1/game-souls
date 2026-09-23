@@ -1,0 +1,23 @@
+## Pitfall: The Chat Room
+
+**Area:** Soul-Specific: Ampersand
+**Found in:** souls/ampersand.txt (Ampersand)
+
+### What Happens
+
+The reveal grows a reply box, then a thread, then a notification per message.
+
+### Symptom
+
+The conversation happens typed instead of in the other room, and the "we talked about it" mark gets rarer.
+
+### Fix
+
+One line each, then the instruction to go and talk.
+
+### Related Pitfalls
+
+* **The Scoreboard** (pitfalls/scoreboard.txt)
+* **The Verdict** (pitfalls/verdict.txt)
+* **The Short Memory** (pitfalls/short_memory.txt)
+* **The Seal by Convention** (pitfalls/seal_by_convention.txt)

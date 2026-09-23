@@ -17,6 +17,21 @@ On the surface, these games look like punishing, obtuse action RPGs designed to 
 | Tone | Elegiac |
 | Structure | Persistent World |
 
+### Psychological Target
+
+What the ideal player of this soul wants from play, described with the six motivation pairs of the Quantic Foundry Gamer Motivation Model (see frameworks/gamer_motivation.txt). This is design intent, not a market segment: it names who the design serves, so that features built for someone else can be spotted.
+
+| Motivation Pair | Level | Why |
+| --- | --- | --- |
+| Action | High | Excitement: tense, deliberate real-time combat. |
+| Social | Medium | Asynchronous messages, co-op summons, and invasions. |
+| Mastery | High | Challenge: mastering bosses through repetition. |
+| Achievement | Medium | Gear and build completion, secondary to mastery. |
+| Immersion | High | Fantasy: a ruined world with scripture-like lore. |
+| Creativity | Medium | Discovery: hidden paths, secrets, and shortcuts. |
+
+**Design note:** Players low in Mastery (Challenge) are the audience this soul accepts losing.
+
 ### Components
 
 * **components/legible_failure.txt:** Legibility lives in animation. Clear wind-ups, honest hitboxes, consistent timing.
@@ -27,6 +42,7 @@ On the surface, these games look like punishing, obtuse action RPGs designed to 
 * **components/shared_discovery.txt:** Asynchronous communion. Messages, bloodstains, phantoms, summons, and invasions, or the Offline Echo if you can't afford servers.
 * **components/trusting_the_player.txt:** Visible destinations replace waypoints.
 * **components/diegetic_interface.txt:** Menus don't pause; the world stays dangerous while you rummage.
+* **components/kinetic_profile.txt:** Deliberate attack, committed release. Every press is a decision the enemy can punish.
 
 ### Signature Pillar: Difficulty as a Covenant of Respect
 
@@ -74,9 +90,9 @@ The player's survival and identity are built from a few scarce, committed choice
 
 ### How It Fails
 
-(Shared failure modes live in the component files: difficulty without legibility, obscurity as a shortcut, checkpoint sadism, the lore void.)
+(Shared pitfalls come through the components: difficulty without legibility, obscurity as a shortcut, checkpoint sadism, the lore void. Every pitfall has its own file in pitfalls/.)
 
-* **Difficulty as Inflation:** The team makes the game "harder" by inflating enemy health and damage instead of deepening patterns. *Symptom:* fights become long attrition slogs rather than tense exams. *Fix:* difficulty comes from reading and punishing patterns, not from bigger numbers.
+* **Difficulty as Inflation** (pitfalls/difficulty_as_inflation.txt): The team makes the game "harder" by inflating enemy health and damage instead of deepening patterns.
 
 ### Neighboring Souls
 

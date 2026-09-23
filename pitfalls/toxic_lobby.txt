@@ -1,0 +1,21 @@
+## Pitfall: The Toxic Lobby
+
+**Area:** Multiplayer & Social
+**Found in:** components/match_integrity.txt (used by Tribunal, Tether)
+
+### What Happens
+
+In-game betrayal spills into real abuse.
+
+### Symptom
+
+Players leave after one bad match.
+
+### Fix
+
+Moderation tools, and a game frame that ends the betrayal at the reveal.
+
+### Related Pitfalls
+
+* **Dead Men Tell Tales** (pitfalls/dead_men_tell_tales.txt)
+* **The Cheater Epidemic** (pitfalls/cheater_epidemic.txt)

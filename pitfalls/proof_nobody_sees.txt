@@ -1,0 +1,22 @@
+## Pitfall: Proof Nobody Sees
+
+**Area:** Soul-Specific: Containment
+**Found in:** souls/containment.txt (Containment)
+
+### What Happens
+
+The only prestige number is peak output, which a doomed board can hit.
+
+### Symptom
+
+Players chase one-minute stunts.
+
+### Fix
+
+Rate stamina, and lead the records with output from a machine that holds.
+
+### Related Pitfalls
+
+* **The Checkerboard Forever** (pitfalls/checkerboard_forever.txt)
+* **The Friendly Leak** (pitfalls/friendly_leak.txt)
+* **The Backdoor Rewind** (pitfalls/backdoor_rewind.txt)

@@ -1,0 +1,21 @@
+## Pitfall: The Flavourful Lie
+
+**Area:** Interface & Voice
+**Found in:** components/interface_voice.txt (used by Containment, Gauge, Ampersand, Casebook, Chorus)
+
+### What Happens
+
+In-character copy claims something the game didn't do ("Officially certified").
+
+### Symptom
+
+Nobody notices until a player relies on it.
+
+### Fix
+
+Audit in-character claims against what the systems measure, and pin them with tests.
+
+### Related Pitfalls
+
+* **The Cheerful Toast** (pitfalls/cheerful_toast.txt)
+* **The Red Signal** (pitfalls/red_signal.txt)

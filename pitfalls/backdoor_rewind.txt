@@ -1,0 +1,22 @@
+## Pitfall: The Backdoor Rewind
+
+**Area:** Soul-Specific: Containment
+**Found in:** souls/containment.txt (Containment)
+
+### What Happens
+
+A save import or cloud restore undoes a meltdown.
+
+### Symptom
+
+The receipt stops mattering.
+
+### Fix
+
+Refuse it in Hardcore, and mark the run as restored everywhere else.
+
+### Related Pitfalls
+
+* **The Checkerboard Forever** (pitfalls/checkerboard_forever.txt)
+* **The Friendly Leak** (pitfalls/friendly_leak.txt)
+* **Proof Nobody Sees** (pitfalls/proof_nobody_sees.txt)

@@ -1,0 +1,21 @@
+## Pitfall: The Camped Door
+
+**Area:** Soul-Specific: Tether
+**Found in:** souls/tether.txt (Tether)
+
+### What Happens
+
+Extracts are predictable, and players wait at them.
+
+### Symptom
+
+Raids are won by whoever camps the exit.
+
+### Fix
+
+Many doors, with variable availability and conditions.
+
+### Related Pitfalls
+
+* **The Safe Pocket** (pitfalls/safe_pocket.txt)
+* **The Hoarder's Paralysis** (pitfalls/hoarder_s_paralysis.txt)

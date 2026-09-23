@@ -4,6 +4,10 @@
 
 **Used by:** Looking Glass, Loathing, Spire, Containment, Swarm
 
+**Requires:** legible_failure (each piece's rule must be clear, even when combinations are hidden)
+**Supports:** difficulty_ladder, shared_discovery, workbench
+**Conflicts With:** scarcity_economy in the late game (a broken build ends scarcity; decide which should win); Information: Hidden (players can't plan combos they can't read)
+
 ### Design Rules
 
 * **Multiply, Don't Add:** Design pieces that multiply one another rather than stacking linear bonuses. A correct combination should turn a modest build into an absurd one.
@@ -36,9 +40,9 @@
 
 ### How It Fails
 
-* **The Dominant Strategy:** One build or tool wins so reliably that everyone converges on it. *Symptom:* every playthrough looks the same. *Fix:* give tools costs or counters, and make the pieces of the top build rarely appear together.
-* **Additive Blandness:** Every piece is "+10% damage." *Symptom:* choices feel interchangeable. *Fix:* design pieces that change *how* you play, not just how much.
-* **Illegible Combos:** Interactions are so opaque that nobody can reason about them. *Symptom:* players pick at random. *Fix:* keep each piece's own rule clear, even if the combinations are hidden.
+* **The Dominant Strategy** (pitfalls/dominant_strategy.txt): One build or tool wins so reliably that everyone converges on it.
+* **Additive Blandness** (pitfalls/additive_blandness.txt): Every piece is "+10% damage."
+* **Illegible Combos** (pitfalls/illegible_combos.txt): Interactions are so opaque that nobody can reason about them.
 
 ### Litmus
 

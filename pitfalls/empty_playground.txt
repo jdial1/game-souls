@@ -1,0 +1,21 @@
+## Pitfall: The Empty Playground
+
+**Area:** Onboarding & Guidance
+**Found in:** components/trusting_the_player.txt (used by Looking Glass, Loathing, Ashen, Hearthian, Toybox, Containment, Gauge, Ampersand, Casebook, Assembly)
+
+### What Happens
+
+Curiosity stops paying off.
+
+### Symptom
+
+Players follow only the main path.
+
+### Fix
+
+Raise reward density or shrink the space. The designer should always get there first.
+
+### Related Pitfalls
+
+* **The Wordy Tutorial** (pitfalls/wordy_tutorial.txt)
+* **Abandonment Disguised as Trust** (pitfalls/abandonment_disguised_as_trust.txt)

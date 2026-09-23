@@ -1,0 +1,22 @@
+## Pitfall: Obscurity as a Shortcut
+
+**Area:** Story & Discovery
+**Also known as:** Guide Dang It! (TV Tropes)
+**Found in:** components/environmental_storytelling.txt (used by Looking Glass, Ashen, Hearthian, Mansion, Casebook)
+
+### What Happens
+
+Designers confuse "cryptic" with "deep" and hide critical progression behind unguessable actions.
+
+### Symptom
+
+Players need a wiki to finish the main path.
+
+### Fix
+
+The main path must be discoverable by observation alone; keep the truly obscure secrets optional.
+
+### Related Pitfalls
+
+* **The Lore Void** (pitfalls/lore_void.txt)
+* **The Audio-Log Dump** (pitfalls/audio_log_dump.txt)

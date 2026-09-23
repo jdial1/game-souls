@@ -1,0 +1,21 @@
+## Pitfall: The Guilt Engine
+
+**Area:** Multiplayer & Social
+**Found in:** components/social_safety.txt (used by Gauge, Ampersand)
+
+### What Happens
+
+Streaks with teeth, escalating reminders, and notifications that name a debt ("Your cousin needs wood!", "Maya is waiting").
+
+### Symptom
+
+Players feel they owe the group their attention, and the game becomes something they nag each other about.
+
+### Fix
+
+Apply the Bad-Month Test; say what is waiting, never who is to blame or who needs what.
+
+### Related Pitfalls
+
+* **The Ranked Group** (pitfalls/ranked_group.txt)
+* **The Nagging Feed** (pitfalls/nagging_feed.txt)

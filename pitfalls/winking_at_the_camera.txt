@@ -1,0 +1,21 @@
+## Pitfall: Winking at the Camera
+
+**Area:** Story & Discovery
+**Found in:** components/theme_as_mechanic.txt (used by Loathing, Elysium, Mansion, Gauge, Ampersand, Casebook, Chorus, Tribunal)
+
+### What Happens
+
+The game nudges the player to notice how clever, random, or deep it is.
+
+### Symptom
+
+The theme reads as self-conscious.
+
+### Fix
+
+The world must take itself completely seriously.
+
+### Related Pitfalls
+
+* **Theme as Paint** (pitfalls/theme_as_paint.txt)
+* **Mechanics That Contradict the Theme** (pitfalls/mechanics_that_contradict_the_theme.txt)

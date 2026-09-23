@@ -1,0 +1,21 @@
+## Pitfall: The Snapped Input
+
+**Area:** Soul-Specific: Chorus
+**Found in:** souls/chorus.txt (Chorus)
+
+### What Happens
+
+The engine quantizes inputs onto the beat.
+
+### Symptom
+
+Sloppy play scores the same as precise play, and experts stop improving.
+
+### Fix
+
+Judge the window; never move the input.
+
+### Related Pitfalls
+
+* **Visual Desync** (pitfalls/visual_desync.txt)
+* **Arbitrary Syncopation** (pitfalls/arbitrary_syncopation.txt)

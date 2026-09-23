@@ -4,6 +4,10 @@
 
 **Used by:** Looking Glass, Ashen, Hearthian, Mansion, Casebook
 
+**Requires:** trusting_the_player (players must be willing to look; nothing points them at the story)
+**Supports:** interlocking_space, shared_discovery, theme_as_mechanic
+**Conflicts With:** cutscene-led delivery (the story told at the player, not found); Information: Total, where nothing is left to find
+
 ### Design Rules
 
 * **Information as a Physical Object:** Passwords are found on discarded clipboards. The layout of an enemy base is learned by stealing a janitor's blueprints (Looking Glass). If the player wants to know something, there is a thing in the world that knows it.
@@ -35,9 +39,9 @@
 
 ### How It Fails
 
-* **The Lore Void:** Fragments are so scattered that no coherent story can be reconstructed. *Symptom:* the community stops theorizing. *Fix:* write the full truth first.
-* **Obscurity as a Shortcut:** Designers confuse "cryptic" with "deep" and hide critical progression behind unguessable actions. *Symptom:* players need a wiki to finish the main path. *Fix:* the main path must be discoverable by observation alone; keep the truly obscure secrets optional.
-* **The Audio-Log Dump:** Environmental storytelling becomes a pile of voice recordings that explain the plot out loud. *Symptom:* the player stops looking at the environment. *Fix:* let objects, placement, and architecture carry the story before text does.
+* **The Lore Void** (pitfalls/lore_void.txt): Fragments are so scattered that no coherent story can be reconstructed.
+* **Obscurity as a Shortcut** (pitfalls/obscurity_as_a_shortcut.txt): Designers confuse "cryptic" with "deep" and hide critical progression behind unguessable actions.
+* **The Audio-Log Dump** (pitfalls/audio_log_dump.txt): Environmental storytelling becomes a pile of voice recordings that explain the plot out loud.
 
 ### Litmus
 

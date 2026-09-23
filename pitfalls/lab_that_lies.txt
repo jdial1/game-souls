@@ -1,0 +1,21 @@
+## Pitfall: The Lab That Lies
+
+**Area:** Progression & Replay
+**Found in:** components/workbench.txt (used by Containment, Assembly)
+
+### What Happens
+
+The lab's setup differs from the real game's.
+
+### Symptom
+
+A design that worked in the lab fails for real, and players stop trusting the tools.
+
+### Fix
+
+A test runs every example design in both and requires them to agree.
+
+### Related Pitfalls
+
+* **The Outside Tool** (pitfalls/outside_tool.txt)
+* **Broken Codes** (pitfalls/broken_codes.txt)

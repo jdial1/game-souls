@@ -17,6 +17,21 @@ On the surface, these are desk games: a page, a pencil, a few names, and a crime
 | Tone | Armchair Intrigue |
 | Structure | Serial |
 
+### Psychological Target
+
+What the ideal player of this soul wants from play, described with the six motivation pairs of the Quantic Foundry Gamer Motivation Model (see frameworks/gamer_motivation.txt). This is design intent, not a market segment: it names who the design serves, so that features built for someone else can be spotted.
+
+| Motivation Pair | Level | Why |
+| --- | --- | --- |
+| Action | Low | No reflex play; time matters less than help taken. |
+| Social | Low | Solitary solving; spoilers are the social risk. |
+| Mastery | High | Challenge: clean solves with minimal help. |
+| Achievement | Medium | Completion: filling the case file. |
+| Immersion | Medium | Story: a mystery told in documents. |
+| Creativity | Medium | Discovery happens inside the page, one proven line at a time. |
+
+**Design note:** Speed-focused Competition (time leaderboards) pulls players away from reading and deducing.
+
 ### Components
 
 * **components/trusting_the_player.txt:** Trust the player to deduce. The board records what they've spotted and shows counts without advice.
@@ -112,12 +127,12 @@ The player isn't a reader of the story or the famous detective. They are a clerk
 
 ### How It Fails
 
-(Shared failure modes live in the component files: moon logic, theme as paint, the Flavourful Lie.)
+(Shared pitfalls come through the components: moon logic, theme as paint, the Flavourful Lie. Every pitfall has its own file in pitfalls/.)
 
-* **The Oracle:** Feedback leaks: wrong letters flagged as typed, a check that refunds on success, an undo that returns a spent ration, or a control that behaves differently when a guess is right. *Symptom:* players cycle letters, or read the controls instead of the page. *Fix:* audit every surface that could reveal correctness; compare the screen with a right guess and a wrong one.
-* **The Stopwatch Takeover:** Speed becomes the prestige: the clock shows tenths, the board ranks by time, and reading the frame costs seconds. *Symptom:* players skip the story and guess. *Fix:* rank by help first and time second, and stop the clock while the player reads the case.
-* **Wallpaper Story:** The case sits beside the puzzles instead of inside them. *Symptom:* players solve without reading and can't say what happened. *Fix:* apply "The Frame Is the Crib" and "The Revelation Is Behind the Lock" to every page.
-* **The Unproven Case:** The player proves every line but never decides anything about the crime. *Fix:* at the end of each arc, let the player file a finding built from lines they proved, checked by the same rationed rules.
+* **The Oracle** (pitfalls/oracle.txt): Feedback leaks: wrong letters flagged as typed, a check that refunds on success, an undo that returns a spent ration, or a control that behaves differently when a guess is right.
+* **The Stopwatch Takeover** (pitfalls/stopwatch_takeover.txt): Speed becomes the prestige: the clock shows tenths, the board ranks by time, and reading the frame costs seconds.
+* **Wallpaper Story** (pitfalls/wallpaper_story.txt): The case sits beside the puzzles instead of inside them.
+* **The Unproven Case** (pitfalls/unproven_case.txt): The player proves every line but never decides anything about the crime.
 
 ### Neighboring Souls
 

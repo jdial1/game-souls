@@ -1,0 +1,26 @@
+## Framework: Gamer Motivation Model
+
+**Source:** Quantic Foundry, Gamer Motivation Model, built from survey data from a very large number of players.
+
+### What It Is
+
+Twelve motivations, grouped into six pairs:
+
+| Pair | Motivations |
+| --- | --- |
+| **Action** ("Boom!") | Destruction (guns, explosives, chaos); Excitement (fast pace, surprises, thrills) |
+| **Social** ("Let's Play Together") | Competition (duels, matches, rankings); Community (being on a team, chatting, interacting) |
+| **Mastery** ("Let Me Think") | Challenge (practice, high difficulty); Strategy (thinking ahead, making decisions) |
+| **Achievement** ("I Want More") | Completion (all collectibles, all missions); Power (a powerful character and equipment) |
+| **Immersion** ("Once Upon a Time") | Fantasy (being someone else, somewhere else); Story (elaborate plots, interesting characters) |
+| **Creativity** ("What If?") | Design (expression, customization); Discovery (explore, tinker, experiment) |
+
+At a higher level, the pairs fall into three clusters: **Action-Social** (immediacy and adrenaline), **Mastery-Achievement** (cool-headed, long-term play), and **Immersion-Creativity** (expansive, expressive play).
+
+### What Game Souls Takes
+
+**The Psychological Target** section in every soul: a High / Medium / Low rating for each of the six pairs, with a reason, and a design note. It describes the ideal player the design serves, so that features built for someone else can be spotted. When a target game mixes souls, compare their targets: a soul rated Low on Mastery (Toybox's main path) doesn't want a spreadsheet economy built for a High-Strategy player (Assembly).
+
+### What We Leave Behind
+
+Demographics and market segmentation. The Psychological Target never names ages, generations, spending habits, or "who buys this." It is design intent: the player the soul is built to delight. Audience trade-offs stay in "What This Soul Costs."

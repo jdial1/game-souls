@@ -17,6 +17,21 @@ On the surface, these games look like standard first-person action or stealth ti
 | Tone | Tense Paranoia |
 | Structure | Persistent World (mission by mission) |
 
+### Psychological Target
+
+What the ideal player of this soul wants from play, described with the six motivation pairs of the Quantic Foundry Gamer Motivation Model (see frameworks/gamer_motivation.txt). This is design intent, not a market segment: it names who the design serves, so that features built for someone else can be spotted.
+
+| Motivation Pair | Level | Why |
+| --- | --- | --- |
+| Action | Medium | Combat is available but optional; many players avoid it. |
+| Social | Low | Single-player; the community shares runs, not play. |
+| Mastery | High | Strategy: planning routes, reading patrols, combining tools. |
+| Achievement | Medium | Ghost and no-kill runs give completionists a target. |
+| Immersion | High | Fantasy: being an infiltrator in a place that feels real. |
+| Creativity | High | Discovery: finding solutions the designers never listed. |
+
+**Design note:** Forced action sequences and objective markers serve Action and Achievement players at the expense of the planners this soul is built for.
+
 ### Components
 
 * **components/systemic_consistency.txt:** The engine of the soul. Blind interactivity and overlapping states of matter are what make a clever plan work.
@@ -63,10 +78,10 @@ Once a mission begins, the game must never wrench control away from the player t
 
 ### How It Fails
 
-(Shared failure modes live in the component files: the illusion of choice, the dominant strategy, unreadable affordances.)
+(Shared pitfalls come through the components: the illusion of choice, the dominant strategy, unreadable affordances. Every pitfall has its own file in pitfalls/.)
 
-* **The Tunnel-Vision Boss:** A mandatory fight in a sealed arena that ignores the entire toolkit. *Symptom:* players who built for stealth are suddenly stuck. *Fix:* every major encounter must offer at least one non-lethal solution and one way to avoid it entirely.
-* **Ludonarrative Whiplash:** The player ghosts an entire level without a kill, and the following cutscene shows the hero gunning down guards. *Symptom:* the player's authorship is overwritten. *Fix:* cutscenes must reflect how the player actually played, or stay out of the way.
+* **The Tunnel-Vision Boss** (pitfalls/tunnel_vision_boss.txt): A mandatory fight in a sealed arena that ignores the entire toolkit.
+* **Ludonarrative Whiplash** (pitfalls/ludonarrative_whiplash.txt): The player ghosts an entire level without a kill, and the following cutscene shows the hero gunning down guards.
 
 ### Neighboring Souls
 

@@ -4,6 +4,10 @@
 
 **Used by:** Gauge, Ampersand
 
+**Requires:** None.
+**Supports:** interface_voice, automation
+**Conflicts With:** shared_discovery with strangers; match_integrity-style competition; difficulty_ladder leaderboards; any hidden-role or deception mechanic
+
 ### Design Rules
 
 * **Given, Never Discovered:** Groups form by invitation only: a code read aloud across a kitchen. No directory, no search, no strangers, and no names typed by anyone. Removing the surface beats moderating it, especially when the players are children.
@@ -36,9 +40,9 @@
 
 ### How It Fails
 
-* **The Guilt Engine:** Streaks with teeth, escalating reminders, and notifications that name a debt ("Your cousin needs wood!", "Maya is waiting"). *Symptom:* players feel they owe the group their attention, and the game becomes something they nag each other about. *Fix:* apply the Bad-Month Test; say what is waiting, never who is to blame or who needs what.
-* **The Ranked Group:** Shared snapshots quietly become a scoreboard, a per-person tally appears, or a gift count becomes a ledger of who gave more. *Symptom:* someone opens the game to see where they stand. *Fix:* show changes as each person's own place growing, and any number as the group's.
-* **The Nagging Feed:** News repeats until it's acknowledged. *Symptom:* good news starts to feel like a notification badge. *Fix:* news is spent the first time it is shown, and never re-announced.
+* **The Guilt Engine** (pitfalls/guilt_engine.txt): Streaks with teeth, escalating reminders, and notifications that name a debt ("Your cousin needs wood!", "Maya is waiting").
+* **The Ranked Group** (pitfalls/ranked_group.txt): Shared snapshots quietly become a scoreboard, a per-person tally appears, or a gift count becomes a ledger of who gave more.
+* **The Nagging Feed** (pitfalls/nagging_feed.txt): News repeats until it's acknowledged.
 
 ### Litmus
 

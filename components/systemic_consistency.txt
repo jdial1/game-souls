@@ -4,6 +4,10 @@
 
 **Used by:** Looking Glass, Dwarven, Hearthian, Toybox, Containment, Gauge, Casebook, Chorus, Tapestry, Assembly
 
+**Requires:** None; this is a foundation other components build on.
+**Supports:** legible_failure, trusting_the_player, workbench, synergy_engines, living_world
+**Conflicts With:** Authorship: Designer-Authored scripting that needs exceptions (immune bosses, indestructible doors, scripted outcomes)
+
 ### Design Rules
 
 * **Blind Interactivity:** Entities react to stimuli, not to the player's status as the protagonist.
@@ -43,9 +47,9 @@
 
 ### How It Fails
 
-* **The Arbitrary Exception:** A boss is immune, a door is indestructible for no reason, a scripted sequence ignores the rules. *Symptom:* players stop experimenting because they no longer trust the world. *Fix:* no exceptions; if something must be blocked, block it with a rule the player can understand.
-* **Unreadable Affordances:** The player can't tell what can be stacked, burned, or climbed. *Symptom:* players only discover creative solutions by watching videos. *Fix:* a consistent visual language, taught early.
-* **Detail Nobody Feels:** The engine tracks the boiling point of a hundred minerals, but no decision ever depends on it. *Symptom:* developers are proud of features players never notice. *Fix:* cut or surface it.
+* **The Arbitrary Exception** (pitfalls/arbitrary_exception.txt): A boss is immune, a door is indestructible for no reason, a scripted sequence ignores the rules.
+* **Unreadable Affordances** (pitfalls/unreadable_affordances.txt): The player can't tell what can be stacked, burned, or climbed.
+* **Detail Nobody Feels** (pitfalls/detail_nobody_feels.txt): The engine tracks the boiling point of a hundred minerals, but no decision ever depends on it.
 
 ### Litmus
 

@@ -2,7 +2,7 @@
 
 This guide teaches a language model how to extract a soul from an existing game, compare it against the library, and use the result to instill that soul in a new game.
 
-The core idea: **a soul = axis positions + components + residue.** Axes and components are shared vocabulary. The residue (what nothing in the library explains) is what makes a soul distinct.
+The core idea: **a soul = axis positions + components + residue.** Axes and components are shared vocabulary. The residue (what nothing in the library explains) is what makes a soul distinct. Every claim is grounded in what the player actually does, and every recommendation is traced to the feeling it produces.
 
 ---
 
@@ -10,14 +10,14 @@ The core idea: **a soul = axis positions + components + residue.** Axes and comp
 
 | Step | Name | Output |
 | --- | --- | --- |
-| 1 | Intake | A fact sheet of the game's concrete mechanics |
+| 1 | Intake | A fact sheet, a verb inventory, and the economy's shape |
 | 2 | Axis Profiling | A position on each of the six axes, with evidence |
-| 3 | Component Extraction | Which components are present, and how they're tuned |
+| 3 | Component Extraction | Which components are present, how they're tuned, and whether their tags conflict |
 | 4 | Residue Hunting | The elements no axis or component explains |
 | 5 | Cross-Comparison | The nearest existing souls and a classification verdict |
 | 6 | Soul Writing | A new or updated soul file (only if the verdict calls for it) |
-| 7 | Validation | Litmus test, tension check, tone-killer check |
-| 8 | Instillation | A gap analysis for a target game (only if requested) |
+| 7 | Validation | Litmus, tension, tone-killer, relationship, topology, and guardrail checks |
+| 8 | Instillation | A gap analysis with causality traces and a pitfall scan (only if requested) |
 
 Do not skip steps 2–4. Jumping straight to "this is like Dark Souls" produces shallow souls.
 
@@ -27,11 +27,19 @@ Do not skip steps 2–4. Jumping straight to "this is like Dark Souls" produces 
 
 Build a fact sheet before interpreting anything. List only observable facts.
 
+**The Verb Inventory (first, always).** Name the three literal actions the player performs most: buttons, gestures, or menu choices, not themes. "Select a dialogue option," "aim and fire," "place a belt," "choose where to spend a turn." Grounding the analysis in verbs keeps it from drifting into plot and setting (see frameworks/koster_grammar.txt). For each real-time verb, describe its kinetic profile in bands: attack (instant, snappy, deliberate, heavy) and release (cancellable, short recovery, committed). Never invent frame counts or timing values (see components/kinetic_profile.txt).
+
+**The Five Elements.** Make sure the fact sheet covers all five top-level elements of the Game Ontology Project (see frameworks/game_ontology.txt):
+* **Interface:** how the player touches the game and what it shows them.
+* **Rules:** what the game allows and forbids.
+* **Goals:** what the player is trying to do.
+* **Entities:** what exists in the world.
+* **Entity Manipulation:** how the player changes those things.
+
 **Key questions:**
-* What does the player do, moment to moment? (The core verbs.)
 * What happens when the player fails? Exactly what is lost?
-* What resources exist, and which one runs out first?
-* How is information delivered? (UI, text, voice, environment, community.)
+* What resources exist, and which one runs out first? What is the economy's shape: Drain, Generator, Zero-Sum, Gift, or no meaningful economy (see "Economic Topology" in components/scarcity_economy.txt)?
+* How is information delivered? (UI, text, sound, environment, community.)
 * How does the player get stronger, if at all? What carries over between sessions?
 * How long is a session? How long is a full playthrough? Is it meant to be replayed?
 * What do players tell each other about the game afterward? (Stories, strategies, secrets.)
@@ -50,10 +58,10 @@ Place the game on each axis. Read the axis file for the full list of positions. 
 | **Information** (axes/information.txt) | What does the player know that they didn't discover themselves? Are enemy intentions shown? Are the rules explained, hidden, or taught through play? Can the protagonist's perception be wrong? |
 | **Authorship** (axes/authorship.txt) | When players tell stories about this game, whose story is it: the designer's plot, their clever solution, who their character became, their build, or what the simulation did? |
 | **Power** (axes/power.txt) | What does "getting stronger" mean: reflexes, tools, knowledge, builds, persuasion, or managing others? Can the player afford to fight everything? |
-| **Tone** (axes/tone.txt) | What emotion does the game sustain for hours, not just in its best moment? What single mechanic, if added, would destroy that emotion? |
+| **Tone** (axes/tone.txt) | What emotion does the game sustain for hours, not just in its best moment? Which MDA aesthetics does it serve (see "Aesthetic Targets" in the tone file)? What single mechanic, if added, would destroy the emotion? |
 | **Structure** (axes/structure.txt) | Is play one journey, a persistent world, a chronicle, a series of runs, a rebirth account, or levels? What resets, and what persists? |
 
-**Watch for:** Positions that don't exist yet. If no named position fits, describe the new position precisely. That is often the first sign of residue.
+**Watch for:** Positions that don't exist yet. If no named position fits, describe the new position precisely. That is often the first sign of residue. Don't borrow another soul's position just because the word is close (Gauge's "Surplus" means spare to give away, not "a lot of power").
 
 ---
 
@@ -70,12 +78,19 @@ Check the game against every component. Use the fingerprints below to detect eac
 | environmental_storytelling | Notes, item descriptions, ruins, audio logs, lore without cutscenes | Is the story found rather than told? |
 | trusting_the_player | No waypoints, visible destinations, wordless tutorials, clues the player must notice | Does the game assume the player is smart? |
 | interlocking_space | Shortcuts, hub revisits, locked doors marked with their key, rare safe rooms | Is the world one folded space the player learns? |
-| scarcity_economy | Limited ammo, saves, turns, inventory, oxygen, energy | Can the player afford to do everything? |
-| synergy_engines | Builds, combos, multiplicative items, community theorycrafting | Can a combination break the game open? |
+| scarcity_economy | Limited ammo, saves, turns, inventory, oxygen, energy; a named economic shape | Can the player afford to do everything? |
+| synergy_engines | Builds, combos, multiplicative items, drafts, community theorycrafting | Can a combination break the game open? |
 | difficulty_ladder | Ascension levels, heat systems, restriction runs, new game plus, speedrun culture | After the credits, is there a harder, stranger way to play? |
 | theme_as_mechanic | Renamed stats, systems that literalize the theme, emotions as resources | Would the mechanic collapse without the theme? |
 | diegetic_interface | Menus that don't pause, health shown on the body, in-world maps | Does the interface live inside the fiction? |
 | shared_discovery | Player messages, ghosts, community puzzles, unannounced secrets | Can other players change this player's experience? |
+| social_safety | Invite-only groups, no chat or typed names, no rankings, no nudges | Is this a game between people who already know each other, built so nobody owes anybody? |
+| interface_voice | Deliberate copy rules, no celebratory popups, stall language, an in-fiction voice | Does every word, colour, and sound say only what is true, once? |
+| audio_information | Sound before sight, audible cues for every threat, noise as a cost | Could a player with eyes closed tell that danger is coming? |
+| workbench | Built-in planners, sandboxes, forecasts, shareable design codes, free teardown | Does the game ship the tools players would otherwise have to build? |
+| automation | Manual chores that become machines, auto-firing weapons, routing instead of carrying | Does the machine take the repeated action while the player keeps the decision? |
+| match_integrity | Hidden roles, server authority, restricted spectating, end-of-match reveals | Are the dead kept silent and the stakes protected from cheating? |
+| kinetic_profile | Wind-ups, recoveries, cancel windows, input buffering | Does the core verb commit the player or forgive them? |
 
 For each component found, record:
 * **Evidence:** the concrete mechanic.
@@ -83,6 +98,10 @@ For each component found, record:
 * **Strength:** Core (the game collapses without it), Supporting (it clearly matters), or Trace (it's there but minor).
 
 Only Core and Supporting components belong in a soul's component list.
+
+**Check the relationship tags.** Every component file opens with **Requires**, **Supports**, and **Conflicts With** (see frameworks/gameplay_design_patterns.txt). If the game relies on two components that conflict, note how it resolves the conflict. That resolution is often residue.
+
+**Don't invent components for features.** A double jump, a health potion, or a skill tree is not a component. If a mechanic fits an existing component, it is tuning. A new component is justified only by a systemic philosophy that appears in two or more souls and fits nowhere else.
 
 ---
 
@@ -101,6 +120,7 @@ Residue is everything important about the game that axes and components don't ex
 1. Is it already covered by a component? If yes, it's tuning, not residue.
 2. Is it specific to one game rather than a family of games? If yes, it's a variant note, not a pillar.
 3. Can you write it as a rule a designer could follow in a different game? If not, keep refining it.
+4. Is it about what the player does, not what the game depicts? Setting and plot are never residue.
 
 Aim for two to four residue items. More than five usually means some belong in components.
 
@@ -114,6 +134,7 @@ Compare the profile against every existing soul using the tables in README.txt.
 * **Axis match:** Count how many of the six axes match each existing soul (partial matches count as half).
 * **Component overlap:** Count shared Core and Supporting components.
 * **Residue overlap:** Check whether any residue matches an existing soul's signature pillars.
+* **Tie-breakers:** Compare the economic shape (components/scarcity_economy.txt) and the Psychological Target in each candidate soul. Two souls with matching axes but opposite ideal players are not the same soul.
 
 **Verdict:**
 
@@ -138,17 +159,23 @@ Only for a New Soul verdict. Create souls/<name>.txt using the section order in 
 
 **Philosophy:** One quotable sentence that could not describe any other soul. Test it against the neighbors: if it fits them too, sharpen it.
 
+**Voice:** Match the library's voice: opinionated, specific, and quotable. Academic framework terms (MDA, Machinations, pattern relations) are for the analysis, never for pillar names or rules.
+
+**Psychological Target:** Rate each of the six motivation pairs (Action, Social, Mastery, Achievement, Immersion, Creativity) High, Medium, or Low, with a one-line reason, and add a design note naming whose features would work against the soul. Describe the ideal player, never a demographic or market (see frameworks/gamer_motivation.txt).
+
 **Signature Pillars:** Built from the residue. Each pillar gets an intro paragraph, then rules in the form **Rule Name:** explanation, with an italic *Example:* where helpful. Examples should be original, not scenes lifted from the source games.
 
 **Components:** List Core and Supporting components with a one-line tuning note each. Do not copy component rules into the soul file.
 
 **Variants & Exceptions:** For each example game that bends a rule, say which rule and why it still belongs.
 
-**Costs and Failure Modes:** Only the ones specific to this soul. Shared ones live in the components.
+**Costs:** Only the ones specific to this soul. Shared ones live in the components.
+
+**How It Fails:** Each soul-specific failure gets its own file in pitfalls/ (name, area, what happens, symptom, fix, related pitfalls), and the soul lists it in one line with its file. Update pitfalls/README.txt.
 
 **Litmus Test:** Four or five yes/no checks a designer could run on a single feature. Each answer should include a one-line reason.
 
-**Index updates:** Add the soul to both tables in README.txt, add it to the "Used by" and "Tuning by Soul" sections of each component it uses, and add it to each axis file's "Where Each Soul Sits" table.
+**Index updates:** Add the soul to both tables in README.txt; add it to "Used by" and "Tuning by Soul" in each component it uses; add it to each axis file's "Where Each Soul Sits" table, the tone killers, and the Aesthetic Targets table in axes/tone.txt; and add it to the topology list in components/scarcity_economy.txt.
 
 If the residue reveals a rule shared with an existing soul, create or extend a component instead of duplicating it.
 
@@ -160,9 +187,12 @@ Run all of these before presenting a soul:
 
 * **Litmus self-test:** Do the source games pass the new soul's own litmus test? If a key source game fails, either the test or the game list is wrong.
 * **Tension check:** Read the "Tensions" section of each axis file. Does the profile hit a known conflict? If yes, explain how the source games resolve it.
+* **Relationship check:** For every pair of components the soul uses, check their Conflicts With tags. Each conflict needs a stated resolution.
+* **Topology check:** Does the economic shape serve the tone? A Drain produces dread and stewardship; a Generator produces momentum; Zero-Sum produces rivalry; a Gift economy produces warmth. A mismatch (an Inflationary economy in a dread soul) is a structural error.
 * **Tone-killer check:** Name the single mechanic that would destroy this soul's tone, and add it to axes/tone.txt.
 * **Neighbor check:** Could the philosophy sentence describe a neighboring soul? If yes, sharpen it.
 * **Duplication check:** Does any signature rule already appear in a component or another soul? If yes, move it.
+* **Guardrail check (frameworks/README.txt, "What We Deliberately Don't Adopt"):** No component invented for a single feature; no soul defined by theme or plot; no demographic language; no frame counts or physics values; the library's voice intact.
 
 ---
 
@@ -170,13 +200,19 @@ Run all of these before presenting a soul:
 
 When the user wants to give a game in development a particular soul, perform a gap analysis.
 
-1. **Profile the target** using Steps 1–3 on the target game's current design.
+1. **Profile the target** using Steps 1–3 on the target game's current design, starting with its verb inventory.
 2. **Diff the axes.** For each axis where the target differs from the soul, state the gap and the smallest design change that closes it.
-3. **Diff the components.** For each component the soul uses that the target lacks or tunes differently, recommend concrete changes, citing the component file's rules.
-4. **Apply the signature pillars.** For each pillar, ask: "What would this rule look like in the target's genre?" Translate the rule; don't copy the source game's mechanic.
-5. **Hunt for tone killers.** Check whether the target already contains the mechanic listed in axes/tone.txt for this soul. This is usually the highest-priority fix.
-6. **Run the soul's litmus test** against the target's key features and report pass or fail for each row.
-7. **Prioritize.** Rank recommendations: tone killers first, then axis gaps, then missing Core components, then signature pillars.
+3. **Diff the components.** For each component the soul uses that the target lacks or tunes differently, recommend concrete changes, citing the component file's rules. Check the relationship tags: flag any component the target already relies on that conflicts with one the soul needs.
+4. **Check the economy's shape.** Compare the target's topology with the soul's. A shape mismatch outranks any tuning change.
+5. **Check the ideal player.** Compare the target's features against the soul's Psychological Target. Flag features built for a motivation the soul rates Low (an Assembly-style spreadsheet in a Toybox platformer serves Strategy players the soul isn't built for).
+6. **Apply the signature pillars.** For each pillar, ask: "What would this rule look like in the target's genre?" Translate the rule; don't copy the source game's mechanic.
+7. **Hunt for tone killers.** Check whether the target already contains the mechanic listed in axes/tone.txt for this soul. This is usually the highest-priority fix.
+8. **Scan the pitfalls.** Check the target's design against pitfalls/README.txt: every area whose components the design uses, plus the soul-specific pitfalls of the soul being instilled. Report only pitfalls with concrete evidence in the design.
+9. **Run the soul's litmus test** against the target's key features and report pass or fail for each row.
+10. **Trace every recommendation.** Each recommendation must be written as a causality trace (see frameworks/mda.txt): *Mechanic → Dynamic → Tone.* The mechanic is a concrete, buildable change; the dynamic is what players will do differently because of it; the tone is the feeling that behavior produces, in the soul's own words. If you can't write the middle link, the recommendation isn't ready.
+   * *Weak:* "Add scarcity to increase dread."
+   * *Traced:* "Two bullets per room → players avoid fights they can walk around, and every shot becomes a decision → dread."
+11. **Prioritize.** Rank recommendations: tone killers first, then topology and relationship conflicts, then axis gaps, then missing Core components, then pitfalls, then signature pillars.
 
 **Key questions for instillation:**
 * What does the target game do today that directly contradicts the soul?
@@ -193,20 +229,25 @@ When the user wants to give a game in development a particular soul, perform a g
 ```
 ## Soul Analysis: <Game>
 
+### Verb Inventory
+| Verb | What the player literally does | Kinetic profile (bands, if real-time) |
+
 ### Fact Sheet
-- ...
+- Interface / Rules / Goals / Entities / Entity Manipulation
+- Economy shape: Drain / Generator / Zero-Sum / Gift / None
 
 ### Axis Profile
 | Axis | Position | Evidence | Confidence |
 
 ### Components
 | Component | Strength | Evidence | Tuning |
+Relationship conflicts: ...
 
 ### Residue
 1. **<Name>:** description. Why no component covers it.
 
 ### Cross-Comparison
-| Soul | Axis Matches | Shared Components | Residue Overlap |
+| Soul | Axis Matches | Shared Components | Residue Overlap | Topology | Ideal Player |
 
 ### Verdict
 Member / Variant / Blend / New Soul, and why in two or three sentences.
@@ -218,15 +259,19 @@ Member / Variant / Blend / New Soul, and why in two or three sentences.
 ## Instilling <Soul> into <Target Game>
 
 ### Tone Killers Found
+### Structural Conflicts
+Topology mismatch, relationship-tag conflicts, ideal-player clashes
 ### Axis Gaps
 | Axis | Soul | Target Today | Recommended Change |
 ### Component Gaps
 | Component | Status | Recommended Change |
+### Pitfalls Found
+| Pitfall | Evidence in the design | Fix |
 ### Signature Pillars, Translated
 ### Litmus Results
 | Check | Pass/Fail | Note |
 ### Prioritized Recommendations
-1. ...
+| # | Mechanic → | Dynamic → | Tone |
 ### Cost Warning
 ```
 
@@ -237,6 +282,16 @@ Use Confidence values of High, Medium, or Low. Mark every Low item for the user 
 ### Worked Example (Abbreviated): Subnautica
 
 *This example shows the method, not a finished soul. Verify game facts with the user before building on it.*
+
+**Verb Inventory**
+
+| Verb | What the player does | Kinetic profile |
+| --- | --- | --- |
+| Swim | Move in three dimensions underwater | Snappy attack, smooth sustain; weightier in vehicles |
+| Scan | Hold a scanner on a creature or fragment | A sustained hold that leaves the player exposed |
+| Build | Place base parts and craft equipment | Menu-driven; not a real-time verb |
+
+**Economy shape:** Drain (oxygen and health drain constantly) nested inside a Generator (the base and its fabricators grow the player's reach).
 
 **Axis Profile**
 
@@ -249,7 +304,7 @@ Use Confidence values of High, Medium, or Low. Mark every Low item for the user 
 | Tone | Wonder and Dread (no existing single position fits) | Beautiful shallows; terrifying depths. |
 | Structure | Persistent World / Single Journey | One continuous world, one story arc. |
 
-**Components (Core/Supporting):** scarcity_economy (oxygen is the defining bottleneck), environmental_storytelling (logs and wrecks), living_world (a predator ecosystem that doesn't scale to the player), trusting_the_player (few objective markers; signals invite rather than direct).
+**Components (Core/Supporting):** scarcity_economy (oxygen is the defining bottleneck), environmental_storytelling (logs and wrecks), living_world (a predator ecosystem that doesn't scale to the player), audio_information (predators are heard long before they're seen), trusting_the_player (few objective markers; signals invite rather than direct).
 
 **Residue candidates:**
 1. **Depth Is the Difficulty Curve:** Danger scales with physical depth and distance, not with level or story progress. The player chooses their own difficulty by choosing how far to go.

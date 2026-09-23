@@ -1,0 +1,21 @@
+## Pitfall: Mechanics That Contradict the Theme
+
+**Area:** Story & Discovery
+**Found in:** components/theme_as_mechanic.txt (used by Loathing, Elysium, Mansion, Gauge, Ampersand, Casebook, Chorus, Tribunal)
+
+### What Happens
+
+The story says the protagonist is desperate; the systems give them infinite resources.
+
+### Symptom
+
+The player stops believing the fiction.
+
+### Fix
+
+Check each system against the tone (axes/tone.txt, "Tone Killers").
+
+### Related Pitfalls
+
+* **Theme as Paint** (pitfalls/theme_as_paint.txt)
+* **Winking at the Camera** (pitfalls/winking_at_the_camera.txt)

@@ -1,0 +1,22 @@
+## Pitfall: The Checkerboard Forever
+
+**Area:** Soul-Specific: Containment
+**Found in:** souls/containment.txt (Containment)
+
+### What Happens
+
+One layout is best at every tier.
+
+### Symptom
+
+Shared codes converge, and nobody redesigns after an upgrade.
+
+### Fix
+
+Upgrades that move ratios, and tiers that change the shape of the heat, not only its size.
+
+### Related Pitfalls
+
+* **The Friendly Leak** (pitfalls/friendly_leak.txt)
+* **The Backdoor Rewind** (pitfalls/backdoor_rewind.txt)
+* **Proof Nobody Sees** (pitfalls/proof_nobody_sees.txt)

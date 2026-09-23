@@ -1,0 +1,22 @@
+## Pitfall: Grind Disguised as Progress
+
+**Area:** Progression & Replay
+**Also known as:** Level Grinding (TV Tropes)
+**Found in:** components/difficulty_ladder.txt (used by Loathing, Spire, Containment, Casebook, Chorus, Swarm)
+
+### What Happens
+
+Meta-progression becomes a stat treadmill, so players win by playing longer rather than better.
+
+### Symptom
+
+Skill matters less than hours logged.
+
+### Fix
+
+Unlock options, not raw power, or make the power optional.
+
+### Related Pitfalls
+
+* **Unfair Rungs** (pitfalls/unfair_rungs.txt)
+* **The Empty Top** (pitfalls/empty_top.txt)

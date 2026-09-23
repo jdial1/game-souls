@@ -1,0 +1,20 @@
+## Framework: Machinations
+
+**Source:** Joris Dormans, *Engineering Emergence* (PhD thesis, 2012); Ernest Adams and Joris Dormans, *Game Mechanics: Advanced Game Design* (2012); the Machinations tool.
+
+### What It Is
+
+A visual language for game economies. Resources flow between nodes along connections:
+
+* **Nodes:** pools (hold resources), sources (create them), drains (destroy them), converters (turn one resource into another), traders (exchange them), gates (distribute them, deterministically or randomly), delays and queues, registers (computed values), and end conditions.
+* **Connections:** resource connections move resources at a rate; state connections carry information that modifies rates, triggers nodes, or activates them.
+
+From these, Dormans names recurring structures. Among them: **engines** that produce a steady or growing flow (static, dynamic, and converter engines, and engine building), **friction** that drains it (static and dynamic friction, attrition, and stopping mechanisms that weaken with use), **escalation** where progress makes further progress harder, and patterns like **trade** and **playing style reinforcement**.
+
+### What Game Souls Takes
+
+**Economic topology**, inside components/scarcity_economy.txt. Before tuning any number, name the economy's shape: Drain, Generator, Zero-Sum, Gift, or No Meaningful Economy. Then name the feedback loops: positive loops that snowball, negative loops that keep contests close. Every shape is paired with the feeling it produces, and topology mismatches are flagged in validation (an Inflationary economy can't carry Mansion's dread).
+
+### What We Leave Behind
+
+Diagrams as the goal. Game Souls never reduces a soul to nodes and flows. Economy is one lens, and the lens always ends in an emotion. Souls whose core is social or emotional (Ampersand, Elysium) are marked as having no meaningful economy rather than forced into one.

@@ -1,0 +1,21 @@
+## Pitfall: The Spoiler Flood
+
+**Area:** Multiplayer & Social
+**Found in:** components/shared_discovery.txt (used by Loathing, Ashen, Hearthian, Containment, Tribunal)
+
+### What Happens
+
+Discoveries leak within hours and everyone else reads the answer instead of finding it.
+
+### Symptom
+
+The mystery dies on day one.
+
+### Fix
+
+Layer secrets so the deepest ones require in-game action, not just information.
+
+### Related Pitfalls
+
+* **Toxic Invasion** (pitfalls/toxic_invasion.txt)
+* **Dead Servers** (pitfalls/dead_servers.txt)

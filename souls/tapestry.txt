@@ -17,6 +17,21 @@ On the surface, these games look like impenetrable spreadsheets stapled to a wor
 | Tone | Armchair Intrigue |
 | Structure | Sandbox Chronicle |
 
+### Psychological Target
+
+What the ideal player of this soul wants from play, described with the six motivation pairs of the Quantic Foundry Gamer Motivation Model (see frameworks/gamer_motivation.txt). This is design intent, not a market segment: it names who the design serves, so that features built for someone else can be spotted.
+
+| Motivation Pair | Level | Why |
+| --- | --- | --- |
+| Action | Low | Wars are managed, not fought by reflex (Mount & Blade excepted). |
+| Social | Medium | Multiplayer exists, but most play is solitary. |
+| Mastery | High | Strategy: long-horizon management of a realm. |
+| Achievement | High | Power: painting the map. |
+| Immersion | High | Story and Fantasy: dynasties, betrayals, and successions. |
+| Creativity | Medium | Design: building a realm and a family. |
+
+**Design note:** Action players will find the pace glacial; the excitement is political.
+
 ### Components
 
 * **components/living_world.txt:** Vassals, factions, and rival realms pursue their own agendas and grudges, and wars on the far side of the map eventually reach the player.
@@ -92,12 +107,12 @@ The numbers are the engine; the stories are the reason anyone plays. The game mu
 
 ### How It Fails
 
-(Shared failure modes live in the component files: illegible chaos, the solved simulation, the waiting room.)
+(Shared pitfalls come through the components: illegible chaos, the solved simulation, the waiting room. Every pitfall has its own file in pitfalls/.)
 
-* **Spreadsheet Blindness:** The numbers go up, but no stories emerge. *Symptom:* the game feels like a math problem rather than a realm. *Fix:* translate notable simulation events into people and choices.
-* **The Omnipotent Ruler:** The player has too much direct control, and subordinates never disobey. *Symptom:* the game becomes easy once the economy snowballs. *Fix:* institutional inertia; the larger the realm, the harder it is to steer.
-* **The Blob:** One realm grows until nothing can threaten it. *Symptom:* the last hundred years are a formality. *Fix:* growth creates resistance: coalitions, internal instability, succession crises that split large realms.
-* **The Rerun:** The same events fire again and again. *Symptom:* players click through without reading. *Fix:* a deep event library, and events that remember they've happened.
+* **Spreadsheet Blindness** (pitfalls/spreadsheet_blindness.txt): The numbers go up, but no stories emerge.
+* **The Omnipotent Ruler** (pitfalls/omnipotent_ruler.txt): The player has too much direct control, and subordinates never disobey.
+* **The Blob** (pitfalls/blob.txt): One realm grows until nothing can threaten it.
+* **The Rerun** (pitfalls/rerun.txt): The same events fire again and again.
 
 ### Neighboring Souls
 

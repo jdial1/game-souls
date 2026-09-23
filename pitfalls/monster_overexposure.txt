@@ -1,0 +1,20 @@
+## Pitfall: Monster Overexposure
+
+**Area:** Soul-Specific: Mansion
+**Found in:** souls/mansion.txt (Mansion)
+
+### What Happens
+
+The creature is shown in full light early and often.
+
+### Symptom
+
+By the midpoint, the monster is a known quantity and fear has drained away.
+
+### Fix
+
+Ration visibility; let the player's imagination do the work for as long as possible.
+
+### Related Pitfalls
+
+* **Jump-Scare Addiction** (pitfalls/jump_scare_addiction.txt)

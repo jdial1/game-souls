@@ -1,0 +1,22 @@
+## Pitfall: The Oracle
+
+**Area:** Soul-Specific: Casebook
+**Found in:** souls/casebook.txt (Casebook)
+
+### What Happens
+
+Feedback leaks: wrong letters flagged as typed, a check that refunds on success, an undo that returns a spent ration, or a control that behaves differently when a guess is right.
+
+### Symptom
+
+Players cycle letters, or read the controls instead of the page.
+
+### Fix
+
+Audit every surface that could reveal correctness; compare the screen with a right guess and a wrong one.
+
+### Related Pitfalls
+
+* **The Stopwatch Takeover** (pitfalls/stopwatch_takeover.txt)
+* **Wallpaper Story** (pitfalls/wallpaper_story.txt)
+* **The Unproven Case** (pitfalls/unproven_case.txt)

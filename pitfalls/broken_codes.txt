@@ -1,0 +1,21 @@
+## Pitfall: Broken Codes
+
+**Area:** Progression & Replay
+**Found in:** components/workbench.txt (used by Containment, Assembly)
+
+### What Happens
+
+An update silently invalidates shared designs.
+
+### Symptom
+
+Forum posts full of designs that no longer paste.
+
+### Fix
+
+Version the format, and migrate old codes forward.
+
+### Related Pitfalls
+
+* **The Lab That Lies** (pitfalls/lab_that_lies.txt)
+* **The Outside Tool** (pitfalls/outside_tool.txt)

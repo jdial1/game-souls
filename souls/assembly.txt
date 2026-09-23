@@ -17,6 +17,21 @@ On the surface, these games look like management simulators or sandbox builders.
 | Tone | Cool Focus |
 | Structure | Persistent World |
 
+### Psychological Target
+
+What the ideal player of this soul wants from play, described with the six motivation pairs of the Quantic Foundry Gamer Motivation Model (see frameworks/gamer_motivation.txt). This is design intent, not a market segment: it names who the design serves, so that features built for someone else can be spotted.
+
+| Motivation Pair | Level | Why |
+| --- | --- | --- |
+| Action | Low | Little reflex play, except where enemies attack. |
+| Social | Medium | Co-op factories are common; the community shares designs. |
+| Mastery | High | Strategy: ratios, logistics, and throughput. |
+| Achievement | High | Completion: tech trees, milestones, megaprojects. |
+| Immersion | Low | Theme is thin; the factory is the fiction. |
+| Creativity | High | Design: the factory is the player's creation. |
+
+**Design note:** Story players will find the fiction thin; a bolted-on narrative the factory doesn't need won't hold them.
+
 ### Components
 
 * **components/automation.txt:** Automation is the progression system. Every unlock retires a chore, until the player is an architect who never touches an item.
@@ -88,11 +103,11 @@ Production that nothing consumes is a factory that has stopped.
 
 ### How It Fails
 
-(Shared failure modes live in the component files: the Babysat Machine, chores forever, the Lab That Lies.)
+(Shared pitfalls come through the components: the Babysat Machine, chores forever, the Lab That Lies. Every pitfall has its own file in pitfalls/.)
 
-* **The Magic Void:** Items teleport into a global inventory. *Symptom:* the logistics puzzle evaporates, and the game becomes a clicker. *Fix:* everything travels through physical space.
-* **The Sinkhole Economy:** Production outpaces consumption, and chests fill with useless items. *Symptom:* the factory stops moving. *Fix:* an infinite sink, so the factory always has a reason to consume.
-* **The Spaghetti Wall:** The factory becomes too tangled to change, and rebuilding is punished. *Symptom:* players abandon saves rather than refactor. *Fix:* free deconstruction and blueprints, so rebuilding is cheaper than living with the mess.
+* **The Magic Void** (pitfalls/magic_void.txt): Items teleport into a global inventory.
+* **The Sinkhole Economy** (pitfalls/sinkhole_economy.txt): Production outpaces consumption, and chests fill with useless items.
+* **The Spaghetti Wall** (pitfalls/spaghetti_wall.txt): The factory becomes too tangled to change, and rebuilding is punished.
 
 ### Neighboring Souls
 

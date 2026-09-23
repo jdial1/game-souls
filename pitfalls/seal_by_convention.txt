@@ -1,0 +1,19 @@
+## Pitfall: The Seal by Convention
+
+**Area:** Soul-Specific: Ampersand
+**Found in:** souls/ampersand.txt (Ampersand)
+
+### What Happens
+
+Something called sealed (a naming word, tomorrow's theme) is hidden by the screen but readable in the data.
+
+### Fix
+
+Seal it in storage like an answer, or stop calling it sealed.
+
+### Related Pitfalls
+
+* **The Scoreboard** (pitfalls/scoreboard.txt)
+* **The Chat Room** (pitfalls/chat_room.txt)
+* **The Verdict** (pitfalls/verdict.txt)
+* **The Short Memory** (pitfalls/short_memory.txt)

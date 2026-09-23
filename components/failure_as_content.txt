@@ -4,6 +4,10 @@
 
 **Used by:** Dwarven, Ashen, Hearthian, Elysium, Ampersand, Tapestry
 
+**Requires:** legible_failure (the player must see why they failed for the failure to become story or lesson)
+**Supports:** living_world, environmental_storytelling
+**Conflicts With:** free, unlimited reloading (a save that rewinds every failure deletes its content); Failure: Forgone (nothing is lost, so there is no fall to make content of)
+
 ### Design Rules
 
 * **Failure Opens a Different Door:** A failed check, a lost fight, or a death should move the game somewhere new, not just back to where it was.
@@ -37,9 +41,9 @@
 
 ### How It Fails
 
-* **Failure as Punishment:** A failure simply closes a door with a flat "You fail." *Symptom:* players save-scum every roll. *Fix:* write every failure as a scene worth seeing.
-* **The Death Spiral Without a Story:** One bad event cascades into inevitable collapse with nothing interesting along the way. *Symptom:* players quit the moment things go wrong. *Fix:* give the fall dramatic beats and desperate choices.
-* **The Long Dead Run:** A run or save is doomed by the midpoint but takes another thirty minutes to actually end. *Symptom:* players abandon instead of finishing. *Fix:* let lost games end fast, or add comeback mechanics that keep the ending tense.
+* **Failure as Punishment** (pitfalls/failure_as_punishment.txt): A failure simply closes a door with a flat "You fail."
+* **The Death Spiral Without a Story** (pitfalls/death_spiral_without_a_story.txt): One bad event cascades into inevitable collapse with nothing interesting along the way.
+* **The Long Dead Run** (pitfalls/long_dead_run.txt): A run or save is doomed by the midpoint but takes another thirty minutes to actually end.
 
 ### Litmus
 

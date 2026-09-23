@@ -1,0 +1,21 @@
+## Pitfall: Voices Without Personalities
+
+**Area:** Soul-Specific: Elysium
+**Found in:** souls/elysium.txt (Elysium)
+
+### What Happens
+
+Skills speak, but they all sound like the same narrator.
+
+### Symptom
+
+The build doesn't change the experience.
+
+### Fix
+
+Give each voice a distinct vocabulary, temperament, and agenda, and let them disagree with one another.
+
+### Related Pitfalls
+
+* **Walls of Undifferentiated Text** (pitfalls/walls_of_undifferentiated_text.txt)
+* **Choice Without Consequence** (pitfalls/choice_without_consequence.txt)

@@ -1,0 +1,22 @@
+## Pitfall: The Hoarding Trap
+
+**Area:** Economy
+**Also known as:** Too Awesome to Use (TV Tropes)
+**Found in:** components/scarcity_economy.txt (used by Dwarven, Loathing, Spire, Mansion, Containment, Ampersand, Casebook, Swarm, Tapestry, Assembly, Tether)
+
+### What Happens
+
+Players are so afraid of running out that they never use anything and finish the game with a full inventory.
+
+### Symptom
+
+Scarcity creates boredom, not tension.
+
+### Fix
+
+Create pressure to spend (spoilage, carrying limits, encounters that punish holding back).
+
+### Related Pitfalls
+
+* **The Soft Lock** (pitfalls/soft_lock.txt)
+* **Scarcity Without Choice** (pitfalls/scarcity_without_choice.txt)

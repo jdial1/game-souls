@@ -49,3 +49,31 @@ Every tone has a mechanic that destroys it. Identify yours before production sta
 
 * Protect the tone with mechanics first, then with content. Dread survives mediocre monster art; it doesn't survive a full ammo pouch.
 * Tones can blend, but one must lead. Hearthian is Wonder led, with melancholy underneath; if the melancholy leads, it becomes Elegiac and starts to feel like Ashen.
+
+### Aesthetic Targets (MDA)
+
+MDA's eight aesthetics (see frameworks/mda.txt) are a cross-check on each soul's tone: if a design's mechanics don't serve its soul's aesthetic targets, the tone won't arrive, however good the writing is. The first target listed leads.
+
+| Soul | Tone | MDA Aesthetic Targets |
+| --- | --- | --- |
+| Looking Glass | Tense Paranoia | Discovery, Challenge, Fantasy |
+| Dwarven | Tragicomic | Narrative, Discovery, Expression |
+| Loathing | Deadpan Absurd | Challenge, Discovery, Fellowship |
+| Ashen | Elegiac | Challenge, Discovery, Fantasy |
+| Hearthian | Wonder | Discovery, Narrative |
+| Elysium | Tragicomic | Narrative, Expression, Fantasy |
+| Spire | Cool Focus | Challenge, Expression |
+| Toybox | Joyful | Sensation, Discovery, Challenge |
+| Mansion | Dread | Fantasy, Narrative, Challenge |
+| Containment | Watchful Calm | Challenge, Expression, Submission |
+| Ampersand | Plain Warmth | Fellowship, Expression |
+| Gauge | Unhurried Warmth | Submission, Fellowship, Expression |
+| Casebook | Armchair Intrigue | Challenge, Narrative, Discovery |
+| Chorus | Cool Focus / Joyful | Sensation, Challenge |
+| Swarm | Cool Focus / Deadpan Absurd | Challenge, Sensation, Submission |
+| Tapestry | Armchair Intrigue | Narrative, Expression, Challenge |
+| Assembly | Cool Focus | Expression, Challenge, Submission |
+| Tribunal | Tense Paranoia | Fellowship, Challenge, Expression |
+| Tether | Dread / Tense Paranoia | Challenge, Sensation, Fellowship |
+
+**Submission** (game as pastime) is not a lesser aesthetic. It is the heart of the souls built to be glanced at and returned to (Gauge, Containment, Assembly), and a design that denies it (demanding constant attention) breaks them.

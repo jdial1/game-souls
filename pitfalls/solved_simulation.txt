@@ -1,0 +1,22 @@
+## Pitfall: The Solved Simulation
+
+**Area:** Systems & Rules
+**Found in:** components/living_world.txt (used by Looking Glass, Dwarven, Ashen, Mansion, Tapestry, Tether)
+
+### What Happens
+
+Players find a strategy that makes them immune to the world's pressure.
+
+### Symptom
+
+The world stops producing stories.
+
+### Fix
+
+Escalate external pressure over time and let internal systems (aging, grudges, decay) erode even perfect defenses.
+
+### Related Pitfalls
+
+* **The Waiting Room** (pitfalls/waiting_room.txt)
+* **Binary AI** (pitfalls/binary_ai.txt)
+* **The Exhausting Hunter** (pitfalls/exhausting_hunter.txt)

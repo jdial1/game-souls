@@ -1,0 +1,22 @@
+## Pitfall: The Friendly Leak
+
+**Area:** Soul-Specific: Containment
+**Found in:** souls/containment.txt (Containment)
+
+### What Happens
+
+A little heat disappears for free. It feels generous.
+
+### Symptom
+
+Designs that exploit the leak earn top stamina ratings, and players who reason from conservation get the wrong answer.
+
+### Fix
+
+Every sink is a part the player places; if the game wants to be generous, give them a better vent.
+
+### Related Pitfalls
+
+* **The Checkerboard Forever** (pitfalls/checkerboard_forever.txt)
+* **The Backdoor Rewind** (pitfalls/backdoor_rewind.txt)
+* **Proof Nobody Sees** (pitfalls/proof_nobody_sees.txt)

@@ -1,0 +1,21 @@
+## Pitfall: Scarcity Without Choice
+
+**Area:** Economy
+**Found in:** components/scarcity_economy.txt (used by Dwarven, Loathing, Spire, Mansion, Containment, Ampersand, Casebook, Swarm, Tapestry, Assembly, Tether)
+
+### What Happens
+
+Resources are tight, but there's only one way to spend them.
+
+### Symptom
+
+Scarcity is just a tax.
+
+### Fix
+
+Every resource needs at least two competing uses.
+
+### Related Pitfalls
+
+* **The Soft Lock** (pitfalls/soft_lock.txt)
+* **The Hoarding Trap** (pitfalls/hoarding_trap.txt)

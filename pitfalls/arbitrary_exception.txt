@@ -1,0 +1,21 @@
+## Pitfall: The Arbitrary Exception
+
+**Area:** Systems & Rules
+**Found in:** components/systemic_consistency.txt (used by Looking Glass, Dwarven, Hearthian, Toybox, Containment, Gauge, Casebook, Chorus, Tapestry, Assembly)
+
+### What Happens
+
+A boss is immune, a door is indestructible for no reason, a scripted sequence ignores the rules.
+
+### Symptom
+
+Players stop experimenting because they no longer trust the world.
+
+### Fix
+
+No exceptions; if something must be blocked, block it with a rule the player can understand.
+
+### Related Pitfalls
+
+* **Unreadable Affordances** (pitfalls/unreadable_affordances.txt)
+* **Detail Nobody Feels** (pitfalls/detail_nobody_feels.txt)

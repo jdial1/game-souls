@@ -1,0 +1,20 @@
+## Pitfall: The Pause Loophole
+
+**Area:** Interface & Voice
+**Found in:** components/diegetic_interface.txt (used by Looking Glass, Ashen, Mansion, Gauge, Tribunal, Tether)
+
+### What Happens
+
+One menu pauses while others don't, and players use it to cheat time.
+
+### Symptom
+
+The tension leaks.
+
+### Fix
+
+Be consistent about what stops the clock.
+
+### Related Pitfalls
+
+* **Diegesis at the Cost of Legibility** (pitfalls/diegesis_at_the_cost_of_legibility.txt)

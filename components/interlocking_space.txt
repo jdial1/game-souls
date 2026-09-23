@@ -4,6 +4,10 @@
 
 **Used by:** Looking Glass, Ashen, Hearthian, Mansion, Tether
 
+**Requires:** a hand-authored, persistent map
+**Supports:** environmental_storytelling, audio_information, living_world
+**Conflicts With:** Structure: Runs with procedural maps (geography can't be learned if it changes every run); fast travel everywhere (shortcuts stop mattering)
+
 ### Design Rules
 
 * **The Shortcut as Loot:** The most emotionally powerful reward is often a door. After twenty minutes fighting through a hostile fortress, the player kicks down a ladder and realizes they're standing above the first checkpoint. Progress is measured in reclaimed geography.
@@ -36,9 +40,9 @@
 
 ### How It Fails
 
-* **Checkpoint Sadism:** The run back from a checkpoint to the challenge is long, tedious, and dangerous for no reason. *Symptom:* players quit from boredom, not difficulty. *Fix:* keep run-backs short, or make them a learnable challenge with their own shortcut.
-* **Tedious Backtracking:** Revisited spaces offer nothing new. *Symptom:* players resent the map. *Fix:* change something on each revisit: an enemy, a light, a sound, a new shortcut.
-* **The Illusion of Choice:** Several routes that all converge on the same scripted door. *Symptom:* players stop exploring alternatives. *Fix:* let routes change the state of the world or what the player learns.
+* **Checkpoint Sadism** (pitfalls/checkpoint_sadism.txt): The run back from a checkpoint to the challenge is long, tedious, and dangerous for no reason.
+* **Tedious Backtracking** (pitfalls/tedious_backtracking.txt): Revisited spaces offer nothing new.
+* **The Illusion of Choice** (pitfalls/illusion_of_choice.txt): Several routes that all converge on the same scripted door.
 
 ### Litmus
 

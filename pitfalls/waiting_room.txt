@@ -1,0 +1,22 @@
+## Pitfall: The Waiting Room
+
+**Area:** Systems & Rules
+**Found in:** components/living_world.txt (used by Looking Glass, Dwarven, Ashen, Mansion, Tapestry, Tether)
+
+### What Happens
+
+NPCs stand in place until the player arrives, then begin performing.
+
+### Symptom
+
+The world feels like a stage set.
+
+### Fix
+
+Give every NPC at least one routine that runs without the player.
+
+### Related Pitfalls
+
+* **Binary AI** (pitfalls/binary_ai.txt)
+* **The Exhausting Hunter** (pitfalls/exhausting_hunter.txt)
+* **The Solved Simulation** (pitfalls/solved_simulation.txt)

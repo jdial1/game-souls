@@ -1,0 +1,21 @@
+## Pitfall: Arbitrary Syncopation
+
+**Area:** Soul-Specific: Chorus
+**Found in:** souls/chorus.txt (Chorus)
+
+### What Happens
+
+An obstacle sits on an off-beat with no musical cue.
+
+### Symptom
+
+The hit feels random and unfair.
+
+### Fix
+
+If you want an off-beat hit, add a hi-hat or a synth stab to the track to justify it.
+
+### Related Pitfalls
+
+* **Visual Desync** (pitfalls/visual_desync.txt)
+* **The Snapped Input** (pitfalls/snapped_input.txt)

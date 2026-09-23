@@ -19,10 +19,26 @@ What separates this soul from ordinary good craft is priority. Most souls in thi
 | Tone | Joyful |
 | Structure | Levels |
 
+### Psychological Target
+
+What the ideal player of this soul wants from play, described with the six motivation pairs of the Quantic Foundry Gamer Motivation Model (see frameworks/gamer_motivation.txt). This is design intent, not a market segment: it names who the design serves, so that features built for someone else can be spotted.
+
+| Motivation Pair | Level | Why |
+| --- | --- | --- |
+| Action | Medium | Excitement from movement, rarely from destruction. |
+| Social | Medium | Couch co-op and shared play are common. |
+| Mastery | Medium | Optional mastery layers; the main path is for everyone. |
+| Achievement | High | Completion: collectibles placed where curiosity leads. |
+| Immersion | Medium | Fantasy of a bright, playful world. |
+| Creativity | High | Discovery: poking at everything and finding a reward. |
+
+**Design note:** Strategy-heavy systems break the toy; keep spreadsheets out.
+
 ### Components
 
 * **components/trusting_the_player.txt:** Reward poking. Anything the player might plausibly try should do something, and the designer should always get there first. Teach through play, never text.
 * **components/systemic_consistency.txt:** A trustworthy playground. In open-world variants, consistent chemistry (fire, wind, metal, electricity) replaces authored levels as the source of play.
+* **components/kinetic_profile.txt:** Instant attack, cancellable release, with hidden forgiveness in both directions.
 
 ### Signature Pillar 1: The Verb Is Sacred
 
@@ -87,10 +103,10 @@ A child should be able to finish the level. A speedrunner should find forty tric
 
 ### How It Fails
 
-(Shared failure modes live in the component files: the wordy tutorial, the empty playground.)
+(Shared pitfalls come through the components: the wordy tutorial, the empty playground. Every pitfall has its own file in pitfalls/.)
 
-* **Floaty or Stiff Verbs:** The core action is technically functional but not joyful. *Symptom:* playtesters stop moving around between objectives. *Fix:* go back to the gray box; no new content until the empty room is fun.
-* **The Overstayed Gimmick:** A mechanic appears unchanged space after space. *Symptom:* players sigh when it shows up again. *Fix:* introduce, develop, twist, conclude, retire.
+* **Floaty or Stiff Verbs** (pitfalls/floaty_or_stiff_verbs.txt): The core action is technically functional but not joyful.
+* **The Overstayed Gimmick** (pitfalls/overstayed_gimmick.txt): A mechanic appears unchanged space after space.
 
 ### Neighboring Souls
 

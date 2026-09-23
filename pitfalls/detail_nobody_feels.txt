@@ -1,0 +1,21 @@
+## Pitfall: Detail Nobody Feels
+
+**Area:** Systems & Rules
+**Found in:** components/systemic_consistency.txt (used by Looking Glass, Dwarven, Hearthian, Toybox, Containment, Gauge, Casebook, Chorus, Tapestry, Assembly)
+
+### What Happens
+
+The engine tracks the boiling point of a hundred minerals, but no decision ever depends on it.
+
+### Symptom
+
+Developers are proud of features players never notice.
+
+### Fix
+
+Cut or surface it.
+
+### Related Pitfalls
+
+* **The Arbitrary Exception** (pitfalls/arbitrary_exception.txt)
+* **Unreadable Affordances** (pitfalls/unreadable_affordances.txt)

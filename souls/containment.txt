@@ -17,6 +17,21 @@ On the surface, these games are a grid of squares, a few bars, and numbers that 
 | Tone | Watchful Calm |
 | Structure | Rebirth Account |
 
+### Psychological Target
+
+What the ideal player of this soul wants from play, described with the six motivation pairs of the Quantic Foundry Gamer Motivation Model (see frameworks/gamer_motivation.txt). This is design intent, not a market segment: it names who the design serves, so that features built for someone else can be spotted.
+
+| Motivation Pair | Level | Why |
+| --- | --- | --- |
+| Action | Low | An idle game; nothing is performed by reflex. |
+| Social | Low | Designs are shared as codes, but play is solitary. |
+| Mastery | High | Strategy: ratios, geometry, and conservation. |
+| Achievement | High | Records, marks, and restriction-run times. |
+| Immersion | Low | Theme is minimal; the machine is the point. |
+| Creativity | High | Design: a layout that holds is a personal creation. |
+
+**Design note:** Immersion and Action players will find little to hold them; adding either at the design's expense dilutes the soul.
+
 ### Components
 
 * **components/systemic_consistency.txt:** The laws are thermodynamics, and they hold everywhere: the lab, the forecast, and the real board run the same tick.
@@ -107,12 +122,12 @@ The communities of these games built planners, calculators, and share codes beca
 
 ### How It Fails
 
-(Shared failure modes live in the component files: the Babysat Machine, the Lab That Lies, the dominant strategy, hidden math, grind disguised as progress.)
+(Shared pitfalls come through the components: the Babysat Machine, the Lab That Lies, the dominant strategy, hidden math, grind disguised as progress. Every pitfall has its own file in pitfalls/.)
 
-* **The Checkerboard Forever:** One layout is best at every tier. *Symptom:* shared codes converge, and nobody redesigns after an upgrade. *Fix:* upgrades that move ratios, and tiers that change the shape of the heat, not only its size.
-* **The Friendly Leak:** A little heat disappears for free. It feels generous. *Symptom:* designs that exploit the leak earn top stamina ratings, and players who reason from conservation get the wrong answer. *Fix:* every sink is a part the player places; if the game wants to be generous, give them a better vent.
-* **The Backdoor Rewind:** A save import or cloud restore undoes a meltdown. *Symptom:* the receipt stops mattering. *Fix:* refuse it in Hardcore, and mark the run as restored everywhere else.
-* **Proof Nobody Sees:** The only prestige number is peak output, which a doomed board can hit. *Symptom:* players chase one-minute stunts. *Fix:* rate stamina, and lead the records with output from a machine that holds.
+* **The Checkerboard Forever** (pitfalls/checkerboard_forever.txt): One layout is best at every tier.
+* **The Friendly Leak** (pitfalls/friendly_leak.txt): A little heat disappears for free. It feels generous.
+* **The Backdoor Rewind** (pitfalls/backdoor_rewind.txt): A save import or cloud restore undoes a meltdown.
+* **Proof Nobody Sees** (pitfalls/proof_nobody_sees.txt): The only prestige number is peak output, which a doomed board can hit.
 
 ### Neighboring Souls
 

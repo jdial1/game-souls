@@ -1,0 +1,22 @@
+## Pitfall: The Exhausting Hunter
+
+**Area:** Systems & Rules
+**Found in:** components/living_world.txt (used by Looking Glass, Dwarven, Ashen, Mansion, Tapestry, Tether)
+
+### What Happens
+
+An adaptive pursuer appears too often or too predictably.
+
+### Symptom
+
+Terror curdles into irritation.
+
+### Fix
+
+Give it rhythm, with long absences and escalation tied to player progress.
+
+### Related Pitfalls
+
+* **The Waiting Room** (pitfalls/waiting_room.txt)
+* **Binary AI** (pitfalls/binary_ai.txt)
+* **The Solved Simulation** (pitfalls/solved_simulation.txt)

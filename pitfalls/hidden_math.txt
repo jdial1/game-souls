@@ -1,0 +1,23 @@
+## Pitfall: Hidden Math
+
+**Area:** Feedback & Legibility
+**Found in:** components/legible_failure.txt (used by Dwarven, Ashen, Hearthian, Spire, Mansion, Containment, Gauge, Casebook, Chorus, Swarm, Tapestry, Assembly, Tribunal)
+
+### What Happens
+
+Damage formulas or modifier stacking are opaque.
+
+### Symptom
+
+Losses feel unfair.
+
+### Fix
+
+Show the intent, the preview, and the numbers.
+
+### Related Pitfalls
+
+* **Difficulty Without Legibility** (pitfalls/difficulty_without_legibility.txt)
+* **Illegible Chaos** (pitfalls/illegible_chaos.txt)
+* **Moon Logic** (pitfalls/moon_logic.txt)
+* **Clumsy Input Masquerading as Vulnerability** (pitfalls/clumsy_input_masquerading_as_vulnerability.txt)

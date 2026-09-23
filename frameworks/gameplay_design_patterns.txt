@@ -1,0 +1,30 @@
+## Framework: Gameplay Design Patterns
+
+**Source:** Staffan Björk and Jussi Holopainen, *Patterns in Game Design* (2004), and the Gameplay Design Patterns wiki that grew from it.
+
+### What It Is
+
+An exhaustive catalog of recurring gameplay patterns (several hundred of them) across every genre. Each pattern entry has a short description, examples, a section on using the pattern, its consequences, its relations to other patterns, its history, and references.
+
+The relations are the most useful part. Patterns are linked by typed relationships:
+
+* **Can Instantiate / Can Be Instantiated By:** one pattern can give rise to another, either as a more specific form or as a typical consequence.
+* **Can Modulate / Can Be Modulated By:** one pattern can change how another behaves.
+* **Potentially Conflicting With:** two patterns tend to undermine each other.
+* **Possible Closure Effects:** what a pattern can do to how a game or a phase ends.
+
+Relations describe possibilities, not guarantees.
+
+### What Game Souls Takes
+
+**Relationship tags on every component.** The top of each file in components/ now states:
+
+* **Requires:** what must already be true for the component to work (for example, legible_failure requires systemic_consistency, because a cause can only be named if the same cause always has the same effect).
+* **Supports:** components it tends to strengthen.
+* **Conflicts With:** components or axis positions it tends to undermine (for example, shared_discovery conflicts with social_safety, because messages and invasions from strangers contradict invitation-only play).
+
+When blending souls or instilling one into a game, check these tags first: a conflict between two components the design relies on is a structural problem, not a tuning problem.
+
+### What We Leave Behind
+
+The encyclopedia. Game Souls keeps its component list small and philosophical. A mechanic that fits an existing component becomes a tuning note, not a new file. See "What We Deliberately Don't Adopt" in frameworks/README.txt.

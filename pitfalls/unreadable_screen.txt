@@ -1,0 +1,21 @@
+## Pitfall: The Unreadable Screen
+
+**Area:** Soul-Specific: Swarm
+**Found in:** souls/swarm.txt (Swarm)
+
+### What Happens
+
+Effects bury the player's character and the lethal projectiles.
+
+### Symptom
+
+Deaths feel random, even to experts.
+
+### Fix
+
+A visual hierarchy where threats always sit on top, and options to dim the player's own effects.
+
+### Related Pitfalls
+
+* **The Stagnant Mid-Game** (pitfalls/stagnant_mid_game.txt)
+* **The Dead Draft** (pitfalls/dead_draft.txt)

@@ -19,6 +19,21 @@ This soul travels well. It can be instilled into a deckbuilder, an extraction ro
 | Tone | Deadpan Absurd |
 | Structure | Rebirth Account |
 
+### Psychological Target
+
+What the ideal player of this soul wants from play, described with the six motivation pairs of the Quantic Foundry Gamer Motivation Model (see frameworks/gamer_motivation.txt). This is design intent, not a market segment: it names who the design serves, so that features built for someone else can be spotted.
+
+| Motivation Pair | Level | Why |
+| --- | --- | --- |
+| Action | Low | Turn-based menus; no reflex play. |
+| Social | High | Community: clans, the player market, collective events. |
+| Mastery | High | Strategy: turn efficiency, soft caps, and scripts. |
+| Achievement | High | Completion: collections, trophies, and ascension paths. |
+| Immersion | Medium | Story: the humor and the world's absurd logic. |
+| Creativity | Medium | Discovery: hidden secrets and puzzles without announcements. |
+
+**Design note:** The crude presentation filters out players who choose games for visual Immersion.
+
 ### Components
 
 * **components/theme_as_mechanic.txt:** The heart of the soul. Mechanize the metaphor, rename the fundamentals (Muscle, Moxie, Mysticality; currency is Meat), and tie animation to combat logic.
@@ -89,10 +104,10 @@ If the game includes an economy, trading, or monetization, it must treat the pla
 
 ### How It Fails
 
-(Shared failure modes live in the component files: theme as paint, winking at the camera, grind disguised as progress.)
+(Shared pitfalls come through the components: theme as paint, winking at the camera, grind disguised as progress. Every pitfall has its own file in pitfalls/.)
 
-* **Depth Without an On-Ramp:** The math is so dense that new players can't find the fun. *Symptom:* only veterans stay, and the community stops growing. *Fix:* respect player literacy, but keep early resource constraints generous and let the brutal optimization pressure arrive with ascension.
-* **Monetization Creep:** Revenue pressure pushes purchases from tradable convenience toward pay-to-win or FOMO. *Symptom:* veteran trust erodes quickly and permanently. *Fix:* hold the Mr. Accessory standard absolutely, even when it costs money.
+* **Depth Without an On-Ramp** (pitfalls/depth_without_an_on_ramp.txt): The math is so dense that new players can't find the fun.
+* **Monetization Creep** (pitfalls/monetization_creep.txt): Revenue pressure pushes purchases from tradable convenience toward pay-to-win or FOMO.
 
 ### Neighboring Souls
 

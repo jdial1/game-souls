@@ -1,0 +1,21 @@
+## Pitfall: Monetization Creep
+
+**Area:** Soul-Specific: Loathing
+**Also known as:** Bribing Your Way to Victory (TV Tropes)
+**Found in:** souls/loathing.txt (Loathing)
+
+### What Happens
+
+Revenue pressure pushes purchases from tradable convenience toward pay-to-win or FOMO.
+
+### Symptom
+
+Veteran trust erodes quickly and permanently.
+
+### Fix
+
+Hold the Mr. Accessory standard absolutely, even when it costs money.
+
+### Related Pitfalls
+
+* **Depth Without an On-Ramp** (pitfalls/depth_without_an_on_ramp.txt)

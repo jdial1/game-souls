@@ -17,6 +17,21 @@ On the surface, these are the slightest things in the collection: a question a d
 | Tone | Plain Warmth |
 | Structure | Ritual |
 
+### Psychological Target
+
+What the ideal player of this soul wants from play, described with the six motivation pairs of the Quantic Foundry Gamer Motivation Model (see frameworks/gamer_motivation.txt). This is design intent, not a market segment: it names who the design serves, so that features built for someone else can be spotted.
+
+| Motivation Pair | Level | Why |
+| --- | --- | --- |
+| Action | Low | No reflex play. |
+| Social | High | Community with exactly one other person: the entire point. |
+| Mastery | Low | Nothing to master; understanding a person is never finished. |
+| Achievement | Low | Scores and completion are deliberately refused. |
+| Immersion | Low | No world or fiction to inhabit. |
+| Creativity | Low | Writing questions for the partner is the only creative act. |
+
+**Design note:** Any feature that serves Competition or Achievement (scores, streak rewards) works against this soul's audience.
+
 ### Components
 
 * **components/social_safety.txt:** The core of the soul's ethics. No witness but the other half, every number about the pair, either partner can veto, and every feature passes the Bad-Month Test.
@@ -105,13 +120,13 @@ A Ritual game's archive is its long game. The players write the content one day 
 
 ### How It Fails
 
-(Shared failure modes live in the component files: the Guilt Engine, the Ranked Group, the Cheerful Toast, theme as paint.)
+(Shared pitfalls come through the components: the Guilt Engine, the Ranked Group, the Cheerful Toast, theme as paint. Every pitfall has its own file in pitfalls/.)
 
-* **The Scoreboard:** Right guesses pay more, or a per-person tally appears. *Symptom:* players guess safe, and the reveal turns tense instead of funny. *Fix:* pay flat for doing it together, and keep any number about the pair ("84% of guesses landed").
-* **The Chat Room:** The reveal grows a reply box, then a thread, then a notification per message. *Symptom:* the conversation happens typed instead of in the other room, and the "we talked about it" mark gets rarer. *Fix:* one line each, then the instruction to go and talk.
-* **The Oracle:** The game interprets: personality types, compatibility readings, "what your answers say about you." *Symptom:* a reading becomes something one partner quotes at the other. *Fix:* show both results and ask one question about them.
-* **The Short Memory:** Everything is archived, but nothing old enough comes back. *Symptom:* "on this day" only ever shows last month, and the history screen is visited once. *Fix:* budget storage and loading for years, and bring the past forward unasked.
-* **The Seal by Convention:** Something called sealed (a naming word, tomorrow's theme) is hidden by the screen but readable in the data. *Fix:* seal it in storage like an answer, or stop calling it sealed.
+* **The Scoreboard** (pitfalls/scoreboard.txt): Right guesses pay more, or a per-person tally appears.
+* **The Chat Room** (pitfalls/chat_room.txt): The reveal grows a reply box, then a thread, then a notification per message.
+* **The Verdict** (pitfalls/verdict.txt): The game interprets: personality types, compatibility readings, "what your answers say about you."
+* **The Short Memory** (pitfalls/short_memory.txt): Everything is archived, but nothing old enough comes back.
+* **The Seal by Convention** (pitfalls/seal_by_convention.txt): Something called sealed (a naming word, tomorrow's theme) is hidden by the screen but readable in the data.
 
 ### Neighboring Souls
 

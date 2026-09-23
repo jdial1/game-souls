@@ -1,0 +1,23 @@
+## Pitfall: The Short Memory
+
+**Area:** Soul-Specific: Ampersand
+**Found in:** souls/ampersand.txt (Ampersand)
+
+### What Happens
+
+Everything is archived, but nothing old enough comes back.
+
+### Symptom
+
+"on this day" only ever shows last month, and the history screen is visited once.
+
+### Fix
+
+Budget storage and loading for years, and bring the past forward unasked.
+
+### Related Pitfalls
+
+* **The Scoreboard** (pitfalls/scoreboard.txt)
+* **The Chat Room** (pitfalls/chat_room.txt)
+* **The Verdict** (pitfalls/verdict.txt)
+* **The Seal by Convention** (pitfalls/seal_by_convention.txt)

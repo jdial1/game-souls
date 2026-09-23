@@ -1,0 +1,22 @@
+## Pitfall: The Rerun
+
+**Area:** Soul-Specific: Tapestry
+**Found in:** souls/tapestry.txt (Tapestry)
+
+### What Happens
+
+The same events fire again and again.
+
+### Symptom
+
+Players click through without reading.
+
+### Fix
+
+A deep event library, and events that remember they've happened.
+
+### Related Pitfalls
+
+* **Spreadsheet Blindness** (pitfalls/spreadsheet_blindness.txt)
+* **The Omnipotent Ruler** (pitfalls/omnipotent_ruler.txt)
+* **The Blob** (pitfalls/blob.txt)

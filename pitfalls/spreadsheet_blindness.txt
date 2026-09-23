@@ -1,0 +1,22 @@
+## Pitfall: Spreadsheet Blindness
+
+**Area:** Soul-Specific: Tapestry
+**Found in:** souls/tapestry.txt (Tapestry)
+
+### What Happens
+
+The numbers go up, but no stories emerge.
+
+### Symptom
+
+The game feels like a math problem rather than a realm.
+
+### Fix
+
+Translate notable simulation events into people and choices.
+
+### Related Pitfalls
+
+* **The Omnipotent Ruler** (pitfalls/omnipotent_ruler.txt)
+* **The Blob** (pitfalls/blob.txt)
+* **The Rerun** (pitfalls/rerun.txt)

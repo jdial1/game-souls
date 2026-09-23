@@ -1,0 +1,22 @@
+## Pitfall: The Dominant Strategy
+
+**Area:** Economy
+**Also known as:** Game-Breaker (TV Tropes)
+**Found in:** components/synergy_engines.txt (used by Looking Glass, Loathing, Spire, Containment, Swarm)
+
+### What Happens
+
+One build or tool wins so reliably that everyone converges on it.
+
+### Symptom
+
+Every playthrough looks the same.
+
+### Fix
+
+Give tools costs or counters, and make the pieces of the top build rarely appear together.
+
+### Related Pitfalls
+
+* **Additive Blandness** (pitfalls/additive_blandness.txt)
+* **Illegible Combos** (pitfalls/illegible_combos.txt)

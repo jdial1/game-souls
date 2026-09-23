@@ -1,0 +1,21 @@
+## Pitfall: Execution Friction
+
+**Area:** Soul-Specific: Hearthian
+**Found in:** souls/hearthian.txt (Hearthian)
+
+### What Happens
+
+Movement or controls are so clumsy that performing a known solution becomes the challenge.
+
+### Symptom
+
+Players understand what to do but can't do it.
+
+### Fix
+
+Once the player knows the answer, execution should be easy.
+
+### Related Pitfalls
+
+* **The Wall** (pitfalls/wall.txt)
+* **The Accidental Answer** (pitfalls/accidental_answer.txt)

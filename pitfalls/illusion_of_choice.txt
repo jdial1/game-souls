@@ -1,0 +1,21 @@
+## Pitfall: The Illusion of Choice
+
+**Area:** Space & Pacing
+**Found in:** components/interlocking_space.txt (used by Looking Glass, Ashen, Hearthian, Mansion, Tether)
+
+### What Happens
+
+Several routes that all converge on the same scripted door.
+
+### Symptom
+
+Players stop exploring alternatives.
+
+### Fix
+
+Let routes change the state of the world or what the player learns.
+
+### Related Pitfalls
+
+* **Checkpoint Sadism** (pitfalls/checkpoint_sadism.txt)
+* **Tedious Backtracking** (pitfalls/tedious_backtracking.txt)

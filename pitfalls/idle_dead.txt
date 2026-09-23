@@ -1,0 +1,21 @@
+## Pitfall: The Idle Dead
+
+**Area:** Soul-Specific: Tribunal
+**Found in:** souls/tribunal.txt (Tribunal)
+
+### What Happens
+
+Eliminated players have nothing to do.
+
+### Symptom
+
+They leave, and matches empty out early.
+
+### Fix
+
+Give the dead something to do that can't leak information: tasks, a ghost vote, a spectator role.
+
+### Related Pitfalls
+
+* **The Solved Meta** (pitfalls/solved_meta.txt)
+* **The Loudest Wins** (pitfalls/loudest_wins.txt)

@@ -1,0 +1,21 @@
+## Pitfall: Failure as Punishment
+
+**Area:** Failure & Stakes
+**Found in:** components/failure_as_content.txt (used by Dwarven, Ashen, Hearthian, Elysium, Ampersand, Tapestry)
+
+### What Happens
+
+A failure simply closes a door with a flat "You fail."
+
+### Symptom
+
+Players save-scum every roll.
+
+### Fix
+
+Write every failure as a scene worth seeing.
+
+### Related Pitfalls
+
+* **The Death Spiral Without a Story** (pitfalls/death_spiral_without_a_story.txt)
+* **The Long Dead Run** (pitfalls/long_dead_run.txt)

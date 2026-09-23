@@ -1,0 +1,21 @@
+## Pitfall: The Babysat Machine
+
+**Area:** Progression & Replay
+**Found in:** components/automation.txt (used by Containment, Gauge, Swarm, Assembly)
+
+### What Happens
+
+The design can't run without a hand on it.
+
+### Symptom
+
+Players quit from chores, not difficulty.
+
+### Fix
+
+Sell automation early; the player's hands belong on the design.
+
+### Related Pitfalls
+
+* **Chores Forever** (pitfalls/chores_forever.txt)
+* **The Game Plays Itself** (pitfalls/game_plays_itself.txt)

@@ -1,0 +1,21 @@
+## Framework: The Game Ontology Project
+
+**Source:** José Zagal, Michael Mateas, Clara Fernández-Vara, Brian Hochhalter, and Nolan Lichti, "Towards an Ontological Language for Game Analysis" (2005), and the Game Ontology Project.
+
+### What It Is
+
+A hierarchy of game elements built to describe games by their structure rather than their genre. It has five top-level elements:
+
+* **Interface:** where the player and the game meet: presentation, input devices, and input methods.
+* **Rules:** what can and can't be done, split into gameplay rules and game-world rules.
+* **Goals:** the objectives or conditions the player must meet.
+* **Entities:** the objects that make up the game world.
+* **Entity Manipulation:** changing entities' attributes or abilities. Abilities are the "verbs" of entities.
+
+### What Game Souls Takes
+
+**A completeness checklist for Intake** (Step 1 of LLM_SOUL_GUIDE.txt). Before interpreting anything, the fact sheet covers all five elements: how the player touches the game, what the rules allow and forbid, what the player is trying to do, what exists in the world, and how the player changes it. An analysis that skipped one of these usually has a hole in its axis profile.
+
+### What We Leave Behind
+
+The taxonomy as an end in itself. Game Souls uses the five elements to make sure nothing is missed, then moves on to the questions that matter: what the design feels like and why.

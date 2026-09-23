@@ -4,6 +4,10 @@
 
 **Used by:** Containment, Gauge, Swarm, Assembly
 
+**Requires:** legible_failure (an automated system must show why it stalled)
+**Supports:** workbench, scarcity_economy
+**Conflicts With:** Power: Kinetic (in Toybox and Chorus the performed verb is the joy; automating it deletes the game); automating decisions of any kind
+
 ### Design Rules
 
 * **The Manual Tax:** Make the player do a task by hand just long enough to find it tedious. The moment they think "I never want to do that again," offer the machine that does it for them. Automation feels like a reward only after the chore has been felt.
@@ -30,9 +34,9 @@
 
 ### How It Fails
 
-* **The Babysat Machine:** The design can't run without a hand on it. *Symptom:* players quit from chores, not difficulty. *Fix:* sell automation early; the player's hands belong on the design.
-* **Chores Forever:** Automation arrives long after the task stopped being interesting. *Symptom:* the first hours are remembered as a grind. *Fix:* unlock the machine the moment the manual task stops teaching anything.
-* **The Game Plays Itself:** Automation reaches the decisions, or the player's build is so complete that nothing is left to decide. *Symptom:* players put the controller down and watch. *Fix:* automate verbs, never choices, and keep introducing a new problem the automation can't solve.
+* **The Babysat Machine** (pitfalls/babysat_machine.txt): The design can't run without a hand on it.
+* **Chores Forever** (pitfalls/chores_forever.txt): Automation arrives long after the task stopped being interesting.
+* **The Game Plays Itself** (pitfalls/game_plays_itself.txt): Automation reaches the decisions, or the player's build is so complete that nothing is left to decide.
 
 ### Litmus
 

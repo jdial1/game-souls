@@ -1,0 +1,22 @@
+## Pitfall: The Stopwatch Takeover
+
+**Area:** Soul-Specific: Casebook
+**Found in:** souls/casebook.txt (Casebook)
+
+### What Happens
+
+Speed becomes the prestige: the clock shows tenths, the board ranks by time, and reading the frame costs seconds.
+
+### Symptom
+
+Players skip the story and guess.
+
+### Fix
+
+Rank by help first and time second, and stop the clock while the player reads the case.
+
+### Related Pitfalls
+
+* **The Oracle** (pitfalls/oracle.txt)
+* **Wallpaper Story** (pitfalls/wallpaper_story.txt)
+* **The Unproven Case** (pitfalls/unproven_case.txt)

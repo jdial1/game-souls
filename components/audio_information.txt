@@ -4,6 +4,10 @@
 
 **Used by:** Mansion, Containment, Chorus, Tether
 
+**Requires:** low, stable latency and positional audio
+**Supports:** diegetic_interface, living_world, kinetic_profile, legible_failure
+**Conflicts With:** licensed, static soundtracks that can't carry cues; Information: Total UIs that make sound redundant; accessibility unless every cue has a visual twin
+
 ### Design Rules
 
 * **Sound Before Sight:** The player should hear a threat before they see it: footsteps in the ceiling, scraping in the vents, a musical cue before the attack animation. The ear is the early-warning system.
@@ -35,10 +39,10 @@
 
 ### How It Fails
 
-* **The Decorative Mix:** Music and effects are layered for mood, but none of them tell the player anything. *Symptom:* players play with sound off and lose nothing. *Fix:* audit every threat and state change; each needs an audible cue.
-* **The Lying Ear:** Occlusion or panning is wrong, so enemies sound like they're somewhere they aren't. *Symptom:* players die "to a sound from the wrong floor" and stop trusting audio. *Fix:* test positional audio as rigorously as hitboxes.
-* **The Buzzer:** Mistakes trigger loud, unpleasant sounds. *Symptom:* players mute the game, and with it the game's best information. *Fix:* a mistake removes a sound; it never adds a punishing one.
-* **Hearing Required:** A cue exists only as sound. *Symptom:* deaf players can't play at all. *Fix:* give every critical cue a visual twin.
+* **The Decorative Mix** (pitfalls/decorative_mix.txt): Music and effects are layered for mood, but none of them tell the player anything.
+* **The Lying Ear** (pitfalls/lying_ear.txt): Occlusion or panning is wrong, so enemies sound like they're somewhere they aren't.
+* **The Buzzer** (pitfalls/buzzer.txt): Mistakes trigger loud, unpleasant sounds.
+* **Hearing Required** (pitfalls/hearing_required.txt): A cue exists only as sound.
 
 ### Litmus
 

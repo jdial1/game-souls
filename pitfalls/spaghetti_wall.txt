@@ -1,0 +1,21 @@
+## Pitfall: The Spaghetti Wall
+
+**Area:** Soul-Specific: Assembly
+**Found in:** souls/assembly.txt (Assembly)
+
+### What Happens
+
+The factory becomes too tangled to change, and rebuilding is punished.
+
+### Symptom
+
+Players abandon saves rather than refactor.
+
+### Fix
+
+Free deconstruction and blueprints, so rebuilding is cheaper than living with the mess.
+
+### Related Pitfalls
+
+* **The Magic Void** (pitfalls/magic_void.txt)
+* **The Sinkhole Economy** (pitfalls/sinkhole_economy.txt)

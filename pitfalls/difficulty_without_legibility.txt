@@ -1,0 +1,24 @@
+## Pitfall: Difficulty Without Legibility
+
+**Area:** Feedback & Legibility
+**Also known as:** Fake Difficulty (TV Tropes)
+**Found in:** components/legible_failure.txt (used by Dwarven, Ashen, Hearthian, Spire, Mansion, Containment, Gauge, Casebook, Chorus, Swarm, Tapestry, Assembly, Tribunal)
+
+### What Happens
+
+Enemies are hard because of unfair hitboxes, off-screen attacks, or random damage spikes.
+
+### Symptom
+
+Players blame the game.
+
+### Fix
+
+Audit every playtest death; if the player can't name the cause, fix the tell.
+
+### Related Pitfalls
+
+* **Hidden Math** (pitfalls/hidden_math.txt)
+* **Illegible Chaos** (pitfalls/illegible_chaos.txt)
+* **Moon Logic** (pitfalls/moon_logic.txt)
+* **Clumsy Input Masquerading as Vulnerability** (pitfalls/clumsy_input_masquerading_as_vulnerability.txt)

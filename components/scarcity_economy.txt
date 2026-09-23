@@ -4,6 +4,10 @@
 
 **Used by:** Dwarven, Loathing, Spire, Mansion, Containment, Ampersand, Casebook, Swarm, Tapestry, Assembly, Tether
 
+**Requires:** a deliberate topology (see Economic Topology below): a bottleneck only exists where sources and drains are deliberately unbalanced
+**Supports:** legible_failure, failure_as_content, difficulty_ladder
+**Conflicts With:** Inflationary topology without drains (abundance ends scarcity); synergy_engines late in a run (screen-clearing power ends the pressure); Failure: Forgone
+
 ### Design Rules
 
 * **Poor, Not Powerless:** Give the player the means to act, but never enough to act on everything. Every encounter becomes a question: spend, save, or find another way.
@@ -19,6 +23,30 @@
 * **Saying No Is a Skill:** When the player is offered more than they can use, turning things down should often be correct. A thin, focused build beats a bloated one (Spire).
 
 * **A Hidden Floor:** Scarcity must never soft-lock the player. Quietly guarantee enough of the essentials to continue, for players who are truly out.
+
+### Economic Topology
+
+Every economy has a shape: where resources come from, where they go, and whether the total grows, shrinks, or only moves. The shape decides the feeling before any number is tuned, so name it first. (The vocabulary of sources, drains, converters, and feedback loops comes from Joris Dormans' Machinations; see frameworks/machinations.txt. The math here always serves the emotion.)
+
+* **Drain (Deflationary):** Sources are capped and the game steadily takes resources away. The total only shrinks. *The feeling:* dread and careful stewardship. Every bullet spent is gone. *Souls:* Mansion, Dwarven, Tether (within a raid).
+
+* **Generator (Inflationary):** Sources grow with investment, and the total climbs without limit. Drains exist only to keep growth meaningful. *The feeling:* momentum and mastery. The bottleneck keeps moving because the output never stops rising. *Souls:* Assembly, Swarm, Containment, Loathing.
+
+* **Zero-Sum:** Resources mostly move between players, factions, or characters rather than being created or destroyed. One side's gain is another's loss. *The feeling:* rivalry and intrigue. *Souls:* Tapestry, Tribunal (information, not goods), Tether (between raids, gear changes hands).
+
+* **Gift Economy:** Surplus is produced to be given away, and nothing is ever taken back. *The feeling:* warmth. *Souls:* Gauge.
+
+* **No Meaningful Economy:** The soul's core is emotional or social, and resources are incidental or absent. Don't force a topology onto it. *Souls:* Ampersand, Elysium, Hearthian, Chorus, Toybox.
+
+**Design Rules:**
+
+* **Name the Shape Before Tuning a Number:** Decide which topology the soul needs, then tune. A Mansion game with an Inflationary economy isn't a horror game with too much ammo; it's the wrong shape.
+
+* **Every Generator Needs a Sink:** An economy whose sources grow must have a drain that grows with it (infinite research, a megaproject, a rising tide), or the player ends up with chests full of nothing to do.
+
+* **Know Your Feedback Loops:** Positive feedback (the rich get richer) makes runs snowball and stories dramatic; negative feedback (the leader is slowed) keeps contests close. Choose deliberately, and say which loop produces which feeling: a snowball in Swarm is the breakpoint; a snowball in Tapestry is the blob that needs resistance.
+
+* **Friction Is a Mechanism, Not a Leak:** Drains, attrition, and rising costs are designed, named, and visible to the player. A resource that disappears without a named sink is a bug.
 
 ### Tuning by Soul
 
@@ -41,9 +69,9 @@
 
 ### How It Fails
 
-* **The Soft Lock:** The player saves with no resources in front of a mandatory challenge. *Symptom:* they must restart hours of progress. *Fix:* every mandatory encounter has an evasion route or a guaranteed supply nearby.
-* **The Hoarding Trap:** Players are so afraid of running out that they never use anything and finish the game with a full inventory. *Symptom:* scarcity creates boredom, not tension. *Fix:* create pressure to spend (spoilage, carrying limits, encounters that punish holding back).
-* **Scarcity Without Choice:** Resources are tight, but there's only one way to spend them. *Symptom:* scarcity is just a tax. *Fix:* every resource needs at least two competing uses.
+* **The Soft Lock** (pitfalls/soft_lock.txt): The player saves with no resources in front of a mandatory challenge.
+* **The Hoarding Trap** (pitfalls/hoarding_trap.txt): Players are so afraid of running out that they never use anything and finish the game with a full inventory.
+* **Scarcity Without Choice** (pitfalls/scarcity_without_choice.txt): Resources are tight, but there's only one way to spend them.
 
 ### Litmus
 

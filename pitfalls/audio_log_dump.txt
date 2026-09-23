@@ -1,0 +1,21 @@
+## Pitfall: The Audio-Log Dump
+
+**Area:** Story & Discovery
+**Found in:** components/environmental_storytelling.txt (used by Looking Glass, Ashen, Hearthian, Mansion, Casebook)
+
+### What Happens
+
+Environmental storytelling becomes a pile of voice recordings that explain the plot out loud.
+
+### Symptom
+
+The player stops looking at the environment.
+
+### Fix
+
+Let objects, placement, and architecture carry the story before text does.
+
+### Related Pitfalls
+
+* **The Lore Void** (pitfalls/lore_void.txt)
+* **Obscurity as a Shortcut** (pitfalls/obscurity_as_a_shortcut.txt)

@@ -1,0 +1,20 @@
+## Pitfall: Depth Without an On-Ramp
+
+**Area:** Soul-Specific: Loathing
+**Found in:** souls/loathing.txt (Loathing)
+
+### What Happens
+
+The math is so dense that new players can't find the fun.
+
+### Symptom
+
+Only veterans stay, and the community stops growing.
+
+### Fix
+
+Respect player literacy, but keep early resource constraints generous and let the brutal optimization pressure arrive with ascension.
+
+### Related Pitfalls
+
+* **Monetization Creep** (pitfalls/monetization_creep.txt)

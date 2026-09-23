@@ -1,0 +1,20 @@
+## Pitfall: Difficulty as Inflation
+
+**Area:** Soul-Specific: Ashen
+**Found in:** souls/ashen.txt (Ashen)
+
+### What Happens
+
+The team makes the game "harder" by inflating enemy health and damage instead of deepening patterns.
+
+### Symptom
+
+Fights become long attrition slogs rather than tense exams.
+
+### Fix
+
+Difficulty comes from reading and punishing patterns, not from bigger numbers.
+
+### Related Pitfalls
+
+* None yet.

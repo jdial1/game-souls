@@ -1,0 +1,20 @@
+## Pitfall: Upkeep in Disguise
+
+**Area:** Soul-Specific: Gauge
+**Found in:** souls/gauge.txt (Gauge)
+
+### What Happens
+
+A recurring charge on what the player already owns, defended as "only a stall."
+
+### Symptom
+
+A tester describes a stall as having lost something.
+
+### Fix
+
+Recurring sinks are things the player chooses to feed, never charges on what they hold.
+
+### Related Pitfalls
+
+* **The Screensaver** (pitfalls/screensaver.txt)

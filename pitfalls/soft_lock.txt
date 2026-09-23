@@ -1,0 +1,22 @@
+## Pitfall: The Soft Lock
+
+**Area:** Economy
+**Also known as:** Unwinnable by Design (TV Tropes)
+**Found in:** components/scarcity_economy.txt (used by Dwarven, Loathing, Spire, Mansion, Containment, Ampersand, Casebook, Swarm, Tapestry, Assembly, Tether)
+
+### What Happens
+
+The player saves with no resources in front of a mandatory challenge.
+
+### Symptom
+
+They must restart hours of progress.
+
+### Fix
+
+Every mandatory encounter has an evasion route or a guaranteed supply nearby.
+
+### Related Pitfalls
+
+* **The Hoarding Trap** (pitfalls/hoarding_trap.txt)
+* **Scarcity Without Choice** (pitfalls/scarcity_without_choice.txt)

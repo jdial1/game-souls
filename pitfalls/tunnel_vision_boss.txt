@@ -1,0 +1,20 @@
+## Pitfall: The Tunnel-Vision Boss
+
+**Area:** Soul-Specific: Looking Glass
+**Found in:** souls/looking_glass.txt (Looking Glass)
+
+### What Happens
+
+A mandatory fight in a sealed arena that ignores the entire toolkit.
+
+### Symptom
+
+Players who built for stealth are suddenly stuck.
+
+### Fix
+
+Every major encounter must offer at least one non-lethal solution and one way to avoid it entirely.
+
+### Related Pitfalls
+
+* **Ludonarrative Whiplash** (pitfalls/ludonarrative_whiplash.txt)

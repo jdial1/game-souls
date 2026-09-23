@@ -1,0 +1,23 @@
+## Pitfall: The Scoreboard
+
+**Area:** Soul-Specific: Ampersand
+**Found in:** souls/ampersand.txt (Ampersand)
+
+### What Happens
+
+Right guesses pay more, or a per-person tally appears.
+
+### Symptom
+
+Players guess safe, and the reveal turns tense instead of funny.
+
+### Fix
+
+Pay flat for doing it together, and keep any number about the pair ("84% of guesses landed").
+
+### Related Pitfalls
+
+* **The Chat Room** (pitfalls/chat_room.txt)
+* **The Verdict** (pitfalls/verdict.txt)
+* **The Short Memory** (pitfalls/short_memory.txt)
+* **The Seal by Convention** (pitfalls/seal_by_convention.txt)

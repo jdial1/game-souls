@@ -4,6 +4,10 @@
 
 **Used by:** Looking Glass, Ashen, Mansion, Gauge, Tribunal, Tether
 
+**Requires:** legible_failure (diegetic displays must still be unmistakable)
+**Supports:** audio_information, living_world, interlocking_space
+**Conflicts With:** Information: Total with dense numbers (Spire-style previews can't live on a character's body); paused menus in a world that doesn't wait
+
 ### Design Rules
 
 * **Vulnerability in Interface:** Checking inventory, reading a document, or looking at a map does not pause the game. If you are reading a code off a sticky note, a guard can walk up behind you and hit you in the head (Looking Glass).
@@ -32,8 +36,8 @@
 
 ### How It Fails
 
-* **Diegesis at the Cost of Legibility:** The player can't tell how hurt they are because the limp is too subtle. *Symptom:* deaths feel unfair. *Fix:* diegetic doesn't mean ambiguous; make states unmistakable (see components/legible_failure.txt).
-* **The Pause Loophole:** One menu pauses while others don't, and players use it to cheat time. *Symptom:* the tension leaks. *Fix:* be consistent about what stops the clock.
+* **Diegesis at the Cost of Legibility** (pitfalls/diegesis_at_the_cost_of_legibility.txt): The player can't tell how hurt they are because the limp is too subtle.
+* **The Pause Loophole** (pitfalls/pause_loophole.txt): One menu pauses while others don't, and players use it to cheat time.
 
 ### Litmus
 

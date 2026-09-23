@@ -1,0 +1,21 @@
+## Pitfall: Abandonment Disguised as Trust
+
+**Area:** Onboarding & Guidance
+**Found in:** components/trusting_the_player.txt (used by Looking Glass, Loathing, Ashen, Hearthian, Toybox, Containment, Gauge, Ampersand, Casebook, Assembly)
+
+### What Happens
+
+There's no guidance, and also no landmarks, no sightlines, and no clues.
+
+### Symptom
+
+Players wander aimlessly and quit.
+
+### Fix
+
+Removing arrows means adding world design, not just deleting UI.
+
+### Related Pitfalls
+
+* **The Wordy Tutorial** (pitfalls/wordy_tutorial.txt)
+* **The Empty Playground** (pitfalls/empty_playground.txt)

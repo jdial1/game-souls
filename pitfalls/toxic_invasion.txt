@@ -1,0 +1,21 @@
+## Pitfall: Toxic Invasion
+
+**Area:** Multiplayer & Social
+**Found in:** components/shared_discovery.txt (used by Loathing, Ashen, Hearthian, Containment, Tribunal)
+
+### What Happens
+
+Hostile multiplayer drives away the players it preys on.
+
+### Symptom
+
+Players go offline to avoid it.
+
+### Fix
+
+Make invasions opt-in or tied to a clear risk the player chose.
+
+### Related Pitfalls
+
+* **The Spoiler Flood** (pitfalls/spoiler_flood.txt)
+* **Dead Servers** (pitfalls/dead_servers.txt)

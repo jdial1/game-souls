@@ -1,0 +1,20 @@
+## Pitfall: The Screensaver
+
+**Area:** Soul-Specific: Gauge
+**Found in:** souls/gauge.txt (Gauge)
+
+### What Happens
+
+Nothing is lost and nothing is wanted.
+
+### Symptom
+
+Players open the game, see that everything is fine, and close it.
+
+### Fix
+
+Every visit should find something that wants something. Wanting, not owing.
+
+### Related Pitfalls
+
+* **Upkeep in Disguise** (pitfalls/upkeep_in_disguise.txt)

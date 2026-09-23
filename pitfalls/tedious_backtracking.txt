@@ -1,0 +1,21 @@
+## Pitfall: Tedious Backtracking
+
+**Area:** Space & Pacing
+**Found in:** components/interlocking_space.txt (used by Looking Glass, Ashen, Hearthian, Mansion, Tether)
+
+### What Happens
+
+Revisited spaces offer nothing new.
+
+### Symptom
+
+Players resent the map.
+
+### Fix
+
+Change something on each revisit: an enemy, a light, a sound, a new shortcut.
+
+### Related Pitfalls
+
+* **Checkpoint Sadism** (pitfalls/checkpoint_sadism.txt)
+* **The Illusion of Choice** (pitfalls/illusion_of_choice.txt)

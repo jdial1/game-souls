@@ -1,0 +1,21 @@
+## Pitfall: The Outside Tool
+
+**Area:** Progression & Replay
+**Found in:** components/workbench.txt (used by Containment, Assembly)
+
+### What Happens
+
+The community has to build the planner or calculator.
+
+### Symptom
+
+Every serious player keeps a browser tab open beside the game.
+
+### Fix
+
+Whatever the community keeps building, build in.
+
+### Related Pitfalls
+
+* **The Lab That Lies** (pitfalls/lab_that_lies.txt)
+* **Broken Codes** (pitfalls/broken_codes.txt)

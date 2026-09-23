@@ -1,0 +1,21 @@
+## Pitfall: Choice Without Consequence
+
+**Area:** Soul-Specific: Elysium
+**Found in:** souls/elysium.txt (Elysium)
+
+### What Happens
+
+Beliefs and failures are acknowledged once, then forgotten.
+
+### Symptom
+
+Players stop believing their choices matter.
+
+### Fix
+
+Track what the player has said and done and pay it off, even hours later, even in small ways.
+
+### Related Pitfalls
+
+* **Voices Without Personalities** (pitfalls/voices_without_personalities.txt)
+* **Walls of Undifferentiated Text** (pitfalls/walls_of_undifferentiated_text.txt)

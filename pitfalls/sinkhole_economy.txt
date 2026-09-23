@@ -1,0 +1,21 @@
+## Pitfall: The Sinkhole Economy
+
+**Area:** Soul-Specific: Assembly
+**Found in:** souls/assembly.txt (Assembly)
+
+### What Happens
+
+Production outpaces consumption, and chests fill with useless items.
+
+### Symptom
+
+The factory stops moving.
+
+### Fix
+
+An infinite sink, so the factory always has a reason to consume.
+
+### Related Pitfalls
+
+* **The Magic Void** (pitfalls/magic_void.txt)
+* **The Spaghetti Wall** (pitfalls/spaghetti_wall.txt)

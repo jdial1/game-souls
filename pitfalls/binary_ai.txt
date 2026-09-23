@@ -1,0 +1,22 @@
+## Pitfall: Binary AI
+
+**Area:** Systems & Rules
+**Found in:** components/living_world.txt (used by Looking Glass, Dwarven, Ashen, Mansion, Tapestry, Tether)
+
+### What Happens
+
+Enemies flip straight from idle to hostile.
+
+### Symptom
+
+Stealth becomes pass/fail with no tension.
+
+### Fix
+
+Awareness ladders with readable intermediate states.
+
+### Related Pitfalls
+
+* **The Waiting Room** (pitfalls/waiting_room.txt)
+* **The Exhausting Hunter** (pitfalls/exhausting_hunter.txt)
+* **The Solved Simulation** (pitfalls/solved_simulation.txt)

@@ -19,6 +19,21 @@ The name comes from the rule that turns separate railways into one network: a co
 | Tone | Unhurried Warmth |
 | Structure | Persistent World (visited, not inhabited) |
 
+### Psychological Target
+
+What the ideal player of this soul wants from play, described with the six motivation pairs of the Quantic Foundry Gamer Motivation Model (see frameworks/gamer_motivation.txt). This is design intent, not a market segment: it names who the design serves, so that features built for someone else can be spotted.
+
+| Motivation Pair | Level | Why |
+| --- | --- | --- |
+| Action | Low | No reflex play; checked in on for minutes. |
+| Social | High | Community: kin who help each other, never compete. |
+| Mastery | Low | No challenge; nothing can be lost. |
+| Achievement | Medium | Completion: visible growth of a place. |
+| Immersion | Medium | Fantasy of a small, toy-like world that keeps working. |
+| Creativity | Medium | Design: routing and building the network. |
+
+**Design note:** Competition-driven players will want rankings; the soul refuses them.
+
 ### Components
 
 * **components/social_safety.txt:** The family layer. Invite codes only, no typed names or free text, no ranking, no requests, news that only goes up and is spent once, and thanks without words.
@@ -123,10 +138,10 @@ A Gauge-style game lives on a desk or a kitchen table and is pleasant to glance 
 
 ### How It Fails
 
-(Shared failure modes live in the component files: the Guilt Engine, the Ranked Group, the Nagging Feed, the Red Signal.)
+(Shared pitfalls come through the components: the Guilt Engine, the Ranked Group, the Nagging Feed, the Red Signal. Every pitfall has its own file in pitfalls/.)
 
-* **The Screensaver:** Nothing is lost and nothing is wanted. *Symptom:* players open the game, see that everything is fine, and close it. *Fix:* every visit should find something that wants something. Wanting, not owing.
-* **Upkeep in Disguise:** A recurring charge on what the player already owns, defended as "only a stall." *Symptom:* a tester describes a stall as having lost something. *Fix:* recurring sinks are things the player chooses to feed, never charges on what they hold.
+* **The Screensaver** (pitfalls/screensaver.txt): Nothing is lost and nothing is wanted.
+* **Upkeep in Disguise** (pitfalls/upkeep_in_disguise.txt): A recurring charge on what the player already owns, defended as "only a stall."
 
 ### Neighboring Souls
 

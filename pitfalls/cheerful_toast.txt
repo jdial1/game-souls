@@ -1,0 +1,22 @@
+## Pitfall: The Cheerful Toast
+
+**Area:** Interface & Voice
+**Also known as:** Annoying Video Game Helper (TV Tropes)
+**Found in:** components/interface_voice.txt (used by Containment, Gauge, Ampersand, Casebook, Chorus)
+
+### What Happens
+
+Confirmations and celebrations pile on top of feedback the world already gave.
+
+### Symptom
+
+Players dismiss popups without reading, including the important ones.
+
+### Fix
+
+Delete every message the world already says.
+
+### Related Pitfalls
+
+* **The Red Signal** (pitfalls/red_signal.txt)
+* **The Flavourful Lie** (pitfalls/flavourful_lie.txt)

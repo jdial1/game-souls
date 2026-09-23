@@ -4,6 +4,10 @@
 
 **Used by:** Loathing, Elysium, Mansion, Gauge, Ampersand, Casebook, Chorus, Tribunal
 
+**Requires:** None; it is a test applied to every other component.
+**Supports:** interface_voice, environmental_storytelling
+**Conflicts With:** generic nomenclature and reskins (theme applied as paint)
+
 ### Design Rules
 
 * **The Integration Check:** For every feature, ask: can the theme be removed without breaking the mechanic? If yes, rebuild it until the answer is no.
@@ -39,9 +43,9 @@
 
 ### How It Fails
 
-* **Theme as Paint:** The theme lives only in names, art, and flavor text; the mechanics underneath are generic. *Symptom:* the game is interesting for an hour and forgettable after. *Fix:* apply the Integration Check.
-* **Winking at the Camera:** The game nudges the player to notice how clever, random, or deep it is. *Symptom:* the theme reads as self-conscious. *Fix:* the world must take itself completely seriously.
-* **Mechanics That Contradict the Theme:** The story says the protagonist is desperate; the systems give them infinite resources. *Symptom:* the player stops believing the fiction. *Fix:* check each system against the tone (axes/tone.txt, "Tone Killers").
+* **Theme as Paint** (pitfalls/theme_as_paint.txt): The theme lives only in names, art, and flavor text; the mechanics underneath are generic.
+* **Winking at the Camera** (pitfalls/winking_at_the_camera.txt): The game nudges the player to notice how clever, random, or deep it is.
+* **Mechanics That Contradict the Theme** (pitfalls/mechanics_that_contradict_the_theme.txt): The story says the protagonist is desperate; the systems give them infinite resources.
 
 ### Litmus
 

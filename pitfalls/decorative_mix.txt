@@ -1,0 +1,22 @@
+## Pitfall: The Decorative Mix
+
+**Area:** Interface & Voice
+**Found in:** components/audio_information.txt (used by Mansion, Containment, Chorus, Tether)
+
+### What Happens
+
+Music and effects are layered for mood, but none of them tell the player anything.
+
+### Symptom
+
+Players play with sound off and lose nothing.
+
+### Fix
+
+Audit every threat and state change; each needs an audible cue.
+
+### Related Pitfalls
+
+* **The Lying Ear** (pitfalls/lying_ear.txt)
+* **The Buzzer** (pitfalls/buzzer.txt)
+* **Hearing Required** (pitfalls/hearing_required.txt)

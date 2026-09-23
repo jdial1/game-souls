@@ -1,0 +1,32 @@
+## Framework: MDA (Mechanics, Dynamics, Aesthetics)
+
+**Source:** Robin Hunicke, Marc LeBlanc, and Robert Zubek, "MDA: A Formal Approach to Game Design and Game Research" (2004).
+
+### What It Is
+
+MDA splits a game into three layers:
+
+* **Mechanics:** the particular components of the game, at the level of data and algorithms.
+* **Dynamics:** the run-time behavior of the mechanics acting on player inputs and on each other over time.
+* **Aesthetics:** the emotional responses the game evokes in the player.
+
+The designer and the player meet the layers from opposite ends. The designer builds mechanics, which give rise to dynamics, which produce aesthetics. The player first meets the aesthetics (the feeling), then notices the dynamics, and only later the mechanics. The paper's point is that a designer can't build a feeling directly; they can only build mechanics that tend to produce it.
+
+The paper names eight kinds of aesthetic ("including but not limited to"): **Sensation** (game as sense-pleasure), **Fantasy** (make-believe), **Narrative** (drama), **Challenge** (obstacle course), **Fellowship** (social framework), **Discovery** (uncharted territory), **Expression** (self-discovery), and **Submission** (pastime).
+
+### What Game Souls Takes
+
+* **The causality trace.** Every recommendation in an instillation (Step 8 of LLM_SOUL_GUIDE.txt) is written as a chain: *Mechanic → Dynamic → Tone.* "Add scarcity" is not a recommendation. "Two bullets per room → the player avoids fights rather than taking them → dread" is.
+* **Aesthetic targets.** axes/tone.txt maps each soul to the MDA aesthetics it serves, as a cross-check on its tone.
+
+### Mapping to Game Souls
+
+| MDA | Game Souls |
+| --- | --- |
+| Mechanics | Components' design rules, and signature pillar rules |
+| Dynamics | What the rules produce in play: the breakpoint, the corpse run, the moving bottleneck |
+| Aesthetics | The Tone axis and each soul's philosophy |
+
+### What We Leave Behind
+
+The layer names are analysis scaffolding. They never replace the library's voice: pillars keep their names, and traces are written in plain, specific language, not "kinetic dynamic optimization."

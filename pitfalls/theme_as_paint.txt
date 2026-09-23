@@ -1,0 +1,21 @@
+## Pitfall: Theme as Paint
+
+**Area:** Story & Discovery
+**Found in:** components/theme_as_mechanic.txt (used by Loathing, Elysium, Mansion, Gauge, Ampersand, Casebook, Chorus, Tribunal)
+
+### What Happens
+
+The theme lives only in names, art, and flavor text; the mechanics underneath are generic.
+
+### Symptom
+
+The game is interesting for an hour and forgettable after.
+
+### Fix
+
+Apply the Integration Check.
+
+### Related Pitfalls
+
+* **Winking at the Camera** (pitfalls/winking_at_the_camera.txt)
+* **Mechanics That Contradict the Theme** (pitfalls/mechanics_that_contradict_the_theme.txt)

@@ -4,6 +4,10 @@
 
 **Used by:** Loathing, Ashen, Hearthian, Containment, Tribunal
 
+**Requires:** environmental_storytelling or synergy_engines deep enough to reward a community
+**Supports:** difficulty_ladder, trusting_the_player
+**Conflicts With:** social_safety (strangers' messages and invasions contradict invitation-only play); match_integrity where the shared information is the thing being protected
+
 ### Design Rules
 
 * **Messages from the Void:** Let players leave short, templated notes in the world for strangers to find. Warnings, hints about hidden walls, and deliberate trolling ("Try jumping") coexist, and the reader must decide whom to trust (Ashen).
@@ -36,9 +40,9 @@
 
 ### How It Fails
 
-* **The Spoiler Flood:** Discoveries leak within hours and everyone else reads the answer instead of finding it. *Symptom:* the mystery dies on day one. *Fix:* layer secrets so the deepest ones require in-game action, not just information.
-* **Toxic Invasion:** Hostile multiplayer drives away the players it preys on. *Symptom:* players go offline to avoid it. *Fix:* make invasions opt-in or tied to a clear risk the player chose.
-* **Dead Servers:** The communion depends on servers that eventually shut down. *Symptom:* the game becomes emptier than designed. *Fix:* build an Offline Echo fallback from the start.
+* **The Spoiler Flood** (pitfalls/spoiler_flood.txt): Discoveries leak within hours and everyone else reads the answer instead of finding it.
+* **Toxic Invasion** (pitfalls/toxic_invasion.txt): Hostile multiplayer drives away the players it preys on.
+* **Dead Servers** (pitfalls/dead_servers.txt): The communion depends on servers that eventually shut down.
 
 ### Litmus
 

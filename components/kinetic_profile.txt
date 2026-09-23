@@ -1,0 +1,54 @@
+## Component: Kinetic Profile
+
+**The principle:** Every real-time verb has a shape in time: how quickly it starts, how long it commits the player, and how it lets go. That shape is a design decision that expresses the soul, whether the designer chose it or not. Commitment and forgiveness are opposite promises, and a soul must pick one.
+
+**Used by:** Ashen, Toybox, Mansion, Chorus
+
+**Requires:** None; every real-time verb has a profile, whether designed or not.
+**Supports:** legible_failure, audio_information, diegetic_interface
+**Conflicts With:** automation of the core verb; input latency or animation that the profile can't account for
+
+### The Shape of a Verb
+
+Borrowed from sound synthesis by Steve Swink in *Game Feel* (see frameworks/game_feel.txt), an action's response can be described as an envelope with four phases. Describe each phase in plain bands, never in frame counts: the exact numbers belong to the designer in the engine, and an analysis that invents them is guessing.
+
+* **Attack:** How fast the action starts after the input. *Bands:* instant, snappy, deliberate, heavy.
+* **Decay:** How the action settles from its peak into its steady state. *Bands:* none, quick, gradual.
+* **Sustain:** What the action does while the input is held. *Bands:* none (a one-shot), steady, building.
+* **Release:** How the action ends and when the player is free again. *Bands:* cancellable, short recovery, committed, long recovery.
+
+### Design Rules
+
+* **Commitment or Forgiveness, Not Both:** A soul either commits the player to their inputs (a slow attack and a long, uncancellable release, so every press is a decision) or forgives them (an instant attack and a cancellable release, plus hidden help like input buffering). Mixing the two in one verb makes it feel both sluggish and cheap.
+  * *Example (Ashen):* An attack has a deliberate wind-up and a recovery the player can't cancel. The enemy punishes greed, not slowness.
+  * *Example (Toybox):* A jump fires the instant the button is pressed, and a press slightly after leaving a ledge still counts. The game quietly cheats in the player's favor.
+
+* **Read the Enemy's Profile, Too:** Enemy actions have envelopes. A long, readable attack phase is a telegraph; a short one is a surprise. Legible failure depends on enemies whose attacks are shaped to be read.
+
+* **The Six Things That Make Feel:** When a verb "feels wrong," check Swink's six elements in order: the input device and mapping, the response (the envelope above), the context the verb is used in (the space around it), the polish (sound, particles, camera), the metaphor (what the player believes they are controlling), and the rules (what the verb means in the game). Most "floaty" or "stiff" complaints live in the first two.
+
+* **Describe, Don't Measure:** A design document or an analysis states the band ("the dodge has a snappy attack and a committed release"), and leaves timing values to be tuned by hand in the engine and confirmed in playtests.
+
+### Tuning by Soul
+
+* **Ashen:** Deliberate attack, committed release. Every press is a decision the enemy can punish.
+* **Toybox:** Instant attack, cancellable release, with hidden forgiveness in both directions.
+* **Mansion:** Heavy and rooted: aiming stops movement, reloading takes real time, and turning is slow. The character is clumsy; the input is precise.
+* **Chorus:** The attack is judged against the beat. The profile's job is to make the input land where the music says it did.
+
+### What It Costs
+
+* **Iteration Time:** A verb's shape is found by feel, over many builds, before content exists.
+* **Animation Budget:** A committed release needs animations that clearly show the commitment; a forgiving attack needs animations that can be interrupted cleanly.
+
+### How It Fails
+
+* **Floaty or Stiff Verbs** (pitfalls/floaty_or_stiff_verbs.txt): The core action is technically functional but not joyful.
+* **Clumsy Input Masquerading as Vulnerability** (pitfalls/clumsy_input_masquerading_as_vulnerability.txt): The controls are unresponsive rather than deliberately constrained.
+* **Visual Desync** (pitfalls/visual_desync.txt): An animation lands after the moment it represents.
+
+### Litmus
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Promise** | Can you say, in one sentence, whether this soul's core verb commits the player or forgives them? | **Yes.** The shape of the verb is the soul in miniature. |

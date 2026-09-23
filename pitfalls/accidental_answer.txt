@@ -1,0 +1,22 @@
+## Pitfall: The Accidental Answer
+
+**Area:** Soul-Specific: Hearthian
+**Also known as:** Luck-Based Mission (TV Tropes)
+**Found in:** souls/hearthian.txt (Hearthian)
+
+### What Happens
+
+A player stumbles into a solution without understanding it.
+
+### Symptom
+
+Progress without an epiphany.
+
+### Fix
+
+Make gates resistant to brute force and blind luck, so comprehension is the only way through.
+
+### Related Pitfalls
+
+* **The Wall** (pitfalls/wall.txt)
+* **Execution Friction** (pitfalls/execution_friction.txt)

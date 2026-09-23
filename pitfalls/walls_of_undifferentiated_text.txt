@@ -1,0 +1,21 @@
+## Pitfall: Walls of Undifferentiated Text
+
+**Area:** Soul-Specific: Elysium
+**Found in:** souls/elysium.txt (Elysium)
+
+### What Happens
+
+Long passages with no choices, no checks, and no stakes.
+
+### Symptom
+
+Players skim.
+
+### Fix
+
+Keep conversations interactive; every few lines should offer a meaningful choice, a check, or an inner voice reacting.
+
+### Related Pitfalls
+
+* **Voices Without Personalities** (pitfalls/voices_without_personalities.txt)
+* **Choice Without Consequence** (pitfalls/choice_without_consequence.txt)

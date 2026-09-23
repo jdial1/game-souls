@@ -4,6 +4,10 @@
 
 **Used by:** Dwarven, Ashen, Hearthian, Spire, Mansion, Containment, Gauge, Casebook, Chorus, Swarm, Tapestry, Assembly, Tribunal
 
+**Requires:** systemic_consistency (a cause can only be named if the same cause always has the same effect)
+**Supports:** failure_as_content, trusting_the_player, synergy_engines, kinetic_profile
+**Conflicts With:** Information: Hidden, when failure is Punishing (unexplained deaths read as unfair); outcome randomness (dice that decide after the player commits)
+
 ### Design Rules
 
 * **Every Death Must Be Legible:** The player must always be able to answer "Why did I lose?" Attacks need clear wind-ups, hitboxes must be honest, and timing must be consistent. Unblockable surprise attacks with no tell violate the contract.
@@ -47,11 +51,11 @@
 
 ### How It Fails
 
-* **Difficulty Without Legibility:** Enemies are hard because of unfair hitboxes, off-screen attacks, or random damage spikes. *Symptom:* players blame the game. *Fix:* audit every playtest death; if the player can't name the cause, fix the tell.
-* **Hidden Math:** Damage formulas or modifier stacking are opaque. *Symptom:* losses feel unfair. *Fix:* show the intent, the preview, and the numbers.
-* **Illegible Chaos:** The simulation produces rich events, but the player can't see the causes. *Symptom:* players describe their losses as random. *Fix:* surface causes, not just effects.
-* **Moon Logic:** A puzzle solution makes sense only to the designer. *Symptom:* players who look up the answer feel cheated rather than foolish. *Fix:* if the reaction is "How would anyone know that?", a clue is missing.
-* **Clumsy Input Masquerading as Vulnerability:** The controls are unresponsive rather than deliberately constrained. *Symptom:* players blame the controls instead of the monster. *Fix:* the character may be slow; the input must never be.
+* **Difficulty Without Legibility** (pitfalls/difficulty_without_legibility.txt): Enemies are hard because of unfair hitboxes, off-screen attacks, or random damage spikes.
+* **Hidden Math** (pitfalls/hidden_math.txt): Damage formulas or modifier stacking are opaque.
+* **Illegible Chaos** (pitfalls/illegible_chaos.txt): The simulation produces rich events, but the player can't see the causes.
+* **Moon Logic** (pitfalls/moon_logic.txt): A puzzle solution makes sense only to the designer.
+* **Clumsy Input Masquerading as Vulnerability** (pitfalls/clumsy_input_masquerading_as_vulnerability.txt): The controls are unresponsive rather than deliberately constrained.
 
 ### Litmus
 

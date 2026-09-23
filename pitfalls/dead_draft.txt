@@ -1,0 +1,21 @@
+## Pitfall: The Dead Draft
+
+**Area:** Soul-Specific: Swarm
+**Found in:** souls/swarm.txt (Swarm)
+
+### What Happens
+
+Offers ignore what the player already owns, so most level-ups are irrelevant.
+
+### Symptom
+
+Drafting becomes clicking through.
+
+### Fix
+
+Weight offers toward the player's current weapons and recipes.
+
+### Related Pitfalls
+
+* **The Stagnant Mid-Game** (pitfalls/stagnant_mid_game.txt)
+* **The Unreadable Screen** (pitfalls/unreadable_screen.txt)

@@ -1,0 +1,22 @@
+## Pitfall: The Wordy Tutorial
+
+**Area:** Onboarding & Guidance
+**Also known as:** Annoying Video Game Helper (TV Tropes)
+**Found in:** components/trusting_the_player.txt (used by Looking Glass, Loathing, Ashen, Hearthian, Toybox, Containment, Gauge, Ampersand, Casebook, Assembly)
+
+### What Happens
+
+Text boxes explain what the level should teach.
+
+### Symptom
+
+Players skip the text and miss the mechanic.
+
+### Fix
+
+Redesign the first obstacle so the correct action is the natural one.
+
+### Related Pitfalls
+
+* **Abandonment Disguised as Trust** (pitfalls/abandonment_disguised_as_trust.txt)
+* **The Empty Playground** (pitfalls/empty_playground.txt)

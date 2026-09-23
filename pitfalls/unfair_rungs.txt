@@ -1,0 +1,21 @@
+## Pitfall: Unfair Rungs
+
+**Area:** Progression & Replay
+**Found in:** components/difficulty_ladder.txt (used by Loathing, Spire, Containment, Casebook, Chorus, Swarm)
+
+### What Happens
+
+Higher tiers are harder only through bigger numbers and randomness.
+
+### Symptom
+
+Experts plateau and quit.
+
+### Fix
+
+Each rung should demand a new skill or a new decision, not just more patience.
+
+### Related Pitfalls
+
+* **Grind Disguised as Progress** (pitfalls/grind_disguised_as_progress.txt)
+* **The Empty Top** (pitfalls/empty_top.txt)

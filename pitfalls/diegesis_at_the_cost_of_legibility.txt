@@ -1,0 +1,20 @@
+## Pitfall: Diegesis at the Cost of Legibility
+
+**Area:** Interface & Voice
+**Found in:** components/diegetic_interface.txt (used by Looking Glass, Ashen, Mansion, Gauge, Tribunal, Tether)
+
+### What Happens
+
+The player can't tell how hurt they are because the limp is too subtle.
+
+### Symptom
+
+Deaths feel unfair.
+
+### Fix
+
+Diegetic doesn't mean ambiguous; make states unmistakable (see components/legible_failure.txt).
+
+### Related Pitfalls
+
+* **The Pause Loophole** (pitfalls/pause_loophole.txt)

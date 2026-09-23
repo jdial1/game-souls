@@ -10,7 +10,16 @@ A design library for the distinct "souls" of influential games. Each soul is a d
 | **Component** | components/ | Reusable design principles shared by several souls, each written once, with rules, costs, failure modes, and per-soul tuning. | "What building blocks does it use?" |
 | **Soul** | souls/ | Compositions: a philosophy, a set of axis positions, a list of components, and only the pillars that are unique to that soul. | "What makes it *this* soul and not another?" |
 
-archive/ holds the original single-file versions of each soul, untouched.
+Two reference folders sit beside the layers:
+
+| Folder | What It Holds |
+| --- | --- |
+| pitfalls/ | A library of named design failures, one file each (what happens, the symptom, the fix, related pitfalls), indexed by symptom in pitfalls/README.txt. |
+| frameworks/ | Summaries of the older frameworks the library borrows from (MDA, Gameplay Design Patterns, Machinations, Game Feel, the Gamer Motivation Model, the Game Ontology Project, Koster's grammar, TV Tropes), what was taken from each, and what the library deliberately doesn't adopt. |
+
+Every component file opens with relationship tags (**Requires**, **Supports**, **Conflicts With**), so conflicts between building blocks are visible before a design is built on them.
+
+archive/ holds the original single-file versions of the first nine souls, untouched.
 
 **For language models:** start with LLM_README.txt, then follow LLM_SOUL_GUIDE.txt to analyze a game, classify it, write a new soul, or instill a soul into a game in development.
 
@@ -70,6 +79,7 @@ archive/ holds the original single-file versions of each soul, untouched.
 | workbench | | | | | | | | | | x | | | | | | | x | | |
 | automation | | | | | | | | | | x | x | | | | x | | x | | |
 | match_integrity | | | | | | | | | | | | | | | | | | x | x |
+| kinetic_profile | | | | x | | | | x | x | | | | | x | | | | | |
 
 ### How to Use This Library
 
@@ -89,14 +99,17 @@ Create souls/<name>.txt with these sections, in order:
 
 1. Title, subtitle, philosophy, and surface/beneath description
 2. Axis Positions (a table covering all six axes)
-3. Components (each referenced by path, with a one-line note on how this soul tunes it)
-4. Signature Pillars (only rules that aren't already in a component)
-5. Variants & Exceptions (where the example games bend the rules)
-6. What This Soul Costs (soul-specific costs only)
-7. How It Fails (soul-specific failure modes only)
-8. Neighboring Souls (the closest souls and what separates them)
-9. Litmus Test and closing quote
+3. Psychological Target (the six motivation pairs rated High, Medium, or Low, with reasons and a design note; the ideal player, never a market)
+4. Components (each referenced by path, with a one-line note on how this soul tunes it)
+5. Signature Pillars (only rules that aren't already in a component)
+6. Variants & Exceptions (where the example games bend the rules)
+7. What This Soul Costs (soul-specific costs only)
+8. How It Fails (soul-specific failure modes, one line each, each with its own file in pitfalls/)
+9. Neighboring Souls (the closest souls and what separates them)
+10. Litmus Test and closing quote
 
 Aim for 1,300–2,400 words. A soul much longer than that is usually holding rules that belong in a component, or implementation detail that belongs in the game's own design docs.
+
+A new component is justified only by a systemic philosophy that appears in two or more souls and fits no existing component. A feature (a double jump, a skill tree, a health potion) is never a component; add it as a tuning note. See "What We Deliberately Don't Adopt" in frameworks/README.txt.
 
 If a new soul repeats a rule that appears in another soul, move that rule into a component (a new one, or an existing one) and reference it from both.

@@ -1,0 +1,21 @@
+## Pitfall: The Safe Pocket
+
+**Area:** Soul-Specific: Tether
+**Found in:** souls/tether.txt (Tether)
+
+### What Happens
+
+The unlootable container is too big.
+
+### Symptom
+
+Players grab the best loot, stash it, and die on purpose to leave quickly.
+
+### Fix
+
+Keep it tiny, and tie value to extraction.
+
+### Related Pitfalls
+
+* **The Hoarder's Paralysis** (pitfalls/hoarder_s_paralysis.txt)
+* **The Camped Door** (pitfalls/camped_door.txt)

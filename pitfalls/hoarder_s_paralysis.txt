@@ -1,0 +1,22 @@
+## Pitfall: The Hoarder's Paralysis
+
+**Area:** Soul-Specific: Tether
+**Also known as:** Too Awesome to Use (TV Tropes)
+**Found in:** souls/tether.txt (Tether)
+
+### What Happens
+
+Good gear feels too precious to use.
+
+### Symptom
+
+Stashes fill with gear nobody brings into raids.
+
+### Fix
+
+Cheap, viable kits, and wipes often enough that hoarding has no future.
+
+### Related Pitfalls
+
+* **The Safe Pocket** (pitfalls/safe_pocket.txt)
+* **The Camped Door** (pitfalls/camped_door.txt)

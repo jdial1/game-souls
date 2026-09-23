@@ -1,0 +1,22 @@
+## Pitfall: The Lying Ear
+
+**Area:** Interface & Voice
+**Found in:** components/audio_information.txt (used by Mansion, Containment, Chorus, Tether)
+
+### What Happens
+
+Occlusion or panning is wrong, so enemies sound like they're somewhere they aren't.
+
+### Symptom
+
+Players die "to a sound from the wrong floor" and stop trusting audio.
+
+### Fix
+
+Test positional audio as rigorously as hitboxes.
+
+### Related Pitfalls
+
+* **The Decorative Mix** (pitfalls/decorative_mix.txt)
+* **The Buzzer** (pitfalls/buzzer.txt)
+* **Hearing Required** (pitfalls/hearing_required.txt)

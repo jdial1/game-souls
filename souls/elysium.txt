@@ -17,6 +17,21 @@ On the surface, these games look like walls of text with a character slowly wand
 | Tone | Tragicomic |
 | Structure | Single Journey |
 
+### Psychological Target
+
+What the ideal player of this soul wants from play, described with the six motivation pairs of the Quantic Foundry Gamer Motivation Model (see frameworks/gamer_motivation.txt). This is design intent, not a market segment: it names who the design serves, so that features built for someone else can be spotted.
+
+| Motivation Pair | Level | Why |
+| --- | --- | --- |
+| Action | Low | Combat is rare or absent. |
+| Social | Low | Single-player. |
+| Mastery | Low | Checks are dice, not skill; failure is content, not a test. |
+| Achievement | Low | No completion drive; most content is missed by design. |
+| Immersion | High | Story and Fantasy: inhabiting a specific, flawed person. |
+| Creativity | Medium | Design: authoring who the protagonist becomes. |
+
+**Design note:** The audience must enjoy reading a great deal; Action and Mastery players will not stay.
+
 ### Components
 
 * **components/failure_as_content.txt:** Failure is the richest branch. Write failures with more care than successes, distinguish retryable checks from permanent ones, and kill the reload reflex.
@@ -79,11 +94,11 @@ Beliefs are not flavor. They are items the player picks up, equips, and lives wi
 
 ### How It Fails
 
-(Shared failure modes live in the component files: failure as punishment, theme as paint.)
+(Shared pitfalls come through the components: failure as punishment, theme as paint. Every pitfall has its own file in pitfalls/.)
 
-* **Voices Without Personalities:** Skills speak, but they all sound like the same narrator. *Symptom:* the build doesn't change the experience. *Fix:* give each voice a distinct vocabulary, temperament, and agenda, and let them disagree with one another.
-* **Walls of Undifferentiated Text:** Long passages with no choices, no checks, and no stakes. *Symptom:* players skim. *Fix:* keep conversations interactive; every few lines should offer a meaningful choice, a check, or an inner voice reacting.
-* **Choice Without Consequence:** Beliefs and failures are acknowledged once, then forgotten. *Symptom:* players stop believing their choices matter. *Fix:* track what the player has said and done and pay it off, even hours later, even in small ways.
+* **Voices Without Personalities** (pitfalls/voices_without_personalities.txt): Skills speak, but they all sound like the same narrator.
+* **Walls of Undifferentiated Text** (pitfalls/walls_of_undifferentiated_text.txt): Long passages with no choices, no checks, and no stakes.
+* **Choice Without Consequence** (pitfalls/choice_without_consequence.txt): Beliefs and failures are acknowledged once, then forgotten.
 
 ### Neighboring Souls
 

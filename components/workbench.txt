@@ -4,6 +4,10 @@
 
 **Used by:** Containment, Assembly
 
+**Requires:** systemic_consistency (forecasts and shared designs need determinism)
+**Supports:** trusting_the_player, synergy_engines, shared_discovery
+**Conflicts With:** outcome randomness (a forecast of dice is meaningless); Information: Hidden; Failure: Terminal where the lab would spoil the stakes
+
 ### Design Rules
 
 * **A Lab Beside the Floor:** Give the player a sandbox copy where nothing is lost and predictions are allowed. Forecasts live in the lab; the real game reports only what has happened.
@@ -32,9 +36,9 @@
 
 ### How It Fails
 
-* **The Lab That Lies:** The lab's setup differs from the real game's. *Symptom:* a design that worked in the lab fails for real, and players stop trusting the tools. *Fix:* a test runs every example design in both and requires them to agree.
-* **The Outside Tool:** The community has to build the planner or calculator. *Symptom:* every serious player keeps a browser tab open beside the game. *Fix:* whatever the community keeps building, build in.
-* **Broken Codes:** An update silently invalidates shared designs. *Symptom:* forum posts full of designs that no longer paste. *Fix:* version the format, and migrate old codes forward.
+* **The Lab That Lies** (pitfalls/lab_that_lies.txt): The lab's setup differs from the real game's.
+* **The Outside Tool** (pitfalls/outside_tool.txt): The community has to build the planner or calculator.
+* **Broken Codes** (pitfalls/broken_codes.txt): An update silently invalidates shared designs.
 
 ### Litmus
 

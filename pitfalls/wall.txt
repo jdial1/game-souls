@@ -1,0 +1,21 @@
+## Pitfall: The Wall
+
+**Area:** Soul-Specific: Hearthian
+**Found in:** souls/hearthian.txt (Hearthian)
+
+### What Happens
+
+A player is stuck on one insight with no other thread to pull.
+
+### Symptom
+
+They quit or open a walkthrough, and the epiphany is lost forever.
+
+### Fix
+
+The knowledge graph must always leave an open question. After a long stretch without progress, the world may redirect their attention (a bird lands on the relevant statue, a distant light flickers) without ever giving the answer.
+
+### Related Pitfalls
+
+* **Execution Friction** (pitfalls/execution_friction.txt)
+* **The Accidental Answer** (pitfalls/accidental_answer.txt)

@@ -17,6 +17,21 @@ On the surface, these games look like quiet, meandering exploration titles where
 | Tone | Wonder |
 | Structure | Single Journey (bounded, often looped) |
 
+### Psychological Target
+
+What the ideal player of this soul wants from play, described with the six motivation pairs of the Quantic Foundry Gamer Motivation Model (see frameworks/gamer_motivation.txt). This is design intent, not a market segment: it names who the design serves, so that features built for someone else can be spotted.
+
+| Motivation Pair | Level | Why |
+| --- | --- | --- |
+| Action | Low | No reflex demands; execution should be easy. |
+| Social | Low | Single-player; the community forms after launch. |
+| Mastery | Medium | Puzzle challenge, but understanding matters more than skill. |
+| Achievement | Low | Nothing to collect or grind; progress is knowledge. |
+| Immersion | High | Story: a mystery assembled by the player. |
+| Creativity | High | Discovery: the whole game is the journey from ignorance to understanding. |
+
+**Design note:** Achievement players will find nothing to collect; adding collectibles to hold them undercuts the epiphany.
+
 ### Components
 
 * **components/trusting_the_player.txt:** Curiosity is the only quest log. Every anomaly is a promise; the journal records observations, never instructions; nothing thinks for the player.
@@ -82,11 +97,11 @@ The world must be finite and learnable, so every piece the player discovers fits
 
 ### How It Fails
 
-(Shared failure modes live in the component files: moon logic, abandonment disguised as trust.)
+(Shared pitfalls come through the components: moon logic, abandonment disguised as trust. Every pitfall has its own file in pitfalls/.)
 
-* **The Wall:** A player is stuck on one insight with no other thread to pull. *Symptom:* they quit or open a walkthrough, and the epiphany is lost forever. *Fix:* the knowledge graph must always leave an open question. After a long stretch without progress, the world may redirect their attention (a bird lands on the relevant statue, a distant light flickers) without ever giving the answer.
-* **Execution Friction:** Movement or controls are so clumsy that performing a known solution becomes the challenge. *Symptom:* players understand what to do but can't do it. *Fix:* once the player knows the answer, execution should be easy.
-* **The Accidental Answer:** A player stumbles into a solution without understanding it. *Symptom:* progress without an epiphany. *Fix:* make gates resistant to brute force and blind luck, so comprehension is the only way through.
+* **The Wall** (pitfalls/wall.txt): A player is stuck on one insight with no other thread to pull.
+* **Execution Friction** (pitfalls/execution_friction.txt): Movement or controls are so clumsy that performing a known solution becomes the challenge.
+* **The Accidental Answer** (pitfalls/accidental_answer.txt): A player stumbles into a solution without understanding it.
 
 ### Neighboring Souls
 

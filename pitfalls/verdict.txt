@@ -1,0 +1,23 @@
+## Pitfall: The Verdict
+
+**Area:** Soul-Specific: Ampersand
+**Found in:** souls/ampersand.txt (Ampersand)
+
+### What Happens
+
+The game interprets: personality types, compatibility readings, "what your answers say about you."
+
+### Symptom
+
+A reading becomes something one partner quotes at the other.
+
+### Fix
+
+Show both results and ask one question about them.
+
+### Related Pitfalls
+
+* **The Scoreboard** (pitfalls/scoreboard.txt)
+* **The Chat Room** (pitfalls/chat_room.txt)
+* **The Short Memory** (pitfalls/short_memory.txt)
+* **The Seal by Convention** (pitfalls/seal_by_convention.txt)

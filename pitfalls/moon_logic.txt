@@ -1,0 +1,24 @@
+## Pitfall: Moon Logic
+
+**Area:** Feedback & Legibility
+**Also known as:** Guide Dang It! (TV Tropes)
+**Found in:** components/legible_failure.txt (used by Dwarven, Ashen, Hearthian, Spire, Mansion, Containment, Gauge, Casebook, Chorus, Swarm, Tapestry, Assembly, Tribunal)
+
+### What Happens
+
+A puzzle solution makes sense only to the designer.
+
+### Symptom
+
+Players who look up the answer feel cheated rather than foolish.
+
+### Fix
+
+If the reaction is "How would anyone know that?", a clue is missing.
+
+### Related Pitfalls
+
+* **Difficulty Without Legibility** (pitfalls/difficulty_without_legibility.txt)
+* **Hidden Math** (pitfalls/hidden_math.txt)
+* **Illegible Chaos** (pitfalls/illegible_chaos.txt)
+* **Clumsy Input Masquerading as Vulnerability** (pitfalls/clumsy_input_masquerading_as_vulnerability.txt)

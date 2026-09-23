@@ -1,0 +1,21 @@
+## Pitfall: The Lore Void
+
+**Area:** Story & Discovery
+**Found in:** components/environmental_storytelling.txt (used by Looking Glass, Ashen, Hearthian, Mansion, Casebook)
+
+### What Happens
+
+Fragments are so scattered that no coherent story can be reconstructed.
+
+### Symptom
+
+The community stops theorizing.
+
+### Fix
+
+Write the full truth first.
+
+### Related Pitfalls
+
+* **Obscurity as a Shortcut** (pitfalls/obscurity_as_a_shortcut.txt)
+* **The Audio-Log Dump** (pitfalls/audio_log_dump.txt)

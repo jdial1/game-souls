@@ -1,0 +1,21 @@
+## Pitfall: The Ranked Group
+
+**Area:** Multiplayer & Social
+**Found in:** components/social_safety.txt (used by Gauge, Ampersand)
+
+### What Happens
+
+Shared snapshots quietly become a scoreboard, a per-person tally appears, or a gift count becomes a ledger of who gave more.
+
+### Symptom
+
+Someone opens the game to see where they stand.
+
+### Fix
+
+Show changes as each person's own place growing, and any number as the group's.
+
+### Related Pitfalls
+
+* **The Guilt Engine** (pitfalls/guilt_engine.txt)
+* **The Nagging Feed** (pitfalls/nagging_feed.txt)

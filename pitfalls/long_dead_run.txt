@@ -1,0 +1,22 @@
+## Pitfall: The Long Dead Run
+
+**Area:** Failure & Stakes
+**Also known as:** Unwinnable (the "walking dead" state) (TV Tropes)
+**Found in:** components/failure_as_content.txt (used by Dwarven, Ashen, Hearthian, Elysium, Ampersand, Tapestry)
+
+### What Happens
+
+A run or save is doomed by the midpoint but takes another thirty minutes to actually end.
+
+### Symptom
+
+Players abandon instead of finishing.
+
+### Fix
+
+Let lost games end fast, or add comeback mechanics that keep the ending tense.
+
+### Related Pitfalls
+
+* **Failure as Punishment** (pitfalls/failure_as_punishment.txt)
+* **The Death Spiral Without a Story** (pitfalls/death_spiral_without_a_story.txt)

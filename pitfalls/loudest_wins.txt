@@ -1,0 +1,21 @@
+## Pitfall: The Loudest Wins
+
+**Area:** Soul-Specific: Tribunal
+**Found in:** souls/tribunal.txt (Tribunal)
+
+### What Happens
+
+Discussion is dominated by whoever talks most.
+
+### Symptom
+
+Quiet players are voted out for being quiet.
+
+### Fix
+
+Structure the talking phase (speaking order, timers, private claims).
+
+### Related Pitfalls
+
+* **The Solved Meta** (pitfalls/solved_meta.txt)
+* **The Idle Dead** (pitfalls/idle_dead.txt)

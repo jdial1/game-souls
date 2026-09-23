@@ -4,6 +4,10 @@
 
 **Used by:** Looking Glass, Dwarven, Ashen, Mansion, Tapestry, Tether
 
+**Requires:** systemic_consistency (agents must obey the same rules as the player)
+**Supports:** failure_as_content, audio_information, environmental_storytelling
+**Conflicts With:** Failure: Forgone and the Gauge rule "Absence Only Adds" (a world that moves without you can take things while you're away); level scaling
+
 ### Design Rules
 
 * **Granular Awareness States:** AI must not jump from "oblivious" to "lethally hostile." It needs a ladder of suspicion.
@@ -40,10 +44,10 @@
 
 ### How It Fails
 
-* **The Waiting Room:** NPCs stand in place until the player arrives, then begin performing. *Symptom:* the world feels like a stage set. *Fix:* give every NPC at least one routine that runs without the player.
-* **Binary AI:** Enemies flip straight from idle to hostile. *Symptom:* stealth becomes pass/fail with no tension. *Fix:* awareness ladders with readable intermediate states.
-* **The Exhausting Hunter:** An adaptive pursuer appears too often or too predictably. *Symptom:* terror curdles into irritation. *Fix:* give it rhythm, with long absences and escalation tied to player progress.
-* **The Solved Simulation:** Players find a strategy that makes them immune to the world's pressure. *Symptom:* the world stops producing stories. *Fix:* escalate external pressure over time and let internal systems (aging, grudges, decay) erode even perfect defenses.
+* **The Waiting Room** (pitfalls/waiting_room.txt): NPCs stand in place until the player arrives, then begin performing.
+* **Binary AI** (pitfalls/binary_ai.txt): Enemies flip straight from idle to hostile.
+* **The Exhausting Hunter** (pitfalls/exhausting_hunter.txt): An adaptive pursuer appears too often or too predictably.
+* **The Solved Simulation** (pitfalls/solved_simulation.txt): Players find a strategy that makes them immune to the world's pressure.
 
 ### Litmus
 

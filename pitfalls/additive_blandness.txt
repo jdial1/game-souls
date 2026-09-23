@@ -1,0 +1,21 @@
+## Pitfall: Additive Blandness
+
+**Area:** Economy
+**Found in:** components/synergy_engines.txt (used by Looking Glass, Loathing, Spire, Containment, Swarm)
+
+### What Happens
+
+Every piece is "+10% damage."
+
+### Symptom
+
+Choices feel interchangeable.
+
+### Fix
+
+Design pieces that change *how* you play, not just how much.
+
+### Related Pitfalls
+
+* **The Dominant Strategy** (pitfalls/dominant_strategy.txt)
+* **Illegible Combos** (pitfalls/illegible_combos.txt)

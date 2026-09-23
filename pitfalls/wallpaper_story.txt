@@ -1,0 +1,22 @@
+## Pitfall: Wallpaper Story
+
+**Area:** Soul-Specific: Casebook
+**Found in:** souls/casebook.txt (Casebook)
+
+### What Happens
+
+The case sits beside the puzzles instead of inside them.
+
+### Symptom
+
+Players solve without reading and can't say what happened.
+
+### Fix
+
+Apply "The Frame Is the Crib" and "The Revelation Is Behind the Lock" to every page.
+
+### Related Pitfalls
+
+* **The Oracle** (pitfalls/oracle.txt)
+* **The Stopwatch Takeover** (pitfalls/stopwatch_takeover.txt)
+* **The Unproven Case** (pitfalls/unproven_case.txt)

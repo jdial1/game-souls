@@ -1,0 +1,22 @@
+## Pitfall: The Omnipotent Ruler
+
+**Area:** Soul-Specific: Tapestry
+**Found in:** souls/tapestry.txt (Tapestry)
+
+### What Happens
+
+The player has too much direct control, and subordinates never disobey.
+
+### Symptom
+
+The game becomes easy once the economy snowballs.
+
+### Fix
+
+Institutional inertia; the larger the realm, the harder it is to steer.
+
+### Related Pitfalls
+
+* **Spreadsheet Blindness** (pitfalls/spreadsheet_blindness.txt)
+* **The Blob** (pitfalls/blob.txt)
+* **The Rerun** (pitfalls/rerun.txt)

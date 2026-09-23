@@ -17,6 +17,21 @@ On the surface, these games look like action games, shooters, or puzzle games wi
 | Tone | Cool Focus / Joyful |
 | Structure | Levels (one song, one level) |
 
+### Psychological Target
+
+What the ideal player of this soul wants from play, described with the six motivation pairs of the Quantic Foundry Gamer Motivation Model (see frameworks/gamer_motivation.txt). This is design intent, not a market segment: it names who the design serves, so that features built for someone else can be spotted.
+
+| Motivation Pair | Level | Why |
+| --- | --- | --- |
+| Action | High | Excitement: fast, physical, rhythmic play. |
+| Social | Low | Leaderboards add light Competition. |
+| Mastery | High | Challenge: timing mastery and full combos. |
+| Achievement | Medium | Ranks and full-combo completion. |
+| Immersion | Medium | Sensation more than fiction; the music carries the world. |
+| Creativity | Low | Little room for expression beyond performance. |
+
+**Design note:** Strategy players will find little to plan; the soul is played with the body, not the spreadsheet.
+
 ### Components
 
 * **components/audio_information.txt:** Sound is the rules. Every threat is written into the music before it lands, and a miss removes a sound rather than adding a buzzer.
@@ -25,6 +40,7 @@ On the surface, these games look like action games, shooters, or puzzle games wi
 * **components/theme_as_mechanic.txt:** The theme is the music, and the music is the mechanic. Without the backing track, the game is unplayable.
 * **components/difficulty_ladder.txt:** The ladder is tempo, syncopation, and a narrower timing window. Mastery is a full combo on the hardest chart.
 * **components/systemic_consistency.txt:** The metronome never lies. If a rule says action happens on the quarter-note, it happens on the quarter-note forever.
+* **components/kinetic_profile.txt:** Inputs are judged against the beat; the profile's job is to make each press land where the music says it did.
 
 ### Signature Pillar 1: The Universal Metronome
 
@@ -81,11 +97,11 @@ The conscious mind is too slow to process a dense rhythm chart. The game must mo
 
 ### How It Fails
 
-(Shared failure modes live in the component files: the Buzzer, the Lying Ear, hearing required.)
+(Shared pitfalls come through the components: the Buzzer, the Lying Ear, hearing required. Every pitfall has its own file in pitfalls/.)
 
-* **Visual Desync:** An animation takes 30 frames to play, but the beat lands at frame 25. *Symptom:* players fail despite knowing the rhythm. *Fix:* animations snap to the beat, even if it means dropping frames to catch up.
-* **Arbitrary Syncopation:** An obstacle sits on an off-beat with no musical cue. *Symptom:* the hit feels random and unfair. *Fix:* if you want an off-beat hit, add a hi-hat or a synth stab to the track to justify it.
-* **The Snapped Input:** The engine quantizes inputs onto the beat. *Symptom:* sloppy play scores the same as precise play, and experts stop improving. *Fix:* judge the window; never move the input.
+* **Visual Desync** (pitfalls/visual_desync.txt): An animation takes 30 frames to play, but the beat lands at frame 25.
+* **Arbitrary Syncopation** (pitfalls/arbitrary_syncopation.txt): An obstacle sits on an off-beat with no musical cue.
+* **The Snapped Input** (pitfalls/snapped_input.txt): The engine quantizes inputs onto the beat.
 
 ### Neighboring Souls
 

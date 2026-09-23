@@ -1,0 +1,21 @@
+## Pitfall: Visual Desync
+
+**Area:** Soul-Specific: Chorus
+**Found in:** souls/chorus.txt (Chorus)
+
+### What Happens
+
+An animation takes 30 frames to play, but the beat lands at frame 25.
+
+### Symptom
+
+Players fail despite knowing the rhythm.
+
+### Fix
+
+Animations snap to the beat, even if it means dropping frames to catch up.
+
+### Related Pitfalls
+
+* **Arbitrary Syncopation** (pitfalls/arbitrary_syncopation.txt)
+* **The Snapped Input** (pitfalls/snapped_input.txt)

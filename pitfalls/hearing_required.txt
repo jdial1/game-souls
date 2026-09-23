@@ -1,0 +1,22 @@
+## Pitfall: Hearing Required
+
+**Area:** Interface & Voice
+**Found in:** components/audio_information.txt (used by Mansion, Containment, Chorus, Tether)
+
+### What Happens
+
+A cue exists only as sound.
+
+### Symptom
+
+Deaf players can't play at all.
+
+### Fix
+
+Give every critical cue a visual twin.
+
+### Related Pitfalls
+
+* **The Decorative Mix** (pitfalls/decorative_mix.txt)
+* **The Lying Ear** (pitfalls/lying_ear.txt)
+* **The Buzzer** (pitfalls/buzzer.txt)

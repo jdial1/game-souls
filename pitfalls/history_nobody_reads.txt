@@ -1,0 +1,20 @@
+## Pitfall: History Nobody Reads
+
+**Area:** Soul-Specific: Dwarven
+**Found in:** souls/dwarven.txt (Dwarven)
+
+### What Happens
+
+The game records rich legends and artifact histories, but they're buried in menus the player never opens.
+
+### Symptom
+
+Pillar 3 exists in the code but not in anyone's memory.
+
+### Fix
+
+Bring history to the player: engravings they walk past, named items that return in play, bards who sing about last year's disaster.
+
+### Related Pitfalls
+
+* None yet.

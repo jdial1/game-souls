@@ -1,0 +1,21 @@
+## Pitfall: Dead Servers
+
+**Area:** Multiplayer & Social
+**Found in:** components/shared_discovery.txt (used by Loathing, Ashen, Hearthian, Containment, Tribunal)
+
+### What Happens
+
+The communion depends on servers that eventually shut down.
+
+### Symptom
+
+The game becomes emptier than designed.
+
+### Fix
+
+Build an Offline Echo fallback from the start.
+
+### Related Pitfalls
+
+* **The Spoiler Flood** (pitfalls/spoiler_flood.txt)
+* **Toxic Invasion** (pitfalls/toxic_invasion.txt)

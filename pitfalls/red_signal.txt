@@ -1,0 +1,21 @@
+## Pitfall: The Red Signal
+
+**Area:** Interface & Voice
+**Found in:** components/interface_voice.txt (used by Containment, Gauge, Ampersand, Casebook, Chorus)
+
+### What Happens
+
+Warning colours or words contradict the mechanics.
+
+### Symptom
+
+Players read a full store or a quiet line as a problem.
+
+### Fix
+
+Reserve warning styling for real danger.
+
+### Related Pitfalls
+
+* **The Cheerful Toast** (pitfalls/cheerful_toast.txt)
+* **The Flavourful Lie** (pitfalls/flavourful_lie.txt)

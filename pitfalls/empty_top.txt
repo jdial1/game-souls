@@ -1,0 +1,21 @@
+## Pitfall: The Empty Top
+
+**Area:** Progression & Replay
+**Found in:** components/difficulty_ladder.txt (used by Loathing, Spire, Containment, Casebook, Chorus, Swarm)
+
+### What Happens
+
+Nothing is waiting for players who reach the top.
+
+### Symptom
+
+The most dedicated players leave.
+
+### Fix
+
+Efficiency leaderboards, restriction paths, and seeds give the top of the ladder somewhere to go.
+
+### Related Pitfalls
+
+* **Grind Disguised as Progress** (pitfalls/grind_disguised_as_progress.txt)
+* **Unfair Rungs** (pitfalls/unfair_rungs.txt)

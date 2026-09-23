@@ -17,6 +17,21 @@ On the surface, these are hardcore shooters or medieval slashers with punishing 
 | Tone | Dread / Tense Paranoia |
 | Structure | Runs (raids) feeding a Rebirth Account (the stash) |
 
+### Psychological Target
+
+What the ideal player of this soul wants from play, described with the six motivation pairs of the Quantic Foundry Gamer Motivation Model (see frameworks/gamer_motivation.txt). This is design intent, not a market segment: it names who the design serves, so that features built for someone else can be spotted.
+
+| Motivation Pair | Level | Why |
+| --- | --- | --- |
+| Action | High | Excitement: high-stakes firefights with real loss. |
+| Social | High | Competition with other players, cooperation within a squad. |
+| Mastery | High | Challenge: map knowledge, sound reading, and aim. |
+| Achievement | High | Power: the stash, until the wipe. |
+| Immersion | Medium | Fantasy: a hostile place where anything can happen. |
+| Creativity | Low | Little room for building or design. |
+
+**Design note:** Players with a low tolerance for loss will not stay; the wager is the point.
+
 ### Components
 
 * **components/audio_information.txt:** Sound is radar and liability. Every shot, step, and heal broadcasts the player's position. It's Mansion's "Sound Before Sight," with other players as the thing in the dark.
@@ -95,11 +110,11 @@ Because the economy is built on accumulating gear, the player base eventually ge
 
 ### How It Fails
 
-(Shared failure modes live in the component files: Dead Men Tell Tales, the cheater epidemic, the Lying Ear.)
+(Shared pitfalls come through the components: Dead Men Tell Tales, the cheater epidemic, the Lying Ear. Every pitfall has its own file in pitfalls/.)
 
-* **The Safe Pocket:** The unlootable container is too big. *Symptom:* players grab the best loot, stash it, and die on purpose to leave quickly. *Fix:* keep it tiny, and tie value to extraction.
-* **The Hoarder's Paralysis:** Good gear feels too precious to use. *Symptom:* stashes fill with gear nobody brings into raids. *Fix:* cheap, viable kits, and wipes often enough that hoarding has no future.
-* **The Camped Door:** Extracts are predictable, and players wait at them. *Symptom:* raids are won by whoever camps the exit. *Fix:* many doors, with variable availability and conditions.
+* **The Safe Pocket** (pitfalls/safe_pocket.txt): The unlootable container is too big.
+* **The Hoarder's Paralysis** (pitfalls/hoarder_s_paralysis.txt): Good gear feels too precious to use.
+* **The Camped Door** (pitfalls/camped_door.txt): Extracts are predictable, and players wait at them.
 
 ### Neighboring Souls
 

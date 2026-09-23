@@ -1,0 +1,17 @@
+## Framework: TV Tropes (Video Game Tropes)
+
+**Source:** TV Tropes, the video game tropes index.
+
+### What It Is
+
+The largest crowd-sourced catalog of named patterns in games. Many of its video game tropes are precise mechanical observations that players recognize instantly: **Guide Dang It!** (secrets you realistically need a guide for), **Checkpoint Starvation** (long stretches without a checkpoint), **Too Awesome to Use** (scarce items hoarded and never used), **Game-Breaker** (one element so strong it trumps everything), **Fake Difficulty** (difficulty from flaws rather than skill), **Unwinnable by Design** (the game continues after it can no longer be won), and **Anti-Frustration Features** (design that quietly smooths over snags).
+
+### What Game Souls Takes
+
+**Named, reusable failures.** The pitfalls/ folder gives every failure mode in the library its own file and name, the way TV Tropes gives every pattern its own page. A named failure is easy to spot, discuss, and search for. Where a pitfall matches a well-known mechanical trope, the trope's name is listed under "Also known as." For example, Checkpoint Sadism is also known as Checkpoint Starvation, and The Dominant Strategy as Game-Breaker.
+
+Toybox's "Secret Forgiveness" is, in TV Tropes' terms, a deliberate program of Anti-Frustration Features.
+
+### What We Leave Behind
+
+Story tropes. A soul is never identified by its plot, setting, or characters ("cyberpunk," "chosen one," "zombie apocalypse"). Only mechanical tropes are borrowed, and only as aliases. What the player does always outranks what the player is looking at.

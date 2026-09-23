@@ -1,0 +1,22 @@
+## Pitfall: Checkpoint Sadism
+
+**Area:** Space & Pacing
+**Also known as:** Checkpoint Starvation (TV Tropes)
+**Found in:** components/interlocking_space.txt (used by Looking Glass, Ashen, Hearthian, Mansion, Tether)
+
+### What Happens
+
+The run back from a checkpoint to the challenge is long, tedious, and dangerous for no reason.
+
+### Symptom
+
+Players quit from boredom, not difficulty.
+
+### Fix
+
+Keep run-backs short, or make them a learnable challenge with their own shortcut.
+
+### Related Pitfalls
+
+* **Tedious Backtracking** (pitfalls/tedious_backtracking.txt)
+* **The Illusion of Choice** (pitfalls/illusion_of_choice.txt)

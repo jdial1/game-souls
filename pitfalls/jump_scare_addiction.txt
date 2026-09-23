@@ -1,0 +1,20 @@
+## Pitfall: Jump-Scare Addiction
+
+**Area:** Soul-Specific: Mansion
+**Found in:** souls/mansion.txt (Mansion)
+
+### What Happens
+
+Loud stings replace atmosphere.
+
+### Symptom
+
+Players are startled but not afraid, and the scares become predictable.
+
+### Fix
+
+Spend silence generously and save shocks for moments that break an established pattern.
+
+### Related Pitfalls
+
+* **Monster Overexposure** (pitfalls/monster_overexposure.txt)

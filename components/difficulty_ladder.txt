@@ -4,6 +4,10 @@
 
 **Used by:** Loathing, Spire, Containment, Casebook, Chorus, Swarm
 
+**Requires:** Structure: Runs or Rebirth Account (a ladder needs repeated attempts)
+**Supports:** synergy_engines, shared_discovery
+**Conflicts With:** Structure: Single Journey (there's nothing to climb after the credits); social_safety (leaderboards and ranking)
+
 ### Design Rules
 
 * **Each Rung Is Earned:** Winning unlocks a harder tier with a stacked modifier (more elite enemies, less healing, a starting curse). The player can always see which rung they've reached.
@@ -36,9 +40,9 @@
 
 ### How It Fails
 
-* **Grind Disguised as Progress:** Meta-progression becomes a stat treadmill, so players win by playing longer rather than better. *Symptom:* skill matters less than hours logged. *Fix:* unlock options, not raw power, or make the power optional.
-* **Unfair Rungs:** Higher tiers are harder only through bigger numbers and randomness. *Symptom:* experts plateau and quit. *Fix:* each rung should demand a new skill or a new decision, not just more patience.
-* **The Empty Top:** Nothing is waiting for players who reach the top. *Symptom:* the most dedicated players leave. *Fix:* efficiency leaderboards, restriction paths, and seeds give the top of the ladder somewhere to go.
+* **Grind Disguised as Progress** (pitfalls/grind_disguised_as_progress.txt): Meta-progression becomes a stat treadmill, so players win by playing longer rather than better.
+* **Unfair Rungs** (pitfalls/unfair_rungs.txt): Higher tiers are harder only through bigger numbers and randomness.
+* **The Empty Top** (pitfalls/empty_top.txt): Nothing is waiting for players who reach the top.
 
 ### Litmus
 

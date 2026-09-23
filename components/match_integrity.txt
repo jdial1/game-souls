@@ -4,6 +4,10 @@
 
 **Used by:** Tribunal, Tether
 
+**Requires:** authoritative servers and a live-operations team
+**Supports:** legible_failure (the end-of-match reveal), audio_information
+**Conflicts With:** social_safety (open voice chat among strangers); client-side authority over anything with stakes
+
 ### Design Rules
 
 * **The Dead Are Sealed:** An eliminated player can't pass information to the living until the match ends. Spectating, kill-cams, and ghost chat are restricted or delayed so the dead can't name a killer or point out a sniper.
@@ -28,9 +32,9 @@
 
 ### How It Fails
 
-* **Dead Men Tell Tales:** Eliminated players reach the living through spectating, kill-cams, or chat. *Symptom:* a dead player names the killer or the sniper's window, and the match collapses. *Fix:* seal the dead from the living until the match ends.
-* **The Cheater Epidemic:** Stakes grow but security doesn't. *Symptom:* every loss is blamed on cheaters, and many of them are. *Fix:* server authority and anti-cheat sized to the stakes.
-* **The Toxic Lobby:** In-game betrayal spills into real abuse. *Symptom:* players leave after one bad match. *Fix:* moderation tools, and a game frame that ends the betrayal at the reveal.
+* **Dead Men Tell Tales** (pitfalls/dead_men_tell_tales.txt): Eliminated players reach the living through spectating, kill-cams, or chat.
+* **The Cheater Epidemic** (pitfalls/cheater_epidemic.txt): Stakes grow but security doesn't.
+* **The Toxic Lobby** (pitfalls/toxic_lobby.txt): In-game betrayal spills into real abuse.
 
 ### Litmus
 

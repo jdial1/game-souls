@@ -17,6 +17,21 @@ On the surface, these games look small and tidy: a map, a handful of cards or me
 | Tone | Cool Focus |
 | Structure | Runs |
 
+### Psychological Target
+
+What the ideal player of this soul wants from play, described with the six motivation pairs of the Quantic Foundry Gamer Motivation Model (see frameworks/gamer_motivation.txt). This is design intent, not a market segment: it names who the design serves, so that features built for someone else can be spotted.
+
+| Motivation Pair | Level | Why |
+| --- | --- | --- |
+| Action | Low | Turn-based or paused; no reflex demands. |
+| Social | Low | Seeded runs and daily challenges add light Competition. |
+| Mastery | High | Strategy: perfect-information decisions under pressure. |
+| Achievement | Medium | Unlocks and the difficulty ladder give long-term goals. |
+| Immersion | Low | Theme is light; the math is the experience. |
+| Creativity | Medium | Design: assembling a build that breaks the game. |
+
+**Design note:** Immersion players looking for a world will find a puzzle box instead.
+
 ### Components
 
 * **components/legible_failure.txt:** Total legibility. Telegraph intent, randomize inputs not outcomes, show all the math.
@@ -80,9 +95,9 @@ Between the fights, the map is itself a decision. The player sees the road ahead
 
 ### How It Fails
 
-(Shared failure modes live in the component files: hidden math, the dominant strategy, grind disguised as progress, the long dead run.)
+(Shared pitfalls come through the components: hidden math, the dominant strategy, grind disguised as progress, the long dead run. Every pitfall has its own file in pitfalls/.)
 
-* **Snowball Certainty:** Runs are effectively decided in the first ten minutes. *Symptom:* the rest of the run is a formality, won or lost. *Fix:* escalate threats and change their type as the run progresses, so even strong starts must keep adapting.
+* **Snowball Certainty** (pitfalls/snowball_certainty.txt): Runs are effectively decided in the first ten minutes.
 
 ### Neighboring Souls
 

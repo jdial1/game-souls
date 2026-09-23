@@ -17,6 +17,21 @@ On the surface, these games are obtuse management simulators or punishing surviv
 | Tone | Tragicomic |
 | Structure | Sandbox Chronicle |
 
+### Psychological Target
+
+What the ideal player of this soul wants from play, described with the six motivation pairs of the Quantic Foundry Gamer Motivation Model (see frameworks/gamer_motivation.txt). This is design intent, not a market segment: it names who the design serves, so that features built for someone else can be spotted.
+
+| Motivation Pair | Level | Why |
+| --- | --- | --- |
+| Action | Low | Combat is watched and managed, rarely performed. |
+| Social | Low | Played alone; stories are shared afterward. |
+| Mastery | High | Strategy: long-horizon planning against a simulation. |
+| Achievement | Medium | Wealth and fortress milestones matter, but losing is expected. |
+| Immersion | High | Story: the emergent tragedy is the reason to play. |
+| Creativity | High | Design: the fortress or colony is a personal creation. |
+
+**Design note:** Players who want Achievement through winning will bounce; the soul promises a story, not a victory.
+
 ### Components
 
 * **components/legible_failure.txt:** Legible catastrophe. Every mood has an itemized receipt, every blow has a plain-language log entry, and the player can trace the collapse back to the first domino.
@@ -72,9 +87,9 @@ Because the mechanics are so granular, the game generates actual history rather 
 
 ### How It Fails
 
-(Shared failure modes live in the component files: illegible chaos, the death spiral without a story, the solved simulation, detail nobody feels.)
+(Shared pitfalls come through the components: illegible chaos, the death spiral without a story, the solved simulation, detail nobody feels. Every pitfall has its own file in pitfalls/.)
 
-* **History Nobody Reads:** The game records rich legends and artifact histories, but they're buried in menus the player never opens. *Symptom:* Pillar 3 exists in the code but not in anyone's memory. *Fix:* bring history to the player: engravings they walk past, named items that return in play, bards who sing about last year's disaster.
+* **History Nobody Reads** (pitfalls/history_nobody_reads.txt): The game records rich legends and artifact histories, but they're buried in menus the player never opens.
 
 ### Neighboring Souls
 

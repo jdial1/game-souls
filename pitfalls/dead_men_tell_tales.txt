@@ -1,0 +1,21 @@
+## Pitfall: Dead Men Tell Tales
+
+**Area:** Multiplayer & Social
+**Found in:** components/match_integrity.txt (used by Tribunal, Tether)
+
+### What Happens
+
+Eliminated players reach the living through spectating, kill-cams, or chat.
+
+### Symptom
+
+A dead player names the killer or the sniper's window, and the match collapses.
+
+### Fix
+
+Seal the dead from the living until the match ends.
+
+### Related Pitfalls
+
+* **The Cheater Epidemic** (pitfalls/cheater_epidemic.txt)
+* **The Toxic Lobby** (pitfalls/toxic_lobby.txt)

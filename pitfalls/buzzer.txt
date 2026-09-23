@@ -1,0 +1,22 @@
+## Pitfall: The Buzzer
+
+**Area:** Interface & Voice
+**Found in:** components/audio_information.txt (used by Mansion, Containment, Chorus, Tether)
+
+### What Happens
+
+Mistakes trigger loud, unpleasant sounds.
+
+### Symptom
+
+Players mute the game, and with it the game's best information.
+
+### Fix
+
+A mistake removes a sound; it never adds a punishing one.
+
+### Related Pitfalls
+
+* **The Decorative Mix** (pitfalls/decorative_mix.txt)
+* **The Lying Ear** (pitfalls/lying_ear.txt)
+* **Hearing Required** (pitfalls/hearing_required.txt)

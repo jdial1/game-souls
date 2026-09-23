@@ -1,0 +1,21 @@
+## Pitfall: The Solved Meta
+
+**Area:** Soul-Specific: Tribunal
+**Found in:** souls/tribunal.txt (Tribunal)
+
+### What Happens
+
+An exploit lets innocents confirm each other with certainty.
+
+### Symptom
+
+The deduction vanishes, and the game becomes a checklist.
+
+### Fix
+
+Every proof can be faked, or can be turned off.
+
+### Related Pitfalls
+
+* **The Idle Dead** (pitfalls/idle_dead.txt)
+* **The Loudest Wins** (pitfalls/loudest_wins.txt)

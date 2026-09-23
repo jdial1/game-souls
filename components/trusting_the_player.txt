@@ -4,6 +4,10 @@
 
 **Used by:** Looking Glass, Loathing, Ashen, Hearthian, Toybox, Containment, Gauge, Ampersand, Casebook, Assembly
 
+**Requires:** systemic_consistency and legible_failure (players can only teach themselves a world that is consistent and explains its failures)
+**Supports:** environmental_storytelling, workbench, synergy_engines
+**Conflicts With:** text-box tutorials, objective markers, and hint systems that give the answer; Structure: short sessions for casual audiences, where there is no time to wander
+
 ### Design Rules
 
 * **No Quest Arrows:** No glowing trails, no objective markers, no patronizing pop-ups. Trust the player to read the joke, spot the clue, and figure out the solution (Loathing).
@@ -44,9 +48,9 @@
 
 ### How It Fails
 
-* **The Wordy Tutorial:** Text boxes explain what the level should teach. *Symptom:* players skip the text and miss the mechanic. *Fix:* redesign the first obstacle so the correct action is the natural one.
-* **Abandonment Disguised as Trust:** There's no guidance, and also no landmarks, no sightlines, and no clues. *Symptom:* players wander aimlessly and quit. *Fix:* removing arrows means adding world design, not just deleting UI.
-* **The Empty Playground:** Curiosity stops paying off. *Symptom:* players follow only the main path. *Fix:* raise reward density or shrink the space. The designer should always get there first.
+* **The Wordy Tutorial** (pitfalls/wordy_tutorial.txt): Text boxes explain what the level should teach.
+* **Abandonment Disguised as Trust** (pitfalls/abandonment_disguised_as_trust.txt): There's no guidance, and also no landmarks, no sightlines, and no clues.
+* **The Empty Playground** (pitfalls/empty_playground.txt): Curiosity stops paying off.
 
 ### Litmus
 

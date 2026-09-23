@@ -1,0 +1,21 @@
+## Pitfall: The Stagnant Mid-Game
+
+**Area:** Soul-Specific: Swarm
+**Found in:** souls/swarm.txt (Swarm)
+
+### What Happens
+
+The build matures at minute fifteen, the run lasts thirty, and enemies just become damage sponges.
+
+### Symptom
+
+The player stops paying attention.
+
+### Fix
+
+Introduce a new threat type exactly when the player gets comfortable.
+
+### Related Pitfalls
+
+* **The Unreadable Screen** (pitfalls/unreadable_screen.txt)
+* **The Dead Draft** (pitfalls/dead_draft.txt)

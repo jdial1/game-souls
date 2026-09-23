@@ -1,0 +1,21 @@
+## Pitfall: The Nagging Feed
+
+**Area:** Multiplayer & Social
+**Found in:** components/social_safety.txt (used by Gauge, Ampersand)
+
+### What Happens
+
+News repeats until it's acknowledged.
+
+### Symptom
+
+Good news starts to feel like a notification badge.
+
+### Fix
+
+News is spent the first time it is shown, and never re-announced.
+
+### Related Pitfalls
+
+* **The Guilt Engine** (pitfalls/guilt_engine.txt)
+* **The Ranked Group** (pitfalls/ranked_group.txt)

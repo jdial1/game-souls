@@ -1,0 +1,21 @@
+## Pitfall: Ludonarrative Whiplash
+
+**Area:** Soul-Specific: Looking Glass
+**Also known as:** Gameplay and Story Segregation (TV Tropes)
+**Found in:** souls/looking_glass.txt (Looking Glass)
+
+### What Happens
+
+The player ghosts an entire level without a kill, and the following cutscene shows the hero gunning down guards.
+
+### Symptom
+
+The player's authorship is overwritten.
+
+### Fix
+
+Cutscenes must reflect how the player actually played, or stay out of the way.
+
+### Related Pitfalls
+
+* **The Tunnel-Vision Boss** (pitfalls/tunnel_vision_boss.txt)

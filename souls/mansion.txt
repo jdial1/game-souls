@@ -17,6 +17,21 @@ On the surface, these games look like action or adventure titles with monsters i
 | Tone | Dread |
 | Structure | Single Journey |
 
+### Psychological Target
+
+What the ideal player of this soul wants from play, described with the six motivation pairs of the Quantic Foundry Gamer Motivation Model (see frameworks/gamer_motivation.txt). This is design intent, not a market segment: it names who the design serves, so that features built for someone else can be spotted.
+
+| Motivation Pair | Level | Why |
+| --- | --- | --- |
+| Action | Medium | Excitement under threat, rationed by scarcity. |
+| Social | Low | Single-player. |
+| Mastery | Medium | Resource management and evasion reward skill. |
+| Achievement | Low | Little to collect beyond keys and files. |
+| Immersion | High | Fantasy and Story: dread in a place with a past. |
+| Creativity | Medium | Discovery: mapping the house and its puzzles. |
+
+**Design note:** Action players expecting power will find the scarcity frustrating by design.
+
 ### Components
 
 * **components/scarcity_economy.txt:** Poor, not powerless. Bullets, healing, inventory slots, and saves are all budgeted, with a hidden floor so the player is never soft-locked.
@@ -27,6 +42,7 @@ On the surface, these games look like action or adventure titles with monsters i
 * **components/environmental_storytelling.txt:** Diaries and files reveal what happened here, and what is probably still here.
 * **components/diegetic_interface.txt:** Health is read from the body, not a bar.
 * **components/audio_information.txt:** Sound creates dread. The player hears the threat long before seeing it: footsteps in the ceiling, scraping in the vents, breathing on the other side of a door.
+* **components/kinetic_profile.txt:** Heavy and rooted: aiming stops movement, reloading takes real time. The character is clumsy; the input is precise.
 
 ### Signature Pillar 1: The Terror of the Unseen
 
@@ -83,10 +99,10 @@ The building is also a lock. Its puzzles aren't a break from the horror; they ar
 
 ### How It Fails
 
-(Shared failure modes live in the component files: the soft lock, the exhausting hunter, clumsy input masquerading as vulnerability.)
+(Shared pitfalls come through the components: the soft lock, the exhausting hunter, clumsy input masquerading as vulnerability. Every pitfall has its own file in pitfalls/.)
 
-* **Jump-Scare Addiction:** Loud stings replace atmosphere. *Symptom:* players are startled but not afraid, and the scares become predictable. *Fix:* spend silence generously and save shocks for moments that break an established pattern.
-* **Monster Overexposure:** The creature is shown in full light early and often. *Symptom:* by the midpoint, the monster is a known quantity and fear has drained away. *Fix:* ration visibility; let the player's imagination do the work for as long as possible.
+* **Jump-Scare Addiction** (pitfalls/jump_scare_addiction.txt): Loud stings replace atmosphere.
+* **Monster Overexposure** (pitfalls/monster_overexposure.txt): The creature is shown in full light early and often.
 
 ### Neighboring Souls
 
