@@ -28,7 +28,7 @@
 
 Every economy has a shape: where resources come from, where they go, and whether the total grows, shrinks, or only moves. The shape decides the feeling before any number is tuned, so name it first. (The vocabulary of sources, drains, converters, and feedback loops comes from Joris Dormans' Machinations; see frameworks/machinations.txt. The math here always serves the emotion.)
 
-* **Drain (Deflationary):** Sources are capped and the game steadily takes resources away. The total only shrinks. *The feeling:* dread and careful stewardship. Every bullet spent is gone. *Souls:* Mansion, Dwarven, Tether (within a raid).
+* **Drain (Deflationary):** Sources are capped and the game steadily takes resources away. The total only shrinks. *The feeling:* dread and careful stewardship. Every bullet spent is gone. *Souls:* Mansion, Dwarven, Tether (within a raid), Casebook (within an installment: the ration of checks and hints only shrinks, and refills only when the next installment opens).
 
 * **Generator (Inflationary):** Sources grow with investment, and the total climbs without limit. Drains exist only to keep growth meaningful. *The feeling:* momentum and mastery. The bottleneck keeps moving because the output never stops rising. *Souls:* Assembly, Swarm, Containment, Loathing.
 

@@ -132,6 +132,7 @@ A Ritual game's archive is its long game. The players write the content one day 
 
 * **Elysium:** Both make conversation the main verb and treat a wrong answer as the best content. Elysium's conversation is with authored characters in one mind; Ampersand's is between two real people, after the game is closed.
 * **Hearthian:** Both make understanding the only power. Hearthian's world can be finished; a person keeps changing, so a question asked a year later has a new answer.
+* **Tribunal:** Both make the other players the whole game, and the story afterward is Mutual. Tribunal hides roles asymmetrically so that someone can lie; Ampersand hides both answers equally so that nobody can, and social_safety forbids exactly the deception Tribunal runs on.
 * **Gauge:** Both are warm, short-visit games between people who already know each other, sharing the Social Safety component. Gauge's people help each other and hide nothing; Ampersand's pair must both act before anything happens, and the payoff is finding something out.
 
 ### The "Ampersand" Litmus Test

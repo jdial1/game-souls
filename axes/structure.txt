@@ -9,6 +9,7 @@
 * **Sandbox Chronicle:** Open-ended play that continues until collapse. Worlds and histories can persist across multiple games.
 * **Runs:** Short, self-contained sessions that reset on death. Mastery accumulates in the player, across runs.
 * **Rebirth Account:** Runs that feed a permanent account. Finishing the game is merely completing the tutorial. Often live and ongoing.
+* **Career:** Runs feeding one character who accumulates and never resets. Progress is a level and a record rather than a rung, and finishing the content is not the end, because the records are still soft. Unlike a Rebirth Account, nothing is ever traded back for breadth.
 * **Levels:** Discrete, bite-sized spaces, each built around its own idea.
 * **Ritual:** Short sessions tied to the real calendar, usually one a day, that can't be binged or played ahead. Nothing resets; play builds up into an archive, and the game's long arc is what that archive becomes.
 * **Serial:** One authored arc delivered as short, sealed installments (pages, cases, chapters), each finished in one sitting. Each installment closes; the arc does not. Unlike a Ritual, the player sets the pace, and a season can be read as fast as it can be solved.
@@ -26,6 +27,7 @@
 * **Ritual + a streak with teeth:** A calendar-bound game punishes absence by default, because every missed day is visible. The design has to push the other way, or the ritual becomes a chore (Ampersand: "The Bad-Month Test").
 * **Serial + a fast reader:** A self-paced serial can be finished in a weekend, and then nothing is left until the next season. Either pace the arc (chapter breaks that wait, a harder page that must be earned) or budget the next season before shipping this one (Casebook: "Every Page Is Spent Once").
 * **Runs + heavy authored story** means the player sees the same scenes repeatedly. *Hades* solves this with an enormous pool of reactive dialogue; most teams can't afford that.
+* **Career + a levelled account:** When power rises with time spent, over-levelling becomes an alternative to playing better, and the ladder's rungs stop being the challenge. Either cap what a level buys, or put the real ladder somewhere levels cannot reach.
 
 ### Where Each Soul Sits
 

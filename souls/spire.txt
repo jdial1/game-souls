@@ -86,6 +86,7 @@ Between the fights, the map is itself a decision. The player sees the road ahead
 * *FTL* breaks "randomize inputs, not outcomes": weapons can miss, and evasion is a percentage. It compensates with heavy transparency elsewhere (you watch enemy weapons charge and can see their crew and systems) and relatively short runs. It is an older, rougher form of the soul.
 * *Hades* breaks "width, not height": the Mirror grants permanent stat upgrades, and resources carry across runs. It balances this with the Heat system, which lets players opt back into difficulty. It is the most accessible form of the soul, built for players who would bounce off pure mastery.
 * *Into the Breach* is the purest form of total legibility: nearly every enemy action is shown before the player commits, and its few random elements are clearly labeled with their odds.
+* *Overheal* moves the soul into a real-time party role game and bends two rules. Its structure is a Career rather than Runs (one character levels across dungeons, and nothing resets), and its tone is Answerable Vigilance rather than Cool Focus, because four of the five party members are played by the machine and the player absorbs their mistakes. It keeps the draft (a talent tree, one charm, and one consumable, all chosen before the run), total state information, and a ladder of fixed per-dungeon affixes.
 
 ### What This Soul Costs
 
