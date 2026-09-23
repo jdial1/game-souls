@@ -91,10 +91,6 @@ The communities of these games built planners, calculators, and share codes beca
 
 * **Rebuild, Never Rewind:** Saved designs can be rebuilt on today's board, but the game can't be rolled back. The workbench helps you build; it never undoes a consequence.
 
-### Field Notes
-
-How *Reactor Revived* implements each pillar, and where it broke or still breaks them, is recorded in souls/field_notes/containment.txt. Those notes are a dated snapshot of a codebase; this file is the philosophy.
-
 ### Variants & Exceptions
 
 * *IndustrialCraft 2* is the ancestor, and its heat is conserved: exchangers only move heat, only vents and condensators remove it, and melting coolant returns its heat to the hull. It left the workbench to its community: outside planners shared designs as text codes, and the Mark scale was a wiki convention, from Mark I (never builds heat) to Mark V (needs constant supervision). Its failure sat nearer Terminal: a reactor at full heat exploded and took its surroundings with it.

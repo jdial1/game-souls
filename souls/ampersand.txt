@@ -85,10 +85,6 @@ A Ritual game's archive is its long game. The players write the content one day 
 
 * **Built for Year Two:** Judge each feature by whether it survives two years with the same two people. Novelty wears off; a deep question pool, a growing archive, and a calendar that brings dates back around don't.
 
-### Field Notes
-
-How *Click Clack* implements each pillar, and where it broke or still breaks them, is recorded in souls/field_notes/ampersand.txt. Those notes are a dated snapshot of a codebase; this file is the philosophy.
-
 ### Variants & Exceptions
 
 * *The Newlywed Game* is the ancestor of the Seal: one spouse leaves the stage while the other answers about them. It breaks the Pair on purpose, with four couples competing for points and a prize in front of an audience, and shows most clearly what grading the pair does to the tone.

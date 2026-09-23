@@ -103,10 +103,6 @@ A Gauge-style game lives on a desk or a kitchen table and is pleasant to glance 
 
 * **Not a Retention Funnel:** Tune for a pleasant visit, not a fast first reward, and keep rewards cosmetic. New ground and a bigger village change how the place looks, never anyone's power over anyone else.
 
-### Field Notes
-
-How *Common Gauge* implements each pillar, and where it broke or still breaks them, is recorded in souls/field_notes/gauge.txt. Those notes are a dated snapshot of a codebase; this file is the philosophy.
-
 ### Variants & Exceptions
 
 * *Neko Atsume* holds Pillar 1 almost perfectly: an empty food bowl just means no cats until it's refilled. It reverses Pillar 3 (the visitors bring gifts to the player), has no kin layer, and its waits happen out of sight.

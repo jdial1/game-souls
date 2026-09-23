@@ -91,10 +91,6 @@ The player isn't a reader of the story or the famous detective. They are a clerk
 
 * **The Institution Speaks:** Everything the interface says (hints, results, records, even errors) is said by the institution the player works for, in its voice. Its stinginess, its forms, and its stamps are the game's personality.
 
-### Field Notes
-
-How *Chronicle Cryptogram* implements each pillar, and where it broke or still breaks them, is recorded in souls/field_notes/casebook.txt. Those notes are a dated snapshot of a codebase; this file is the philosophy.
-
 ### Variants & Exceptions
 
 * *The Case of the Golden Idol* is the Account in its purest form: sentence templates filled with words found in the scene. On submission it says only that slots are wrong, or that "two or fewer" are wrong, never which: "Confirm in Sets," made generous on purpose. Players can still test one word at a time, the weakness of set confirmation.
