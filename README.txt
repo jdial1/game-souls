@@ -81,13 +81,12 @@ Create souls/<name>.txt with these sections, in order:
 2. Axis Positions (a table covering all six axes)
 3. Components (each referenced by path, with a one-line note on how this soul tunes it)
 4. Signature Pillars (only rules that aren't already in a component)
-5. Field Notes (only when the soul was drawn from a game whose source you can read: a short pointer to souls/field_notes/<name>.txt, which holds how each pillar is implemented and the "Open Bends" and "Closed Bends". Keep the notes out of the soul file; they are a dated snapshot, and the soul is the philosophy)
-6. Variants & Exceptions (where the example games bend the rules)
-7. What This Soul Costs (soul-specific costs only)
-8. How It Fails (soul-specific failure modes only)
-9. Neighboring Souls (the closest souls and what separates them)
-10. Litmus Test and closing quote
+5. Variants & Exceptions (where the example games bend the rules)
+6. What This Soul Costs (soul-specific costs only)
+7. How It Fails (soul-specific failure modes only)
+8. Neighboring Souls (the closest souls and what separates them)
+9. Litmus Test and closing quote
 
-Aim for 1,300–2,400 words. A soul much longer than that is usually holding rules that belong in a component, or field notes that belong in souls/field_notes/.
+Aim for 1,300–2,400 words. A soul much longer than that is usually holding rules that belong in a component, or implementation detail that belongs in the game's own design docs.
 
 If a new soul repeats a rule that appears in another soul, move that rule into a component (a new one, or an existing one) and reference it from both.
