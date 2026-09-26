@@ -10,18 +10,19 @@ A design library for the distinct "souls" of influential games. Each soul is a d
 | **Component** | components/ | Reusable design principles shared by several souls, each written once, with rules, costs, failure modes, and per-soul tuning. | "What building blocks does it use?" |
 | **Soul** | souls/ | Compositions: a philosophy, a set of axis positions, a list of components, and only the pillars that are unique to that soul. | "What makes it *this* soul and not another?" |
 
-Two reference folders sit beside the layers:
+Three folders sit beside the layers:
 
 | Folder | What It Holds |
 | --- | --- |
 | pitfalls/ | A library of named design failures, one file each (what happens, the symptom, the fix, related pitfalls), indexed by symptom in pitfalls/README.txt. |
+| instances/ | Soul instances: the soul of one specific game, built phase by phase with SOUL_INSTANCE_GUIDE.txt. Includes a template and a worked example. |
 | frameworks/ | Summaries of the older frameworks the library borrows from (MDA, Gameplay Design Patterns, Machinations, Game Feel, the Gamer Motivation Model, the Game Ontology Project, Koster's grammar, TV Tropes), what was taken from each, and what the library deliberately doesn't adopt. |
 
 Every component file opens with relationship tags (**Requires**, **Supports**, **Conflicts With**), so conflicts between building blocks are visible before a design is built on them.
 
 archive/ holds the original single-file versions of the first nine souls, untouched.
 
-**For language models:** start with LLM_README.txt, then follow LLM_SOUL_GUIDE.txt to analyze a game, classify it, write a new soul, or instill a soul into a game in development.
+**For language models:** start with LLM_README.txt, then follow LLM_SOUL_GUIDE.txt to analyze a game, classify it, write a new soul, or instill a soul into a game in development, and SOUL_INSTANCE_GUIDE.txt to build a new game's soul from its first idea to ship.
 
 ### Axes (Foundational Layer)
 
@@ -84,11 +85,22 @@ archive/ holds the original single-file versions of the first nine souls, untouc
 
 ### How to Use This Library
 
-**To design a new game:**
-1. Pick a position on each of the six axes. Read each axis file's "Tensions" section to check for conflicting choices.
-2. Pull in the components your positions demand. Each component's "Tuning by Soul" section shows how different souls set the dial.
-3. Write the signature pillars: the rules no other soul has. If you can't name any, you're describing a mix of existing souls, not a new one.
-4. Write a litmus test, and check the tone killers in axes/tone.txt.
+**To design a new game:** Build a soul instance with SOUL_INSTANCE_GUIDE.txt, copying instances/TEMPLATE.txt. Each phase fills one section of the instance and ends in a gate:
+
+| Phase | Name | What It Settles |
+| --- | --- | --- |
+| 0 | Seed | Three verbs, the fortieth-minute feeling, and the story players tell the next day |
+| 1 | Soul Choice | Adopt, Blend, or Forge a soul, and name the ideal player |
+| 2 | Axis Commitment | Six positions, their tensions, and the banned mechanics |
+| 3 | Component Bill | Components, tunings, resolved conflicts, and the economy's shape |
+| 4 | Pillar Translation | The soul's rules rewritten for this genre, and the Instance Litmus |
+| 5 | Verb Prototype | The smallest playable thing, tested for the intended dynamic |
+| 6 | Soul Slice | One full loop, failure included, tested for the tone and against the pitfalls |
+| 7 | Production Guard | A Feature Gate for every feature, and a Soul Ledger for every deviation |
+| 8 | Drift Audit and Lock | A pre-ship instillation on your own game, and the accepted costs |
+| 9 | Live and Feedback | Live changes through the gate, and what the game taught returned to the library |
+
+instances/the_pass.txt is a worked example.
 
 **To study an existing soul:** Read the soul file first, then follow its component references for the shared rules, costs, and failure modes.
 

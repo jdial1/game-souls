@@ -2,6 +2,8 @@
 
 This guide teaches a language model how to extract a soul from an existing game, compare it against the library, and use the result to instill that soul in a new game.
 
+This guide works backward, from a finished game to its soul. To work forward, from a new idea to a finished game with its soul intact, use SOUL_INSTANCE_GUIDE.txt, which borrows steps from this guide and adds phases, gates, and a ledger of deviations.
+
 The core idea: **a soul = axis positions + components + residue.** Axes and components are shared vocabulary. The residue (what nothing in the library explains) is what makes a soul distinct. Every claim is grounded in what the player actually does, and every recommendation is traced to the feeling it produces.
 
 ---
@@ -198,7 +200,7 @@ Run all of these before presenting a soul:
 
 ### Step 8: Instillation (Applying a Soul to a Target Game)
 
-When the user wants to give a game in development a particular soul, perform a gap analysis.
+When the user wants to give a game in development a particular soul, perform a gap analysis. (For a game that doesn't exist yet, build a soul instance with SOUL_INSTANCE_GUIDE.txt instead. Its Phase 8 runs this step on the project's own build before ship.)
 
 1. **Profile the target** using Steps 1–3 on the target game's current design, starting with its verb inventory.
 2. **Diff the axes.** For each axis where the target differs from the soul, state the gap and the smallest design change that closes it.

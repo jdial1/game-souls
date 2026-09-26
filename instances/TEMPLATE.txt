@@ -1,0 +1,160 @@
+## Soul Instance: <Game Title>
+
+**Status:** Seeded / Chosen / Committed / Composed / Translated / Proven / Sliced / Guarded / Locked / Live
+**Lead soul:** souls/<soul>.txt (Path: Adopt / Blend with souls/<soul>.txt / Forge)
+**Last milestone review:** <date or "none yet">
+
+*Copy this file to instances/<game>.txt. Each section is filled by one phase of SOUL_INSTANCE_GUIDE.txt. Leave later sections empty until their phase begins, and never fill a findings section without real playtests.*
+
+---
+
+### Seed Card (Phase 0)
+
+| Verb | What the player literally does | Kinetic profile (bands, if real-time) |
+| --- | --- | --- |
+| | | |
+| | | |
+| | | |
+
+* **The fortieth minute:** <one sentence: what the player feels deep into a session>
+* **The next-day story:** "<one sentence a player says to a friend the next day>"
+* **Setting (provisional):** <one line>
+
+### Soul Choice (Phase 1)
+
+* **Path:** Adopt / Blend / Forge, and why in two sentences.
+* **Instance philosophy:** "<one quotable sentence>"
+* **Blend leaders (Blend only):** for each axis where the two souls disagree, which one leads and why.
+
+**Psychological Target** (copied from the lead soul; at most two rows changed)
+
+| Motivation Pair | Level | Why | Changed? |
+| --- | --- | --- | --- |
+| Action | | | |
+| Social | | | |
+| Mastery | | | |
+| Achievement | | | |
+| Immersion | | | |
+| Creativity | | | |
+
+**Design note:** <whose features would work against this game>
+
+### Axis Positions (Phase 2)
+
+| Axis | Lead Soul | This Game | Match / Bend / Break |
+| --- | --- | --- | --- |
+| Failure | | | |
+| Information (rules / state) | | | |
+| Authorship | | | |
+| Power | | | |
+| Tone | | | |
+| Structure | | | |
+
+**Tensions, resolved:**
+* <tension from an axis file> → <how this game resolves it>
+
+### Banned Mechanics (Phase 2)
+
+| Banned Mechanic | Source | Why It Is Banned |
+| --- | --- | --- |
+| <lead soul's tone killer, translated> | axes/tone.txt | |
+| <mechanic contradicting an axis position> | axes/<axis>.txt | |
+| <instance-specific ban> | This instance | |
+
+### Component Bill (Phase 3)
+
+| Component | Core / Supporting | This Game's Tuning |
+| --- | --- | --- |
+| components/<name>.txt | | |
+
+**Relationship conflicts, resolved:**
+* **<component> against <component or axis>:** <resolution>
+
+### Economy (Phase 3)
+
+* **Shape:** Drain / Generator / Zero-Sum / Gift / None (with nesting, if any)
+* **The bottleneck:** <the one resource that defines a session>
+* **Drains:** <every named sink>
+* **Why this shape produces the tone:** <one sentence>
+
+**Expected features:**
+
+| Feature | Serves (component or pillar) |
+| --- | --- |
+| | |
+
+### Translated Pillars (Phase 4)
+
+**<Lead soul pillar name>**
+
+| Soul Rule | Carried / Adapted / Dropped | In This Game | Carried By (mechanic) |
+| --- | --- | --- | --- |
+| | | | |
+
+**House Rules** (at most three)
+
+* **<Rule Name>:** <explanation>
+
+### Instance Litmus (Phase 4)
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| | | |
+
+**Litmus self-test:** <which expected feature failed, and what happened to it>
+
+### Prototype Findings (Phase 5)
+
+* **Soul claim:** <verbs, bottleneck> → <dynamic> → <tone>
+* **Did the dynamic appear unprompted?**
+* **Next-day stories collected:**
+* **What failed:**
+
+### Slice Findings (Phase 6)
+
+* **The loop built:**
+* **The fortieth minute, in testers' words:**
+* **Litmus results:**
+
+| Feature | Litmus Rows Failed | Action |
+| --- | --- | --- |
+| | | |
+
+### Pitfall Watchlist (Phase 6, re-run in Phase 7)
+
+| Pitfall | Why It Is in Scope | Symptom to Watch For | Seen? Evidence and Fix |
+| --- | --- | --- | --- |
+| pitfalls/<name>.txt | | | |
+
+### Feature Gate Log (Phase 7)
+
+| Feature | Serves | Trace (Mechanic → Dynamic → Tone) | Litmus | Verdict |
+| --- | --- | --- | --- | --- |
+| | | | | |
+
+### Soul Ledger (Phases 2–9)
+
+| Date / Phase | What Bends | Which Rule or Position | Why | Cost |
+| --- | --- | --- | --- | --- |
+| | | | | |
+
+### Drift Audit (Phase 8)
+
+* **Instillation Report summary:**
+* **Seed Card vs. late playtests:**
+* **Tone killers found late:**
+
+### Accepted Costs (Phase 8)
+
+* **<Cost>:** <what players will complain about, and why the team chose it anyway>
+
+### Live Log (Phase 9)
+
+| Date | Change | Feature Gate Verdict | Pitfalls Watched |
+| --- | --- | --- | --- |
+| | | | |
+
+### Library Feedback (Phase 9)
+
+* **Verdict on the shipped game (Steps 1–5 of LLM_SOUL_GUIDE.txt):** Member / Variant / New Soul
+* **Changes proposed to the library:**
