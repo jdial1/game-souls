@@ -1,0 +1,221 @@
+## Soul Instance: The Pass
+
+**Status:** Translated (Phases 0–4 complete on paper; Phases 5–7 show format only)
+**Lead soul:** souls/vigil.txt (Path: Adopt)
+**Last milestone review:** none yet
+
+*A worked example for SOUL_INSTANCE_GUIDE.txt. The Pass is a hypothetical game, not a real one. Phases 0–4 are paper decisions and are filled in full. No playtest has been run, so the findings sections for Phases 5–6 show the questions and the watchlist and leave the results empty, exactly as a real project would at this stage. The Feature Gate Log shows paper verdicts only.*
+
+---
+
+### Seed Card (Phase 0)
+
+| Verb | What the player literally does | Kinetic profile (bands) |
+| --- | --- | --- |
+| Fire a ticket | Send an order from the rail to the stations that must cook it | Deliberate attack, committed release: once fired, the cooks start and it can't be recalled |
+| Check a plate | Accept a finished plate for the dining room, or send it back | Snappy attack, committed release: the window closes as the plate cools |
+| Call a station | Spend composure to redirect a station: "grill, table six first" | Deliberate attack, short recovery: the call lands, and the station needs a moment to act on it |
+
+* **The fortieth minute:** Calm, and only calm because you are two tickets ahead of the grill's next mistake.
+* **The next-day story:** "The grill fell behind on the eight-top, and I rebuilt the whole rail around it with one call left."
+* **Setting (provisional):** The pass of a small restaurant kitchen during dinner service. The player expedites; they never cook.
+
+*Integration check:* Delete the kitchen and the verbs still hold: release work to agents you can't control, inspect what comes back, and spend a scarce resource to correct them. The kitchen gives those verbs a fiction everyone already understands, which is what Vigil's Immersion row asks for.
+
+### Soul Choice (Phase 1)
+
+* **Path:** Adopt. Vigil's philosophy describes the seed almost unchanged: one seat, and the game is what the other seats cost you. No second soul explains anything Vigil doesn't. Spire shares the Optimization power but not the fallible team; Containment shares the watching but rewards looking away, which this seed never does.
+* **Instance philosophy:** "You never touch the food, and you answer for every plate that leaves."
+
+**Psychological Target** (copied from Vigil; one row changed)
+
+| Motivation Pair | Level | Why | Changed? |
+| --- | --- | --- | --- |
+| Action | Medium | Real-time and paced by the rail, but nothing is aimed and nothing is dodged. | No |
+| Social | Low | The brigade is entirely machine. There is no group to belong to, only a group to read. | Yes: Vigil's source games fill seats with people; this one never does. |
+| Mastery | High | Strategy: firing order, when to spend a call, and staying ahead of a cook's error. | No |
+| Achievement | Medium | Completion: a record per menu, and a season that runs out. | No |
+| Immersion | Medium | Fantasy: players already know what an expediter is for. | No |
+| Creativity | Medium | Design: the menu and the brigade are built before service, never during it. | No |
+
+**Design note:** Players who want to cook with their own hands will find no knife here, and a cooking mini-game built for them would break the soul (see Banned Mechanics). Players who want Competition find no standings.
+
+### Axis Positions (Phase 2)
+
+| Axis | Lead Soul | This Game | Match / Bend / Break |
+| --- | --- | --- | --- |
+| Failure | Costly | Costly: a blown ticket costs the table's covers and the night's reputation; service goes on | Match |
+| Information (rules / state) | Taught / Total | Taught / Observed: the pass sees the rail and every plate, but not inside the stations. A station's state is read from what it sends and what it sounds like. | Bend (ledgered) |
+| Authorship | Player-Authored Build | Player-Authored Build: the menu and brigade chosen before service | Match |
+| Power | Optimization | Optimization: composure spent per cover served | Match |
+| Tone | Answerable Vigilance | Answerable Vigilance | Match |
+| Structure | Career | Career: a season of services; reputation, recipes, and records never reset | Match |
+
+**Tensions, resolved:**
+* **Career + a levelled account** (axes/structure.txt): hiring better cooks could replace playing better. Each menu rung caps the brigade's total skill, and records are held per rung, so over-hiring can't buy a record.
+* **Hidden + Punishing failure** (axes/information.txt): not triggered. State is Observed, not Hidden, and failure is Costly. The bend is kept safe by the receipt (see Component Bill).
+
+### Banned Mechanics (Phase 2)
+
+| Banned Mechanic | Source | Why It Is Banned |
+| --- | --- | --- |
+| A brigade that never misfires | axes/tone.txt (Vigil's tone killer, translated) | A kitchen that runs itself makes the pass a spectator (pitfalls/covering_party.txt). |
+| Restarting a service mid-service | axes/failure.txt (Costly) | A free rewind deletes the cost of a blown ticket (pitfalls/backdoor_rewind.txt). |
+| The player cooking | This instance | The genre expects hands on the food. Here it is the Solo Wizard in an apron (pitfalls/solo_wizard.txt): the moment the pass can cook, the brigade is optional. |
+| A station meter showing a cook's stress or load | This instance (house rule: The Plate Is the Evidence) | Reading the kitchen from its plates and its sound *is* the game. A meter answers the question the player is supposed to be asking. |
+
+### Component Bill (Phase 3)
+
+| Component | Core / Supporting | This Game's Tuning |
+| --- | --- | --- |
+| components/scarcity_economy.txt | Core | Composure is the pass's pool, spent on every call and never refilled mid-service. |
+| components/legible_failure.txt | Core | The end-of-service receipt traces every late or returned plate to a station and a minute. Legibility arrives after service, not during it. |
+| components/audio_information.txt | Core | The kitchen is heard before it is seen: the grill's tempo, a dropped pan, a cook calling "behind." Carries the station state the Information bend took off the screen. |
+| components/synergy_engines.txt | Supporting | Brigade traits and menu dishes feed one effect funnel, so a hire and a dish can do the same kind of thing. |
+| components/difficulty_ladder.txt | Supporting | Fixed rungs per menu (lunch, dinner, holiday), never rolled. Prestige is composure per cover and ticket time. |
+| components/trusting_the_player.txt | Supporting | No suggested firing order. The rail shows every ticket and recommends none. |
+| components/social_safety.txt | Supporting | No leaderboards and no grade for any cook. |
+| components/workbench.txt | Supporting | A menu planner that forecasts each station's load, in bands, before service. |
+
+**Relationship conflicts, resolved:**
+* **difficulty_ladder against social_safety:** Vigil's resolution, kept. Records are per restaurant and compared only against the player's own history.
+* **scarcity_economy against synergy_engines late in a run:** Vigil's resolution, kept. The menu and brigade lock when service opens, so nothing compounds mid-service.
+* **legible_failure against outcome randomness:** Cooks misfire because of load and priority, which are deterministic and visible in hindsight on the receipt. The only roll is which tables arrive when, and that is an input to the next decision, never the verdict on the last one.
+* **audio_information against accessibility:** Every kitchen sound has a visual twin on the rail (a ticket's edge changes as its station falls behind). Sound gets there first; sight gets there too (pitfalls/hearing_required.txt).
+* **workbench against outcome randomness:** Arrivals are rolled, so the planner forecasts load in bands ("the grill will be heavy between the second and third seatings"), never exact times. A forecast that promised more would be The Lab That Lies.
+
+### Economy (Phase 3)
+
+* **Shape:** A Drain inside each service (composure only falls, and the clock only runs) nested in a Generator across the season (reputation, recipes, and brigade only grow).
+* **The bottleneck:** Composure. Every call spends it. A station that is called too often gets rattled and misfires more, so the pool also drains through over-use.
+* **Drains:** every call; every plate sent back; every seating rush.
+* **Why this shape produces the tone:** A pool that only shrinks, spent against mistakes other people keep making, is Answerable Vigilance in a single number.
+
+**Expected features:**
+
+| Feature | Serves (component or pillar) |
+| --- | --- |
+| The ticket rail | scarcity_economy, trusting_the_player |
+| The plate check | Pillar 1 (The Hole Is the Job), house rule Nothing Leaves Without You |
+| Station calls | scarcity_economy |
+| The end-of-service receipt | legible_failure |
+| Hiring the brigade | synergy_engines |
+| The menu planner | workbench |
+| Per-menu records | difficulty_ladder |
+| The kitchen soundscape | audio_information |
+| A "Chef's Tasting" intermission where the player cooks one dish | none (see Litmus self-test) |
+| A station stress meter | none (see Litmus self-test) |
+
+### Translated Pillars (Phase 4)
+
+**Pillar 1: The Seat You Do Not Hold**
+
+| Soul Rule | Carried / Adapted / Dropped | In This Game | Carried By (mechanic) |
+| --- | --- | --- | --- |
+| The Hole Is the Job | Carried | The pass can't cook; stations can't see the rail. Each needs the other. | Stations see only their own tickets. |
+| Competent Enough / Fallible Enough | Carried | Cooks fail by judgment, not only by speed. | Under load, a cook starts the easiest ticket, not the oldest. |
+| No Handover Path | Carried | A cook who walks out mid-rush is replaced by the same agent that fills an empty station at the start. | One cook model for every station and every moment. |
+| Never Grade the Others | Carried | The receipt names the station and the minute, never a score for the cook. | The receipt's copy rules. |
+
+**Pillar 2: Waste Is the Score**
+
+| Soul Rule | Carried / Adapted / Dropped | In This Game | Carried By (mechanic) |
+| --- | --- | --- | --- |
+| Name the Waste, Then Price It | Carried | "Wasted calls": calls to a station already on that ticket, and good plates sent back. | A line on every receipt, never rounded away. |
+| At Least One Build Buys the Waste Back | Carried | A sous-chef trait turns a redundant call into a little composure for that station. | The "Reassurance" hire. |
+| Efficiency, Not Volume | Carried | A service is ranked by composure per cover and by ticket time, never by covers served. | Per-menu records. |
+| A Pure-Upside Reward Is a Reward Nobody Thinks About | Adapted | Every hire has a strength and a blind spot, so the brigade is a set of trade-offs, not a shopping list. | The hiring screen shows both. |
+
+**Pillar 3: One Fight, Several Windows**
+
+| Soul Rule | Carried / Adapted / Dropped | In This Game | Carried By (mechanic) |
+| --- | --- | --- | --- |
+| Change the Window, Not Just the Verbs | Adapted | There is only one seat, so the *restaurant* changes the window: an open kitchen shows the stations; a basement kitchen gives only the rail and the sound. | Restaurant layouts along the season. |
+| One Simulation, Every Seat | Dropped | One playable seat. | Ledgered. |
+| Each Seat Owns One Number | Carried | Composure is the pass's number, and what it buys is shown before every call. | The call button shows its cost and the station's current reaction. |
+
+**House Rules**
+
+* **The Plate Is the Evidence:** Everything the player learns about a station arrives through what it sends to the pass (timing, order, quality) or what it sounds like. The screen never shows a cook's state directly.
+  * *Example:* A fish course arrives before its sides. Nothing on screen says the garnish station is buried; the player works it out from the plate, and from the silence where its call-backs used to be.
+* **Nothing Leaves Without You:** Every plate crosses the pass, and the player's accept is the only way it reaches a diner. Answerability is literal: every late plate went through the player's hands.
+* **The Rush Is Somebody Else's:** Pressure comes from the dining room and the brigade (a twelve-top seated early, a cook walking out), never from a timer the designer tightened.
+
+### Instance Litmus (Phase 4)
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Pass** | Could the player use this to cook, or to do a station's job? | **No.** The hole is the job. |
+| **The Fallible Brigade** | Can a cook be wrong in a way the player can see or hear, and name? | **Yes.** A cook who is only slow is furniture. |
+| **The Wasted Call** | Can the player spend composure on this and achieve nothing? | **Yes.** Waste has to be possible before efficiency can be a skill. |
+| **The Window** | Does this change what the pass can observe, or only which buttons it presses? | **Observe.** Buttons alone are a costume. |
+| **The Grade** | Does this score any cook's performance? | **No.** Answerable for the pass, told nothing about the line. |
+| **The Evidence** | Does this show a station's state other than through its plates, its sound, or the rail? | **No.** The plate is the evidence. |
+| **The Door** | Can a plate reach a diner without the player accepting it? | **No.** Nothing leaves without you. |
+
+**Litmus self-test:** Two expected features failed.
+* The **"Chef's Tasting" intermission** failed The Pass. It was cut.
+* The **station stress meter** failed The Evidence. It was changed: the meter's information now reaches the player as the station's sound and as the edge of its oldest ticket on the rail, which the pass legitimately sees.
+
+### Prototype Findings (Phase 5)
+
+* **Soul claim:** Firing, checking, and calling under a composure pool that only shrinks → players hold calls in reserve and fire tickets in an order built around the station they trust least → Answerable Vigilance: calm only while ahead of someone else's mistake.
+* **What the prototype contains:** one restaurant, three stations, one seating, composure, and one way to fail (a table walks out). No hiring, no menu planner, no season.
+* **Questions for testers:** Did they build their firing order around a station without being told to? When did they spend their first call, and could they say why? Could any of them name a cook's mistake from a plate alone?
+* **Did the dynamic appear unprompted?** *Not yet run.*
+* **Next-day stories collected:** *Not yet run.*
+* **What failed:** *Not yet run.*
+
+### Slice Findings (Phase 6)
+
+*Not yet reached.*
+
+### Pitfall Watchlist (Phase 6, re-run in Phase 7)
+
+| Pitfall | Why It Is in Scope | Symptom to Watch For | Seen? Evidence and Fix |
+| --- | --- | --- | --- |
+| pitfalls/covering_party.txt | Vigil (soul-specific) | Testers can't tell a good service of their own from a bad one. | Not yet run |
+| pitfalls/solo_wizard.txt | Vigil (soul-specific) | A hire or call lets the pass do a station's work, and testers stop reading the line. | Not yet run |
+| pitfalls/hidden_math.txt | legible_failure, plus the Information bend | Testers call a walked-out table unfair. | Not yet run |
+| pitfalls/lying_ear.txt | audio_information | A tester reacts to a sound from the wrong station. | Not yet run |
+| pitfalls/hearing_required.txt | audio_information | A tester with sound off can't read the kitchen. | Not yet run |
+| pitfalls/hoarding_trap.txt | scarcity_economy | Services end with most of the composure unspent. | Not yet run |
+| pitfalls/scarcity_without_choice.txt | scarcity_economy | Every tester spends calls on the same station at the same moment. | Not yet run |
+| pitfalls/lab_that_lies.txt | workbench | A tester's planned menu collapses in a way the forecast didn't warn of. | Not yet run |
+| pitfalls/unfair_rungs.txt | difficulty_ladder | Experts plateau on the holiday rung. | Not yet run |
+| pitfalls/borrowed_mechanic.txt | Pillar translation | Testers describe it as "a cooking game where you can't cook." | Not yet run |
+
+### Feature Gate Log (Phase 7)
+
+*Paper verdicts, made while drafting the expected feature list. No feature has been built.*
+
+| Feature | Serves | Trace (Mechanic → Dynamic → Tone) | Litmus | Verdict |
+| --- | --- | --- | --- | --- |
+| A cook walks out mid-rush | Pillar 1 (Fallible Brigade, No Handover Path) | A station empties and refills with a new cook who doesn't know the rail → the player re-plans firing order around the gap → vigilance, with somebody else's choice as the cause | All pass | Build |
+| An online weekly leaderboard | none | Players compare records with strangers → they play for rank, not for their own history → Answerable Vigilance turns into competition | Passes every row, but serves nothing and reverses the written difficulty_ladder / social_safety resolution | Cut |
+| A relaxed mode that removes misfires | none (as proposed) | No misfires → nothing to read → the pass becomes a spectator | Fails The Fallible Brigade; touches the banned list | Change: a relaxed mode slows arrivals and leaves misfires in. Re-gated: all pass → Build |
+
+### Soul Ledger (Phases 2–9)
+
+| Date / Phase | What Bends | Which Rule or Position | Why | Cost |
+| --- | --- | --- | --- | --- |
+| Phase 1 | Psychological Target, Social: Medium → Low | Vigil's Psychological Target | The brigade is entirely machine; there is no group to belong to. | Players who come for the team fantasy with people get only its shape. |
+| Phase 2 | Information state: Total → Observed | Vigil's axis table | The house rule The Plate Is the Evidence; reading the kitchen is the inference problem that makes the single seat interesting. | legible_failure must be carried almost entirely by the receipt and by sound; risk of pitfalls/hidden_math.txt, watched from Phase 6. |
+| Phase 4 | Dropped: One Simulation, Every Seat | Vigil Pillar 3 | Only one seat is playable. | The cooks can drift into a separate model from anything the player does. A future mode that lets the player take a station would need that model rebuilt. |
+| Phase 4 | Adapted: Change the Window | Vigil Pillar 3 | With one seat, the window changes by restaurant instead of by seat. | Each restaurant layout has to be a genuinely different reading problem, which is content the source games didn't need. |
+
+### Drift Audit (Phase 8)
+
+*Not yet reached.*
+
+### Accepted Costs (Phase 8)
+
+*Not yet reached. Known candidates from Vigil: The Teammates Are the Budget (the brigade's judgment is the hardest tuning in the game), and A Group Fantasy With No Group.*
+
+### Live Log (Phase 9)
+
+*Not yet reached.*
+
+### Library Feedback (Phase 9)
+
+*Not yet reached. Watch item: if a second game adopts "The Plate Is the Evidence" (state read only from what agents send back), it may belong in Vigil's Variants & Exceptions, or become a new position on the Information axis.*

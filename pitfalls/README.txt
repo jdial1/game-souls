@@ -2,9 +2,9 @@
 
 A library of named design failures. Each pitfall has its own file with what happens, the symptom that reveals it, the fix, and related pitfalls. Pitfalls are listed here by area, with the symptom first, because a symptom is what you actually see in a playtest or a design document.
 
-Pitfalls in the first ten areas come from components and can appear in any soul that uses that component. Soul-specific pitfalls belong to one soul's pillars, but are worth checking whenever a design borrows those pillars.
+Pitfalls in the first ten areas come from components and can appear in any soul that uses that component. Process pitfalls come from how a game is built rather than what it contains; check them at every milestone of SOUL_INSTANCE_GUIDE.txt. Soul-specific pitfalls belong to one soul's pillars, but are worth checking whenever a design borrows those pillars.
 
-**How to use this library:** When reviewing a design document or a game in development (Step 8 of LLM_SOUL_GUIDE.txt), scan every area whose components the design uses, plus the soul-specific pitfalls of the soul being instilled. For each pitfall, ask whether the design, as written, would produce the symptom. Report only pitfalls with concrete evidence in the design.
+**How to use this library:** When reviewing a design document or a game in development (Step 8 of LLM_SOUL_GUIDE.txt, or Phases 6–8 of SOUL_INSTANCE_GUIDE.txt), scan every area whose components the design uses, plus the soul-specific pitfalls of the soul being instilled. For each pitfall, ask whether the design, as written, would produce the symptom. Report only pitfalls with concrete evidence in the design.
 
 Some pitfalls list a TV Tropes name under "Also known as." Only mechanical tropes are used, never story tropes: a soul is defined by what the player does, not by its plot.
 
@@ -117,6 +117,14 @@ Some pitfalls list a TV Tropes name under "Also known as." Only mechanical trope
 | The Spoiler Flood | The mystery dies on day one. | spoiler_flood.txt |
 | Toxic Invasion | Players go offline to avoid it. | toxic_invasion.txt |
 | The Toxic Lobby | Players leave after one bad match. | toxic_lobby.txt |
+
+### Process
+
+| Pitfall | Symptom | File |
+| --- | --- | --- |
+| The Borrowed Mechanic | Players describe the game as the source game in a different setting. | borrowed_mechanic.txt |
+| The Drifting Soul | Late playtesters describe a different game from the one on the Seed Card. | drifting_soul.txt |
+| The Soul Written Last | Every feature passes every litmus row, and nothing was ever cut for failing one. | soul_written_last.txt |
 
 ### Soul-Specific
 

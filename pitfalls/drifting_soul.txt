@@ -1,0 +1,23 @@
+## Pitfall: The Drifting Soul
+
+**Area:** Process
+**Also known as:** Feature Creep
+**Found in:** SOUL_INSTANCE_GUIDE.txt (Phase 7, Production Guard)
+
+### What Happens
+
+Features are added one at a time, and each one is reasonable on its own: a convenience, a competitor's system, a fix for one playtest complaint. None of them is checked against the soul, or each is checked alone and passes. Together they move the game somewhere nobody chose. The instance file still describes the game the team meant to make, and nobody reads it any more.
+
+### Symptom
+
+Late playtesters describe a different game from the one on the Seed Card, and the team can't name the decision where it changed.
+
+### Fix
+
+Run every feature through the Feature Gate, including late and "non-design" features (difficulty modes, stores, onboarding). Enter every deviation in the Soul Ledger. At each milestone, re-read the Seed Card aloud and count new ledger entries by area: a burst in one area is drift, and it gets a decision (fix the features or amend the soul in the phase that owns it).
+
+### Related Pitfalls
+
+* **The Soul Written Last** (pitfalls/soul_written_last.txt)
+* **Additive Blandness** (pitfalls/additive_blandness.txt)
+* **Monetization Creep** (pitfalls/monetization_creep.txt)

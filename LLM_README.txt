@@ -15,6 +15,7 @@ The library has three layers, plus two reference folders:
 | Soul | souls/ | Compare against 19 existing souls, each holding only what is unique to it. |
 | Reference | pitfalls/ | Scan a design for named failures (one file per pitfall, indexed by symptom). |
 | Reference | frameworks/ | Understand the older frameworks the library borrows from, and what it deliberately doesn't adopt. |
+| Reference | instances/ | See or build the soul of one specific game: a template and a worked example, filled phase by phase. |
 
 archive/ contains older single-file versions of the first nine souls. Do not treat them as current; the souls/ folder is the source of truth.
 
@@ -24,8 +25,9 @@ archive/ contains older single-file versions of the first nine souls. Do not tre
 2. **Classify a game:** Decide whether it belongs to an existing soul, is a variant of one, is a blend of two, or needs a new soul.
 3. **Write a new soul:** Turn the residue into signature pillars and write souls/<name>.txt using the template.
 4. **Instill a soul:** Given a target game in development, find the gaps between it and a chosen soul, scan it for pitfalls, and recommend changes, each traced from mechanic to feeling.
+5. **Build a soul instance:** Given a new game idea, take it phase by phase from verbs to a chosen soul, committed axes, a component bill, translated pillars, and a litmus the project runs on every feature, then guard it through production and ship.
 
-All four tasks use the same core procedure in LLM_SOUL_GUIDE.txt.
+Tasks 1–4 use the core procedure in LLM_SOUL_GUIDE.txt. Task 5 uses SOUL_INSTANCE_GUIDE.txt, which borrows steps from the core procedure and adds phases, gates, and a ledger of deviations.
 
 ### Reading Order
 
@@ -34,6 +36,7 @@ All four tasks use the same core procedure in LLM_SOUL_GUIDE.txt.
 3. The axis and component files relevant to the task.
 4. The two or three souls/ files closest to the game being analyzed.
 5. For instillation: pitfalls/README.txt.
+6. For building an instance: SOUL_INSTANCE_GUIDE.txt, instances/TEMPLATE.txt, and instances/the_pass.txt as the example.
 
 You do not need to read every file for every task. Start from the README tables and read files on demand.
 

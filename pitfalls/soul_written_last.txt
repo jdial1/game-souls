@@ -1,0 +1,21 @@
+## Pitfall: The Soul Written Last
+
+**Area:** Process
+**Found in:** SOUL_INSTANCE_GUIDE.txt (Phases 4 and 7)
+
+### What Happens
+
+The instance, or the soul document, is written or rewritten after the game is built, to describe what already exists. Its litmus rows are phrased so that the current features pass. It records the game's soul the way a caption records a photograph: accurately, and too late to change anything.
+
+### Symptom
+
+Every feature passes every litmus row, and nobody can name a feature that was cut or changed because it failed one.
+
+### Fix
+
+Write the litmus in Phase 4, before production, and self-test it against the expected feature list: at least one expected feature must fail. After that, the litmus changes only by returning to the phase that owns it, never to let a feature through. A test that has never cut anything is not a test.
+
+### Related Pitfalls
+
+* **The Drifting Soul** (pitfalls/drifting_soul.txt)
+* **Theme as Paint** (pitfalls/theme_as_paint.txt)

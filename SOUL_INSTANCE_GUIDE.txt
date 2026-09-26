@@ -1,0 +1,346 @@
+## Soul Instance Guide: Building One Game's Soul, Phase by Phase
+
+A soul in souls/ describes a family of games. A **soul instance** is the soul of *one* game: the specific axis positions, component tunings, translated pillars, and banned mechanics a single project commits to, written down before production and defended until ship.
+
+LLM_SOUL_GUIDE.txt runs in one direction: from a finished game back to its soul. This guide runs the other way, from a premise to a finished game that has its soul intact. It reuses the same vocabulary and borrows whole steps from the soul guide where they already exist. It adds what the soul guide doesn't have: an order to build in, a gate at the end of each phase, and a record of every time the project bends the soul it chose.
+
+Every instance lives in instances/<game>.txt, copied from instances/TEMPLATE.txt. Each phase below fills one section of that file. instances/the_pass.txt is a worked example.
+
+---
+
+### Why Phases
+
+Souls are rarely lost in one decision. They get lost one reasonable feature at a time, each of which passed a meeting on its own. A soul stated on day one and never checked again is a mission statement. A soul with gates is a design constraint.
+
+Three rules hold across every phase:
+
+* **Nothing Is Built Before It Is Named.** A mechanic that enters the game before its phase has named what it serves will be justified afterward, and a justification written afterward always passes.
+* **Every Gate Can Fail.** A gate that has never sent a project back is decoration. If a whole project passes every gate on the first try, the gates were written to pass.
+* **Bending Is Allowed; Silent Bending Is Not.** An instance may deviate from its soul anywhere, as long as each deviation is entered in the Soul Ledger with its reason and its cost. The ledger turns drift into decisions.
+
+---
+
+### The Phases at a Glance
+
+| Phase | Name | Question | Instance Section Filled | Status After the Gate |
+| --- | --- | --- | --- | --- |
+| 0 | Seed | What does the player do, and what should it feel like? | Seed Card | Seeded |
+| 1 | Soul Choice | Which soul leads, and for whom? | Soul Choice | Chosen |
+| 2 | Axis Commitment | Where does this game stand, and what is banned? | Axis Positions, Banned Mechanics | Committed |
+| 3 | Component Bill | Which building blocks, tuned how, and in what economy? | Component Bill, Economy | Composed |
+| 4 | Pillar Translation | What do the soul's rules become in this genre? | Translated Pillars, Instance Litmus | Translated |
+| 5 | Verb Prototype | Does the smallest playable thing produce the dynamic? | Prototype Findings | Proven |
+| 6 | Soul Slice | Does one full loop, including failure, produce the tone? | Slice Findings, Pitfall Watchlist | Sliced |
+| 7 | Production Guard | Does each new feature serve the soul, or bend it on purpose? | Feature Gate Log, Soul Ledger | Guarded (ongoing) |
+| 8 | Drift Audit and Lock | Is the game about to ship still the game the Seed Card described? | Drift Audit, Accepted Costs | Locked |
+| 9 | Live and Feedback | Does the soul survive contact with players, and what did it teach the library? | Live Log, Library Feedback | Live |
+
+Phases 0–4 are paper. They should take days, not months, and cost almost nothing to redo. Phases 5–6 are the first time the soul meets hands. Phase 7 is most of the calendar. Phases 8–9 are where souls die quietly if nobody is looking.
+
+**Going back.** When a gate fails, return to the earliest phase that owns the problem, not the phase you are in:
+
+| Symptom at the Gate | Return To |
+| --- | --- |
+| The verbs don't produce the intended feeling at any tuning | Phase 0 (the seed is wrong) |
+| The playtest ideal player isn't the soul's ideal player | Phase 1 (the soul is wrong) |
+| A tension or tone killer keeps reappearing in new forms | Phase 2 (an axis position is wrong) |
+| The economy produces the wrong emotion however it is tuned | Phase 3 (the topology is wrong) |
+| Players describe the game as "the source game, reskinned" | Phase 4 (a pillar was copied, not translated) |
+| One feature fails a litmus row | Phase 7 (fix or ledger the feature; the soul is fine) |
+
+---
+
+### Phase 0: Seed
+
+**Goal:** State the game in verbs and one feeling, before any soul, genre, or setting is chosen.
+
+**Inputs:** The idea, however vague.
+
+**Steps:**
+1. Write the **verb inventory**: the three literal actions the player will perform most, exactly as in Step 1 of LLM_SOUL_GUIDE.txt. Give each real-time verb a kinetic profile in bands (components/kinetic_profile.txt).
+2. Write the **feeling** as one sentence about what the player feels in the *fortieth* minute, not the first. The first minute sells the game; the fortieth is the soul.
+3. Write the **story players tell afterward**: one sentence a player would say to a friend the next day. This line predicts the Authorship axis before you choose it.
+4. Write the **setting last**, in one line, and mark it provisional. The setting is allowed to change through Phase 4. The verbs and the feeling are not, without returning here.
+
+**Key questions:**
+* If the setting were deleted, would the verbs still produce the feeling? (If not, the setting is doing work a mechanic should do; see the Integration Check in components/theme_as_mechanic.txt.)
+* Is any verb there only because the genre expects it?
+* What does the player do while waiting, and is that also a verb?
+
+**Exit gate:**
+* [ ] Three verbs, each a literal action, with kinetic bands where real-time.
+* [ ] One fortieth-minute feeling.
+* [ ] One next-day story.
+* [ ] A setting line marked provisional.
+
+**Common mistake:** A seed that is a setting ("a haunted lighthouse") or a genre ("a roguelike deckbuilder"). Neither says what the player does or feels. Send it back.
+
+---
+
+### Phase 1: Soul Choice
+
+**Goal:** Decide which soul leads the instance, and name the ideal player the game is built for.
+
+**Inputs:** The Seed Card; README.txt's tables; the two or three souls/ files closest to the seed.
+
+**Steps:**
+1. **Shortlist.** From the Seed Card, guess the Failure, Power, and Tone positions, and find every soul in README.txt that shares at least two. Read the philosophy sentence and litmus test of each.
+2. **Match the ideal player.** Compare each candidate's Psychological Target with the player the Seed Card implies. Two souls with similar axes but opposite ideal players are not interchangeable (Step 5 of LLM_SOUL_GUIDE.txt uses the same tie-breaker).
+3. **Choose one of three paths:**
+
+| Path | When | What It Means |
+| --- | --- | --- |
+| **Adopt** | One soul's philosophy sentence describes the seed with no edits | Take that soul whole. Every later deviation goes in the ledger. |
+| **Blend** | Two souls each explain about half the seed | One soul leads and one follows. For every axis where they disagree, name which soul wins and why, now, not during production. |
+| **Forge** | No soul's philosophy fits, and the seed has at least two rules no soul covers | Run Steps 4–7 of LLM_SOUL_GUIDE.txt on the seed to write a draft soul. The instance adopts the draft. The draft enters souls/ only after the game proves it (Phase 9). |
+
+4. Write the **instance philosophy**: one sentence, in the library's voice, that fits this game and would sound wrong for its lead soul's other games. If it would fit them unchanged, you have a Member of that soul, and that is fine. Say so.
+5. Copy the lead soul's Psychological Target, and adjust at most two rows with a reason each. More than two changes means the lead soul is wrong.
+
+**Key questions:**
+* Which soul would this game be filed under by a reader of the library, and do you agree?
+* In a Blend, which soul owns the tone? One must lead (axes/tone.txt, "Design Implications").
+* Whose features would work against this soul? (The lead soul's design note usually names them.)
+
+**Exit gate:**
+* [ ] A path (Adopt, Blend, or Forge) and the lead soul named.
+* [ ] For a Blend: an axis-by-axis leader list.
+* [ ] An instance philosophy sentence.
+* [ ] A Psychological Target with no more than two rows changed, each with a reason.
+
+**Common mistake:** Choosing a soul because the source games share a setting with the seed. Mansion and Swarm both have zombies. The soul is chosen by verbs and feeling.
+
+---
+
+### Phase 2: Axis Commitment
+
+**Goal:** Fix a position on all six axes, and name what the game will never contain.
+
+**Inputs:** The lead soul's axis table; the six files in axes/.
+
+**Steps:**
+1. For each axis, write the instance's position and whether it **Matches**, **Bends**, or **Breaks** the lead soul's position. Bends and Breaks go straight into the Soul Ledger with a reason.
+2. For Information, state rules and state separately ("Rules vs. State" in axes/information.txt).
+3. Read the "Tensions" section of every axis file. For every tension the profile hits, write how this game resolves it.
+4. Write the **Banned Mechanics** list:
+   * The lead soul's tone killer from axes/tone.txt, rewritten for this genre.
+   * Any mechanic that would contradict an axis position (for example, free unlimited reloading in a Costly game).
+   * At least one banned mechanic specific to this instance: the thing the genre expects that this game refuses.
+
+**Key questions:**
+* Which axis position would the team be most tempted to soften during production? Write its defense now.
+* What will a publisher, a playtester, or a teammate ask for that is on the banned list? Write the answer now.
+
+**Exit gate:**
+* [ ] Six positions, each marked Match, Bend, or Break.
+* [ ] Every Bend and Break entered in the Soul Ledger.
+* [ ] Every tension the profile hits has a stated resolution.
+* [ ] A banned list with the translated tone killer and at least one instance-specific ban.
+
+**Common mistake:** Leaving an axis "to be decided in playtesting." Playtesting tunes a position; it cannot choose one. An undecided axis is decided by whoever builds that system first.
+
+---
+
+### Phase 3: Component Bill
+
+**Goal:** Decide which components the game uses, how each is tuned, and what shape its economy has.
+
+**Inputs:** The lead soul's component list; the component files; the "Economic Topology" section of components/scarcity_economy.txt.
+
+**Steps:**
+1. Start from the lead soul's components. For each one, write this instance's tuning in one line, compared against the lead soul's line in the component's "Tuning by Soul" section.
+2. Mark each component **Core** (the game collapses without it) or **Supporting**. Drop any the axes no longer need, and add any they now demand. Every drop and every addition goes in the Soul Ledger.
+3. **Resolve every conflict.** For every pair of components in the bill, read the **Conflicts With** tags. For every conflict (and every conflict between a component and an axis position), write the resolution. Copy the lead soul's resolutions where they still apply.
+4. **Name the economic shape** (Drain, Generator, Zero-Sum, Gift, or none), including any nesting ("a Drain inside each run, a Generator across the career"). Name the one hard bottleneck and every drain. Run the topology check from Step 7 of LLM_SOUL_GUIDE.txt: does the shape produce the tone?
+5. List the **features you expect to need**, each attached to the component it serves. A feature that serves no component and no pillar is a candidate for the banned list.
+
+**Key questions:**
+* Which component will cost the most to build, and is it Core? (A Supporting component that eats the budget is a sign the soul is wrong.)
+* Which bottleneck does the player feel first in a session?
+* What does the player do with a surplus, if one ever appears?
+
+**Exit gate:**
+* [ ] Every component marked Core or Supporting, with a one-line tuning.
+* [ ] Every relationship conflict resolved in writing.
+* [ ] An economic shape, a named bottleneck, and named drains, and a sentence on why that shape produces the tone.
+* [ ] An expected feature list, each feature tied to a component.
+
+**Common mistake:** Copying rules from the component files into the instance. The instance holds *tuning*: where this game sets the dial. The rules stay in the components and are referenced by path.
+
+---
+
+### Phase 4: Pillar Translation
+
+**Goal:** Turn the lead soul's signature pillars into rules for this genre, and write the litmus test the project will run on every feature.
+
+**Inputs:** The lead soul's signature pillars and litmus test; the Seed Card.
+
+**Steps:**
+1. For each **design rule** in each signature pillar, ask: "What would this rule look like in this game?" Write the translated rule in one or two lines, plus the concrete mechanic that will carry it. Translate the rule, never the source game's mechanic (Step 8.6 of LLM_SOUL_GUIDE.txt).
+2. Mark each rule **Carried** (translated whole), **Adapted** (translated with a changed emphasis), or **Dropped** (doesn't apply). Every Dropped rule goes in the Soul Ledger. A dropped *pillar* (every rule in it dropped) means the lead soul is probably wrong; return to Phase 1.
+3. Write **house rules**: at most three rules unique to this instance, written like pillar rules (**Rule Name:** explanation). These are the instance's residue. If one of them later appears in a second game, it is a candidate for the library (Phase 9).
+4. Write the **Instance Litmus**: the lead soul's litmus rows, rewritten in this game's terms, plus one row per house rule. Four to seven rows. Each row is a yes/no question a designer can ask about one feature, with the correct answer and a one-line reason.
+5. **Self-test the litmus** against the expected feature list from Phase 3. If every feature passes, the litmus is too soft. At least one expected feature should fail, and get cut or changed.
+
+**Key questions:**
+* Could a player of the lead soul's source games recognize the soul here without recognizing any mechanic?
+* Which translated rule will be hardest to keep in this genre?
+* Which house rule would you defend if the budget were halved?
+
+**Exit gate:**
+* [ ] Every pillar rule marked Carried, Adapted, or Dropped, with a translation or a ledger entry.
+* [ ] No more than three house rules.
+* [ ] An Instance Litmus of four to seven rows.
+* [ ] At least one expected feature cut or changed by the litmus.
+
+**Common mistake:** The Borrowed Mechanic (pitfalls/borrowed_mechanic.txt): the source game's mechanic is copied in place of its rule, and the game becomes a reskin.
+
+---
+
+### Phase 5: Verb Prototype
+
+**Goal:** Build the smallest playable thing that tests the soul's central claim.
+
+**Inputs:** Phases 0–4. Nothing else. No art, no content beyond the minimum, no progression.
+
+**Steps:**
+1. Write the **soul claim** as a causality trace (frameworks/mda.txt): *these verbs, under this bottleneck → players do this → they feel this.* The prototype exists to test the middle link.
+2. Build only the three verbs, the one bottleneck, and one way to fail. Real-time verbs get their kinetic bands; if the verbs don't feel right, nothing downstream will (pitfalls/floaty_or_stiff_verbs.txt).
+3. **Watch; don't explain.** Put testers in front of it with no briefing beyond the controls. Record what they *do*, not what they say. The dynamic either appears without being asked for, or it doesn't.
+4. Record the **next-day story**. Ask testers the next day what happened. Compare their sentence with the Seed Card's.
+
+**Key questions:**
+* Did testers do the dynamic from the soul claim without being told to?
+* Where did they spend the bottleneck first, and was that a decision or a reflex?
+* Did any tester find a way to avoid the verbs entirely?
+
+**Exit gate:**
+* [ ] The dynamic from the soul claim appears in most sessions without prompting.
+* [ ] At least one tester's next-day story resembles the Seed Card's.
+* [ ] The kinetic bands feel intended, or the gap is named.
+* [ ] Findings entered in the instance, including what failed.
+
+**Common mistake:** Prototyping the content or the progression instead of the verbs. A prototype that needs a skill tree to be interesting has shown that the verbs aren't.
+
+---
+
+### Phase 6: Soul Slice
+
+**Goal:** Build one complete loop (start, pressure, failure, recovery, end) at shipping quality in the places that carry the soul, and prove it produces the tone.
+
+**Inputs:** The proven prototype; the Component Bill; pitfalls/README.txt.
+
+**Steps:**
+1. Build one full loop: one level, one run, one day, one case, whatever the structure's unit is. It must include **failure** and whatever follows it, because failure is where most souls are decided (axes/failure.txt).
+2. Build the Core components for real. Supporting components can be stubbed, but each stub should be labeled with the pitfall it risks.
+3. **Pre-scan the pitfalls.** From pitfalls/README.txt, list every pitfall in each area whose components the instance uses, plus the lead soul's soul-specific pitfalls. For each one, write the symptom you'll watch for in playtests. This is the **Pitfall Watchlist**.
+4. **Playtest against the watchlist.** A pitfall's symptom is written as something observable in a playtest. Report only the ones you actually see.
+5. **Run the Instance Litmus** on every feature in the slice. Record pass or fail.
+6. **Check the tone at the fortieth minute.** Does the feeling on the Seed Card hold for a whole session, or only in the best moment?
+
+**Key questions:**
+* After a failure, can testers name what caused it? Do they want to go again?
+* Which banned mechanic did someone on the team try to add to fix a slice problem?
+* What does the slice make testers feel that the Seed Card didn't predict? (That is either residue or a warning.)
+
+**Exit gate:**
+* [ ] One complete loop, including failure, playable end to end.
+* [ ] A Pitfall Watchlist, with each observed pitfall's evidence and fix.
+* [ ] Every slice feature passes the Instance Litmus or has a ledger entry.
+* [ ] The fortieth-minute feeling reported by testers in their own words.
+
+**Common mistake:** A slice that shows the best ten minutes. The soul lives in the worst ten minutes: the loss, the stall, the long middle.
+
+---
+
+### Phase 7: Production Guard
+
+**Goal:** Keep the soul intact while the game grows by an order of magnitude.
+
+This phase runs for most of the project. It has no single gate. It has a gate on every feature and a review at every milestone.
+
+**The Feature Gate.** Every proposed feature, system, or content type gets a feature card before it is built:
+
+```
+Feature: <name>
+Serves: <component or translated pillar> (a feature that serves neither is out)
+Trace: <Mechanic> → <Dynamic> → <Tone>
+Litmus: <each Instance Litmus row: pass / fail / n.a.>
+Banned list: <clear / conflicts with ...>
+Verdict: Build / Change / Cut / Build with a ledger entry
+```
+
+* A feature that fails a litmus row is changed or cut. It is built only with a Soul Ledger entry that names the row it fails, why the project accepts that, and what it will cost.
+* A feature that touches the banned list is cut. Changing the banned list means returning to Phase 2.
+* A feature that can't write the middle link of its trace isn't ready, exactly as in Step 8.10 of LLM_SOUL_GUIDE.txt.
+
+**The Soul Ledger.** One running table of every place the instance bends its lead soul: axis Bends and Breaks, dropped components, dropped pillar rules, features built despite a litmus failure. Each entry has a date, what bent, why, and the cost. The ledger is not a list of mistakes. It is the record that every bend was a decision.
+
+**The Milestone Review.** At every milestone:
+1. Re-read the Seed Card aloud. Ask whether a new tester would describe the current build the same way.
+2. Re-run the Instance Litmus on every feature added since the last review.
+3. Re-run the Pitfall Watchlist in playtests. Add any pitfall newly in scope because a new component arrived.
+4. Count ledger entries since the last review. A burst of entries in one area is drift. Name it, and decide whether to fix the features or amend the soul (which means returning to the phase that owns it).
+
+**Key questions:**
+* Which feature was added this milestone because a competitor has it?
+* Which ledger entry would the team reverse if it had the time?
+* Is anyone still reading the instance file? (If not, see pitfalls/drifting_soul.txt.)
+
+**Common mistakes:** The Drifting Soul (pitfalls/drifting_soul.txt): each feature passes alone and the game drifts anyway. The Soul Written Last (pitfalls/soul_written_last.txt): the instance is updated to describe what was built, never to stop anything.
+
+---
+
+### Phase 8: Drift Audit and Lock
+
+**Goal:** Before ship, confirm that the game still has the soul it chose, and write down what that soul cost.
+
+**Steps:**
+1. **Run a full instillation on your own game.** Perform Step 8 of LLM_SOUL_GUIDE.txt with the current build as the target and the instance (not the lead soul) as the soul being instilled. Use the Instillation Report format. A healthy project produces a short report.
+2. **Compare with the Seed Card.** Put the three verbs, the fortieth-minute feeling, and the next-day story beside what late playtesters actually say. Every difference is either an accepted evolution (enter it in the ledger) or a drift to fix before ship.
+3. **Hunt the tone killers one last time.** Late features (monetization, accessibility options, difficulty modes, onboarding, platform requirements) are where banned mechanics most often slip back in. Check each against the banned list.
+4. **Write the Accepted Costs:** the soul-specific costs from the lead soul's "What This Soul Costs," plus the costs of the ledger's biggest entries, stated as deliberate choices. These are the things reviewers and players will complain about that the team chose on purpose.
+5. **Lock** the instance: the positions, pillars, litmus, and banned list become the reference for every post-launch change.
+
+**Exit gate:**
+* [ ] An Instillation Report on the current build, with every tone killer and structural conflict resolved.
+* [ ] Seed Card differences each either ledgered or fixed.
+* [ ] Accepted Costs written.
+* [ ] Status set to Locked.
+
+**Common mistake:** Treating late features as "not design." A difficulty mode, a store, or a reminder notification is a mechanic like any other, and it runs through the Feature Gate like any other (see pitfalls/monetization_creep.txt, pitfalls/cheerful_toast.txt).
+
+---
+
+### Phase 9: Live and Feedback
+
+**Goal:** Keep the soul through updates, and return what the game taught to the library.
+
+**Steps:**
+1. **Every live change runs the Feature Gate.** Patches, events, balance passes, and store items are features. Record them in the Live Log.
+2. **Watch the live pitfalls.** Keep a watch on the pitfalls that only appear at scale or over time: pitfalls/solved_meta.txt, pitfalls/dominant_strategy.txt, pitfalls/empty_top.txt, pitfalls/dead_servers.txt, pitfalls/monetization_creep.txt, and any on the Watchlist that shipped as a known risk.
+3. **Feed the library.** When the game has been played long enough to know what it is, run Steps 1–5 of LLM_SOUL_GUIDE.txt on the shipped game, as a stranger would. Then act on the verdict:
+   * **Member:** add the game to the lead soul's example games.
+   * **Variant:** add the biggest ledger entries to the lead soul's "Variants & Exceptions."
+   * **New Soul:** for a Forged instance, promote the draft soul into souls/ once a second game shares its house rules. One game is a variant; two games are a soul.
+   * **New pitfall:** any failure the team found that no pitfall file names gets its own file in pitfalls/.
+   * **New component:** a house rule that turns up in two souls becomes a component (see "Adding a New Soul" in README.txt).
+
+**Key questions:**
+* What are players telling each other about the game, and is it the next-day story?
+* Which ledger entry would the team now reverse?
+* What did this game learn that no file in the library says?
+
+---
+
+### Ground Rules for Language Models
+
+When helping a user through these phases:
+
+* **Work one phase at a time,** and show the exit gate checklist at the end of each. Don't write Phase 4 before the user has agreed to Phase 2.
+* **Every ground rule in LLM_README.txt still applies:** verbs before philosophy, evidence not vibes, traced recommendations, no invented game facts, no frame counts, no demographics, the library's voice.
+* **Don't invent playtest results.** Phases 5–9 need observations of real players. If the user hasn't run a playtest, write the watchlist and the questions, and leave the findings empty.
+* **Protect the ledger.** When a user proposes a deviation, don't refuse it and don't bury it. Name the rule it bends, write the ledger entry, and state its cost.
+* **Say when the soul is wrong.** If gates keep failing in the same place, recommend returning to the phase that owns the problem, even if that is Phase 1.
+
+*"A soul you chose on the first day and never checked again is a mood board. A soul with gates is a design."*

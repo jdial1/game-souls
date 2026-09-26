@@ -1,0 +1,22 @@
+## Pitfall: The Borrowed Mechanic
+
+**Area:** Process
+**Also known as:** The Reskin
+**Found in:** SOUL_INSTANCE_GUIDE.txt (Phase 4, Pillar Translation); LLM_SOUL_GUIDE.txt (Step 8)
+
+### What Happens
+
+A game adopting a soul copies a source game's mechanic in place of the rule behind it: the bonfire, the intent icon, the damage meter, lifted whole into a genre where it does a different job or none. The mechanic arrives without the dynamic that made it matter, and the soul stays behind in the source game.
+
+### Symptom
+
+Players describe the game as "the source game, but in a different setting," and the parts they call copied are the parts that feel flattest.
+
+### Fix
+
+For every pillar rule, write what the rule does to player behaviour, then ask what mechanic produces that behaviour in this genre. If the answer is the source game's mechanic, check that it produces the same dynamic here before keeping it.
+
+### Related Pitfalls
+
+* **Theme as Paint** (pitfalls/theme_as_paint.txt)
+* **Mechanics That Contradict the Theme** (pitfalls/mechanics_that_contradict_the_theme.txt)
