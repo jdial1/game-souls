@@ -63,7 +63,7 @@ Gathering by hand is the Manual Tax (components/automation.txt), not a core verb
 **Tensions, resolved:**
 * **Total + shallow systems** (axes/information.txt): a visible economy can be solved. The rival is the depth, and the Moving Bottleneck keeps the solo half from settling.
 * **Hidden + Punishing failure:** not triggered. Fog is Observed (what is in range is shown exactly) and failure is Costly.
-* **Persistent PvP + absence** (named by no axis file): the world runs while the owner sleeps, so losses happen off-screen. Allowed, because rivalry is the soul, but never unexplained (see Banned Mechanics). Absence cuts both ways: an absent hero holds no ground either. Whether absent players also need a protection window is a Phase 5 question.
+* **Persistent PvP + absence** (named by no axis file): the world runs while the owner sleeps, so losses happen off-screen. Allowed, because rivalry is the soul, but never unexplained (see Banned Mechanics). Absence cuts both ways: an absent hero holds no ground either. Whether absent players also need a protection window is a Phase 5 question. When *everyone* is absent, the world rests (see the Soul Ledger).
 
 ### Banned Mechanics (Phase 2)
 
@@ -248,6 +248,7 @@ Tapestry Pillars 1, 2, and 4 are dropped (ledgered). One idea survives from Pill
 | Phase 4 | Tapestry pillars | Pillars 1, 2, and 4 dropped | The follower soul lends its map, not its court. | No system-authored drama beyond what rivals do. |
 | Phase 4 | Pillar 2 | The Plan draws from the purse; no worker carries it | The purse is already filled only by workers; a second trip adds a chore, not a decision. | The Plan is the one place goods move without legs. |
 | Phase 4 | Information | Outposts and their owners are public through the fog | The political map is the ledger, and a ledger nobody can read isn't one. | Rivals always know where your borders are, never what stands inside them. |
+| Phase 7 | Structure | Persistent World rests when empty: with nobody connected, the server sleeps and the world pauses | One always-on instance cost more than the game earns while it has few players. Losses while away still happen whenever anyone else is online. | Overnight, nobody's workers mine and no border is pressed. The world only moves while someone is watching it. |
 
 ### Drift Audit (Phase 8)
 
