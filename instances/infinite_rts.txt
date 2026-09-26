@@ -20,9 +20,9 @@ Gathering by hand is the Manual Tax (components/automation.txt), not a core verb
 
 * **The fortieth minute:** Calm, because the machine feeds itself and its border was built right, and never quite calm, because a neighbour is measuring that border.
 * **The next-day story:** "My stone ran dry at home, so I ran a supply road out to the mountain outposts, and by morning the red player had neutralized two of them."
-* **Setting (provisional):** A Soviet-industrial frontier, currently mixed with sci-fi upgrade names.
+* **Setting:** A Soviet-industrial frontier. Settled in Phase 4, once the Plan existed to carry it.
 
-*Integration check:* Delete the setting and the verbs still hold. Today it does no mechanical work (pitfalls/theme_as_paint.txt). It would earn its place if the planned economy's **Plan** became the infinite sink (Pillar 4) and the commissariat spoke the ledger. Otherwise, drop the flavour and keep the verbs.
+*Integration check:* Delete the setting and the verbs still hold. It earned its place when the planned economy's **Plan** became the infinite sink (Pillar 4) and the Commissariat began to speak the ledger. The sci-fi upgrade names were retired.
 
 ### Soul Choice (Phase 1)
 
@@ -63,7 +63,7 @@ Gathering by hand is the Manual Tax (components/automation.txt), not a core verb
 **Tensions, resolved:**
 * **Total + shallow systems** (axes/information.txt): a visible economy can be solved. The rival is the depth, and the Moving Bottleneck keeps the solo half from settling.
 * **Hidden + Punishing failure:** not triggered. Fog is Observed (what is in range is shown exactly) and failure is Costly.
-* **Persistent PvP + absence** (named by no axis file): the world runs while the owner sleeps, so losses happen off-screen. Allowed, because rivalry is the soul, but never unexplained (see Banned Mechanics). Whether absence also needs a limit is a Phase 5 question.
+* **Persistent PvP + absence** (named by no axis file): the world runs while the owner sleeps, so losses happen off-screen. Allowed, because rivalry is the soul, but never unexplained (see Banned Mechanics). Absence cuts both ways: an absent hero holds no ground either. Whether absent players also need a protection window is a Phase 5 question.
 
 ### Banned Mechanics (Phase 2)
 
@@ -91,9 +91,9 @@ Gathering by hand is the Manual Tax (components/automation.txt), not a core verb
 Tapestry's living_world is dropped: rival players already keep the world running.
 
 **Relationship conflicts, resolved:**
-* **match_integrity against client-side authority:** *Open in the build.* The server accepts whatever hero position the client sends, and every building and unit is sent to every client, with fog drawn only on screen (pitfalls/seal_by_convention.txt, by analogy). Resolution: clamp hero movement on the server, and send each client only what its vision covers.
-* **automation against automating decisions:** Resolution: the player sets the split (say 3:2:1) and the machine keeps it as workers are bought. The machine keeps a ratio; it never picks one.
-* **scarcity_economy against a Generator without drains:** upgrades are the only sink, and their effects are linear while their costs are exponential, so buying stops. Resolution: the infinite sink of Pillar 4.
+* **match_integrity against client-side authority:** The hero spends a movement budget that refills at its legal top speed, and the server corrects any report that outruns it. Each client is sent rival state only inside its own vision, so fog is real in the data, not only on screen (pitfalls/seal_by_convention.txt, by analogy). Outposts stay public.
+* **automation against automating decisions:** Standing Orders. The player sets the split (say 3:2:1), and the machine keeps it as workers are bought. The machine keeps a ratio; it never picks one.
+* **scarcity_economy against a Generator without drains:** upgrades have linear effects at exponential costs, so buying stops. The Plan is the infinite sink (Pillar 4), capped at a quarter phase per delivery so it never empties the purse in one decision.
 * **workbench against outcome randomness:** node sizes are rolled when a chunk is generated, before any decision; turret targeting is deterministic. Nothing is rolled after the player commits.
 
 ### Economy (Phase 3)
@@ -129,7 +129,7 @@ Tapestry's living_world is dropped: rival players already keep the world running
 | --- | --- | --- | --- |
 | The Squeeze | Carried | Stone runs dry at home; the fix is an outpost; the outpost is on a rival's edge; holding it takes turrets that eat stone. | Finite nodes, territory-limited mining, the outpost cap |
 | Ratio over Capacity | Adapted | The ratio is labour per resource against spend per build. | Worker assignment, the rate readout |
-| Show the Rates | Carried | Income per resource is on the resource bar; per depot is missing. | Resource bar; rates panel (planned) |
+| Show the Rates | Carried | Income per minute on the resource bar; each depot's last-minute deliveries in the worker panel. | Server-logged deliveries |
 
 **Assembly Pillar 2: Everything Travels**
 
@@ -150,14 +150,14 @@ Tapestry's living_world is dropped: rival players already keep the world running
 
 | Soul Rule | Carried / Adapted / Dropped | In This Game | Carried By (mechanic) |
 | --- | --- | --- | --- |
-| The Infinite Sink | Adapted (missing) | A sink with no ceiling that rivals can see, such as the Plan, delivered to the base in escalating phases. | The Plan (planned) |
+| The Infinite Sink | Adapted | The Plan: phases delivered to the base, each 1.35x the last, forever, and shown in the standings. | The Plan |
 | Milestones, Not Endings | Carried | No win. A Plan phase or a filled square is passed, and play goes on. | No end state |
 
 **Tapestry Pillar 3: The Map Is the Ledger** (the only Tapestry pillar carried)
 
 | Soul Rule | Carried / Adapted / Dropped | In This Game | Carried By (mechanic) |
 | --- | --- | --- | --- |
-| Painting the Map | Carried | Territory in the player's colour, and a board that counts ground. Today the board counts walls and ignores outposts. | Territory rendering; score (to change) |
+| Painting the Map | Carried | Territory in the player's colour, and standings that count held outposts and Plan phases, nothing else. | Territory rendering; server-side standings |
 | Many Maps of One World | Adapted | The ground you hold, and the ground that pays (resource zones; refinery and market outposts). | Zones, unique outposts |
 | Growth Creates Resistance | Adapted | The outpost cap, 4x expansion, doubling worker costs, a longer border to watch. | Cost curves |
 
@@ -182,7 +182,7 @@ Tapestry Pillars 1, 2, and 4 are dropped (ledgered). One idea survives from Pill
 | **The Receipt** | If it takes something from a player, does the ledger name who, what, and where? | **Yes.** No loss without a line. |
 | **The Hands** | Does it let the hero deal damage? | **No.** Hands stake; buildings fight. |
 
-**Litmus self-test:** Five features in the build failed. **Photon Plates** (walls that generated wood and stone) failed The Legs and was a dominant strategy: at level one, a ten-stone wall paid for itself in twenty seconds and kept paying forever. It was cut and rebuilt as Supply Roads. **Sovereign Tax** and **Vacuum Cores** failed The Legs and became a base delivery bonus and Forward Depots. **Auto-assign** fails The Chores and is changed. The **leaderboard** fails The Ledger (a wall scores 50, an outpost 0) and is changed to count held ground.
+**Litmus self-test:** Five features in the build failed, and all five were cut or changed. **Photon Plates** (walls that generated wood and stone) failed The Legs and was a dominant strategy: at level one, a ten-stone wall paid for itself in twenty seconds and kept paying forever. It was cut and rebuilt as Supply Roads. **Sovereign Tax** and **Vacuum Cores** failed The Legs and became a base delivery bonus and Forward Depots. **Auto-assign** failed The Chores and became Standing Orders. The **leaderboard** failed The Ledger (a wall scored 50, an outpost 0) and now counts only held ground and Plan phases.
 
 ### Prototype Findings (Phase 5)
 
@@ -202,18 +202,18 @@ Tapestry Pillars 1, 2, and 4 are dropped (ledgered). One idea survives from Pill
 | Pitfall | Why It Is in Scope | Symptom to Watch For | Seen? Evidence and Fix |
 | --- | --- | --- | --- |
 | pitfalls/magic_void.txt | Assembly | Nothing is ever placed along worker routes | Seen in code: passive ticks. Removed. |
-| pitfalls/dominant_strategy.txt | Economy | Territories carpeted in walls | Seen in code: Photon Plates and 50 score per wall. Income fixed; score open. |
+| pitfalls/dominant_strategy.txt | Economy | Territories carpeted in walls | Seen in code: Photon Plates and 50 score per wall. Both fixed. |
 | pitfalls/flavourful_lie.txt | systemic_consistency | A player plans on "+10 capacity" and gets +1 | Seen in code: four descriptions overstated their effect, by up to 25x. Fixed. |
 | pitfalls/illegible_chaos.txt | legible_failure | Losses described as random | Seen in code: every fight on the server scrolled past as "Turret attack hit for 10 damage!" Fixed: only your fights, by name. |
-| pitfalls/cheater_epidemic.txt | match_integrity | Losses blamed on teleporting heroes | Seen in code: client-reported positions. Open. |
-| pitfalls/seal_by_convention.txt | match_integrity (by analogy) | Rivals react to what fog should hide | Seen in code: fog is client-side only. Open. |
-| pitfalls/game_plays_itself.txt | automation | Auto-assign left on; labour never considered | Seen in code: on by default. Open. |
-| pitfalls/sinkhole_economy.txt | Assembly | Full purse, idle player | Watch: no infinite sink yet. |
-| pitfalls/spaghetti_wall.txt | Assembly | Territories abandoned rather than rebuilt | Watch: no demolish action exists. |
+| pitfalls/cheater_epidemic.txt | match_integrity | Losses blamed on teleporting heroes | Seen in code: client-reported positions, and free outposts via the build message. Fixed: a movement budget; only bases, walls, and turrets are buildable. |
+| pitfalls/seal_by_convention.txt | match_integrity (by analogy) | Rivals react to what fog should hide | Seen in code: fog was client-side only. Fixed: server-side vision. |
+| pitfalls/game_plays_itself.txt | automation | Auto-assign left on; labour never considered | Seen in code: on by default. Fixed: Standing Orders. |
+| pitfalls/sinkhole_economy.txt | Assembly | Full purse, idle player | Watch: the Plan is the sink; check that players keep delivering past phase three. |
+| pitfalls/spaghetti_wall.txt | Assembly | Territories abandoned rather than rebuilt | Watch: demolish exists now (full refund while undamaged). |
 | pitfalls/blob.txt | Tapestry | The leader's lead only grows | Watch: only cost curves resist it. |
 | pitfalls/death_spiral_without_a_story.txt | Failure: Costly | Quitting after returning to a broken border | Watch: the away report is the first defence. |
 | pitfalls/dead_servers.txt | Social: High | Nobody at the edge of an endless map | Watch: the tone needs neighbours. |
-| pitfalls/theme_as_paint.txt | Setting | Players can't say what the setting is | Seen: Soviet menus, sci-fi upgrades. Open. |
+| pitfalls/theme_as_paint.txt | Setting | Players can't say what the setting is | Seen: Soviet menus, sci-fi upgrades. Fixed: Soviet-industrial throughout. |
 
 ### Feature Gate Log (Phase 7)
 
@@ -225,9 +225,14 @@ Tapestry Pillars 1, 2, and 4 are dropped (ledgered). One idea survives from Pill
 | The ledger and the away report | house rule 2 | Every loss is named → a returning player reads which border failed before looking at the map → the danger has a name, and the calm holds | Pass | Built |
 | Stall reasons; workers skip nodes they can't mine | Pillar 2 | "No stone left inside your borders" → the player reaches for an outpost instead of wondering → the Squeeze, felt as a decision | Pass | Built |
 | Honest upgrade descriptions | systemic_consistency | Numbers match the server → purchases planned on paper → Cool Focus | Pass | Built |
-| Auto-assign by lowest rate | none | Chooses the resource → players stop setting ratios | Fails The Chores | Change: the player sets the split |
-| Leaderboard counting walls | Tapestry Pillar 3 | Rewards wall spam → territories carpeted | Fails The Ledger | Change: count held ground |
-| Server-side movement and vision | match_integrity | No teleports or fog-reading → losses are trusted | Pass | Build next |
+| Auto-assign by lowest rate | none | Chooses the resource → players stop setting ratios | Fails The Chores | Changed to Standing Orders |
+| Leaderboard counting walls | Tapestry Pillar 3 | Rewards wall spam → territories carpeted | Fails The Ledger | Changed: ground and Plan only |
+| Server-side movement and vision | match_integrity | No teleports or fog-reading → losses are trusted | Pass | Built |
+| Standing Orders | automation | The player sets 3:2:1 → the split is revised when the bottleneck moves, not every time a worker is bought | Pass | Built |
+| The Plan | Pillar 4 | An endless phased quota at the base, a quarter phase per delivery → always a reason to route more, and a rival's phase is readable in the standings | Pass | Built |
+| Demolish, refund scaled by health | workbench | Undamaged buildings refund in full → borders are redesigned as the frontier moves; burning ones can't be sold | Pass | Built |
+| Rates by depot | workbench | Last-minute deliveries per depot → players see which route pays | Pass | Built |
+| World persistence | Structure: Persistent World | The world survives a restart → borders mean something tomorrow | Pass | Built |
 | A hero with a weapon | none | Fights by reflex → power moves to the hands | Fails The Hands | Cut (banned) |
 
 ### Soul Ledger (Phases 2–9)
@@ -241,6 +246,8 @@ Tapestry Pillars 1, 2, and 4 are dropped (ledgered). One idea survives from Pill
 | Phase 3 | Components | match_integrity and failure_as_content added; living_world dropped | Ground is the stake; rivals are the living world. | Server authority, anti-cheat, and a world that survives a restart (today it lives in memory) are permanent costs. |
 | Phase 4 | Pillar 2 | No Magic Inventory adapted: one purse | The hero builds anywhere in the borders. | The trip to the depot is the only travel; no belts between buildings. |
 | Phase 4 | Tapestry pillars | Pillars 1, 2, and 4 dropped | The follower soul lends its map, not its court. | No system-authored drama beyond what rivals do. |
+| Phase 4 | Pillar 2 | The Plan draws from the purse; no worker carries it | The purse is already filled only by workers; a second trip adds a chore, not a decision. | The Plan is the one place goods move without legs. |
+| Phase 4 | Information | Outposts and their owners are public through the fog | The political map is the ledger, and a ledger nobody can read isn't one. | Rivals always know where your borders are, never what stands inside them. |
 
 ### Drift Audit (Phase 8)
 
