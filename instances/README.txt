@@ -10,6 +10,7 @@ Instances are built phase by phase with SOUL_INSTANCE_GUIDE.txt. Each phase fill
 | --- | --- |
 | TEMPLATE.txt | The empty instance, with one section per phase. Copy it to start a new instance. |
 | the_pass.txt | A worked example: a hypothetical kitchen game that adopts the Vigil soul, taken through Phase 4 on paper, with a sample of what Phases 5–7 record. |
+| infinite_rts.txt | infiniteRTS, a real browser RTS in development on one shared, endless map: an Assembly-led blend with Tapestry's territory rivalry, written after an instillation of the existing build, and Translated on paper. |
 
 ### Instance Status
 

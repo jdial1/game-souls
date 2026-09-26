@@ -1,0 +1,264 @@
+## Soul Instance: infiniteRTS
+
+**Status:** Translated (Phases 0–4 on paper; Phase 6 watchlist drafted; no playtests yet)
+**Lead soul:** souls/assembly.txt (Path: Blend with souls/tapestry.txt)
+**Last milestone review:** none yet
+
+*infiniteRTS (the menu reads "Red October: Overlord Command") is a real browser RTS in development: one endless, shared, persistent map where every player mines, builds, and claims outposts. This instance was written after a build existed, so it follows an instillation of that build (Step 8 of LLM_SOUL_GUIDE.txt), kept in the game's repository at docs/SOUL.md. The Seed Card is inferred from the build and the designer's answers (the growing machine and the pressing border together; competitive PvP; setting provisional). The designer confirms it before Phase 5.*
+
+---
+
+### Seed Card (Phase 0)
+
+| Verb | What the player literally does | Kinetic profile (bands, if real-time) |
+| --- | --- | --- |
+| Stake ground | Walk the hero into an outpost's ring and hold it until it turns (or until a rival's turns neutral) | Deliberate attack, committed hold: progress fills only while the hero stays; a rival in the ring freezes it |
+| Route labour | Assign workers to wood, stone, or gold, and decide where they can unload | Menu choice; not real-time |
+| Place a building | Put a wall, turret, or base inside the borders | Snappy attack, committed release: instant, paid on the spot |
+
+Gathering by hand is the Manual Tax (components/automation.txt), not a core verb: workers exist to take it away.
+
+* **The fortieth minute:** Calm, because the machine feeds itself and its border was built right, and never quite calm, because a neighbour is measuring that border.
+* **The next-day story:** "My stone ran dry at home, so I ran a supply road out to the mountain outposts, and by morning the red player had neutralized two of them."
+* **Setting (provisional):** A Soviet-industrial frontier, currently mixed with sci-fi upgrade names.
+
+*Integration check:* Delete the setting and the verbs still hold. Today it does no mechanical work (pitfalls/theme_as_paint.txt). It would earn its place if the planned economy's **Plan** became the infinite sink (Pillar 4) and the commissariat spoke the ledger. Otherwise, drop the flavour and keep the verbs.
+
+### Soul Choice (Phase 1)
+
+* **Path:** Blend. Assembly explains the machine: workers, routes, a bottleneck that keeps moving outward, no ending. Tapestry explains the map: ground that only changes hands, borders as the record of play, size that costs something. Neither explains a session alone.
+* **Instance philosophy:** "The machine must grow, and every tile it grows onto is a tile someone else wanted."
+* **Blend leaders:**
+  * **Failure:** Neither. Assembly's Trivial can't survive PvP; Tapestry's Terminal is too much for a persistent world. Costly, in Tapestry's spirit: a lost outpost is the next chapter.
+  * **Information:** Tapestry leads. Rules and your own state are Total; a rival's state beyond your sight is Observed through fog.
+  * **Authorship:** Assembly leads. Player-Authored Build, with the rival as co-author of the border.
+  * **Power:** Assembly leads. Optimization; workers have no wills, so Custodial is dropped.
+  * **Tone:** Neither. Watchful Calm (Containment's position), with the danger supplied by rivals instead of heat.
+  * **Structure:** Assembly leads. Persistent World, shared and never reset.
+
+**Psychological Target** (copied from Assembly; one row changed)
+
+| Motivation Pair | Level | Why | Changed? |
+| --- | --- | --- | --- |
+| Action | Low | The hero never fights; reflex matters only in a race to an outpost. | No |
+| Social | High | Competition: rivals share one map, take ground, and share one board. | Yes: Assembly's co-op neighbours are rivals here, and the rivalry is half the game. |
+| Mastery | High | Strategy: labour ratios, routes, and which border can be held. | No |
+| Achievement | High | Power: painting the map. | No |
+| Immersion | Low | The fiction is thin and provisional. | No |
+| Creativity | High | Design: the lattice of outposts, roads, and depots. | No |
+
+**Design note:** Action players will ask for a hero who fights; that moves power from the layout to the hands, and it is banned. Players who want a peaceful factory will meet neighbours who take things. That is the soul, not a flaw to patch.
+
+### Axis Positions (Phase 2)
+
+| Axis | Lead Soul | This Game | Match / Bend / Break |
+| --- | --- | --- | --- |
+| Failure | Trivial | Costly: buildings and outposts are taken or destroyed and their cost is gone; account, upgrades, and workers survive | Break (ledgered) |
+| Information (rules / state) | Total | Total rules; Total state within your own sight; Observed beyond it | Bend (ledgered) |
+| Authorship | Player-Authored Build | "What I built, and where they broke it" | Match |
+| Power | Optimization | Throughput per worker, ground per upgrade | Match |
+| Tone | Cool Focus | Watchful Calm: the machine is quiet because its border was built right, and the neighbour never leaves | Break (ledgered) |
+| Structure | Persistent World | One shared map, never reset | Match |
+
+**Tensions, resolved:**
+* **Total + shallow systems** (axes/information.txt): a visible economy can be solved. The rival is the depth, and the Moving Bottleneck keeps the solo half from settling.
+* **Hidden + Punishing failure:** not triggered. Fog is Observed (what is in range is shown exactly) and failure is Costly.
+* **Persistent PvP + absence** (named by no axis file): the world runs while the owner sleeps, so losses happen off-screen. Allowed, because rivalry is the soul, but never unexplained (see Banned Mechanics). Whether absence also needs a limit is a Phase 5 question.
+
+### Banned Mechanics (Phase 2)
+
+| Banned Mechanic | Source | Why It Is Banned |
+| --- | --- | --- |
+| Resources that arrive without a worker (tax ticks, generating walls, collector turrets) | axes/tone.txt (Assembly's killer, translated) | Income from nowhere is the Magic Void (pitfalls/magic_void.txt). *Was in the build; removed.* |
+| A loss with no receipt | axes/tone.txt (Watchful Calm's killer, translated) | Calm survives danger; it doesn't survive danger you can't name. *Was in the build; addressed.* |
+| Insurance or a rewind that restores what a rival took | axes/failure.txt (Costly) | If the loss can be undone, the border means nothing. |
+| A hero who deals damage | This instance (house rule 3) | The genre expects the commander to fight. Here hands stake and buildings fight. |
+| A button that decides where labour goes | components/automation.txt | The labour split is the Ratio over Capacity decision. The build's auto-assign makes it for the player. |
+
+### Component Bill (Phase 3)
+
+| Component | Core / Supporting | This Game's Tuning |
+| --- | --- | --- |
+| components/scarcity_economy.txt | Core | Scarcity is ground: depleting nodes inside the borders, and an outpost cap that rises only at a steep price. Never money. |
+| components/automation.txt | Core | Hand-gathering is the tax; workers retire it; roads and depots are the progression. The player routes, never carries. |
+| components/legible_failure.txt | Core | Two receipts: a stalled worker names its missing input; every loss to a rival is a ledger line with a name, a place, and a time. |
+| components/match_integrity.txt | Core (added) | The server decides positions, vision, captures, and deliveries, because ground is the stake. |
+| components/systemic_consistency.txt | Supporting | One rule set for every player; every tooltip number is the server's number. |
+| components/workbench.txt | Supporting | Show the Rates first (per resource, per depot), then free demolition, then outpost-layout blueprints. |
+| components/trusting_the_player.txt | Supporting | Give the lattice rules and the numbers; never suggest where to expand. |
+| components/failure_as_content.txt | Supporting (added) | A lost outpost stays on the map as neutral ground with its ledger line: the next thing to retake, and the story of who took it. |
+
+Tapestry's living_world is dropped: rival players already keep the world running.
+
+**Relationship conflicts, resolved:**
+* **match_integrity against client-side authority:** *Open in the build.* The server accepts whatever hero position the client sends, and every building and unit is sent to every client, with fog drawn only on screen (pitfalls/seal_by_convention.txt, by analogy). Resolution: clamp hero movement on the server, and send each client only what its vision covers.
+* **automation against automating decisions:** Resolution: the player sets the split (say 3:2:1) and the machine keeps it as workers are bought. The machine keeps a ratio; it never picks one.
+* **scarcity_economy against a Generator without drains:** upgrades are the only sink, and their effects are linear while their costs are exponential, so buying stops. Resolution: the infinite sink of Pillar 4.
+* **workbench against outcome randomness:** node sizes are rolled when a chunk is generated, before any decision; turret targeting is deterministic. Nothing is rolled after the player commits.
+
+### Economy (Phase 3)
+
+* **Shape:** A Generator (workers, routes, and upgrades grow output without limit) nested inside a Zero-Sum (outposts only change hands).
+* **The bottleneck:** Minable ground. Home nodes run dry, richer nodes lie further out, and each outpost past the cap needs a Base Expansion at four times the last one's price.
+* **Drains:** building costs; worker costs that double every ten workers; upgrades at 1.5x per level; Base Expansion at 4x; buildings destroyed by rivals; depleting nodes.
+* **Why this shape produces the tone:** The Generator gives Assembly's momentum; the Zero-Sum puts a rival at the edge of every expansion. A working machine watched from a contested border is Watchful Calm.
+
+**Expected features:**
+
+| Feature | Serves (component or pillar) |
+| --- | --- |
+| Manual gathering; workers and labour assignment | automation |
+| Auto-assign | none (see Litmus self-test) |
+| Outpost capture and neutralize; lattice bridges and squares | scarcity_economy, Pillar 3, Tapestry Pillar 3 |
+| Supply Roads (walls speed workers); Forward Depots (turrets take loads) | Pillar 2 |
+| Refinery and market outposts as delivery bonuses | Pillar 2, Tapestry Pillar 3 |
+| Turrets and guard towers | scarcity_economy (the drain rivals apply) |
+| The ledger and the "While You Were Away" report | legible_failure, house rule 2 |
+| Worker stall reasons | legible_failure |
+| Rates panel; demolish with full refund | workbench |
+| Server-side movement and vision | match_integrity |
+| The Plan | Pillar 4 |
+| Leaderboard | Tapestry Pillar 3 (see Litmus self-test) |
+| Doctrine traits (two of speed, strength, cost) | Authorship |
+
+### Translated Pillars (Phase 4)
+
+**Assembly Pillar 1: The Moving Bottleneck**
+
+| Soul Rule | Carried / Adapted / Dropped | In This Game | Carried By (mechanic) |
+| --- | --- | --- | --- |
+| The Squeeze | Carried | Stone runs dry at home; the fix is an outpost; the outpost is on a rival's edge; holding it takes turrets that eat stone. | Finite nodes, territory-limited mining, the outpost cap |
+| Ratio over Capacity | Adapted | The ratio is labour per resource against spend per build. | Worker assignment, the rate readout |
+| Show the Rates | Carried | Income per resource is on the resource bar; per depot is missing. | Resource bar; rates panel (planned) |
+
+**Assembly Pillar 2: Everything Travels**
+
+| Soul Rule | Carried / Adapted / Dropped | In This Game | Carried By (mechanic) |
+| --- | --- | --- | --- |
+| No Magic Inventory | Adapted | One purse remains, because the hero builds anywhere in the borders, but nothing enters it unless a worker carries it to a depot. | Delivery-only income |
+| The Jam Is Visible | Carried | A stalled worker says why: "No stone left inside your borders." | Worker panel (a marker in the world is planned) |
+| Distance Unlocks New Logistics | Carried | Walking, then supply roads along walls, then forward depots at turrets, then outposts as depots. Convoys between outposts are the open next tier. | Supply Roads, Forward Depots |
+
+**Assembly Pillar 3: The Infinite Canvas**
+
+| Soul Rule | Carried / Adapted / Dropped | In This Game | Carried By (mechanic) |
+| --- | --- | --- | --- |
+| Sprawl as a Mechanic | Carried | Nodes grow richer with distance from the centre, so far ground is worth the walk. | Chunk generation, distance scaling |
+| The Main Bus and Other Emergent Patterns | Adapted | The composable part is the outpost lattice: neighbours bridge, and four in a square fill the interior. | Lattice territory rules |
+
+**Assembly Pillar 4: Always a Reason to Consume**
+
+| Soul Rule | Carried / Adapted / Dropped | In This Game | Carried By (mechanic) |
+| --- | --- | --- | --- |
+| The Infinite Sink | Adapted (missing) | A sink with no ceiling that rivals can see, such as the Plan, delivered to the base in escalating phases. | The Plan (planned) |
+| Milestones, Not Endings | Carried | No win. A Plan phase or a filled square is passed, and play goes on. | No end state |
+
+**Tapestry Pillar 3: The Map Is the Ledger** (the only Tapestry pillar carried)
+
+| Soul Rule | Carried / Adapted / Dropped | In This Game | Carried By (mechanic) |
+| --- | --- | --- | --- |
+| Painting the Map | Carried | Territory in the player's colour, and a board that counts ground. Today the board counts walls and ignores outposts. | Territory rendering; score (to change) |
+| Many Maps of One World | Adapted | The ground you hold, and the ground that pays (resource zones; refinery and market outposts). | Zones, unique outposts |
+| Growth Creates Resistance | Adapted | The outpost cap, 4x expansion, doubling worker costs, a longer border to watch. | Cost curves |
+
+Tapestry Pillars 1, 2, and 4 are dropped (ledgered). One idea survives from Pillar 4: the ledger writes about people ("the red player neutralized your outpost"), not numbers.
+
+**House Rules**
+
+* **Every Border Is Someone's Border:** Everyone starts near the centre and the best nodes lie further out, so the most valuable ground is always the most contested.
+* **The Receipt Arrives Before the Grudge:** Every loss one player inflicts on another is written down with the attacker's name, the place, and the time, and it waits for an absent owner. A player knows who to blame before deciding what to do about it.
+  * *Example:* A player logs in to a broken western square. Before the map, the report reads: "The red player's turret destroyed your wall. 03:12 [1210, -640]."
+* **Hands Stake, Buildings Fight:** The hero claims and gathers and never deals damage. Every attack comes from something built and placed, so fights are won by layouts, not reflexes.
+
+### Instance Litmus (Phase 4)
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Math** | Is this feature about balancing what workers carry against what the build spends? | **Yes.** Throughput per worker is the metric. |
+| **The Legs** | Does every resource it produces arrive with a worker? | **Yes.** Nothing enters the purse without legs. |
+| **The Chores** | Does it retire a repeated action without choosing for the player? | **Yes.** Automate the verb; keep the decision. |
+| **The Canvas** | Does tearing down your own building cost you materials? | **No.** Rivals may take; redesigning must not. |
+| **The Ledger** | Does it make held ground count, and more ground harder to hold? | **Yes.** The map is the record; size is never a pure win. |
+| **The Receipt** | If it takes something from a player, does the ledger name who, what, and where? | **Yes.** No loss without a line. |
+| **The Hands** | Does it let the hero deal damage? | **No.** Hands stake; buildings fight. |
+
+**Litmus self-test:** Five features in the build failed. **Photon Plates** (walls that generated wood and stone) failed The Legs and was a dominant strategy: at level one, a ten-stone wall paid for itself in twenty seconds and kept paying forever. It was cut and rebuilt as Supply Roads. **Sovereign Tax** and **Vacuum Cores** failed The Legs and became a base delivery bonus and Forward Depots. **Auto-assign** fails The Chores and is changed. The **leaderboard** fails The Ledger (a wall scores 50, an outpost 0) and is changed to count held ground.
+
+### Prototype Findings (Phase 5)
+
+* **Soul claim:** stake, route, and place under a ground bottleneck → players push supply lines toward rich ground and fortify the border they route through → Watchful Calm.
+* **Did the dynamic appear unprompted?** Not yet tested. Watch for: walls built as roads without prompting; hand-gathering abandoned after the third worker; testers naming who took their outpost without opening the ledger.
+* **Next-day stories collected:** none yet.
+* **What failed:** not yet tested.
+
+### Slice Findings (Phase 6)
+
+* **The loop built:** not yet. The slice is one session: spawn, a lost outpost, a retaken one.
+* **The fortieth minute, in testers' words:** not yet.
+* **Litmus results:** paper verdicts only; see the Feature Gate Log.
+
+### Pitfall Watchlist (Phase 6, re-run in Phase 7)
+
+| Pitfall | Why It Is in Scope | Symptom to Watch For | Seen? Evidence and Fix |
+| --- | --- | --- | --- |
+| pitfalls/magic_void.txt | Assembly | Nothing is ever placed along worker routes | Seen in code: passive ticks. Removed. |
+| pitfalls/dominant_strategy.txt | Economy | Territories carpeted in walls | Seen in code: Photon Plates and 50 score per wall. Income fixed; score open. |
+| pitfalls/flavourful_lie.txt | systemic_consistency | A player plans on "+10 capacity" and gets +1 | Seen in code: four descriptions overstated their effect, by up to 25x. Fixed. |
+| pitfalls/illegible_chaos.txt | legible_failure | Losses described as random | Seen in code: every fight on the server scrolled past as "Turret attack hit for 10 damage!" Fixed: only your fights, by name. |
+| pitfalls/cheater_epidemic.txt | match_integrity | Losses blamed on teleporting heroes | Seen in code: client-reported positions. Open. |
+| pitfalls/seal_by_convention.txt | match_integrity (by analogy) | Rivals react to what fog should hide | Seen in code: fog is client-side only. Open. |
+| pitfalls/game_plays_itself.txt | automation | Auto-assign left on; labour never considered | Seen in code: on by default. Open. |
+| pitfalls/sinkhole_economy.txt | Assembly | Full purse, idle player | Watch: no infinite sink yet. |
+| pitfalls/spaghetti_wall.txt | Assembly | Territories abandoned rather than rebuilt | Watch: no demolish action exists. |
+| pitfalls/blob.txt | Tapestry | The leader's lead only grows | Watch: only cost curves resist it. |
+| pitfalls/death_spiral_without_a_story.txt | Failure: Costly | Quitting after returning to a broken border | Watch: the away report is the first defence. |
+| pitfalls/dead_servers.txt | Social: High | Nobody at the edge of an endless map | Watch: the tone needs neighbours. |
+| pitfalls/theme_as_paint.txt | Setting | Players can't say what the setting is | Seen: Soviet menus, sci-fi upgrades. Open. |
+
+### Feature Gate Log (Phase 7)
+
+*Paper verdicts; no playtest has confirmed them.*
+
+| Feature | Serves | Trace (Mechanic → Dynamic → Tone) | Litmus | Verdict |
+| --- | --- | --- | --- | --- |
+| Delivery-only income; upgrades rebuilt as roads, depots, and delivery bonuses | Pillar 2 | Income arrives only with a worker → players lay walls along paths and turrets where loads can land → the focus of a routed machine | Pass | Built |
+| The ledger and the away report | house rule 2 | Every loss is named → a returning player reads which border failed before looking at the map → the danger has a name, and the calm holds | Pass | Built |
+| Stall reasons; workers skip nodes they can't mine | Pillar 2 | "No stone left inside your borders" → the player reaches for an outpost instead of wondering → the Squeeze, felt as a decision | Pass | Built |
+| Honest upgrade descriptions | systemic_consistency | Numbers match the server → purchases planned on paper → Cool Focus | Pass | Built |
+| Auto-assign by lowest rate | none | Chooses the resource → players stop setting ratios | Fails The Chores | Change: the player sets the split |
+| Leaderboard counting walls | Tapestry Pillar 3 | Rewards wall spam → territories carpeted | Fails The Ledger | Change: count held ground |
+| Server-side movement and vision | match_integrity | No teleports or fog-reading → losses are trusted | Pass | Build next |
+| A hero with a weapon | none | Fights by reflex → power moves to the hands | Fails The Hands | Cut (banned) |
+
+### Soul Ledger (Phases 2–9)
+
+| Date / Phase | What Bends | Which Rule or Position | Why | Cost |
+| --- | --- | --- | --- | --- |
+| Phase 1 | Psychological Target | Social: Medium → High | The rivalry is half the game. | Co-op factory players are served less. |
+| Phase 2 | Failure | Trivial → Costly (Break) | PvP needs something to take. | Losses while away can drive players off; the ledger must carry the story. |
+| Phase 2 | Information | Total → Observed beyond sight (Bend) | Fog makes the border worth watching. | Fog must be real on the server, not only on screen. |
+| Phase 2 | Tone | Cool Focus → Watchful Calm (Break) | The rivalry must be felt inside the calm. | The tone needs neighbours to exist. |
+| Phase 3 | Components | match_integrity and failure_as_content added; living_world dropped | Ground is the stake; rivals are the living world. | Server authority, anti-cheat, and a world that survives a restart (today it lives in memory) are permanent costs. |
+| Phase 4 | Pillar 2 | No Magic Inventory adapted: one purse | The hero builds anywhere in the borders. | The trip to the depot is the only travel; no belts between buildings. |
+| Phase 4 | Tapestry pillars | Pillars 1, 2, and 4 dropped | The follower soul lends its map, not its court. | No system-authored drama beyond what rivals do. |
+
+### Drift Audit (Phase 8)
+
+* **Instillation Report summary:**
+* **Seed Card vs. late playtests:**
+* **Tone killers found late:**
+
+### Accepted Costs (Phase 8)
+
+* **<Cost>:**
+
+### Live Log (Phase 9)
+
+| Date | Change | Feature Gate Verdict | Pitfalls Watched |
+| --- | --- | --- | --- |
+| | | | |
+
+### Library Feedback (Phase 9)
+
+* **Verdict on the shipped game (Steps 1–5 of LLM_SOUL_GUIDE.txt):**
+* **Changes proposed to the library:** none yet. A candidate to test: the "Persistent PvP + absence" tension, which no axis file names. If a second game hits it, it belongs in axes/structure.txt.
