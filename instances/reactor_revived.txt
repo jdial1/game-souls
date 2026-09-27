@@ -282,6 +282,7 @@ The Dice is widened from the soul's row to cover undoing a board: a rewind is th
 | The toast that closes a Time Flux run | legible_failure | A receipt of what the board did while the player was away | Fails The Room | Build with a ledger entry |
 | Heat Control Operator switched on the Upgrades page; auto-sell and perpetual rebuys with no light or switch | automation | An automated system with no light → the player cannot see what is running | Fails The Room's spirit and legible_failure | Change: a light and a switch on the reactor for each |
 | Thirteen interface strings in a default voice | interface_voice | "Save exported", "Restart the reactor" → the game sounds like an app | Pass, but fail the Voice Guide | Changed: the accepted rewrites (built; test/voice.test.js holds them) |
+| The valley outside: four of the designer's paintings behind the board, one per season, dark after seven | Setting; house rule 3 | The valley shows through the empty slots and fades as heat rises → an empty slot is a view of what it is not yet lighting, and near the limit only the room is left → the why, seen, without a word | Pass: The Lineage (Reactor Revival's art), The Room (still, silent, never in the planner) | Built (reactor-revived commit 062c904) |
 
 ### Soul Ledger (Phases 2–9)
 
