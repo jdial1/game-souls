@@ -274,7 +274,7 @@ The Dice is widened from the soul's row to cover undoing a board: a rewind is th
 
 | Feature | Serves | Trace (Mechanic → Dynamic → Tone) | Litmus | Verdict |
 | --- | --- | --- | --- | --- |
-| The "Feeding an accelerator" example at goal 22, which hands over the farm | trusting_the_player | The layout arrives solved → the story players would tell ("I figured out the accelerator layout") never happens | Passes the rows, and spends the next-day story | Change: teach the accelerator's numbers, not its layout |
+| The "Feeding an accelerator" example at goal 22, which hands over the farm | trusting_the_player | The layout arrives solved → the story players would tell ("I figured out the accelerator layout") never happens | Passes the rows, and spends the next-day story | Changed: goal 22 shows the accelerator's numbers and puts one alone in the planner (built, reactor-revived commit 808e057) |
 | Toasts for parts supplied, new dock parts, and casing design authorised | legible_failure | A second voice announces each arrival → the room is never silent | Fails The Room | Changed: a silent entry in the log book (built) |
 | Trophy and field note toasts | difficulty_ladder | A second voice for each feat | Fails The Room | Changed: filed silently in the log book (built) |
 | The welcome-back toast ("Away 3h - banked as Time Flux") | Pillar 3 (Absence Is Play) | A second voice on return | Fails The Room | Changed: the Time Flux gauge lights (built) |
