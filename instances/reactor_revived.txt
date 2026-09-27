@@ -1,8 +1,8 @@
 ## Soul Instance: Reactor Revived
 
-**Status:** Translated (Phases 0–4 reconstructed from the build; no playtest is recorded, so Phases 5–6 are open; the Feature Gate is running; a Phase 8 audit was run on the build and does not pass yet)
+**Status:** Translated (Phases 0–4 reconstructed from the build, then revisited in the designer's Soul Interview; no playtest is recorded, so Phases 5–6 are open; the Feature Gate is running; a Phase 8 audit was run on the build and does not pass yet)
 **Lead soul:** souls/containment.txt (Path: Adopt)
-**Last milestone review:** 27 September 2026, on the build at reactor-revived commit a7c0215 (the Drift Audit below)
+**Last milestone review:** 27 September 2026, on the build at reactor-revived commit a7c0215 (the Drift Audit below). Phases 0, 1 and 4 revisited the same week through the designer's Soul Interview (docs/soul-interview.md in the game's repository).
 
 *Reactor Revived is a real game in development: a zero-dependency rewrite of Reactor Knockoff for Android phones, and the source game of Containment. The soul was drawn from this game, so its litmus was written to describe features that already existed, which is the definition of pitfalls/soul_written_last.txt. This instance turns that caption back into a constraint: it reconstructs Phases 0–4 from the build and the game's soul report (docs/soul.md in its repository), then holds the build to them with a Feature Gate and a drift audit that can fail, and did. Paths to the game's files are in its repository. Nothing here is claimed about players, because no playtest is recorded.*
 
@@ -18,22 +18,24 @@
 
 The reactor runs in real time around these verbs, but no verb is performed by reflex. Selling power and venting heat by tapping the bars is the Manual Tax (components/automation.txt), not a core verb: the first upgrades retire it.
 
-* **The fortieth minute:** Calm, because the board you built has stopped climbing and the hum has steadied, and never careless, because the next cell you want to fit is the one that could tip it.
-* **The next-day story:** "The vent upgrade made my checkerboard wasteful, so I rebuilt it round exchangers, and it has been Mark I for four thousand ticks."
-* **Setting (provisional, and meant to stay thin):** Harrow Station, a plant cold for eleven years above a town that has been on candles since it closed; one deadpan line per job in the operator's log.
+Unpausing is the reactor's on switch (the designer's word, interview 1.1): the moment a board built by these verbs is set running.
 
-*The fortieth minute and the next-day story were inferred from the build. The designer confirms or replaces them, and settles the setting, through the Soul Interview kept in the game's repository (docs/soul-interview.md, Phases 1 and 4).*
+* **The fortieth minute:** "A feeling of accomplishment pulled from confusing and uncertainty": the struggle first, then watching it flow together, then confirming it holds and leaving it, confident it is stable (interview 1.1, 6.3).
+* **The next-day story:** "I figured out the accelerator layout," told with excitement (interview 1.4).
+* **Setting (settled in the interview):** Harrow Station, an old Soviet-built reactor in an English valley of fog and overcast. A control room left in clean order over a core that needs replacing. A valley that may be run by humanoid robots, waiting on an approval nobody is left to give, and asking only for more. Story is told only in letters and log entries (interview 2-6).
 
-*Integration check:* Delete Harrow Station and every verb still produces the feeling; the setting gives the reactor somewhere to be, as an IC2 base did, and does no work a mechanic should. That is deliberate. Immersion is rated Low, and the standing rule "no story beats" keeps the setting to one line per job.
+*The fortieth minute and the next-day story were first inferred from the build. The designer replaced both, and settled the setting, in the Soul Interview (docs/soul-interview.md). The inferred versions are in the Soul Ledger.*
+
+*Integration check:* Delete Harrow Station and every verb still produces the feeling; the setting does no work a mechanic should. It supplies what the build lacked, by the designer's own verdict: a why (interview 6.5). It reaches the player only through the log, letters, names, voice, materials and sound, never through a scene.
 
 ### Soul Choice (Phase 1)
 
 * **Path:** Adopt. Containment's philosophy sentence was written from this game and describes the seed with no edits. Loathing lends furniture (records, trophies, restriction runs taken like ascension paths, and the fair-play contract) but leads no axis and explains no part of the seed Containment doesn't, so this is not a Blend; the borrowings are entered as components and a house rule.
-* **Instance philosophy:** "A reactor small enough to hold in one hand, and good enough to put in your pocket."
-  This is a Member of Containment, and says so. The one thing it adds is the phone: the whole board in one hand, and a pocket as the place a held machine is left.
+* **Instance philosophy (the Soul Sentence, interview 7.1):** "Paid to start a Soviet reactor nobody else could, in an English fog, you learn it alone until it holds. The valley asks for more."
+  Still a Member of Containment: "until it holds" is the soul. What it adds is the world the holding is for. It replaces the philosophy first inferred from the build ("A reactor small enough to hold in one hand, and good enough to put in your pocket"); see the Soul Ledger.
 * **Blend leaders:** not applicable.
 
-**Psychological Target** (copied from Containment; no rows changed)
+**Psychological Target** (copied from Containment; one row changed)
 
 | Motivation Pair | Level | Why | Changed? |
 | --- | --- | --- | --- |
@@ -41,10 +43,10 @@ The reactor runs in real time around these verbs, but no verb is performed by re
 | Social | Low | Designs travel as codes; play is solitary and offline. | No |
 | Mastery | High | Strategy: ratios, geometry, and a conserved ledger. | No |
 | Achievement | High | Marks, Mark I records, restriction-run times, and a trophy case. | No |
-| Immersion | Low | One deadpan line of Harrow Station per job; the machine is the point. | No |
+| Immersion | Medium | The machine is still the point, and the world now gives it a why: letters and log entries, optional and never interrupting play. | Yes: the designer's verdict that the build "lacks the why" (interview 6.5), bounded in 6.3. |
 | Creativity | High | Design: a layout that holds is the player's own, and it travels as text. | No |
 
-**Design note:** Two groups will ask for things that work against this game. Immersion players will ask for Harrow Station to grow into a story; the standing rule is no story beats. Phone idle players, and the store around them, will ask for what the genre expects: notifications that call them back, daily rewards, ads, and offline earnings that pile up while they are away. Each of those is on the banned list.
+**Design note:** Two groups will ask for things that work against this game. Immersion players will ask for Harrow Station to grow into a story told on screen; story lives only in letters and log entries, optional, and never interrupts play. Phone idle players, and the store around them, will ask for what the genre expects: notifications that call them back, daily rewards, ads, and offline earnings that pile up while they are away. Each of those is on the banned list.
 
 ### Axis Positions (Phase 2)
 
@@ -74,6 +76,12 @@ The reactor runs in real time around these verbs, but no verb is performed by re
 | A board that grows | Pillar 2 | *Knockoff's two expansion upgrades; removed.* On a phone the whole board must fit in one hand. |
 | Anything that calls the player back or punishes absence: notifications, daily rewards, streaks, spoilage, offline earnings that expire | This instance (house rule 2) | The phone idle genre expects all of them. Here a held machine is one you are allowed to leave. |
 | Ads, purchases, accounts, analytics, or network access of any kind | This instance (house rule 2) | The lineage never asked for anything, and a game that sells skips has a reason to make the wait longer. |
+| A second request or a second voice in the room: stacked quests, badges, toasts that fill the silence | This instance (house rule 3) | The room's silence and the one request waiting are the 20% that makes it Harrow's (interview 6.4). |
+| Story told anywhere but letters and log entries; story that is required, or that interrupts play | This instance (interview 6.3) | The world gives the game its why; it must never take the game's time. Still never a scene, a cutscene, or a character on screen. |
+| A world that sees, thanks or praises the operator | This instance (interview 4.1) | Only the power is noticed; the operator stays invisible. |
+| Bright, glossy icons; cartoony, blobby characters; modern material design | This instance (interview 6.1) | The genre's look. Colour that carries a signal is allowed. |
+
+The designer's full Never List, including the voice rules, is in the game's docs/soul-interview.md (7.4).
 
 ### Component Bill (Phase 3)
 
@@ -134,6 +142,9 @@ The workbench is marked Core here, where docs/soul.md has it Supporting: it is t
 | Knockoff's expansion upgrades | none (see Litmus self-test) |
 | Google Drive saves | none (see Litmus self-test) |
 | Android cloud backup of the save | none (see Litmus self-test) |
+| Letters and log entries that tell the world, answered as the player climbs | house rule 3, Immersion (interview 6.3) |
+| A light and a switch on the reactor for every automated system | automation, legible_failure (interview 5.2) |
+| Requests that grow after they are made, and a demand that goes on past job 30 | house rule 3, the world's demand (interview 2.1, 3.5) |
 
 ### Translated Pillars (Phase 4)
 
@@ -176,9 +187,11 @@ The soul was drawn from this genre, so most rules carry whole. The translation t
 
 **House Rules**
 
-* **Inside the Lineage:** Every part, rule, and number comes from IndustrialCraft 2, Reactor Incremental, or Reactor Knockoff, and the balance is checked against the running original. A departure is allowed only when it is named and given a reason in the README's "Differences from the original".
+* **Inside the Lineage:** Every part, rule, and number comes from IndustrialCraft 2, Reactor Incremental, or Reactor Knockoff. Reactor Incremental is the game being revived; Knockoff is the route it survived by, and the balance is checked against Knockoff running in a browser. A departure is allowed only when it is named and given a reason in the README's "Differences from the original".
   * *Example:* Knockoff's particle accelerator could never make a particle. The fix is listed as a difference, with the reason and the example farm that proves it.
 * **Nothing Asked, Nothing Sold:** The game asks nothing of the player but play: no ads, purchases, accounts, network, or notifications, and no clock outside the game that punishes being away. Time away is banked, never spent behind the player's back.
+* **One Request, Waiting:** One request at a time, in a silent room. The demand arrives as a line in the log and waits; nothing else speaks. (The designer's, from the Soul Interview, 6.4 and 7.2.)
+  * *Example:* A part the player has earned appears in the dock and is filed in the log book. No toast announces it.
 
 ### Instance Litmus (Phase 4)
 
@@ -190,11 +203,11 @@ The soul was drawn from this genre, so most rules carry whole. The translation t
 | **The Workbench** | If players would need an outside tool to design well, does the game ship it, offline? | **Yes.** Planner, forecast, codes, and datasheet are in the box. |
 | **The Dice** | Can a part fail, or a board be undone, for a reason the board did not cause? | **No.** Every failure is heat the design made, and it stays made. |
 | **The Lineage** | Does it come from IC2, Incremental, or Knockoff, or is it written down as a named difference? | **Yes.** Inside the line, or named. |
-| **The Ask** | Does it ask the player for money, data, a connection, or a return at a set time? | **No.** Nothing asked, nothing sold. |
+| **The Room** | Does it ask the player for anything but the one request waiting: money, data, a connection, a return at a set time, or attention for a second voice? | **No.** Nothing asked, nothing sold, one request waiting. |
 
-The Dice is widened from the soul's row to cover undoing a board: a rewind is the same lie as a random failure, told in the other direction. docs/soul.md's extra rows (The Voice, The Chores, The Blindfold) are component checks, and run in the Pitfall Watchlist instead.
+The Dice is widened from the soul's row to cover undoing a board: a rewind is the same lie as a random failure, told in the other direction. The Room carries house rules 2 and 3 together, so the litmus stays at seven rows; it replaced The Ask when house rule 3 arrived (see the Soul Ledger). docs/soul.md's extra rows (The Voice, The Chores, The Blindfold) are component checks, and run in the Pitfall Watchlist instead.
 
-**Litmus self-test:** The expected feature list includes the lineage's own features, and six failed. **Knockoff's free trickle** under the heat limit failed The Ledger and was removed. **Board-wide capacitor and plating bonuses** failed The Neighbour and became local. **A peak-power record** as the only prestige number failed The Clock and now sits under Mark I power. **Knockoff's expansion upgrades** failed The Neighbour, whose question is asked on the 12x8 (a board that grows stops fitting the hand), and were cut. **Google Drive saves** failed The Ask and were cut. **Android cloud backup** failed The Dice, because a reinstall restores a board past its meltdown, and was cut in the drift audit (see the Feature Gate Log).
+**Litmus self-test:** The expected feature list includes the lineage's own features, and six failed. **Knockoff's free trickle** under the heat limit failed The Ledger and was removed. **Board-wide capacitor and plating bonuses** failed The Neighbour and became local. **A peak-power record** as the only prestige number failed The Clock and now sits under Mark I power. **Knockoff's expansion upgrades** failed The Neighbour, whose question is asked on the 12x8 (a board that grows stops fitting the hand), and were cut. **Google Drive saves** failed The Room (then The Ask) and were cut. **Android cloud backup** failed The Dice, because a reinstall restores a board past its meltdown, and was cut in the drift audit (see the Feature Gate Log). House rule 3 was self-tested on the build when it was written: five features add a second voice or a badge to the room, and each has a verdict in the Feature Gate Log.
 
 ### Prototype Findings (Phase 5)
 
@@ -231,6 +244,8 @@ The Dice is widened from the soul's row to cover undoing a board: a rewind is th
 | pitfalls/wordy_tutorial.txt, pitfalls/abandonment_disguised_as_trust.txt | trusting_the_player | Text skipped; or testers lost after the last card | Seen in code: seventeen cards. Fixed: seven, five of which wait for an action. Watch the other side in playtests. |
 | pitfalls/empty_top.txt, pitfalls/unfair_rungs.txt | difficulty_ladder | The most dedicated players leave | Watch: the last tiers have never been played to (docs/play/checklist.md). |
 | pitfalls/monetization_creep.txt | House rule 2 (from Loathing) | A store appears | Clear: no permissions, no purchases, no network. |
+| pitfalls/audio_log_dump.txt, pitfalls/walls_of_undifferentiated_text.txt | Letters (interview 6.3) | Letters skipped unread; the log read as a wall | Watch: letters are optional and one at a time, and every answer is earned by climbing. |
+| pitfalls/theme_as_paint.txt | The setting (interview 2-6) | Testers cannot say where Harrow is, or why the plant runs | Watch: every truth has a verdict in docs/soul-interview.md 7.3; twelve are told in letters, none yet written. |
 | pitfalls/soul_written_last.txt | Process: the soul was drawn from this game | Every feature passes every row | In scope by construction. Evidence against it: the self-test cut six lineage features, and the 27 September audit failed five rows on the build. |
 
 ### Feature Gate Log (Phase 7)
@@ -251,9 +266,22 @@ The Dice is widened from the soul's row to cover undoing a board: a rewind is th
 | Android cloud backup | none | A reinstall restores a board from before its meltdown, even in Hardcore → the receipt stops mattering | Fails The Dice; on the banned list | Cut 27 Sep |
 | Loading a 1.2 save without its doctrines | none (a migration gap) | A returning player's board loses Throttled Cells → it fails for a reason it did not cause | Fails The Dice | Changed 27 Sep: migrated, with the 1.2 save as a test fixture |
 | A store listing that states the square law | none | The first discovery is spent before the first tap | On the banned list | Changed 27 Sep; a test reads the listing |
-| Push notifications while away | none | The phone calls the player back → leaving is punished | Fails The Ask | Cut (docs/soul-brainstorm.md) |
+| Push notifications while away | none | The phone calls the player back → leaving is punished | Fails The Room (then The Ask) | Cut (docs/soul-brainstorm.md) |
 | Meltdown insurance | none | A fall that can be bought back → the receipt matters less | Fails The Dice | Cut (docs/soul-brainstorm.md) |
 | Random disasters | none | A failure the design did not cause | The tone killer | Cut (docs/soul-brainstorm.md) |
+
+*Verdicts from the Soul Interview (docs/soul-interview.md 7.3, 7.5, 7.8), on paper; none is built yet.*
+
+| Feature | Serves | Trace (Mechanic → Dynamic → Tone) | Litmus | Verdict |
+| --- | --- | --- | --- | --- |
+| The "Feeding an accelerator" example at goal 22, which hands over the farm | trusting_the_player | The layout arrives solved → the story players would tell ("I figured out the accelerator layout") never happens | Passes the rows, and spends the next-day story | Change: teach the accelerator's numbers, not its layout |
+| Toasts for parts supplied, new dock parts, and casing design authorised | legible_failure | A second voice announces each arrival → the room is never silent | Fails The Room | Change: a silent entry in the log book |
+| Trophy and field note toasts | difficulty_ladder | A second voice for each feat | Fails The Room | Change: filed silently in the log book and the record |
+| The welcome-back toast ("Away 3h - banked as Time Flux") | Pillar 3 (Absence Is Play) | A second voice on return | Fails The Room | Change: shown on the Time Flux gauge |
+| The dot on the goal line marking an example waiting in the log | trusting_the_player | A mark on the one request's own line, pointing at help inside the game | Fails The Room, narrowly | Build with a ledger entry |
+| The toast that closes a Time Flux run | legible_failure | A receipt of what the board did while the player was away | Fails The Room | Build with a ledger entry |
+| Heat Control Operator switched on the Upgrades page; auto-sell and perpetual rebuys with no light or switch | automation | An automated system with no light → the player cannot see what is running | Fails The Room's spirit and legible_failure | Change: a light and a switch on the reactor for each |
+| Thirteen interface strings in a default voice | interface_voice | "Save exported", "Restart the reactor" → the game sounds like an app | Pass, but fail the Voice Guide | Change: the accepted rewrites in docs/soul-interview.md 7.5 |
 
 ### Soul Ledger (Phases 2–9)
 
@@ -266,6 +294,13 @@ The Dice is widened from the soul's row to cover undoing a board: a rewind is th
 | Phase 7 | Pause and the planner stop the real board | Pillar 3 (The Clock Is the Judge) | A phone is put down mid-thought; a planner that let the floor run would punish planning. | A failing board can be frozen while it is fixed. Nothing is earned by it, but the clock is not always the judge. |
 | Phase 7 | The module designer measures a casing cold and hot, outside the planner | components/workbench.txt (forecasts live in the lab) | A saved design is a part, and a part carries its datasheet, like a cell's listed heat. | One forecast-like number lives outside the lab. |
 | 27 Sep, Phase 8 | Cloud backup off | none bent: a banned mechanic removed | A reinstall was a way back past a meltdown. | A lost phone with no exported save is a lost game. Device transfer still moves a game to a new phone. |
+| 27 Sep, Soul Interview (returns to Phases 0, 1, 4) | The Seed Card's fortieth minute and next-day story, and the instance philosophy, replaced | Phase 0, Phase 1 | They were inferred from the build; the designer's own answers replace them. Inferred: "Calm, because the board you built has stopped climbing …"; "The vent upgrade made my checkerboard wasteful …"; "A reactor small enough to hold in one hand, and good enough to put in your pocket." | None to the soul. The instance now names a world Containment does not have. |
+| 27 Sep, Soul Interview | "No story beats" becomes: story only in letters and log entries, optional, never required, never interrupting play | Standing rule; Containment's Immersion: Low | The designer's verdict that the build is "closer to the hollow version, it lacks the why" (6.5). | Letters to write, every one answered as the player climbs, with no sacred mysteries to lean on. Watch the Audio-Log Dump. |
+| 27 Sep, Soul Interview | Psychological Target, Immersion: Low → Medium | Containment's Psychological Target | The same. | Players who come for the machine alone are served no less, but the world now has a claim on their attention. It must stay optional. |
+| 27 Sep, Soul Interview | House rule 3 added (One Request, Waiting); The Ask merged into The Room | Phase 4 | The silence and the one request are the 20% that makes it Harrow's (6.4). The litmus stays at seven rows. | Every toast in the build is on trial. |
+| 27 Sep, Soul Interview | Reactor Incremental named as the game being revived; Knockoff as the route | House rule 1 | The designer's childhood game is Incremental (0.2). | None to the balance, which stays checked against Knockoff, the version that runs in a browser. |
+| 27 Sep, Soul Interview | The dot on the goal line kept | House rule 3 | It sits on the one request's own line and points at help inside the game (6.3). | A mark in a room meant to be silent. |
+| 27 Sep, Soul Interview | The Time Flux receipt toast kept | House rule 3 | A receipt of what happened while away is legibility (1.5). | A second voice, once per Time Flux run. |
 
 ### Drift Audit (Phase 8)
 
@@ -310,4 +345,5 @@ The Dice is widened from the soul's row to cover undoing a board: a rewind is th
   * **A platform restore is a backdoor too.** pitfalls/backdoor_rewind.txt says to refuse an import in Hardcore and mark a restored run elsewhere; a platform's own cloud restore can be neither refused nor marked. Its fix could add: turn the platform backup off, and keep an export the game can see.
   * **The off-book button.** A manual action outside the tick (here, a paid refill) moved the conserved quantity without a row on the line. It belongs in pitfalls/friendly_leak.txt as an example: a leak can be paid for and still be a leak.
   * **Saves break like codes.** pitfalls/broken_codes.txt covers shared designs. The same failure reached saves here, when an update dropped what an old save had bought. Its fix, "version the format, and migrate old codes forward", could name saves too.
+  * **The Soul Interview.** The game's docs/soul-interview.md adapts a general interview (the spark, the feeling, the world's truths, people and voice, the player's place, texture, tensions, and a Lock) to one game, and its Lock maps each answer to where it lives in the build: the Soul Sentence to the instance philosophy, one atmosphere pillar to a house rule, the Soul Check to Feature Gate verdicts. The instance guide has no phase that asks for a game's why; this interview found one missing from a finished machine. If it does the same for a second game, it belongs in SOUL_INSTANCE_GUIDE.txt as a companion to Phases 0-4.
   * **A source game's instance.** When the soul was written from the game, the Instance Litmus is a caption until something fails it. Here the self-test was run on the lineage's own features (six failed) and the audit on the current build (five rows failed). If a second source game does the same, it belongs in SOUL_INSTANCE_GUIDE.txt beside pitfalls/soul_written_last.txt.
