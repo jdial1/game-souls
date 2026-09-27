@@ -1,0 +1,311 @@
+## Soul Instance: Reactor Revived
+
+**Status:** Translated (Phases 0–4 reconstructed from the build; no playtest is recorded, so Phases 5–6 are open; the Feature Gate is running; a Phase 8 audit was run on the build and does not pass yet)
+**Lead soul:** souls/containment.txt (Path: Adopt)
+**Last milestone review:** 27 September 2026, on the build at reactor-revived commit a7c0215 (the Drift Audit below)
+
+*Reactor Revived is a real game in development: a zero-dependency rewrite of Reactor Knockoff for Android phones, and the source game of Containment. The soul was drawn from this game, so its litmus was written to describe features that already existed, which is the definition of pitfalls/soul_written_last.txt. This instance turns that caption back into a constraint: it reconstructs Phases 0–4 from the build and the game's soul report (docs/soul.md in its repository), then holds the build to them with a Feature Gate and a drift audit that can fail, and did. Paths to the game's files are in its repository. Nothing here is claimed about players, because no playtest is recorded.*
+
+---
+
+### Seed Card (Phase 0)
+
+| Verb | What the player literally does | Kinetic profile (bands, if real-time) |
+| --- | --- | --- |
+| Place a part | Tap an empty tile with a part selected, or drag to paint a row | Not a real-time verb: instant, and refunded if sold, so never committed |
+| Inspect, then sell, move, or replace | Tap a placed part for its sheet; every action on a placed part lives there | Not a real-time verb: instant; a sale refunds the price less fuel used |
+| Buy | Buy an upgrade, a doctrine side, or research with Exotic Particles | Not a real-time verb: a menu choice |
+
+The reactor runs in real time around these verbs, but no verb is performed by reflex. Selling power and venting heat by tapping the bars is the Manual Tax (components/automation.txt), not a core verb: the first upgrades retire it.
+
+* **The fortieth minute:** Calm, because the board you built has stopped climbing and the hum has steadied, and never careless, because the next cell you want to fit is the one that could tip it.
+* **The next-day story:** "The vent upgrade made my checkerboard wasteful, so I rebuilt it round exchangers, and it has been Mark I for four thousand ticks."
+* **Setting (provisional, and meant to stay thin):** Harrow Station, a plant cold for eleven years above a town that has been on candles since it closed; one deadpan line per job in the operator's log.
+
+*Integration check:* Delete Harrow Station and every verb still produces the feeling; the setting gives the reactor somewhere to be, as an IC2 base did, and does no work a mechanic should. That is deliberate. Immersion is rated Low, and the standing rule "no story beats" keeps the setting to one line per job.
+
+### Soul Choice (Phase 1)
+
+* **Path:** Adopt. Containment's philosophy sentence was written from this game and describes the seed with no edits. Loathing lends furniture (records, trophies, restriction runs taken like ascension paths, and the fair-play contract) but leads no axis and explains no part of the seed Containment doesn't, so this is not a Blend; the borrowings are entered as components and a house rule.
+* **Instance philosophy:** "A reactor small enough to hold in one hand, and good enough to put in your pocket."
+  This is a Member of Containment, and says so. The one thing it adds is the phone: the whole board in one hand, and a pocket as the place a held machine is left.
+* **Blend leaders:** not applicable.
+
+**Psychological Target** (copied from Containment; no rows changed)
+
+| Motivation Pair | Level | Why | Changed? |
+| --- | --- | --- | --- |
+| Action | Low | Nothing is performed by reflex; the reactor keeps time, the player doesn't. | No |
+| Social | Low | Designs travel as codes; play is solitary and offline. | No |
+| Mastery | High | Strategy: ratios, geometry, and a conserved ledger. | No |
+| Achievement | High | Marks, Mark I records, restriction-run times, and a trophy case. | No |
+| Immersion | Low | One deadpan line of Harrow Station per job; the machine is the point. | No |
+| Creativity | High | Design: a layout that holds is the player's own, and it travels as text. | No |
+
+**Design note:** Two groups will ask for things that work against this game. Immersion players will ask for Harrow Station to grow into a story; the standing rule is no story beats. Phone idle players, and the store around them, will ask for what the genre expects: notifications that call them back, daily rewards, ads, and offline earnings that pile up while they are away. Each of those is on the banned list.
+
+### Axis Positions (Phase 2)
+
+| Axis | Lead Soul | This Game | Match / Bend / Break |
+| --- | --- | --- | --- |
+| Failure | Costly | A failed part is gone and its heat returns to the pool; a meltdown wipes the board but keeps money, research, and records | Match |
+| Information (rules / state) | Total (state) / Observed (consequence) | Rules: every part's rule is stated on its sheet and in the parts guide, except how hard touching cells pulse, which is observed. State: every number is on the board. Consequence: learned by running, or forecast in the planner only | Match |
+| Authorship | Player-Authored Build | "My Mark I": layout codes, save states, modules | Match |
+| Power | Optimization | Ratios, geometry, upgrades, doctrine sides | Match |
+| Tone | Watchful Calm | The hum steadies when a board holds and beats while heat climbs; near the limit the reactor is the loudest thing in the game | Match |
+| Structure | Rebirth Account | A reboot banks Exotic Particles into research; the log ends and the long game goes on | Match |
+
+**Tensions, resolved:**
+* **Total + shallow systems** (axes/information.txt): a visible board can be solved. The depth is combinatorial (thirteen part kinds with their own neighbour rules on 96 tiles), and doctrine sides are there to move the optimum between runs. The watch is pitfalls/checkerboard_forever.txt, because most of the 72 upgrades only scale a number.
+* **Costly failure + a save file** (named by no axis file; Containment's pitfalls/backdoor_rewind.txt): a meltdown is only Costly if nothing brings the board back. Import is refused in Hardcore and marked *Restored* elsewhere. Android's cloud backup was a second way back; see the Drift Audit.
+* **Glance-length sessions + trusting_the_player** (components/trusting_the_player.txt, "short sessions for casual audiences"): a phone is picked up for a minute at a time, and there is no time to wander. Resolved by letting the reactor keep time instead of the player: it runs on every page, and time away is banked as Time Flux to spend on the player's say. The discovery happens across many short sessions, not inside one.
+* **What stops the clock** (pitfalls/pause_loophole.txt, by analogy): Pause, the planner, and leaving the app stop the real board; every other page lets it run. Leaving banks the time; Pause and the planner don't, so stopping the clock never earns anything.
+
+### Banned Mechanics (Phase 2)
+
+| Banned Mechanic | Source | Why It Is Banned |
+| --- | --- | --- |
+| A part that fails for a reason the board did not cause (random breakdowns, events, disasters) | axes/tone.txt (Containment's killer) | The calm is only earned if every failure is heat the design made. |
+| Heat that leaves without a sink the player placed (a free trickle, rounding, decay, heat lost with a sold part) | Pillar 1 | A ledger that leaks can't be reasoned about. *Knockoff had the trickle, the rounding, and the lost heat; removed.* |
+| A way back past a meltdown on the real board (restore, insurance, undo) | axes/failure.txt (Costly); pitfalls/backdoor_rewind.txt | If the fall can be undone, the receipt means nothing. The planner may undo; the floor may not. |
+| A layout optimiser, a suggested placement, or a sentence that states the square law | components/trusting_the_player.txt | The law is the player's first discovery, and the layout is the player's build. |
+| A board that grows | Pillar 2 | *Knockoff's two expansion upgrades; removed.* On a phone the whole board must fit in one hand. |
+| Anything that calls the player back or punishes absence: notifications, daily rewards, streaks, spoilage, offline earnings that expire | This instance (house rule 2) | The phone idle genre expects all of them. Here a held machine is one you are allowed to leave. |
+| Ads, purchases, accounts, analytics, or network access of any kind | This instance (house rule 2) | The lineage never asked for anything, and a game that sells skips has a reason to make the wait longer. |
+
+### Component Bill (Phase 3)
+
+| Component | Core / Supporting | This Game's Tuning |
+| --- | --- | --- |
+| components/systemic_consistency.txt | Core | One `tick` runs the floor, the planner, the forecast, and every module casing. The lab changes money and nothing else. |
+| components/legible_failure.txt | Core | Per-part heat bars that stay grey until four-fifths full, Flow, the shift log, one line per cascade naming the first part lost, and a meltdown receipt. |
+| components/workbench.txt | Core (raised from Supporting) | The planner, a forecast that names the failure tick, layout codes carrying their context and a letter grid, save states per job, free teardown and Move, and no rewind. |
+| components/interface_voice.txt | Supporting | Say it once. Red is kept for danger and loss; a refused tap flashes without a sound. |
+| components/scarcity_economy.txt | Supporting | Scarcity is 96 tiles. Money inflates away; tiles never do. |
+| components/synergy_engines.txt | Supporting | Geometric: the square law, reflectors, and each IC2 family's own neighbour rule. |
+| components/difficulty_ladder.txt | Supporting | Reboot for research, five restriction rules, and times to 1K, 1M, 1B, and 1T power and to the first Mark I board, per rule. |
+| components/trusting_the_player.txt | Supporting | Every rule on the sheet, every number live; never the square law, never a placement. Field notes record what a part was seen to do. |
+| components/shared_discovery.txt | Supporting | Codes as text with a header claim; the classic checkerboard waits under its IC2 name. Offline only. |
+| components/automation.txt | Supporting | Auto-sell and perpetual rebuys are bought early; Heat Control Operator is a switch the player sets. Nothing chooses a layout. |
+| components/audio_information.txt | Supporting | One hum on Web Audio: pitch rises with heat, a beat when heat is climbing, lower and quieter once Mark I is earned. Six dull impacts duck near the limit. |
+
+The workbench is marked Core here, where docs/soul.md has it Supporting: it is the largest system in the build (planner, forecast, codes, save states, the module designer), and a Supporting component that eats the budget is a sign that either the bill or the soul is wrong. Here it is the bill. Containment's Pillar 4 is the workbench.
+
+**Relationship conflicts, resolved:**
+* **scarcity_economy against an Inflationary topology:** the scarce thing is tiles, not the money that inflates, and rebirth is the money sink.
+* **scarcity_economy against synergy_engines late in a run:** synergy is geometric, so every combo spends the tiles that stay scarce.
+* **workbench and legible_failure against outcome randomness:** the only roll is the fractional Exotic Particle count, a reward, and the forecast seeds it.
+* **workbench against Terminal failure:** failure is Costly; Hardcore removes the planner and codes for players who want the stakes whole.
+* **automation against automating decisions:** rebuys and selling are chores with one right answer. Heat Control Operator is off until the player turns it on.
+* **audio_information against a Total UI, and without a visual twin:** the hum reports the trend, which the screen shows only as the held column and Mark II; every cue has that twin, so the sound can be off.
+* **audio_information's positional audio requirement:** not met, and not needed. The reactor is one source; which part is failing is visual.
+* **trusting_the_player against tutorials:** seven cards, five of which wait for the player to act, none of which says where a part goes.
+
+### Economy (Phase 3)
+
+* **Shape:** A Generator (power and money grow without limit with investment), with a Drain inside every board (fuel burns out, reflectors wear, condensators cost money to empty), and rebirth as the sink across runs.
+* **The bottleneck:** Tiles. Ninety-six of them, never more.
+* **Drains:** fuel rebuys; reflector wear; condensator refills; parts lost to heat; a meltdown's whole board; the module casing's cut of power and particles (75%, down to 40% with Casing Tolerances); upgrades at exponential cost; doctrine sets at ten times the last; a reboot's board and money.
+* **Why this shape produces the tone:** Money grows but space doesn't, so a richer player is never a safer one; calm has to be built into the arrangement, and a built calm is Watchful Calm.
+
+**Expected features:**
+
+| Feature | Serves (component or pillar) |
+| --- | --- |
+| The rate line (made, vented, moved, held) and the ledger sheet | Pillar 1 |
+| Conserved heat: exact splits, no trickle, a full over-limit dump, heat left behind by lost and sold parts | Pillar 1, systemic_consistency |
+| Condensators: storage refilled for money | Pillar 1 (Storage Buys Time) |
+| A fixed 12x8 board | Pillar 2 |
+| Capacitors and plating that boost only their neighbours; component and hull vents with their own rules | Pillar 2 |
+| Doctrine sets | Pillar 2 (Every Upgrade Moves the Optimum) |
+| Marks earned on the floor; Mark I records and efficiency | Pillar 3 |
+| The hum | Pillar 3, audio_information |
+| The meltdown receipt, the shift log, first-out cascades | Pillar 3, legible_failure |
+| Time Flux | Pillar 3 (Absence Is Play) |
+| The planner and forecast; layout codes; save states; Move; replace-all | Pillar 4, workbench |
+| Modules (a sealed 3x3 as one part) | Pillar 2, synergy_engines |
+| Example layouts and their broken copies | trusting_the_player, shared_discovery |
+| The parts guide and field notes | trusting_the_player |
+| Records, trophies, restriction runs | difficulty_ladder |
+| Auto-sell, perpetual rebuys, Heat Control Operator | automation |
+| The tutorial | trusting_the_player |
+| Knockoff's expansion upgrades | none (see Litmus self-test) |
+| Google Drive saves | none (see Litmus self-test) |
+| Android cloud backup of the save | none (see Litmus self-test) |
+
+### Translated Pillars (Phase 4)
+
+The soul was drawn from this genre, so most rules carry whole. The translation that matters is from a desktop idle game to a phone.
+
+**Pillar 1: The Ledger**
+
+| Soul Rule | Carried / Adapted / Dropped | In This Game | Carried By (mechanic) |
+| --- | --- | --- | --- |
+| One Conserved Quantity | Carried | Heat. Made only by cells (and extreme capacitors); leaves only through vents, refills, conversion to power, and particles. | sim.js; a test checks the books every tick |
+| No Leaks in the Math | Carried | No trickle under the limit; exact splits; lost, sold, and replaced parts leave their heat in the reactor; a condensator emptied by hand is booked by the next tick. | The same test |
+| The Line Is the Truth | Carried | Made = vented + converted + held, on one line, every tick. | The rate line; the ledger sheet on request |
+| Storage Buys Time, Not Safety | Carried | A board leaning on coolant earns Mark II; a condensator must be paid to empty, and a board that needed a refill earns Mark II. | Marks; condensator refills |
+
+**Pillar 2: Geometry Is the Build**
+
+| Soul Rule | Carried / Adapted / Dropped | In This Game | Carried By (mechanic) |
+| --- | --- | --- | --- |
+| A Small, Fixed Board | Adapted | 12 x 8, sized so the whole reactor is on one phone screen with tiles a thumb can hit. Modules fold a 3x3 into one tile at a casing cost. | Fixed grid; modules |
+| Neighbours Are the Rules | Adapted | Every rule is local except the reactor's pool and the experimental tier: the extreme exchanger reaches its whole row, and the extreme inlet and outlet reach two tiles. | Neighbour lists in sim.js |
+| Every Tile Is a Trade | Carried | Each tile makes heat or handles it; an empty tile can be correct. | The square law |
+| Every Upgrade Moves the Optimum | Adapted | Doctrine sides move it; most other upgrades scale values. A reboot keeps the sides, so the next run's first question is which. | Doctrine sets |
+
+**Pillar 3: Proof by Running**
+
+| Soul Rule | Carried / Adapted / Dropped | In This Game | Carried By (mechanic) |
+| --- | --- | --- | --- |
+| The Clock Is the Judge | Carried | Parts fail on schedule; the only roll is a reward. | Deterministic sim |
+| Rate the Machine by Its Stamina | Carried | Marks I–III after 300 ticks unchanged; Records lead with Mark I power and efficiency; particles count only as far as heat is shed. | Marks, Records |
+| Absence Is Play | Adapted | Nothing runs while the app is closed. The time is banked (up to eight hours) and spent at ten times speed on the player's say, ending in a one-line receipt. | Time Flux |
+| The Hum of a Held Machine | Carried | Steady when held, beating while heat climbs, lower once Mark I is earned. | The hum |
+| A Meltdown Is a Receipt, Not a Scar | Carried | A clean wipe and a written receipt of the fall. | The meltdown sheet |
+
+**Pillar 4: The Workbench Ships with the Game**
+
+| Soul Rule | Carried / Adapted / Dropped | In This Game | Carried By (mechanic) |
+| --- | --- | --- | --- |
+| Forecast the Failure Tick | Carried | The planner names the tick and the first part, or says "Would earn Mark I". | forecast.js |
+| Stamina Travels With the Design | Carried | Codes carry mark, power, efficiency, upgrades, and doctrine sides, and say when the reader's game differs. | Layout codes |
+
+**House Rules**
+
+* **Inside the Lineage:** Every part, rule, and number comes from IndustrialCraft 2, Reactor Incremental, or Reactor Knockoff, and the balance is checked against the running original. A departure is allowed only when it is named and given a reason in the README's "Differences from the original".
+  * *Example:* Knockoff's particle accelerator could never make a particle. The fix is listed as a difference, with the reason and the example farm that proves it.
+* **Nothing Asked, Nothing Sold:** The game asks nothing of the player but play: no ads, purchases, accounts, network, or notifications, and no clock outside the game that punishes being away. Time away is banked, never spent behind the player's back.
+
+### Instance Litmus (Phase 4)
+
+| Check | Question | Correct Answer |
+| --- | --- | --- |
+| **The Ledger** | Can the player account for every point of heat the board made this tick, on the rate line or the ledger sheet? | **Yes.** Made equals vented, converted, and held. |
+| **The Neighbour** | Would the same parts in a different arrangement on the 12x8 make a different machine? | **Yes.** Geometry is the build. |
+| **The Clock** | Is a design judged by how long it holds on the real board, not only by what it makes in a minute? | **Yes.** Mark I is the prestige. |
+| **The Workbench** | If players would need an outside tool to design well, does the game ship it, offline? | **Yes.** Planner, forecast, codes, and datasheet are in the box. |
+| **The Dice** | Can a part fail, or a board be undone, for a reason the board did not cause? | **No.** Every failure is heat the design made, and it stays made. |
+| **The Lineage** | Does it come from IC2, Incremental, or Knockoff, or is it written down as a named difference? | **Yes.** Inside the line, or named. |
+| **The Ask** | Does it ask the player for money, data, a connection, or a return at a set time? | **No.** Nothing asked, nothing sold. |
+
+The Dice is widened from the soul's row to cover undoing a board: a rewind is the same lie as a random failure, told in the other direction. docs/soul.md's extra rows (The Voice, The Chores, The Blindfold) are component checks, and run in the Pitfall Watchlist instead.
+
+**Litmus self-test:** The expected feature list includes the lineage's own features, and six failed. **Knockoff's free trickle** under the heat limit failed The Ledger and was removed. **Board-wide capacitor and plating bonuses** failed The Neighbour and became local. **A peak-power record** as the only prestige number failed The Clock and now sits under Mark I power. **Knockoff's expansion upgrades** failed The Neighbour, whose question is asked on the 12x8 (a board that grows stops fitting the hand), and were cut. **Google Drive saves** failed The Ask and were cut. **Android cloud backup** failed The Dice, because a reinstall restores a board past its meltdown, and was cut in the drift audit (see the Feature Gate Log).
+
+### Prototype Findings (Phase 5)
+
+* **Soul claim:** place, inspect, and buy under a 96-tile bottleneck → players thin a packed core into a pattern that holds, then leave it running to earn its mark → Watchful Calm, then permission to look away.
+* **Questions for testers:** After the first lost part, do they thin the cells out without being told? Does anyone leave a board untouched for 300 ticks to see what mark it earns? Can they say why two touching cells run hotter than two apart, in their own words, by the end of the first session?
+* **Did the dynamic appear unprompted?** *Not recorded.* The verbs are the lineage's, but no test of this build with players is recorded in either repository.
+* **Next-day stories collected:** *None recorded.*
+* **What failed:** *Not run.*
+
+### Slice Findings (Phase 6)
+
+* **The loop built:** the whole game is built; the slice to test is one session from a new game to a meltdown receipt and a rebuilt board that earns Mark I. Item 6 of the game's 1.0 plan (docs/mvp-1.0.md), an on-device pass with the sound on, is the nearest planned test, and is not yet run.
+* **The fortieth minute, in testers' words:** *Not recorded.*
+* **Litmus results:** run on the build on paper; see the Feature Gate Log.
+
+### Pitfall Watchlist (Phase 6, re-run in Phase 7)
+
+| Pitfall | Why It Is in Scope | Symptom to Watch For | Seen? Evidence and Fix |
+| --- | --- | --- | --- |
+| pitfalls/friendly_leak.txt | Containment | A design that exploits a leak earns top stamina | Seen in code: Knockoff's trickle, rounded splits, and heat lost with sold parts (fixed earlier). Seen again on 27 September: a condensator emptied by hand lost its heat off the line, and the board earned Mark I. Fixed and tested. |
+| pitfalls/backdoor_rewind.txt | Containment | A meltdown undone by a restore | Seen in code: import (refused in Hardcore, marked *Restored* elsewhere), then Android cloud backup. Backup turned off 27 September. |
+| pitfalls/proof_nobody_sees.txt | Containment | Players chase one-minute stunts | Seen in code: peak power was the only power record. Fixed: Mark I leads Records. |
+| pitfalls/checkerboard_forever.txt | Containment; Pillar 2 adapted | Posted codes at different tiers look the same | Watch: only the six doctrine sets move ratios; most other upgrades scale values. |
+| pitfalls/lab_that_lies.txt | workbench | A planner design fails on the floor | Seen in code: the forecast dropped the power cap, selling, and rebuys. Fixed: a test runs every example on both. |
+| pitfalls/broken_codes.txt | workbench | A pasted code reports parts "not unlocked" that the reader owns | Watch: codes carry an `RR1.` version but no migration exists yet. The same failure was seen in saves (below). |
+| pitfalls/outside_tool.txt | workbench | A spreadsheet open beside the game | Watch: the datasheet copies as text for exactly this. |
+| pitfalls/red_signal.txt | interface_voice | A price out of reach read as danger | Seen in code: red confirmations, then red prices. Fixed: red is for danger and loss. |
+| pitfalls/buzzer.txt, pitfalls/cheerful_toast.txt | interface_voice | Sound muted; toasts dismissed unread | Seen in code: a deny thud and redundant toasts. Fixed. A trophy is one flat toast. |
+| pitfalls/flavourful_lie.txt | interface_voice, systemic_consistency | A player plans on a number the game doesn't keep | Seen in code on 27 September: the listing's counts and "pauses while you are not"; the guide's Improved accelerator ("doubles"; it is linear). Fixed. |
+| pitfalls/hearing_required.txt, pitfalls/decorative_mix.txt | audio_information | Sound off loses the trend; sound on adds nothing | Watch: the hum's trend has its twin in the held column and Mark II. The hum has never been heard on a phone. |
+| pitfalls/pause_loophole.txt | Tension (by analogy) | Pause used to rescue a failing board for free | Checked: Pause, the planner, and leaving stop the clock; only leaving banks time. Ledgered. |
+| pitfalls/chores_forever.txt, pitfalls/babysat_machine.txt | automation | The first hour remembered as tapping bars | Watch: selling and venting by hand until perpetual rebuys (goal 8) and auto-sell. Lineage. |
+| pitfalls/game_plays_itself.txt | automation | A switch left on, and the layout never considered | Checked: Heat Control Operator is off until turned on; nothing places a part. |
+| pitfalls/wordy_tutorial.txt, pitfalls/abandonment_disguised_as_trust.txt | trusting_the_player | Text skipped; or testers lost after the last card | Seen in code: seventeen cards. Fixed: seven, five of which wait for an action. Watch the other side in playtests. |
+| pitfalls/empty_top.txt, pitfalls/unfair_rungs.txt | difficulty_ladder | The most dedicated players leave | Watch: the last tiers have never been played to (docs/play/checklist.md). |
+| pitfalls/monetization_creep.txt | House rule 2 (from Loathing) | A store appears | Clear: no permissions, no purchases, no network. |
+| pitfalls/soul_written_last.txt | Process: the soul was drawn from this game | Every feature passes every row | In scope by construction. Evidence against it: the self-test cut six lineage features, and the 27 September audit failed five rows on the build. |
+
+### Feature Gate Log (Phase 7)
+
+*Verdicts on the build as it stands, and on ideas the project turned down; no playtest has confirmed them. Features before the last soul review (commit a971d5d in the game's repository) are summarized in the Litmus self-test.*
+
+| Feature | Serves | Trace (Mechanic → Dynamic → Tone) | Litmus | Verdict |
+| --- | --- | --- | --- | --- |
+| Condensators, refilled for money | Pillar 1 (Storage Buys Time) | Storage that has to be paid to empty → players trade money for time, and see it priced → storage buys time, never safety | Failed The Ledger and The Clock by hand (heat left between ticks, and the board earned Mark I); pass after the fix | Built; changed 27 Sep |
+| Component and hull vents | Pillar 2 | Each has its own neighbour rule → each wants a different spot → geometry is the build | Pass | Built |
+| Parts guide and datasheet | trusting_the_player, Pillar 4 | Rules and live numbers, never the law or a placement → players plan from the game's own figures | Pass; one stale line fixed | Built |
+| Heat Control Operator as a switch | automation | Outlets push only above the limit, when the player turns it on → a rule the player chose | Pass | Built |
+| Shift log and first-out cascades; ledger over time; broken copies of the examples | legible_failure, Pillar 1, trusting_the_player | What happened, per minute and in order, and a failing board to mend with no fix named → players read and repair designs themselves → the line is the truth | Pass | Built |
+| Doctrine sets; modules | Pillar 2 | A side that changes the shape of a good layout, and a proven 3x3 folded into one tile → a second reactor is built differently from the first | Failed The Lineage: neither came from the line, and neither was named as a difference | Changed 27 Sep: named in the README's Differences |
+| Particle accelerators that work | Pillar 1; house rule 1 | A named sink (a hundredth of what it holds) → a steady feed settles → particles from a board that holds | Pass: a named difference in the README | Built |
+| Mark I needs the reactor within its limit | Pillar 3 | A board held over its limit by the emergency dump is only running hot → Mark I means held | Pass | Built |
+| One menu for a placed part; no gesture destroys | interface_voice | Nothing is sold by a slip → players tap to look without fear | Pass | Built |
+| Android cloud backup | none | A reinstall restores a board from before its meltdown, even in Hardcore → the receipt stops mattering | Fails The Dice; on the banned list | Cut 27 Sep |
+| Loading a 1.2 save without its doctrines | none (a migration gap) | A returning player's board loses Throttled Cells → it fails for a reason it did not cause | Fails The Dice | Changed 27 Sep: migrated, with the 1.2 save as a test fixture |
+| A store listing that states the square law | none | The first discovery is spent before the first tap | On the banned list | Changed 27 Sep; a test reads the listing |
+| Push notifications while away | none | The phone calls the player back → leaving is punished | Fails The Ask | Cut (docs/soul-brainstorm.md) |
+| Meltdown insurance | none | A fall that can be bought back → the receipt matters less | Fails The Dice | Cut (docs/soul-brainstorm.md) |
+| Random disasters | none | A failure the design did not cause | The tone killer | Cut (docs/soul-brainstorm.md) |
+
+### Soul Ledger (Phases 2–9)
+
+| Date / Phase | What Bends | Which Rule or Position | Why | Cost |
+| --- | --- | --- | --- | --- |
+| Phase 4 | Absence Is Play adapted: nothing runs while the app is closed; the time is banked, up to eight hours | Pillar 3 | Nothing may run on a timer that punishes being away, and a board must never melt in a pocket. | The soul's player "who left the same reactor running all night" instead comes back and spends the night at ten times speed; past eight hours, time away is simply gone. |
+| Phase 4 | Neighbours Are the Rules: the experimental tier reaches further (the extreme exchanger its row, the extreme inlet and outlet two tiles) | Pillar 2 | Inherited with the experimental parts. | Two exceptions to learn at the top tier, which Flow has to make visible. |
+| Phase 4 | Every Upgrade Moves the Optimum adapted: only the doctrine sets move ratios | Pillar 2 | The lineage's upgrades are multipliers, and the balance is checked against Knockoff (house rule 1). | pitfalls/checkerboard_forever.txt stays on the watchlist. |
+| Phase 4 | The manual tax runs to goal 8 | components/automation.txt | Lineage: every game in the line starts by selling and venting by hand. | An early hour of tapping bars. |
+| Phase 7 | Pause and the planner stop the real board | Pillar 3 (The Clock Is the Judge) | A phone is put down mid-thought; a planner that let the floor run would punish planning. | A failing board can be frozen while it is fixed. Nothing is earned by it, but the clock is not always the judge. |
+| Phase 7 | The module designer measures a casing cold and hot, outside the planner | components/workbench.txt (forecasts live in the lab) | A saved design is a part, and a part carries its datasheet, like a cell's listed heat. | One forecast-like number lives outside the lab. |
+| 27 Sep, Phase 8 | Cloud backup off | none bent: a banned mechanic removed | A reinstall was a way back past a meltdown. | A lost phone with no exported save is a lost game. Device transfer still moves a game to a new phone. |
+
+### Drift Audit (Phase 8)
+
+* **Instillation Report summary:** Run on 27 September 2026 on the build at reactor-revived commit a7c0215, with this instance, not Containment, as the soul being instilled.
+  * *Tone killers:* none. The only random draw is the Exotic Particle roll, which only adds.
+  * *Structure:* the topology, axes, and ideal player match; the component bill is whole, with the workbench raised to Core.
+  * *Litmus:* five rows failed:
+    * The Ledger and The Clock, on hand refills.
+    * The Dice, on cloud backup.
+    * The Dice again, on 1.2 saves losing their doctrines.
+    * The Lineage, on doctrine sets and modules, which came from no game in the line and were not named as differences.
+  * *Pitfalls with evidence:* the failures above, and three already known (the listing stating the law, describing an older game, and "pausing"). Two were also newly found in the guide and the prices (the Flavourful Lie and the Red Signal).
+  * *Fixed on 27 September:* all but the screenshots, in reactor-revived commits fcc27ff, d2fd7b4, 3875e26, and fd51791, with tests for the refill, the old save, and the listing.
+  * *Still open:* the store screenshots, taken on 11 September; the on-device pass; the version number.
+* **Seed Card vs. late playtests:** *Cannot be run: no playtest is recorded.* This is the gate that fails first. The next-day story on the Seed Card is a prediction until a tester says it.
+* **Tone killers found late:** none. Checked against the banned list: the store listing (changed), platform backup (cut), notifications, ads, and network (none; the manifest requests no permissions).
+* **Exit gate:**
+  * [x] An Instillation Report on the current build, with every tone killer and structural conflict resolved.
+  * [ ] Seed Card differences each either ledgered or fixed (needs playtests).
+  * [x] Accepted Costs written.
+  * [ ] Status set to Locked.
+
+### Accepted Costs (Phase 8)
+
+* **Tuning ratios, not values:** every change to a part moves the optimum for every shared code. The pinned example balances and the lab-versus-floor test keep it honest; they are also why a balance change is slow.
+* **Time as a test input:** a design is proven only by running. Marks take 300 unchanged ticks, and Time Flux and the forecast are what make that bearable.
+* **The law is never explained:** some players will melt a packed board, find nothing in the game or the store that tells them why, and leave. The game shows every number and trusts them to read it.
+* **Nothing runs in the pocket:** a held machine earns nothing while the app is closed. It banks up to eight hours, to be spent on the player's say.
+* **A lost phone is a lost game:** with cloud backup off, only an exported save or a device transfer carries a game forward. Recovering from a meltdown is never one of the things a backup is for.
+* **The first hour is by hand:** selling and venting by tapping the bars until the first automation is bought, as every game in the line began.
+
+### Live Log (Phase 9)
+
+| Date | Change | Feature Gate Verdict | Pitfalls Watched |
+| --- | --- | --- | --- |
+| | | | |
+
+### Library Feedback (Phase 9)
+
+* **Verdict on the shipped game (Steps 1–5 of LLM_SOUL_GUIDE.txt):** not yet shipped. It is the source game of Containment, so a Member by construction; the Phase 9 check is whether a stranger's analysis of the shipped game still lands on Containment.
+* **Changes proposed to the library,** to be made only once the game ships and a second game agrees:
+  * **A platform restore is a backdoor too.** pitfalls/backdoor_rewind.txt says to refuse an import in Hardcore and mark a restored run elsewhere; a platform's own cloud restore can be neither refused nor marked. Its fix could add: turn the platform backup off, and keep an export the game can see.
+  * **The off-book button.** A manual action outside the tick (here, a paid refill) moved the conserved quantity without a row on the line. It belongs in pitfalls/friendly_leak.txt as an example: a leak can be paid for and still be a leak.
+  * **Saves break like codes.** pitfalls/broken_codes.txt covers shared designs. The same failure reached saves here, when an update dropped what an old save had bought. Its fix, "version the format, and migrate old codes forward", could name saves too.
+  * **A source game's instance.** When the soul was written from the game, the Instance Litmus is a caption until something fails it. Here the self-test was run on the lineage's own features (six failed) and the audit on the current build (five rows failed). If a second source game does the same, it belongs in SOUL_INSTANCE_GUIDE.txt beside pitfalls/soul_written_last.txt.
