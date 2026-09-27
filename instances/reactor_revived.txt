@@ -22,6 +22,8 @@ The reactor runs in real time around these verbs, but no verb is performed by re
 * **The next-day story:** "The vent upgrade made my checkerboard wasteful, so I rebuilt it round exchangers, and it has been Mark I for four thousand ticks."
 * **Setting (provisional, and meant to stay thin):** Harrow Station, a plant cold for eleven years above a town that has been on candles since it closed; one deadpan line per job in the operator's log.
 
+*The fortieth minute and the next-day story were inferred from the build. The designer confirms or replaces them, and settles the setting, through the Soul Interview kept in the game's repository (docs/soul-interview.md, Phases 1 and 4).*
+
 *Integration check:* Delete Harrow Station and every verb still produces the feeling; the setting gives the reactor somewhere to be, as an IC2 base did, and does no work a mechanic should. That is deliberate. Immersion is rated Low, and the standing rule "no story beats" keeps the setting to one line per job.
 
 ### Soul Choice (Phase 1)
