@@ -109,7 +109,7 @@ The workbench is marked Core here, where docs/soul.md has it Supporting: it is t
 * **automation against automating decisions:** rebuys and selling are chores with one right answer. Heat Control Operator is off until the player turns it on.
 * **audio_information against a Total UI, and without a visual twin:** the hum reports the trend, which the screen shows only as the held column and Mark II; every cue has that twin, so the sound can be off.
 * **audio_information's positional audio requirement:** not met, and not needed. The reactor is one source; which part is failing is visual.
-* **trusting_the_player against tutorials:** seven cards, five of which wait for the player to act, none of which says where a part goes.
+* **trusting_the_player against tutorials:** eight cards, six of which wait for the player to act, none of which says where a part goes.
 
 ### Economy (Phase 3)
 
@@ -241,7 +241,7 @@ The Dice is widened from the soul's row to cover undoing a board: a rewind is th
 | pitfalls/pause_loophole.txt | Tension (by analogy) | Pause used to rescue a failing board for free | Checked: Pause, the planner, and leaving stop the clock; only leaving banks time. Ledgered. |
 | pitfalls/chores_forever.txt, pitfalls/babysat_machine.txt | automation | The first hour remembered as tapping bars | Watch: selling and venting by hand until perpetual rebuys (goal 8) and auto-sell. Lineage. |
 | pitfalls/game_plays_itself.txt | automation | A switch left on, and the layout never considered | Checked: Heat Control Operator is off until turned on; nothing places a part. |
-| pitfalls/wordy_tutorial.txt, pitfalls/abandonment_disguised_as_trust.txt | trusting_the_player | Text skipped; or testers lost after the last card | Seen in code: seventeen cards. Fixed: seven, five of which wait for an action. Watch the other side in playtests. |
+| pitfalls/wordy_tutorial.txt, pitfalls/abandonment_disguised_as_trust.txt | trusting_the_player | Text skipped; or testers lost after the last card | Seen in code: seventeen cards. Fixed: eight, six of which wait for an action (the sixth is turning the reactor on). Watch the other side in playtests. |
 | pitfalls/empty_top.txt, pitfalls/unfair_rungs.txt | difficulty_ladder | The most dedicated players leave | Watch: the last tiers have never been played to (docs/play/checklist.md). |
 | pitfalls/monetization_creep.txt | House rule 2 (from Loathing) | A store appears | Clear: no permissions, no purchases, no network. |
 | pitfalls/audio_log_dump.txt, pitfalls/walls_of_undifferentiated_text.txt | Letters (interview 6.3) | Letters skipped unread; the log read as a wall | Watch: letters are optional and one at a time, and every answer is earned by climbing. |
@@ -282,6 +282,7 @@ The Dice is widened from the soul's row to cover undoing a board: a rewind is th
 | The toast that closes a Time Flux run | legible_failure | A receipt of what the board did while the player was away | Fails The Room | Build with a ledger entry |
 | Heat Control Operator switched on the Upgrades page; auto-sell and perpetual rebuys with no light or switch | automation | An automated system with no light → the player cannot see what is running | Fails The Room's spirit and legible_failure | Changed: Sell, Rebuy and Operator switches with lamps on the reactor's panel; a switch restarts the mark (built, reactor-revived commit 83aad89) |
 | Thirteen interface strings in a default voice | interface_voice | "Save exported", "Restart the reactor" → the game sounds like an app | Pass, but fail the Voice Guide | Changed: the accepted rewrites (built; test/voice.test.js holds them) |
+| The reactor's on switch: a lamp that reads On or Off; a new station starts off, and the tutorial asks the operator to turn it on | Seed Card (interview 1.1) | Turning the reactor on is a deliberate act → the operator watches the board they built begin to run → accomplishment, and the first moment of watching it flow | Pass | Built (reactor-revived commit f5249dd) |
 | The valley outside: four of the designer's paintings behind the board, one per season, dark after seven | Setting; house rule 3 | The valley shows through the empty slots and fades as heat rises → an empty slot is a view of what it is not yet lighting, and near the limit only the room is left → the why, seen, without a word | Pass: The Lineage (Reactor Revival's art), The Room (still, silent, never in the planner) | Built (reactor-revived commit 062c904) |
 
 ### Soul Ledger (Phases 2–9)
