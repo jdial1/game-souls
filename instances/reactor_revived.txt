@@ -270,18 +270,18 @@ The Dice is widened from the soul's row to cover undoing a board: a rewind is th
 | Meltdown insurance | none | A fall that can be bought back → the receipt matters less | Fails The Dice | Cut (docs/soul-brainstorm.md) |
 | Random disasters | none | A failure the design did not cause | The tone killer | Cut (docs/soul-brainstorm.md) |
 
-*Verdicts from the Soul Interview (docs/soul-interview.md 7.3, 7.5, 7.8), on paper; none is built yet.*
+*Verdicts from the Soul Interview (docs/soul-interview.md 7.3, 7.5, 7.8). The strings and toasts are built (reactor-revived commit 8845628); the rest are on paper.*
 
 | Feature | Serves | Trace (Mechanic → Dynamic → Tone) | Litmus | Verdict |
 | --- | --- | --- | --- | --- |
 | The "Feeding an accelerator" example at goal 22, which hands over the farm | trusting_the_player | The layout arrives solved → the story players would tell ("I figured out the accelerator layout") never happens | Passes the rows, and spends the next-day story | Change: teach the accelerator's numbers, not its layout |
-| Toasts for parts supplied, new dock parts, and casing design authorised | legible_failure | A second voice announces each arrival → the room is never silent | Fails The Room | Change: a silent entry in the log book |
-| Trophy and field note toasts | difficulty_ladder | A second voice for each feat | Fails The Room | Change: filed silently in the log book and the record |
-| The welcome-back toast ("Away 3h - banked as Time Flux") | Pillar 3 (Absence Is Play) | A second voice on return | Fails The Room | Change: shown on the Time Flux gauge |
+| Toasts for parts supplied, new dock parts, and casing design authorised | legible_failure | A second voice announces each arrival → the room is never silent | Fails The Room | Changed: a silent entry in the log book (built) |
+| Trophy and field note toasts | difficulty_ladder | A second voice for each feat | Fails The Room | Changed: filed silently in the log book (built) |
+| The welcome-back toast ("Away 3h - banked as Time Flux") | Pillar 3 (Absence Is Play) | A second voice on return | Fails The Room | Changed: the Time Flux gauge lights (built) |
 | The dot on the goal line marking an example waiting in the log | trusting_the_player | A mark on the one request's own line, pointing at help inside the game | Fails The Room, narrowly | Build with a ledger entry |
 | The toast that closes a Time Flux run | legible_failure | A receipt of what the board did while the player was away | Fails The Room | Build with a ledger entry |
 | Heat Control Operator switched on the Upgrades page; auto-sell and perpetual rebuys with no light or switch | automation | An automated system with no light → the player cannot see what is running | Fails The Room's spirit and legible_failure | Change: a light and a switch on the reactor for each |
-| Thirteen interface strings in a default voice | interface_voice | "Save exported", "Restart the reactor" → the game sounds like an app | Pass, but fail the Voice Guide | Change: the accepted rewrites in docs/soul-interview.md 7.5 |
+| Thirteen interface strings in a default voice | interface_voice | "Save exported", "Restart the reactor" → the game sounds like an app | Pass, but fail the Voice Guide | Changed: the accepted rewrites (built; test/voice.test.js holds them) |
 
 ### Soul Ledger (Phases 2–9)
 
